@@ -1,0 +1,8 @@
+Devs Aufgaben:
+
+Visuel 			- 
+Knöpfe und Formen	-
+daten logik 		-
+testen (penetration) 	-
+Benutzerverwaltung	- Micha
+Backend / alles		- Basti

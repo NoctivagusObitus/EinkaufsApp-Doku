@@ -1,0 +1,30 @@
+Überblick:
+ 1. Grundidee:
+ 1.1. Die App soll in Echtzeit die monetären Ausgaben einer Person speichern, sowie ausgewertet wiedergeben.
+ 1.2. Hierfür soll es möglich sein:
+ a) bei einem Einkauf Informationen über einen Artikel von einem Etikett einzulesen, beziehungsweise bei bestehender EAN Nummer aus einer Datenbank zu laden und aus diesen Argumenten einen Einkauf zu erstellen
+ b) sonstige Kosten aufzunehmen, die nicht mit einem EAN Code in Verbindung gebracht werden können.
+ c) von aktiven Einkäufen unabhängige, regelmäßige Kosten zu erfassen.
+ 1.3. Es soll möglich sein für jemand anderen oder eine Gruppe (z.B. WG) etwas einzukaufen.
+ 1.4. Die Daten werden Zentral in einer, über das Internet erreichbare, Datenbank gespeichert.
+ 1.5. Die App soll primär ein einfaches Front End bereitstellen, um Informationen zu sammeln und zu organisieren
+ 1.6. Eine Web Site ist momentan out of scope, wäre aber eine sinnvolle Ergänzung für die Ausgabe von Statistiken und die Benutzerverwaltung.
+ 1.7. Die Möglichkeiten der Auswertung sind vielfältig und können in Listen oder Diagrammen dargestellt werden.
+ 1.8. Auswertungsbeispiele:
+ a) Durchschnittliche Tageskosten eines Zeitraumes (z.B. Woche oder Monat)
+ b) Maximal oder Minimalpreis innerhalb eines Zeitraumes (z.B. Woche oder Monat) 
+ c) Eine Grafik, die den Ausgabenverlauf innerhalb eines Zeitraumes angibt
+ d) Eine Extrapolation regelmäßig gekaufter Artikel (Ersatz des „Einkaufzettels“)
+ e) Das persönliche Tracking der allgemeinen Ausgaben
+ f) weitere Möglichkeiten...
+ 1.9. Außerdem nicht personenbezogene Auswertungen:
+ a) über beliebteste Artikel
+ b) beliebteste Märkte
+ c) Durchschnittspreise eines Artikels
+ d) weitere Möglichkeiten...
+ 2. Systemstruktur:
+ 2.1. Ein online verfügbarer Server, auf dem seinerseits ein Datenbank Server und ein Web Server läuft
+ a) Als Datenbank Server wird Maria DB als MySQL Server verwendet
+ b) Als Web Server wird Apache verwendet
+ 2.2. Auf dem Web Server befindliche PHP Scripte stellen die Verbindung zur Datenbank her.
+ 2.3. Aus der Android App heraus wird mittels HTTP Post eine Anfrage an die PHP Scripte geschickte und die Antwort im JSON Format wieder an die App zurück geschickt.

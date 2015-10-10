@@ -1,0 +1,12 @@
+Main:
+
+Einkäufe speichern (bestehen aus EANs)
+Kosten auf Personen/Gruppen verteilen und managen
+Auswertugen (durchschnitts Kosten, belibteste Artikel...)
+
+
+---------------------------------------------------------------------------------
+
+important:
+
+bei Artikel Scans den Preis mit umliegenden Läden vergleichen

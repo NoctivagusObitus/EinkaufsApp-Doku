@@ -1,0 +1,4 @@
+vorschlag: - auswertungen bereits in datenbank vorhalten und nicht zur abfrage zeit berechnen
+vorschlag: - Atrikel kategorisieren
+
+ein entwikler = nur penetration test

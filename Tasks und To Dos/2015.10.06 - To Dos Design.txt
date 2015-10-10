@@ -1,0 +1,12 @@
+es kommen jetzt nochmal von mir die Highlights der TelKo.
+ 
+Flussdiagramme von Markus und Flo koppeln (wollte grundsätzlich Flo machen, wobei auch da bitte im Team Design offen kommuniziert werden soll, damit wir zu einem einheitlichen und dann auch abgesprochenen Ergebnis kommen!!)
+Markus und ich wollen dann auch eine Liste zum Erwartungshorizont der App erstellen (auch da bitte in eurem Team reden und schonmal konkrete Ziele formulieren), die dann u. a. als Grundlage für die Entwickler stehen soll. Die Liste wird dann auch rumgeschickt, aber erst am Donnerstag voraussichtlich erstellt. Bis dahin einfach immer wieder Brainstorming und Ideen aufschreiben.
+Wichtig: Immer den Kunden/Endnutzer als Ausgangspunkt sehen, der am Ende von unserer App überzeugt werden soll! (Logisch)
+1. Genannte Idee:  Google Maps mit integrieren und umliegende Einkaufsmärkte anzeigen plus Quick Compare von Artikeln
+2. Genannte Idee: Automatisch generierte Einkaufsliste aus alten Einkäufen
+Generell auch die Anfangsstruktur für die Entwickler definieren, damit die auch eine Grundlage zum arbeiten haben (deswegen auch das so weit es geht fertige Flussdiagramm)
+ 
+Auf eine erfolgreiche Zusammenarbeit und einen schönen Tag
+ 
+Huong

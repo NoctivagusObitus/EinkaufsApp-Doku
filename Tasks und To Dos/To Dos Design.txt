@@ -1,0 +1,11 @@
+Florian:
+-	Konzeption Grundstruktur
+-	Wie ist der Ablauf bei der App Nutzung, welche sonderfällte müssen an welchen Punkten beachtet werden, wie ist die generelle Struktur
+
+Moritz K.:
+-	Konzeption Funktionalitäten und Informationsfluss einzelner Ansichten
+-	welche Knöpfe soll es geben, welche Informationen werden angezeigt, welche Informationen werden zwischen zwei Ansichten ausgetauscht
+
+Moritz S.
+-	Visuelles Design
+-	Farben, Formen und Anordnung, von Butten und Feldern

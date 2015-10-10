@@ -1,0 +1,14 @@
+tasks devs:
+
+und schema aufmahlen
+datenbank möglichst performant halten
+und notwendige datenübertragung minimieren
+
+
+was ist wenn keine internet / offline nutzung 
+-> lokale datenbank
+-> synkronisation
+
+
+
+noch für gps eine abfrage an maps implementieren und karte mit standort für den benutzer anzeigen?
