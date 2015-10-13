@@ -1,0 +1,49 @@
+﻿Inhaltsverzeichnis zur Projektdokumentation
+
+Einleitung / Vorwort
+
+1. Definitionsphase
+1.1 Problembeschreibung (Erwartungshorizont) (Kunde xy will mn mit kj ...blubbakeksbla)  
+1.2 Entscheidung zur Projektdurchführung 
+1.3 Projektziele
+	1.3.1 Sachziel
+	1.3.2 Terminziel
+1.4 Projektauftrag
+1.5 Projektorganisation
+1.6 Kick- Off Meeting
+
+2. Planungsphase
+2.1 Aktivitätsliste (!)
+2.1.1 Designer
+2.1.2 Entwickler
+2.2 Kapazitätsplan (Zeitplan) (?) -> ersetzen durch Skillliste 
+2.2.1 Tools (wieso weshalb warum)		-> Anordnung hinterfragen
+2.2.2 Skillliste (wer kann was und wer muss was lernen?)
+
+(2.3 Qualitätsplan und Qualitätskontrolle
+2.3.1 Design- und Logoentwicklung
+2.3.2 Websites
+2.3.3 Organisationstools)
+
+3. Durchführungsphase
+3.1 Design
+3.1.1 Logoentwicklung
+3.1.2 visuelles Appdesign
+3.1.3 logisches Appdesign
+3.2 Entwickler
+3.2.1 Datenbank
+3.2.2 Webserver
+3.2.3 Anwendungsentwicklung
+3.4 Organisationstool
+
+4. Projektabschluss
+4.1 Resumee
+4.2 Fazit
+
+Quellen 
+Anhang
+Glossar
+
+*Entwickler! in der richtigen Doku
+
+- Doku erwähnen

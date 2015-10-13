@@ -1,0 +1,24 @@
+Telko Development 08.10.2015
+
+Backend DB: Michi und Basti
+Basti: schon Vorlage gegeben --> DB implementieren , Flussidagramm schon vorhanden
+--> DB Modell nach 4 Tagen ungefähr; danach folgt Programmierung
+will Einführung geben
+
+Ideen: (umzusetzen wenn Hauptteil erledigt ist)
+Artikel segmentieren + gruppieren um zu Vergleichen --> ist zu aufwandsreich
+Summary Tabellen 
+
+
+Verknüpfung mit "Kühlschrank-App"
+
+
+mehr rechnen, weniger speichern
+sinnvolle Logik für Start und Endkosten
+Artikel besitzt fixen Preis, Angebotspreis(in bestimmter Zeit gültig) und Basispreis (z.B. 50ct auf 100ml)
+
+übernächstes Wochenende Login Screen 
+nächste Woche: Datenbank soll stehen
+
+
+Inhaltsverzeichnis erstellen für Doku --> kleinen Leserview erstellen 

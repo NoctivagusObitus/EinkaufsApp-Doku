@@ -1,0 +1,17 @@
+Protokoll:
+
+- Moritz Schaub: Diskussion über Haupüberzeugungsmerkmal der App für Endnutzer -> Grundlage des Designs der Mainpage
+
+- Ideen: 
+  - vergangene Einkäufe vergleichen und und "günstigste" Einkaufsliste generieren lassen
+  - Mainscreen bietet von vornerein Artikel an
+
+- hinsichtlich Doku: Fortschritt des Prototypen dokumentieren mit Screenshots -> Moritz Schaub
+
+- Flussdiagramm 3. Version von Florian Graupeter überarbeitet
+
+- Jannis Grohs unterstützt Moritz Schaub im visuellen Design der App und agiert als "Tester"
+
+- Designer wurden auf Stand der Entwickler grob gebracht
+
+- weitere nötige Funktion der App: Auto-Speichern bei Abbruch der App etc.
