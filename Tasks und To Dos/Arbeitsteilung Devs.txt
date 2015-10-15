@@ -6,3 +6,20 @@ daten logik 		-
 testen (penetration) 	-
 Benutzerverwaltung	- Micha
 Backend / alles		- Basti
+
+Aufgabenverteilung aus der initialen Umfrage (https://docs.google.com/spreadsheets/d/1RlF9Zad-OuVW3g855mqVFScJQfH89Eq1nP1jI-HEPuo/edit#gid=0)
+Team 1	BackEnd
+---------------
+Sebastian Kiepsch	
+Michael Hein	
+
+Team 2	Middleware
+------------------
+Eric Sorgalla	
+(Sebastian Kiepsch)
+
+Team 3	Front End
+-----------------
+Daniel Sawadenko	
+Viktor Fuchs	
+Florian Schmitt
