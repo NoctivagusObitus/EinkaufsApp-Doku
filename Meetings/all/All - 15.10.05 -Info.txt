@@ -1,0 +1,21 @@
+Telko am 05.10.2015:
+
+ich: Stichpunkte über alles was in Telkos besprochen wird + Überblick über Telkos; Strukturierung Einleitung der Idee zum Beginn ; Liste über Tools
+Huong: nimmt Feedback der Designer auf
+Markus: nimmt Feedback der Entwickler auf
+(Thomas: aktives schreiben)
+nächster Termin: Freitag vormittag 
+
+Entwickler: Basti: Head of Development
+Eintragen in Liste der Unterthemen --> Hybrid - App; 
+Java Skript + HTML Code;
+wenn wir eher fertig sind, soll App über Android laufen
+zum DB befüllen: Gespir1, OpenERN
+
+wöchentlicher Termin zur App von Marcus eingestellt
+
+Designer: haben schon erste Skizze; mehr Logik --> Logikdiagramme zeichnen
+benötigen Infos von Entwicklern und deren Logik
+
+Doku: Github wichtig: Einkaufsapp! befassen damit , DIA , Skype oder Teamview für weiteres besprechen
+Markus: Frau Wieland Absprache

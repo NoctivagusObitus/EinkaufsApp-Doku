@@ -1,0 +1,8 @@
+DB Modell : bereits auf Git zu sehen
+Implementation: muss noch erledigt werden
+
+Design: Diagramm besteht bereits
+Moritz Karsten --> kann sich Gedanken machen über Login Screen
+Moritz Schaub: Logo kreieren; Brainstorming über neuen Namen für unsere App --> am liebsten kurzer einprägsamer Name
+Logo soll in App am liebsten auf jeder Seite vorhanden sein
+Slack unbedingt verwenden 

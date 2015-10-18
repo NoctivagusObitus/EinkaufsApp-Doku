@@ -1,0 +1,8 @@
+Jannis: Skizze / Zusammenfassung der Aufgaben von Frau Wieland
+Qualitätssicherung; Kontrollieren ob Vorgaben eingehalten werden, KONSISTENZ!
+--> Montag in Telko Zusammenfassung geben über Erwartungen von Frau Wieland
+
+für Entwickler: Penetrationstester und Logikverwalter erforderlich
+Design: einfach und konsistent, angenehme Benutzerführung + zuverlässige Fehlerbehandlung
+
+Absprache mit anderer Gruppe, die thematisch ähnliches macht und unsere DB mit nutzen möchte
