@@ -1,0 +1,13 @@
+Huong + ich : Inhaltsverzeichnis erstellen für Doku --> kleinen Leserview erstellen 
+kleines Protokoll darüber schreiben --> in Telko vergleichen 
+KONSISTENZ!
+Layout gleich beibehalten
+
+Dateiname:
+[Gruppe] - [Datum] - [Thema]
+[Gruppe] = {Dev, Design, Doku}
+
+
+Markus: Roadmap
+
+ToDos und Ideen
