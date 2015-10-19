@@ -1,0 +1,8 @@
+- Jannis stellt Erwartungshorizont als .ppt der Frau Wieland vor
+  - Wird im Nachhinein bis Ende der Woche detaillierter daran arbeiten und schonmal die vorbereitenden Fragen beantworten       (soweit es geht)
+- für Doku: Bewertungsbogen beachten und je nachdem abhaken, genutzte Tools dokumentieren
+- für Developer: Grobe Struktur vom Login von Basti -> Verbesserungen (was passiert bei Fehleingabe? und nicht alles löschen   nach Fehleingabe)
+- für Designer: Einkaufsprozess entwickeln
+- von Thomas erstellte Mindmap immer im Hinterkopf behalten zur Groborganisation (genutztes Tool zur Mindmap dokumentieren)
+- Information Kühlschrank-App: Kollaboration ist voraussichtlich erstmal raus, weil die Erwartungen an die DB zu   unterschiedlich sind
+
