@@ -1,0 +1,8 @@
+- Kühlschrank-App braucht Zugriff auf unsere DB -> API (Anforderungen s. Mail von Johannes Schmidt-Glintzer)
+- PAP verfeinert und muss von Moritz K. ergänzt werden
+- API Basti und Michie
+- Beispielprojekt von Basti (Login-Screen)
+- Einteilung Arbeitsgruppen von Basti auf GitHub
+- Jannis schaut sich generellen Aufbau von Diagrammen an und macht eine Übersicht
+- Konsistenz und Einheit beim Programmieren
+- eigenes Repository für Backend und App auf GitHub erstellt
