@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.4)  18 OCT 2015 15:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.4)  20 OCT 2015 17:32
 entering extended mode
 **Doku-SWE.tex
 (Doku-SWE.tex
@@ -357,7 +357,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write3
 
 [2] [3]
-Underfull \hbox (badness 10000) in paragraph at lines 48--59
+Underfull \hbox (badness 10000) in paragraph at lines 48--60
 
  []
 
@@ -369,12 +369,12 @@ Here is how much of TeX's memory you used:
  5158 multiletter control sequences out of 15000+200000
  12403 words of font info for 48 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,6n,24p,511b,192s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,24p,505b,192s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on Doku-SWE.pdf (11 pages, 58095 bytes).
+Output written on Doku-SWE.pdf (11 pages, 58018 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
