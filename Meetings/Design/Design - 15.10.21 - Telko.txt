@@ -1,0 +1,7 @@
+- Flussdiagramm:
+   - Nummerierung
+   - Logik diskutiert (z. B. zweimal Benutzerdaten prüfen?) -> Lösung: "Registrierung erfolgreich" 
+   - was passiert wenn Laden nicht in Liste vorhande?
+
+- Priorität 1: Nutzerfreundlichkeit!
+- Moritz Schaub soll das visuelle Design einrichten -> Abstimmung mit Markus noch offen
