@@ -1,0 +1,16 @@
+Statustelko
+
+- Entwicklung Stand: nicht viel weiter 
+- Login-Screen bereits vorhanden
+- Über Excelrechnung: "Wir sitzen hinterm Plan" 
+- Design (visuelles Design Moritz Schaub)
+   - Markt aussuchen und dann einscannen
+   - Problem: Was passiert wenn zwei oder mehr Leute auf eine Einkaufsliste zugreifen wollen? Visuell und Logisch umsetzen?
+
+
+- Ziel bis nächsten Freitag 30.10.15: 
+   - Developer arbeitsfähig kriegen!!!
+   - Design: Flussdiagramm, Absprache mit Florian Graupeter
+   - Basti und Markus Absprache diese Woche Datenbankaufbau 
+   - Jannis ToDo: Vorbereitende Fragen Ideen aufsammeln
+   - ToDo: Moritz Schaub optisches Design, anpassen an Flussdiagramm
