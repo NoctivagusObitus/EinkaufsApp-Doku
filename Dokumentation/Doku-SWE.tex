@@ -4,6 +4,7 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage [ngerman] {babel}
+\usepackage{hyperref}
 \begin{document}
 \title{Software Engineering Projekt}
 \author{Gruppe Einkaufsapp}
@@ -42,17 +43,20 @@ Huong Dang
 Thomas Elias
 \newline
 Annika Köstler
+
 \newpage
+
 % Hier beginnt nun die Einleitung.
+
 \section*{Einleitung}
 Diese Dokumentation soll einen näheren Einblick in den Umfang, 
 den Nutzen, den Ablauf und das Ergebnis unseres Softwareprojekts 'Einkaufsapp' geben.  
 \newline
 Unsere entwickelte App dient dem Nutzer seine alltäglichen Einkaufserlebnisse, hinsichtlich seiner besuchten Läden und seiner gekauften Produkte zu dokumentieren und eine Übersicht über seine Finanzen zu erhalten.
-Diese App soll gleichzeitig ein kleines Nachschlagewerk für die Nutzer darstellen, in der ein Überblick über Preis und Angebot bestimmter erstellt wird. 
-Sie soll den täglichen Einkauf für alle Konsumenten erleichtern und es ermöglichen seine Ausgaben auf einen Blick zu sehen.
+Diese App soll gleichzeitig ein kleines Nachschlagewerk für Nutzer darstellen, in der ein Überblick über Preis und Angebot bestimmter Produkte erstellt wird. 
+Sie soll den täglichen Einkauf für alle Konsumenten erleichtern und es ermöglichen Ausgaben auf einen Blick zu sehen.
 \newline
-Diese Dokumentation dient als Nachschlagewerk für die Projektmitglieder und beschreibt alle während der Projektdurchführung aufgekommenen Ideen und Tasks sowie alle  erstellten Dokumente.
+Diese Dokumentation dient als Zusammenfassung und Leitfaden für die Projektmitglieder und beschreibt alle während der Projektdurchführung aufgekommenen Ideen und Tasks sowie alle  erstellten Dokumente.
 \newline
 Zudem wurde eine Einteilung des Projektes in Definitionsphase, Planungsphase, Durchführungsphase und Abschlussphase als angemessen empfunden und in diesem Dokument angewandt.
 Diese Dokumentation ist parallel zur Durchführungsphase entstanden.
@@ -60,45 +64,255 @@ Diese Dokumentation ist parallel zur Durchführungsphase entstanden.
 \newpage
 \section{Definitionsphase}
 \subsection{Problembeschreibung}
-Es gibt viele verschiedene Produkte, welche von unterschiedlichen Anbietern zu unterschiedlichen Preisen und Mengen angeboten werden. 
-Da fällt es jedem Konsumenten schwer den Überblick zu behalten, welches Produkt bei welchen Anbieter am günstigsten ist und wie viel man in der Woche, im Monat oder im Jahr für ein bestimmtes Produkt bei einem bestimmten Anbieter ausgibt. Diese App soll dabei helfen den finanziellen Überblick zu behalten und eine Hilfe für alle Konsumenten sein, dsich öfter fragen, wo ihre Lieblingsprodukte am günstigsten angeboten werden und wie oft sie diese Produkte im Monat kaufen.
-Zudem bietet die App z. B. WG-Mitgliedern die Möglichkeit die Ausgaben pro Person zu tracken was die manuelle Kalkulation am Ende eines Monats erspart. 
+Das Problem, was momentan der Kunde hat ist vor allem die Unübersichtlichkeit über die Menge der Produkte pro Anbieter plus zugehörigem Preis. 
+Die EinkaufsApp soll nun dem entgegenwirken und den Konsumenten einen Überblick verschaffen, welches Produkt bei welchen Anbieter am günstigsten ist und wie viel man in der Woche, im Monat oder im Jahr für ein bestimmtes Produkt bei einem bestimmten Anbieter ausgibt. 
+Diese App soll zudem noch dabei helfen den finanziellen Überblick zu behalten und eine Hilfe für alle Konsumenten sein, die sich öfter fragen, wo ihre Lieblingsprodukte am günstigsten angeboten werden und wie oft sie diese Produkte im Monat kaufen.
+Als Zusatz bietet unsere App z.B. WG-Mitgliedern, die Möglichkeit, die Ausgaben pro Person zu tracken, was die manuelle Kalkulation am Ende eines Monats erspart. 
 
-\subsection{Ursachenanalyse}
 \subsection{Entscheidung zur Projektdurchführung}
+Unsere EinkaufsApp soll die EANs (European Article Number) der Produkte, die Konsumenten bei ihren Einkäufen in den Warenkorb legen und bezahlen  speichern.
+Zudem soll sie es ermöglichen die Kosten auf Personen und Gruppen zuzuteilen und zu managen und eine Auswertung je nach Belieben des Nutzers erstellen.
+Unsere App bietet sehr viele Funktionen an, die je nach Benutzer mehr oder weniger angewandt werden können.
+Unser Ziel mit der Durchführung des Projektes ist es, eine App entwickelt zu haben die alle Probleme der Unübersichtlichkeit für Konsumenten auslöscht und den Konsumenten den Einkauf und den Blick auf die Finanzen vereinfacht.
+
+\newpage
+
 \subsection{Projektziele}
+Unsere Ziele des Projektes sind untergliedert in Grundidee und Systemstruktur:
+
+\subsubsection{Grundidee}
+\begin{itemize}
+ \item[1.1.] Die App soll in Echtzeit die monetären Ausgaben einer Person speichern, sowie ausgewertet wiedergeben.
+ \item[1.2.] Hierfür soll es möglich sein:
+ \begin{itemize}
+ \item[a)] bei einem Einkauf Informationen über einen Artikel von einem Etikett einzulesen, beziehungsweise bei bestehender EAN Nummer aus einer Datenbank zu laden und aus diesen Argumenten einen Einkauf zu erstellen
+  \item[b)] sonstige Kosten aufzunehmen, die nicht mit einem EAN Code in Verbindung gebracht werden können.
+  \item[c)] von aktiven Einkäufen unabhängige, regelmäßige Kosten zu erfassen.
+  \end{itemize}
+ \item[1.3.] Es soll möglich sein für jemand anderen oder eine Gruppe (z.B. WG) etwas einzukaufen.
+ \item[1.4.] Die Daten werden Zentral in einer, über das Internet erreichbare, Datenbank gespeichert.
+ \item[1.5.] Die App soll primär ein einfaches Front End bereitstellen, um Informationen zu sammeln und zu organisieren
+ \item[1.6.] Eine Web Site ist momentan out of scope, wäre aber eine sinnvolle Ergänzung für die Ausgabe von Statistiken und die Benutzerverwaltung.
+ \item[1.7.] Die Möglichkeiten der Auswertung sind vielfältig und können in Listen oder Diagrammen dargestellt werden.
+ \newpage
+ \item[1.8.] Auswertungsbeispiele:
+ \begin{itemize}
+\item[a)]Durchschnittliche Tageskosten eines Zeitraumes (z.B. Woche oder Monat)
+ \item[b)] Maximal oder Minimalpreis innerhalb eines Zeitraumes (z.B. Woche oder Monat) 
+\item[c)] Eine Grafik, die den Ausgabenverlauf innerhalb eines Zeitraumes angibt
+\item[d)] Eine Extrapolation regelmäßig gekaufter Artikel (Ersatz des „Einkaufzettels“)
+\item[e)]Das persönliche Tracking der allgemeinen Ausgaben
+\end{itemize}
+ \item[1.9.] Außerdem nicht personenbezogene Auswertungen:
+ \begin{itemize}
+\item[a)]über beliebteste Artikel
+\item[b)] beliebteste Märkte
+\item[c)] Durchschnittspreise eines Artikels
+\end{itemize}
+\end{itemize}
+ 
+\subsubsection{Systemstruktur}
+\begin{itemize}
+ \item[2.1.] Ein online verfügbarer Server, auf dem seinerseits ein Datenbank Server und ein Web Server läuft
+ \begin{itemize}
+\item[a)]Als Datenbank Server wird Maria DB als MySQL Server verwendet
+\item[b)]Als Web Server wird Apache verwendet
+\end{itemize}
+\item[2.2.] Auf dem Web Server befindliche PHP-Skripte stellen die Verbindung zur Datenbank her.
+\item[2.3.] Aus der Android-App heraus wird mittels HTTP-Post eine Anfrage an die PHP-Skripte geschickte und die Antwort im JSON-Format wieder an die App zurück geschickt.
+\end{itemize}
+
+\newpage
+
 \subsection{Projektorganisation}
-\subsection{Kick-Off-Meeting}
-\newpage
-\section{Planungsphase}
-% Hier soll alles zur Planung stehen.
-\subsection{Aktivitätsliste}
-\subsubsection{Designer}
+Unsere große Projektgruppe wurde am 02. Oktober 2015 in die Gruppen Dokumentation, Design und Entwicklung eingeteilt.
+Dass Markus Hube unser Gruppenleiter und in diesem Falle zudem Projektmanager werden soll, stand von vornherein fest.
+Er schaffte es das Team zu organisieren und den Sinn und Zweck der App zu definieren und zu erklären. Als Projektmanager war er nun auch für die weitere Team- und Projektorganisation zuständig, so sollten alle Mails, die über die EinkaufsApp rund geschrieben wurden auch an ihn adressiert werden.
+Als Verantwortlicher für die Qualitätssicherung und Funktionslogik für die Dokumentation wurde Jannis Grohs benannt.
+Wichtig für unsere App ist natürlich auch ein geeigneter App-Name und um diesen endgültigen Namen zu finden, gab es ein Brainstorming in dem Tool Slack.
+
 \subsubsection{Entwickler}
-\subsection{Qualitätssicherung}
-\subsubsection{Logo- und Designentwicklung}
-\subsubsection{Websites}
+Die Abteilung der Entwickler erarbeitete sich nach dem 02. Oktober eine kleine Unterteilung in Frontend, Middleware und Backend.
+Als generelle Organisation bekamen die Entwickler eine kurze Anweisung, dass sie sinnvoll programmieren sollen und immer eine bestimmte Konsistenz einhalten sollen, z. B. dass die Variablen-Deklaration immer oben stattfindet, Kommentare und/oder Variablen aus mehreren Wörtern mit Unterstrichen verbunden und statische Werte vermieden werden.
+
+\subsubsection{Designer}
+Die Designer beschafften sich zu Beginn einen Überblick über die allgemeine Definition von Design und suchten sich ein paar Tips zum designen der App.
+Ganz wichtig ist hierbei, dass zwei Farben, eine starke und eine schwache genutzt werden und immer der Name und das Logo der App konsistent zum Einsatz kommen.
+\newpage
+
+\subsection{Kick-Off-Meeting}
+Am 02. Oktober  2015 fand unser erstes Meeting mit den genannten Gruppenmitgliedern statt. 
+Wir haben dort erstmal eine Gruppenaufteilung vorgenommen und unser Team in die Abteilungen Dokumentation, Design und Entwicklung geteilt. 
+In dem ersten Meeting einigten sich die Abteilungen untereinander auf Tools, die sie gerne nutzen möchten und mit denen auch in der weiteren Projektarbeit gearbeitet wird. Alle Tools werden ausführlich im Abschnitt Organisationstools aufgezählt und definiert.
+Zudem wurde in diesem ersten Meeting abgestimmt, dass wöchentlich Telefonkonferenzen zum weiteren Vorgehen des Projektes statt finden werden, sodass die genannten Projektziele auch umgesetzt werden können. 
 
 
 \newpage
+
+\section{Planungsphase}
+Hier in der Planungsphase haben wir verschiedene Unterteilungen vorgenommen. Zum einen kann man hier die Aktivitätsliste aller Projektmitglieder anschauen,  wo man sieht welches Teammitglied mit welchen Themen sich befasst hat. 
+Desweiteren sieht man hier welche Entscheidungen und Überlegungen hinsichtlich der Abteilungen notwendig waren bis das Projekt durchgeführt werden konnte.
+
+\subsection{Aktivitätsliste}
+ Hier würde ich Thomas sein Bild einfügen, wenn es vollständig ist.
+ 
+ \subsection{Skillsliste der einzelnen Gruppenmitglieder}
+ 
+ \newpage
+ 
+\subsection{Designer}
+\subsubsection*{ToDos der einzelnen Designer:}
+\textbf{Florian Graupeter:}
+\begin{itemize}
+\item[-]Konzeption Grundstruktur
+\item[-]Wie ist der Ablauf bei der App Nutzung, welche Sonderfälle müssen an welchen Punkten beachtet werden, wie ist die generelle Struktur
+\end{itemize}
+\textbf{Moritz Karsten:}
+\begin{itemize}
+\item[-]Konzeption Funktionalitäten und Informationsfluss einzelner Ansichten
+\item[-]welche Knöpfe soll es geben, welche Informationen werden angezeigt, welche Informationen werden zwischen zwei Ansichten ausgetauscht
+\end{itemize}
+\textbf{Moritz Schaub:}
+\begin{itemize}
+\item[-]Visuelles Design
+\item[-]Farben, Formen und Anordnung, von Butten und Feldern 
+\item[-]eventuelles Logodesign + neuer Name für App
+\end{itemize}
+\textbf{Jannis Grohs:}
+\begin{itemize}
+\item[-]Quality of Service (Konsistenz in allem beachten und Vorgaben einhalten)
+\item[-]Zusammenfassung über Erwartungshorizont und Ausarbeitung zu Fragen
+\item[-]Einfachheit und Intuition im Design beachten, zuverlässige Fehlerbehandlung beachten
+\end{itemize}
+\subsubsection*{ToDos für alle Designer:}
+\begin{itemize}
+\item[-]Flussdiagramm erstellen und erweitern
+\item[-]Erwartungshorizont der App definieren
+\item[-]Anfangsstruktur für die Entwickler festlegen
+\end{itemize}
+\newpage
+
+\subsection{Entwickler}
+ Hier fehlen leider noch die einzelnen Aufgabenbereiche von Vielen! --> Unbedingt nachtragen!
+ 
+\subsubsection*{1. Team Backend}
+\textbf{Sebastian Kiepsch:}
+\textbf{Michael Hein:}
+\begin{itemize}
+\item[-]Erstellung einer Benutzerverwaltung
+\end{itemize}
+
+\subsubsection*{2. Team Middleware}
+\textbf{Eric Sorgalla:}
+
+
+\subsubsection*{3. Team Frontend}
+\textbf{Daniel Sawadenko:}
+\textbf{Viktor Fuchs:}
+\newline 
+\textbf{Florian Schmitt:}
+
+
+\subsection{Ideen und Vorschläge aller Gruppen}:
+\begin{itemize}
+\item[-] Für GPS eine Abfrage an Google Maps implementieren
+\item[-] Karte mit Standort verschiedener Läden dem Benutzer anzeigen
+\item[-] Automatisch generierte Einkaufsliste
+\item[-] GS1 verwaltet alle EANs: 1worldsync soll Schnittstellen für den Zugriff bereitstellen
+\item[-] 95 Euro kostet Zugang for 1worldsync um ihre Schnittstelle zu verwenden
+\end{itemize}
+
+\newpage
+% \subsection{Qualitätssicherung}
+% \subsubsection{Logo- und Designentwicklung}
+% \subsubsection{Websites}
+
+\newpage
+
 \section{Durchführungsphase}
 %Hier soll die genaue Durchführung beschrieben werden.
-\subsection{Designer}
-\subsection{Entwickler}
-\subsection{Organisationstools}
-Wir haben GitHub als allgemeine Ablage genutzt und jedes Teammitglied hatte darauf Zugriff.
 
+\subsection{Designer}
+
+\newpage
+\subsection{Entwickler}
+\textbf{Michael Hein:}
+\newline
+Aufgabe: Erstellen einer Benutzerverwaltung
+\newline
+Funktion der Verwaltung:
+\begin{itemize}
+\item[1.]Registrieren
+\begin{itemize}
+        \item[a)]Test ob Benutzername/Email bereits vergeben sind
+        \item[b)] ob Email wirklich das Format einer Email hat
+        \item[c)]Test ob die Passwörter übereinstimmen --> das Passwort wird als Hash in der  Datenbank gespeichert
+\end{itemize}
+\item[2.]Login/ Logout
+\begin{itemize}
+\item[a)]Test ob Benutzername/Passwort korrekt
+\end{itemize}
+\item[3.]Passwort vergessen 
+\begin{itemize}
+ \item[a)] Sendet Email hinterlegte Mail mit einem Token im Link welches nur eine Stunde gültig ist
+\item[b)]Token ist für Passwort zurücksetzen --> Fehler wenn die Email nicht in der DB existiert welches nur eine Stunde gültig ist
+\end{itemize}
+\item[4.]Passwort zurücksetzen
+\begin{itemize}
+\item[a)]Überprüfung ob die Passwörter übereinstimmen
+\end{itemize}
+\item[5.]Funktion zum schützen von Routen
+\begin{itemize}
+\item[a)]kann in jede Route via „require“ eingebunden und genutzt werden
+\item[b)]verhindert, dass man eine Route ohne ein Login sehen kann
+ \item[c)]- Diese Anfrage wird auf die Login Seite weitergeleitet
+\end{itemize}
+\end{itemize}
+
+\newpage
+\subsection{Organisationstools}
+\begin{itemize}
+\item[-]Allgemeine Ablage: GitHub
+\item[-]Diskussionsrunden: Slack
+\item[-]Informationsaustausch: via Email
+\item[-]Diagramme zeichen: via Dia 
+\item[-]Kreieren von Web-Prototypen: proto.io
+\item[-]Datenbanken und Datenbankenverwaltung: MongoDB, RoboMongo
+\end{itemize}
 
 \newpage
 \section{Abschlussphase}
 %Hier wird das Ergebnis beschrieben.
 \subsection{Resumee}
+\newpage
 \subsection{Fazit}
 \newpage
 \section*{Quellen}
+Kann hier bitte wer helfen, ich bekomme das mit den Links nicht hin?
+%\begin{itemize}
+%\item[1.]Ionic Framework: \href{http://ionicframework.com/}
+%\item[2.]Ionic Framework
+%\item[3.]Ionic Getting Started: \href{http://ionicframework.com/getting-started/}
+%\item[4.]ngCordova - Plugin Seite \href{http://ngcordova.com/}
+%\item[5.]BarCode Scanner : Plugin \href{hhttp://ngcordova.com/docs/plugins/barcodeScanner/}
+%\item[6.]Beispiel Projekt: \href{https://github.com/bastisk/suedm}
+%\item[7.]Editor: \href{http://brackets.io/}
+%\item[8.]Angular JS-Kurs: \href{https://www.codeschool.com/courses/shaping-up-with-angular-js/}
+%\item[9.]Tutorial zum Routing: \href{https://scotch.io/tutorials/angular-routing-using-ui-router}
+%\item[10.]App-Projekt: \href{http://www.mobile2b.de/ablauf-app-projekt/}
+%\item[11.] Dokumentationshilfe: \href{http://www.tellsbells.de/dokuwebsite/tbdokumentation.pdf}
+%\item[12.] Dokumentationshilfe: \href{https://www.lecturio.de/magazin/projekte-dokumentieren/}
+%\item[13.] Open Source mit API über eine einfachen HTTP-GET-Reguest: \href{http://www.opengtindb.org/api.php}
+%\item[14.] Suchmaschine der Firma die GTIN-Nummern verwaltet: \href{http://www.gepir.de/v31/V31_client/gtin.aspx}
+%\end{itemize}
 \newpage
 \section*{Anhang}
 \newpage
 \section*{Glossar}
 
 \end{document}
+
+    Status API Training Shop Blog About Pricing 
+
+    © 2015 GitHub, Inc. Terms Privacy Security Contact Help 
+
