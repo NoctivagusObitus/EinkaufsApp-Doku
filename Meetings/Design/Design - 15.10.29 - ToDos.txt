@@ -1,0 +1,41 @@
+ToDOs: 
+Moritz K.: Logik hinter Diagramm von Flori; alles fett gedruckte kursiv schreiben + Nummerierung neu einfügen
+
+Aufgabe Daniel: Mapping zu Moritz Schaub, Pup angucken und dran arbeiten, 
+als Externer auf Dia schauen + mit Moritz Schaub drüber schauen; soll sich bei markus melden da keine direkte Aufgabe für ihn besteht
+
+
+Moritz Schaub Vorschlag: Editieren von Mitgliedern komplett raus aus Diagramm
+--> guten Teile aus Diagramm in Proto von Moritz Schaub einbauen 
+
+Markus Vorschlag: 5.Gruppenverwaltung als abgetrennten Teil mit Gruppeneinkauf (unter 3.7.) in extra Dia einfügen; 
+Quicklink auf Gruppenverwaltung --> Mitgliederliste unter 3.7. unter 5.Gruppenverwaltung einfügen
+in Dia Rabatte von Produkten mit einfügen
+
+Idee: Kostenteilung unter Leuten, die nicht in Datenbank und nicht in Gruppe sind und eventuelle Trenung bestimmter Sachen unter den Leuten in der gruppe z.B. Frauen wollen Sekt, Männer Bier
+
+Außer Betrachtung:
+zwei/mehr Leute gleiche Liste verwenden und diese abarbeiten sodass die anderen das auch sehen
+Einkäufe die nicht abgeschlossen sind --> out of scope
+nicht abgeschlossene Einkäufe nicht nochmal aufrufbar
+mehrere Leute können nicht an der Liste arbeiten und diese verwenden
+Einkaufsliste vorher schreiben und diese abarbeiten --> gescannte Produkte werden abgehakt,
+
+Idee:
+Google API verwenden --> doch nicht für unsere App machbar
+Einkaufsbewertung --> wie gefällt der Laden? Wie zufrieden war man mit dem Einkauf? Alles erhalten? Parkplatz vorhanden?
+
+Idee Jannis: 
+Benutzerverwaltung: Profilbild, Account löschen, etc.--> unter Einstellung auf Homescreen
+
+Dia: Loginscreen: PW vergessen fehlt --> hat Micha schon gebastelt bei Desginern
+
+Screens+ Interaktionen: 
+1: Laden auswählen
+2. Gruppenabfrage
+3. Barcodescanner
+4. Preis anzeigen
+5. Ausgabe + weiter zum Einkauf
+
+
+für DOku interessant: in GitHub schauen was Designer als Kommentare stehen haben --> das sind die ausgeführten Aufgaben
