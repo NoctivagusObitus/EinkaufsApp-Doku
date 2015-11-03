@@ -1,0 +1,49 @@
+1. Verwendung dieses Handbuches: (Herzlichen Glückwunsch) Dankesrede für Kauf/Nutzung der App; wo kann man das Handbuch danach finden in der App
+2. Lesen Sie folgenden Abschnitt zuerst: 
+3. Systemvoraussetzungen (nur Android)(Hinweissymbole) : 
+Warnung
+ – Situationen, in denen Sie oder andere verletzt werden könnten
+Vorsicht
+ – Situationen, in denen Ihr Gerät oder andere Geräte beschädigt werden könnten
+Hinweis
+ – Hinweise, Tipps zur Verwendung oder Zusatzinformationen 
+5. (Copyright)
+
+Inhaltsverzeichnis:
+1. Installation der App
+2. Erste Schritte (Registrierung, Name anpassen, Bild hochladen, Themen(Schriftfarbe), Homebildschirm kennen lernen)
+3. Voraussetzungen (GPS, Internet, vor dem Laden etc.pp.)
+4. Märkte
+	(Hinweis: Ortungsdienste aktivieren um Märkte zu finden)
+	4.1. bekannten Markt auswählen
+	4.2. unbekannten Markt aufnehmen
+
+5. Einkaufslisten 
+	5.1. einzelner Einkauf
+		5.1.1. erstellen (direkt im Laden einpflegen - per Scan Funktion) 
+		5.1.2. angefangene aufrufen wenn Einkauf nicht abgeschlossen (bei Absturz blaa)
+
+	
+	5.2. Gruppeneinkauf
+		5.2.1. Gruppenverwaltung
+			5.2.1.1. Gruppen erstellen
+			5.2.1.2. Gruppen ändern/bearbeiten
+		5.2.2. Gruppenauswahl
+		5.2.3. Einkaufsliste erstellen(s. 5.1.1)
+		5.2.4. angefangene aufrufen wenn Einkauf nicht abgeschlossen (s. 5.1.2.)
+	
+	5.3. Auswertung
+		5.3.1. Einzeleinkauf
+		5.3.2. Gruppeneinkauf
+		
+6. FAQ
+7. Kontakt (Bei Fragen)
+	
+	
+---------------
+*Fehlermeldungen/Fehlerbehebungen	
+
+
+
+
+
