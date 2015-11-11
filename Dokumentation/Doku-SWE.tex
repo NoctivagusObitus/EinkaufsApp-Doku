@@ -56,10 +56,10 @@ Diese Dokumentation soll einen näheren Einblick in den Umfang,
 den Nutzen, den Ablauf und das Ergebnis unseres Softwareprojekts 'Einkaufsapp' geben.  
 \newline
 Unsere entwickelte App dient dem Nutzer seine alltäglichen Einkaufserlebnisse, hinsichtlich seiner besuchten Läden und seiner gekauften Produkte zu dokumentieren und eine Übersicht über seine Finanzen zu erhalten.
-Diese App soll gleichzeitig ein kleines Nachschlagewerk für Nutzer darstellen, in der ein Überblick über Preis und Angebot bestimmter Produkte erstellt wird. 
-Sie soll den täglichen Einkauf für alle Konsumenten erleichtern und es ermöglichen Ausgaben auf einen Blick zu sehen.
+Gleichzeitig soll sie ein kleines Nachschlagewerk für Nutzer darstellen, in der ein Überblick über Preis und Angebot bestimmter Produkte erstellt wird. 
+Dadurch wird der tägliche Einkauf für alle Konsumenten erleichtert indem eine Übersicht über alle Ausgaben des Konsumenten entsteht.
 \newline
-Diese Dokumentation dient als Zusammenfassung und Leitfaden für die Projektmitglieder und beschreibt alle während der Projektdurchführung aufgekommenen Ideen und Tasks sowie alle  erstellten Dokumente.
+Die Dokumentation fasst die kompletten Phasen der Planung und der Entwicklung mit den jeweiligen Ideen, Tasks und angefertigten Dokumenten zusammen und fungiert als Leitfaden für die alle Projektmitglieder durch das gesamte Projekt.
 \newline
 Zudem wurde eine Einteilung des Projektes in Definitionsphase, Planungsphase, Durchführungsphase und Abschlussphase als angemessen empfunden und in diesem Dokument angewandt.
 Diese Dokumentation ist parallel zur Durchführungsphase entstanden.
@@ -67,16 +67,17 @@ Diese Dokumentation ist parallel zur Durchführungsphase entstanden.
 \newpage
 \section{Definitionsphase}
 \subsection{Problembeschreibung}
-Das Problem, was momentan der Kunde hat ist vor allem die Unübersichtlichkeit über die Menge der Produkte pro Anbieter plus zugehörigem Preis. 
-Die EinkaufsApp soll nun dem entgegenwirken und den Konsumenten einen Überblick verschaffen, welches Produkt bei welchen Anbieter am günstigsten ist und wie viel man in der Woche, im Monat oder im Jahr für ein bestimmtes Produkt bei einem bestimmten Anbieter ausgibt. 
+Mit der steigenden Vielfalt an Produkten, dem wachsendem Interesse des Kunden an diesen Produkten und der damit einhergehenden Unübersichtlichkeit über die Produktvielfalt verliert der Kunde schnell den Überblick über die Preise der Produkte und die Ausgaben des Konsumenten. 
+Wie in der Einleitung beschrieben, bietet die EinkaufsApp die Möglichkeit einen Überblick über getätigte Einkäufe zu schaffen um vor allem die finanziellen Ausgaben pro Woche, Monat oder Jahr zu tracken und Preise gleicher Produkte von unterschiedlichen Anbietern zu vergleichen.  
 Diese App soll zudem noch dabei helfen den finanziellen Überblick zu behalten und eine Hilfe für alle Konsumenten sein, die sich öfter fragen, wo ihre Lieblingsprodukte am günstigsten angeboten werden und wie oft sie diese Produkte im Monat kaufen.
-Als Zusatz bietet unsere App z.B. WG-Mitgliedern, die Möglichkeit, die Ausgaben pro Person zu tracken, was die manuelle Kalkulation am Ende eines Monats erspart. 
+Zusätzlich gibt es die Gruppenfunktion, in der z.B. WG-Mitgliedern, die Möglichkeit, die Ausgaben pro Person zu tracken, was die manuelle Kalkulation am Ende eines Monats erspart. 
 
 \subsection{Entscheidung zur Projektdurchführung}
-Unsere EinkaufsApp soll die EANs (European Article Number) der Produkte, die Konsumenten bei ihren Einkäufen in den Warenkorb legen und bezahlen  speichern.
-Zudem soll sie es ermöglichen die Kosten auf Personen und Gruppen zuzuteilen und zu managen und eine Auswertung je nach Belieben des Nutzers erstellen.
-Unsere App bietet sehr viele Funktionen an, die je nach Benutzer mehr oder weniger angewandt werden können.
-Unser Ziel mit der Durchführung des Projektes ist es, eine App entwickelt zu haben die alle Probleme der Unübersichtlichkeit für Konsumenten auslöscht und den Konsumenten den Einkauf und den Blick auf die Finanzen vereinfacht.
+Unsere EinkaufsApp soll die EANs (European Article Number) der Produkte, die Konsumenten bei ihren Einkäufen in den Warenkorb legen und bezahlen, speichern.
+Zudem soll sie es ermöglichen die Kosten auf Personen und Gruppen aufzuteilen und zu managen und eine Auswertung je nach Belieben des Nutzers erstellen.
+Unsere App bietet viele Funktionen an, die je nach Benutzer mehr oder weniger angewandt werden können.
+Unser Ziel mit der Durchführung des Projektes ist es, eine App zu entwickeln, die die Lösung für das oben genannte Problem darstellt. 
+Die Produktvielfalt der verschiedenen Anbieter für Konsumenten wird vereinfacht dargestellt und man sieht auf einen Blick seine Ausgaben.
 
 \newpage
 
@@ -85,28 +86,28 @@ Unsere Ziele des Projektes sind untergliedert in Grundidee und Systemstruktur:
 
 \subsubsection{Grundidee}
 \begin{itemize}
- \item[1.1.] Die App soll in Echtzeit die monetären Ausgaben einer Person speichern, sowie ausgewertet wiedergeben.
- \item[1.2.] Hierfür soll es möglich sein:
+ \item[1.1)] Die App soll in Echtzeit die monetären Ausgaben einer Person speichern, sowie ausgewertet wiedergeben.
+ \item[1.2)] Hierfür soll es möglich sein:
  \begin{itemize}
- \item[a)] bei einem Einkauf Informationen über einen Artikel von einem Etikett einzulesen, beziehungsweise bei bestehender EAN Nummer aus einer Datenbank zu laden und aus diesen Argumenten einen Einkauf zu erstellen
+ \item[a)] bei einem Einkauf Informationen über einen Artikel von einem Etikett via Barcodescanner einzulesen, beziehungsweise bei bestehender EAN Nummer aus einer Datenbank zu laden und aus diesen Argumenten einen Einkauf zu erstellen
   \item[b)] sonstige Kosten aufzunehmen, die nicht mit einem EAN Code in Verbindung gebracht werden können.
   \item[c)] von aktiven Einkäufen unabhängige, regelmäßige Kosten zu erfassen.
   \end{itemize}
- \item[1.3.] Es soll möglich sein für jemand anderen oder eine Gruppe (z.B. WG) etwas einzukaufen.
- \item[1.4.] Die Daten werden Zentral in einer, über das Internet erreichbare, Datenbank gespeichert.
- \item[1.5.] Die App soll primär ein einfaches Front End bereitstellen, um Informationen zu sammeln und zu organisieren
- \item[1.6.] Eine Web Site ist momentan out of scope, wäre aber eine sinnvolle Ergänzung für die Ausgabe von Statistiken und die Benutzerverwaltung.
- \item[1.7.] Die Möglichkeiten der Auswertung sind vielfältig und können in Listen oder Diagrammen dargestellt werden.
+ \item[1.3)] Es soll möglich sein für jemand anderen oder eine Gruppe (z.B. WG) einzukaufen.
+ \item[1.4)] Die Daten werden zentral in einer, über das Internet erreichbare, Datenbank gespeichert.
+ \item[1.5)] Die App soll primär ein einfaches Front End bereitstellen, um Informationen zu sammeln und zu verwalten
+ \item[1.6)] Eine Web Site ist momentan out of scope, wäre aber eine sinnvolle Ergänzung für die Ausgabe von Statistiken und die Benutzerverwaltung.
+ \item[1.7)] Die Möglichkeiten der Auswertung sind vielfältig und können in Listen oder Diagrammen dargestellt werden.
  \newpage
- \item[1.8.] Auswertungsbeispiele:
+ \item[1.8)] Auswertungsbeispiele:
  \begin{itemize}
-\item[a)]Durchschnittliche Tageskosten eines Zeitraumes (z.B. Woche oder Monat)
+\item[a)]Ausgaben innerhalb eines bestimmten Zeitraumes (z.B. Woche oder Monat)
  \item[b)] Maximal oder Minimalpreis innerhalb eines Zeitraumes (z.B. Woche oder Monat) 
-\item[c)] Eine Grafik, die den Ausgabenverlauf innerhalb eines Zeitraumes angibt
+\item[c)] Eine Grafik, die den Ausgabenverlauf innerhalb eines Zeitraumes darstellt
 \item[d)] Eine Extrapolation regelmäßig gekaufter Artikel (Ersatz des „Einkaufzettels“)
 \item[e)]Das persönliche Tracking der allgemeinen Ausgaben
 \end{itemize}
- \item[1.9.] Außerdem nicht personenbezogene Auswertungen:
+ \item[1.9)] Außerdem nicht personenbezogene Auswertungen:
  \begin{itemize}
 \item[a)]über beliebteste Artikel
 \item[b)] beliebteste Märkte
@@ -116,40 +117,44 @@ Unsere Ziele des Projektes sind untergliedert in Grundidee und Systemstruktur:
  
 \subsubsection{Systemstruktur}
 \begin{itemize}
- \item[2.1.] Ein online verfügbarer Server, auf dem seinerseits ein Datenbank Server und ein Web Server läuft
+ \item[2.1)] Ein online verfügbarer Server, auf dem seinerseits ein Datenbank Server und ein Web Server läuft
  \begin{itemize}
-\item[a)]Als Datenbank Server wird Maria DB als MySQL Server verwendet
+\item[a)]Als Datenbank-Server wird MongoDB verwendet
 \item[b)]Als Web Server wird Apache verwendet
 \end{itemize}
-\item[2.2.] Auf dem Web Server befindliche PHP-Skripte stellen die Verbindung zur Datenbank her.
-\item[2.3.] Aus der Android-App heraus wird mittels HTTP-Post eine Anfrage an die PHP-Skripte geschickte und die Antwort im JSON-Format wieder an die App zurück geschickt.
+\item[2.2)] Auf dem Web Server befindliche PHP-Skripte stellen die Verbindung zur Datenbank her.
+\item[2.3)] Aus der Android-App heraus wird mittels HTTP-Post eine Anfrage an die PHP-Skripte geschickte und die Antwort im JSON-Format wieder an die App zurück geschickt.
 \end{itemize}
 
 \newpage
 
 \subsection{Projektorganisation}
-Unsere große Projektgruppe wurde am 02. Oktober 2015 in die Gruppen Dokumentation, Design und Entwicklung eingeteilt.
+Unsere große Projektgruppe wurde am 02. Oktober 2015 in die Gruppen Dokumentation, Design und Entwicklung aufgeteilt.
 Dass Markus Hube unser Gruppenleiter und in diesem Falle zudem Projektmanager werden soll, stand von vornherein fest.
 Er schaffte es das Team zu organisieren und den Sinn und Zweck der App zu definieren und zu erklären. Als Projektmanager war er nun auch für die weitere Team- und Projektorganisation zuständig, so sollten alle Mails, die über die EinkaufsApp rund geschrieben wurden auch an ihn adressiert werden.
 Als Verantwortlicher für die Qualitätssicherung und Funktionslogik für die Dokumentation wurde Jannis Grohs benannt.
 Wichtig für unsere App ist natürlich auch ein geeigneter App-Name und um diesen endgültigen Namen zu finden, gab es ein Brainstorming in dem Tool Slack.
-
-\subsubsection{Entwickler}
-Die Abteilung der Entwickler arbeitete sich nach dem 02. Oktober in ihre spätere Entwicklungsumgebung ein.
-Als generelle Organisation bekamen die Entwickler eine kurze Anweisung, dass sie sinnvoll programmieren sollen und immer eine bestimmte Konsistenz einhalten sollen, z. B. dass die Variablen-Deklaration immer oben stattfindet, Kommentare und/oder Variablen aus mehreren Wörtern mit Unterstrichen verbunden und statische Werte vermieden werden.
-
-\subsubsection{Designer}
-Die Designer beschafften sich zu Beginn einen Überblick über die allgemeine Definition von Design und suchten sich ein paar Tips zum designen der App.
-Als wichtig hat es sich hierbei erwiesen, dass zwei Farben, eine starke und eine schwache genutzt werden und immer der Name und das Logo der App konsistent zum Einsatz kommen. Die Designer haben mittels  Proto.IO einen Prototypen zum Austesten des Designs erschafft.
-
-
-\newpage
 
 \subsection{Kick-Off-Meeting}
 Am 02. Oktober  2015 fand unser erstes Meeting mit den genannten Gruppenmitgliedern statt. 
 Wir haben dort erstmal eine Gruppenaufteilung vorgenommen und unser Team in die Abteilungen Dokumentation, Design und Entwicklung geteilt. 
 In dem ersten Meeting einigten sich die Abteilungen untereinander auf Tools, die sie gerne nutzen möchten und mit denen auch in der weiteren Projektarbeit gearbeitet wird. Alle Tools werden ausführlich im Abschnitt Organisationstools aufgezählt und definiert.
 Zudem wurde in diesem ersten Meeting abgestimmt, dass wöchentlich Telefonkonferenzen zum weiteren Vorgehen des Projektes statt finden werden, sodass die genannten Projektziele auch umgesetzt werden können. 
+
+\newpage
+
+\subsubsection{Entwickler}
+Die Abteilung der Entwickler arbeitete sich nach dem 02. Oktober in ihre spätere Entwicklungsumgebung ein.
+\subsubsection*{Konsistenz}
+Als generelle Organisation bekamen die Entwickler eine kurze Anweisung, dass sie sinnvoll programmieren sollen und immer eine bestimmte Konsistenz einhalten sollen, z. B. dass die Variablen-Deklaration immer oben stattfindet, Kommentare und/oder Variablen aus mehreren Wörtern mit Unterstrichen verbunden und statische Werte vermieden werden.
+\subsubsection*{Aufteilung}
+Hier müssen wir nochmal nachfragen wie die Entwickler sich nun aufgeteilt haben.
+
+\subsubsection{Designer}
+Die Designer beschafften sich zu Beginn einen Überblick über die allgemeine Definition von Design und suchten sich ein paar Tips zum designen der App.
+Als wichtig hat es sich hierbei erwiesen, dass zwei Farben, eine starke und eine schwache genutzt werden und immer der Name und das Logo der App konsistent zum Einsatz kommen. Die Designer haben mittels  Proto.IO einen Prototypen zum Austesten des Designs erschafft.
+\subsubsection*{Dia als Tool}
+Hier müssen wir dann mal reden was genau hier hin soll.
 
 
 \newpage
@@ -259,6 +264,7 @@ Desweiteren sieht man hier welche Entscheidungen und Überlegungen hinsichtlich 
 
 \newpage
 \subsection{Ideen und Vorschläge aller Gruppen:}
+% Hier dann ein einleitender Satz und der Rest Stichpunktartig?
 \begin{itemize}
 \item[-] Für GPS eine Abfrage an Google Maps implementieren
 \item[-] Karte mit Standort verschiedener Läden dem Benutzer anzeigen
@@ -289,7 +295,8 @@ vorhanden?
 
 \section{Durchführungsphase}
 %Hier soll die genaue Durchführung beschrieben werden.
-
+%Idee Annika: Das wird dann noch in Sätze geschrieben!
+% Idee Huong:Gute Idee. Am besten dann aber aufgeteilt in "ToDo, Umsetzung, Probleme etc.pp" einfach ne idee :) vielleicht fällt dir was besseres ein
 \subsection{Designer}
 PAP erstellt und erweitert:
 Gruppeneinkauf vereinfacht, Einkauf fortsetzen eingebaut und Passwort rücksetzen
