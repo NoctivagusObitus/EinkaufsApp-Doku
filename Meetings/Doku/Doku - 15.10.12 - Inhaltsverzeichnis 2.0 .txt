@@ -1,53 +1,46 @@
 ﻿Inhaltsverzeichnis zur Projektdokumentation
 
-Einleitung / Vorwort
 
-1. Analysephasephase
-1.1 Problembeschreibung (Erwartungshorizont)
-1.2 Entscheidung zur Projektdurchführung (Lösung für Problembeschreibung)
-1.3 Projektziele (Aufbauend auf Problembeschreibung)
+Einleitung / Vorwort
+Abbildungsverzeichnis
+Abkürzungsverzeichnis
+Organisationstool-Übersicht
+
+1. Analysephase
+  1.1 Problembeschreibung (Erwartungshorizont)
+  1.2 Entscheidung zur Projektdurchführung (Lösung für Problembeschreibung)
+  1.3 Projektziele (Aufbauend auf Problembeschreibung)
 	1.3.1. Grundfunktionen der App
 	1.3.2. Pflichtfunktionen
-	1.3.3. Zusatzfunktionen
-1.4 Projektorganisation
+  	1.3.3. Zusatzfunktionen
+  1.4 Projektorganisation
 	1.4.1. Kick- Off Meeting
 	1.4.2. Ist-Analyse intern (Skillliste, "Was haben wir?")
 	1.4.3. Anforderungsanalyse ("Was brauchen wir?") (Text, aber Aufzählung möglich)
 	1.4.4. Soll-Analyse (Übersicht wer welche Aufgabe) ->  Aktivitätsliste (!)
 	1.4.5. Meilensteinplanung (Übersicht von Thomas)
+  1.5 Datensicherheit (Rahmenbedingungen für Profil und Einkaufslisten - Zugriff)
 
-2. Durchführungsphase
-(Sicherheit)
-2.1 Design
-2.1.1 Logoentwicklung
-2.1.2 visuelles Appdesign
-2.1.3 logisches Appdesign
-2.2 Entwicklung
-2.2.1 Datenbank
-2.2.2 Webserver
-2.2.3 Anwendungsentwicklung
-2.4 Organisationstool
+2. Durchführungsphase (Idee: Roadmap, s. Flussdiagramm) (Was haben die Designer für die App geplant und was können die Entwickler davon umsetzen)
+  2.1. Login (Einleitung die Voraussetzungen eines Nutzerprofils)
+    2.1.1. Sicherheit
+    2.1.2. Qualitätskontrolle (Implementierung nennen und dabei entstandene Probleme aufzählen, die dann im nächsten Unterkapitel verbesert wurden)
+  2.2. Datenbank
+    2.2.1. MongoDB Grundstruktur (UML Diagramme etc.)
+    2.2.2. Qualitätkontrolle	
+  2.3. Webserver
+    2.3.1. Qualitätkontrolle
+  2.4 Anwendungsentwicklung
+    2.4.1. Qualitätkontrolle  
+  2.5. visuelles Appdesign
+    2.5.1. Logoentwicklung
+      2.5.1.1. Qualitätkontrolle
+    
+	=> Grundidee (Lösungsansatz - Problem - Lösungsansatz - Problem ...)
 
+3. Projektabschluss
+3.1 Zusammenfassung
 
-(2.3 Qualitätsplan und Qualitätskontrolle
-2.3.1 Design- und Logoentwicklung
-2.3.2 Websites
-2.3.3 Organisationstools)
-
-3. Durchführungsphase
-3.1 Design
-3.1.1 Logoentwicklung
-3.1.2 visuelles Appdesign
-3.1.3 logisches Appdesign
-3.2 Entwickler
-3.2.1 Datenbank
-3.2.2 Webserver
-3.2.3 Anwendungsentwicklung
-3.4 Organisationstool
-
-4. Projektabschluss
-4.1 Resumee
-4.2 Fazit
 
 Quellen 
 Anhang
