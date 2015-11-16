@@ -1,0 +1,34 @@
+1. Schritte:
+
+Benutzer erstellen:
+
+Öffnen Sie die EinkaufsApp. Es erscheint ein Registrationsscreen. 
+Geben Sie alle erforderlichen Nutzerdaten ein und bestätigen Sie Ihre Eingabe indem Sie auf den Button "OK" klicken.
+Sind die von Ihnen eingegebenen Daten inkorrekt (bspw. ein ungültiges Geburtsdatum eingegeben) wird der Vorgang wiederholt.
+
+Sind alle Angaben richtig, war die Registrierung erfolgreich und Sie gelangen in das Hauptmenü.
+
+2. Schritt: Einkauf
+
+Falls Sie offene Einkäufe haben, werden Sie gefragt, ob Sie diesen fortsetzen wollen. Bestätigen Sie Ihre Aussage entweder mit "ja" oder "nein" und fahren Sie wie in Kapitel x vor. 
+
+
+ 2.1 Marktbestimmung
+	Bei einer neu angefangenen Einkaufsliste wird zunächst der Markt über GPS bestimmt. Es erscheint eine Liste mit allen nah gelegenen Märkten. Wählen Sie den Markt aus in dem Sie einkaufen wollen. 
+	Ist der von Ihnen gewünschte Markt nicht vorhanden müssen Sie einen neuen Markt aufnehmen. Hierbei klicken Sie bitte auf den Button "Markt nicht vorhanden".
+	Es erscheint ein Bildschirm mit Eingabefenstern, Geben sie in den jeweiligen Eingabefeldern Name, Kette und Standort ein.
+	Ist der von Ihnen angegebene Markt bereits vorhanden, bekommen Sie eine Hinweisnachricht und Sie gelangen zurück in das Eingabefenster. Der Vorgang kann dann durch den Button "Abbruch" abgebrochen werden.
+	Ist der angegebene Markt von Ihnen noch nicht vorhanden und die Eingaben formkorrekt eingegeben, können Sie jetzt auf "speichern" klicken. 
+ 
+ 2.2 Einkaufsliste erstellen
+   2.2.1. Gruppenliste erstellen
+	  	Geben Sie im nachfolgenden Fenster diejenigen an, für den Sie den Einkauf tätigen wollen. Erstellen Sie dazu eine Gruppe indem auf x klicken. Es erscheint eine leere Liste indem Sie die jeweiligen namen eintragen bzw. auch löschen können, falls Sie sich verschrieben haben.
+	  	Speichern Sie Ihre Angaben.
+   2.2.2. Gruppenliste verwalten
+		Wählen Sie aus dem Hauptmenü den Menüpunkt x aus. Gehen Sie danach auf "vorhandene Gruppen bearbeiten". Wählen Sie die zu bearbeitende Gruppe aus. 
+		Sie können jetzt die angezeigt Mitgliederliste bearbeiten indem Sie entweder auf das "+" gehen und Mitglieder hinzufügen oder indem Sie auf vorhandene Mitglieder klicken und "Mitglieder löschen klicken".
+		Speichern Sie Ihre Änderungen, wenn Sie fertig sind.
+
+ 2.3. Einkaufen 
+ 	Haben Sie Ihre Gruppen wie oben beschrieben ausgewählt können Sie mit dem eigentlichen Einkauf beginnen. 
+ 
