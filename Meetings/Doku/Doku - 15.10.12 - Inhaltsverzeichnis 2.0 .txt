@@ -33,19 +33,19 @@ Organisationstool-Übersicht
 3. Durchführungsphase (Idee: Roadmap, s. Flussdiagramm) (Was haben die Designer für die App geplant und was können die Entwickler davon umsetzen) -> nachfolgende Struktur erklären
 Einleitung
 
-  Login
+  3.1. Login
   	Design
   	Development
   	(Doku)
-  Einkaufs
+  3.2. Einkaufs
   	Design
   	Development
   	(Doku)
-  Nutzerverwaltungs
+  3.3. Nutzerverwaltungs
   	Design
   	Development
   	(Doku)
-  Auswertung
+  3.4. Auswertung
   	Design
   	Development
   	(Doku)
