@@ -1,0 +1,95 @@
+﻿Inhaltsverzeichnis zur Projektdokumentation
+
+
+Einleitung / Vorwort (Ziel des Projektberichts) -> Annika bereits gemacht
+Abbildungsverzeichnis
+Abkürzungsverzeichnis
+Tabellenverzeichnis
+Organisationstool-Übersicht
+
+1. Vorbetrachtung
+  1.1 Problembeschreibung (Erwartungshorizont) -> Annika hat Input geleistet
+  1.2 Entscheidung zur Projektdurchführung (Lösung für Problembeschreibung) -> Annika
+  1.3 Funktionen (Anforderungskatalog?, Aufbauend auf Problembeschreibung) -> Huong (27.11.15 Deadline)
+	1.3.1. Grundfunktionen der App
+	1.3.2. Hauptfunktionen
+  	1.3.3. Zusatzfunktionen
+  1.4 Projektorganisation
+	1.4.1. Kick- Off Meeting (Nicht zu viel wiederholen -> Themen abgrenzen) -> Annika
+	1.4.2. Soll-Analyse ("Welche Ziele?") (Excelliste Ziele) (Use Cases) -> Huong (27.11.15 Deadline) 
+	1.4.3. Ist-Analyse (intern) (Skillliste, "Was haben wir?" (u. a. ER-Schema von Markusvon vorher, Erfahrung von Basti)) -> Huong (27.11.15 Deadline) 
+	1.4.4. Anforderungsanalyse ("Was brauchen wir?") (Text, aber Aufzählung möglich) -> Thomas (30.11.15 Deadline)  
+	1.4.5. Arbeitsplanung (Übersicht von Thomas, konkrete Meilensteine, ToDo's,) -> Aktivitätsliste (!) -> Thomas (30.11.15 Deadline) (Diagramme)
+	1.4.6. Scrum (?) -> agil, Kanban ->Projektmanagement -> Thomas (04.12.15 Deadline)
+  1.5 Sicherheit (Rahmenbedingungen für Profil und Einkaufslisten - Zugriff) (Input Dev) (Formulierung beachten oder woanders hinlegen) -> Thomas hinter Developern 
+
+2. Systemarchitektur/ -landschaft (MEAN-Stack) -> Huong (AZ-Phase, 04.12.2015)
+  2.1. Modell, View, Controller (MVC, Programmierparadigma) -> Markus (Deadline setzen! etwa 2 Wochen)
+  2.2. MongoDB (Diagramm als Veranschaulichung)
+  2.3. OpenShift Server
+  2.4. (Bastis Tools) s. Excel (Bilder)
+
+
+3. Durchführungsphase (Idee: Roadmap, s. Flussdiagramm) (Was haben die Designer für die App geplant und was können die Entwickler davon umsetzen) -> nachfolgende Struktur erklären
+
+Einleitung (Abweichung anhand der AP dokumentieren) -> Huong (AZ-Phase, 04.12.2015)
+
+  3.1. Registrierung -> Annika (AZ-Phase, 04.12.2015)
+  	Design
+  	Entwicklung
+  	(Doku)  
+  3.2. Login -> Annika (AZ-Phase, 04.12.2015)
+  	Design
+  	Entwicklung
+  	(Doku)
+  3.3. Einkauf (Thomas AZ-Phase)
+  	Design
+  	Entwicklung ((3-Tier-Architektur)Unterteilung in Front-End, Middleware, Back-End)
+  	(Doku)
+  3.4. Nutzerverwaltung (Huong AZ-Phase)
+  	Design
+  	Entwicklung
+  	(Doku)
+  3.5. Auswertung Huong (AZ-Phase)
+  	Design
+  	Entwicklung
+  	(Doku)
+/*
+  2.1. PAP-Struktur (einleiten, Aufbau erklären)
+  2.1. Login (Einleitung die Voraussetzungen eines Nutzerprofils)
+    2.1.1. Sicherheit
+    2.1.2. Qualitätskontrolle (Implementierung nennen und dabei entstandene Probleme aufzählen, die dann im nächsten Unterkapitel verbesert wurden)
+  2.2. Datenbank
+    2.2.1. MongoDB Grundstruktur (UML Diagramme etc.)
+    2.2.2. Qualitätkontrolle	
+  2.3. Webserver
+    2.3.1. Qualitätkontrolle
+  2.4 Anwendungsentwicklung
+    2.4.1. Qualitätkontrolle  
+  2.5. visuelles Appdesign
+    2.5.1. Logoentwicklung
+      2.5.1.1. Qualitätkontrolle 
+    */
+	=> Grundidee (Lösungsansatz - Problem - Lösungsansatz - Problem ...)
+
+4. Problemzusammenfassung Annika, Thomas, Huong
+  4.1. Usability der App
+  4.2. Organisaton Projektmanagement
+
+5. Projektabschluss  Annika, Thomas, Huong, (Markus)
+   5.1. fertiges Produkt
+   5.2. Aussichten (nicht umgesetzte Ideen) -> s. Excel
+ 
+   5.3. Zusammenfassung 
+ (6. Lesson learned)
+ 
+
+
+Quellen 
+Anhang
+Glossar
+
+*Entwickler! in der richtigen Doku
+*keine Namen sondern Rollen
+
+- Doku erwähnen
