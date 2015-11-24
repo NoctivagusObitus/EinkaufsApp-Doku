@@ -7,40 +7,40 @@
 \contentsline {subsection}{\numberline {1.2}Entscheidung zur Projektdurchf\IeC {\"u}hrung}{7}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Funktionen}{8}{subsection.1.3}
 \contentsline {subsubsection}{\numberline {1.3.1}Grundfunktionen der App}{8}{subsubsection.1.3.1}
-\contentsline {subsubsection}{\numberline {1.3.2}Hauptfunktionen der App}{8}{subsubsection.1.3.2}
-\contentsline {subsubsection}{\numberline {1.3.3}Zusatzfunktionen der App}{8}{subsubsection.1.3.3}
-\contentsline {subsection}{\numberline {1.4}Projektorganisation}{9}{subsection.1.4}
-\contentsline {subsubsection}{\numberline {1.4.1}Kick-Off-Meeting}{9}{subsubsection.1.4.1}
-\contentsline {subsubsection}{\numberline {1.4.2}Soll-Analyse}{10}{subsubsection.1.4.2}
-\contentsline {subsubsection}{\numberline {1.4.3}Ist-Analyse}{12}{subsubsection.1.4.3}
-\contentsline {subsubsection}{\numberline {1.4.4}Anforderungsanalyse}{13}{subsubsection.1.4.4}
-\contentsline {subsubsection}{\numberline {1.4.5}Arbeitsplanung}{14}{subsubsection.1.4.5}
-\contentsline {subsection}{\numberline {1.5}Designer}{14}{subsection.1.5}
-\contentsline {subsection}{\numberline {1.6}Entwickler}{15}{subsection.1.6}
-\contentsline {subsection}{\numberline {1.7}Dokumentation}{16}{subsection.1.7}
-\contentsline {subsubsection}{\numberline {1.7.1}Scrum}{17}{subsubsection.1.7.1}
-\contentsline {subsection}{\numberline {1.8}Sicherheit}{18}{subsection.1.8}
-\contentsline {section}{\numberline {2}Systemarchitektur/-landschaft}{19}{section.2}
-\contentsline {subsection}{\numberline {2.1}Modell, View, Controller}{20}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}MongoDB}{21}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}OpenShift Server}{22}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Basis Tools}{23}{subsubsection.2.2.2}
-\contentsline {section}{\numberline {3}Durchf\IeC {\"u}hrungsphase}{24}{section.3}
-\contentsline {subsection}{\numberline {3.1}Registrierung}{25}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Login}{26}{subsubsection.3.1.1}
-\contentsline {subsection}{\numberline {3.2}Entwickler}{26}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Einkauf}{27}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Nutzerverwaltung}{28}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Auswertung}{29}{subsection.3.5}
-\contentsline {section}{\numberline {4}Problemzusammenfassung}{30}{section.4}
-\contentsline {subsection}{\numberline {4.1}Usability der App}{30}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Organisation Projektmanagement}{31}{subsection.4.2}
-\contentsline {section}{\numberline {5}Projektabschluss}{32}{section.5}
-\contentsline {subsection}{\numberline {5.1}Fertiges Produkt}{32}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Aussichten}{32}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Zusammenfassung}{33}{subsection.5.3}
-\contentsline {section}{\numberline {6}Lesson learned}{34}{section.6}
-\contentsline {section}{Quellen}{35}{section*.30}
-\contentsline {section}{Internetquellen}{35}{section*.31}
-\contentsline {section}{Anhang}{36}{section*.32}
-\contentsline {section}{Glossar}{37}{section*.33}
+\contentsline {subsubsection}{\numberline {1.3.2}Hauptfunktionen der App}{9}{subsubsection.1.3.2}
+\contentsline {subsubsection}{\numberline {1.3.3}Zusatzfunktionen der App}{9}{subsubsection.1.3.3}
+\contentsline {subsection}{\numberline {1.4}Projektorganisation}{10}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Kick-Off-Meeting}{10}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Soll-Analyse}{11}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.3}Ist-Analyse}{13}{subsubsection.1.4.3}
+\contentsline {subsubsection}{\numberline {1.4.4}Anforderungsanalyse}{14}{subsubsection.1.4.4}
+\contentsline {subsubsection}{\numberline {1.4.5}Arbeitsplanung}{15}{subsubsection.1.4.5}
+\contentsline {subsection}{\numberline {1.5}Designer}{15}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}Entwickler}{16}{subsection.1.6}
+\contentsline {subsection}{\numberline {1.7}Dokumentation}{17}{subsection.1.7}
+\contentsline {subsubsection}{\numberline {1.7.1}Scrum}{18}{subsubsection.1.7.1}
+\contentsline {subsection}{\numberline {1.8}Sicherheit}{19}{subsection.1.8}
+\contentsline {section}{\numberline {2}Systemarchitektur/-landschaft}{20}{section.2}
+\contentsline {subsection}{\numberline {2.1}Modell, View, Controller}{21}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}MongoDB}{22}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}OpenShift Server}{23}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Basis Tools}{24}{subsubsection.2.2.2}
+\contentsline {section}{\numberline {3}Durchf\IeC {\"u}hrungsphase}{25}{section.3}
+\contentsline {subsection}{\numberline {3.1}Registrierung}{26}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Login}{27}{subsubsection.3.1.1}
+\contentsline {subsection}{\numberline {3.2}Entwickler}{27}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Einkauf}{28}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Nutzerverwaltung}{29}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Auswertung}{30}{subsection.3.5}
+\contentsline {section}{\numberline {4}Problemzusammenfassung}{31}{section.4}
+\contentsline {subsection}{\numberline {4.1}Usability der App}{31}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Organisation Projektmanagement}{32}{subsection.4.2}
+\contentsline {section}{\numberline {5}Projektabschluss}{33}{section.5}
+\contentsline {subsection}{\numberline {5.1}Fertiges Produkt}{33}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Aussichten}{33}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Zusammenfassung}{34}{subsection.5.3}
+\contentsline {section}{\numberline {6}Lesson learned}{35}{section.6}
+\contentsline {section}{Quellen}{36}{section*.30}
+\contentsline {section}{Internetquellen}{36}{section*.31}
+\contentsline {section}{Anhang}{37}{section*.32}
+\contentsline {section}{Glossar}{38}{section*.33}
