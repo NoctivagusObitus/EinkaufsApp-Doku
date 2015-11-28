@@ -86,49 +86,72 @@ Die Produktvielfalt der verschiedenen Produktanbieter wird vereinfacht dargestel
 \newpage
 
 \subsection{Funktionen}
-Unsere Ziele des Projektes sind untergliedert in Grundidee und Systemstruktur:
+Dieses Kapitel beinhaltet die geplanten Funktionen der Applikation. Die Unterteilung erfolgt in die Hauptteile Einkauf, Auswertung und Gruppenverwaltung. Es werden jeweils pro Kategorie die Hauptfunktionen, also die Funktionen die implementiert werden müssen, Zusatzfunktionen, also die Funktionen die nachdem die Hauptfunktionen umgesetzt wurden implementiert werden und den Ideen, die aber aus Kapazitätsgründen nicht umgesetzt werden, aber in Zukunft umgesetzt werden können.
+\subsubsection{Einkauf}
+\paragraph{Hauptfunktion}
 \begin{itemize}
-\item[-] Für GPS eine Abfrage an Google Maps implementieren
-\item[-] Karte mit Standort verschiedener Läden dem Benutzer anzeigen
-\item[-] Automatisch generierte Einkaufsliste
-\item[-] GS1 verwaltet alle EANs: 1worldsync soll Schnittstellen für den Zugriff bereitstellen
-\item[-] 95 Euro kostet Zugang for 1worldsync um ihre Schnittstelle zu verwenden
-\item[-] Facebook, Twitter usw. zur Registrierung verwenden
-\item[-] Artikel zuweisen nach Einkauf auf Gruppenmitglieder 
-\item[-] was passiert falls kein Empfang vorhanden ist (Offline-Version)
-\item[-] Kostenteilung unter Leuten, die nicht in Datenbank und nicht in Gruppe sind und eventuelle Trennung bestimmter Sachen unter den Leuten in der Gruppe z.B. Frauen wollen Sekt, Männer Bier
-\item[-] Einkaufsbewertung --> wie gefällt der Laden? Wie zufrieden war man mit dem Einkauf? Alles erhalten? Parkplatz 
-vorhanden?
-\item[-] Benutzerverwaltung: Profilbild, Account löschen, etc.--> unter Einstellung auf Homescreen
+\item[-] Grundlegend muss die App die Funktion der Erstellung von Einkaufslisten haben. Hierzu gehören auch die Artikelaufnahme in diese Liste sowie die nachfolgende Bearbeitung dieser Liste bei Änderungsbedarf des Nutzers. Zum Schluss muss sie den kompletten Einkauf zusammenfassen. Der Einkauf wird dann abgeschlossen sobald der Nutzer dies auch bestätigt.
 \end{itemize}
-\subsubsection*{Ideen: Out of Focus}
+\paragraph{Zusatzfunktion}
 \begin{itemize}
-\item[-] zwei oder mehr Leute können gleiche Liste verwenden und diese abarbeiten sodass die anderen Änderungen sofort sehen
-\item[-] Einkaufsliste vorher schreiben und diese abarbeiten --> gescannte Produkte werden abgehakt
+\item[-]Zusätzlich soll die App die Funktion des Preisvergleichs von Artikeln in unterschiedlichen Märkten besitzen.
+\end {itemize}
+\paragraph{Ideen Out-Of-Scope}
+\begin{itemize}
+\item[-]Es soll keine weitere Zusatzfunktion implementiert werden
 \end{itemize}
-\subsubsection{Grundfunktionen der App}
--Informationen über Artikel via EAN aus DB \\
-- von aktiven Einkäufen unabhängige, regelmäßige Kosten zu erfassen. \\
+\subsubsection{Markt}
+\paragraph{Hauptfunktion}
+\begin{itemize}
+\item[-]Bevor der Einkaufsprozess gestartet wird soll die App die Funktion der Standortbestimmung haben. Sobald der Nutzer vor einem Markt steht ermittelt die App via GPS seinen Standort. Falls der Markt nicht gefunden wird, soll es die Möglichkeit der Hinzufügung eines neuen Marktes geben. Der Nutzer gibt dann hier die Daten des neuen Marktes an.
+\end{itemize}
+\paragraph{Zusatzfunktion}
+\begin{itemize}
+\item[-]Es werden keine weiteren Zusatzfunktionen implementiert.
+\end{itemize}
+\paragraph{Ideen Out-of-Scope}
+\begin{itemize}
+\item[-]Ein Markt kann über die App von einem Nutzer z. B. durch ein 5-Sterne Bwertungssystem bewertet werden
+\end{itemize}
 
-\subsubsection{Hauptfunktionen der App}
-
--Es soll möglich sein für jemand anderen oder eine Gruppe (z.B. WG) etwas einzukaufen. \\
-- Marktfindung über GPS \\
--Anzeige versch. Märkte im Umkreis\\
--Login über FB, TWitter o. ä. - >Benutzerverwaltung\\
--Artikelzuweisung nach Einkauf auf Gruppenmitglieder\\
-
-\subsubsection{Zusatzfunktionen der App}
--Einkaufsbewertung\\
--Offline Funktion\\
--automatisch generierte Einkaufsliste\\
--Eine Web Site ist momentan out of scope, wäre aber eine sinnvolle Ergänzung für die Ausgabe von Statistiken und die Benutzerverwaltung.\\
--Auswertung\\
- a) Durchschnittliche Tageskosten eines Zeitraumes (z.B. Woche oder Monat) \\
- b) Maximal oder Minimalpreis innerhalb eines Zeitraumes\\ (z.B. Woche oder Monat) 
- c) Eine Grafik, die den Ausgabenverlauf innerhalb eines Zeitraumes angibt \\
- d) Eine Extrapolation regelmäßig gekaufter Artikel (Ersatz des „Einkaufzettels“) \\
- e) Das persönliche Tracking der allgemeinen Ausgaben \\
+\subsubsection{Benutzerprofil}
+\paragraph{Hauptfunktion}
+\begin{itemize}
+\item[-]Der Nutzer kann die App erst nutzen, wenn dieser ein Benutzerprofil erstellt. Das Profil besteht grundlegend aus Namen, E-Mailadresse und einem Passwort. Die von ihm getätigten Einkäufe sind dann eindeutig zuordbar.
+\end{itemize}
+\paragraph{Zusatzfunktion}
+\begin{itemize}
+\item[-]Es werden keine weiteren Zusatzfunktionen implementiert.
+\end{itemize}
+\paragraph{Ideen Out-of-Scope}
+\begin{itemize}
+\item[-]Der Nutzer kann sich auch mit seinem FB-Profil oder via Twitter anmelden.
+\end{itemize}
+\subsubsection{Gruppeneinkäufe}
+\paragraph{Hauptfunktion}
+\begin{itemize}
+\item[-]Einkäufe können einzeln Gruppen und Personen zugeordnet werden.
+\end{itemize}
+\paragraph{Zusatzfunktion}
+\begin{itemize}
+\item[-]Es werden keine weiteren Zusatzfunktionen implementiert.
+\end{itemize}
+\paragraph{Ideen Out-of-Scope}
+\begin{itemize}
+\item[-]Es wurden keine weiteren noch nicht-umsetzbare Funktionen formuliert.
+\end{itemize}
+\subsubsection{Auswertung}
+\paragraph{Hauptfunktion}
+\begin{itemize}
+\item[-]Der Nutzer kann vergangene Einkäufe auswerten lassen. 
+\\Folgende Unterscheidungen werden gemacht:
+\begin{itemize}
+\item[a)]Kosten pro Zeitraum
+\item [b)] Kaufhäufigkeit eines Artikels und die dazugehörigen Gesamtkosten
+\item[c)] Kosten pro Artikelkategorie
+\item[d)] monetäre Ausgaben je Käufergruppe
+\end{itemize}
+\end{itemize}
 
 \newpage
 \subsection{Projektorganisation}
@@ -436,6 +459,7 @@ nicht umgesetzte Ideen --> siehe Excelliste
 \newpage
 \section*{Anhang}
 \addcontentsline{toc}{section}{Anhang}
+
 \end{document}
 
     Status API Training Shop Blog About Pricing 

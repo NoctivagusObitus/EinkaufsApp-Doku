@@ -4,35 +4,50 @@
 \contentsline {subsection}{\numberline {1.1}Problembeschreibung}{8}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Entscheidung zur Projektdurchf\IeC {\"u}hrung}{8}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Funktionen}{9}{subsection.1.3}
-\contentsline {subsubsection}{\numberline {1.3.1}Grundfunktionen der App}{9}{subsubsection.1.3.1}
-\contentsline {subsubsection}{\numberline {1.3.2}Hauptfunktionen der App}{10}{subsubsection.1.3.2}
-\contentsline {subsubsection}{\numberline {1.3.3}Zusatzfunktionen der App}{10}{subsubsection.1.3.3}
-\contentsline {subsection}{\numberline {1.4}Projektorganisation}{11}{subsection.1.4}
-\contentsline {subsubsection}{\numberline {1.4.1}Kick-Off-Meeting}{11}{subsubsection.1.4.1}
-\contentsline {subsubsection}{\numberline {1.4.2}Soll-Analyse}{12}{subsubsection.1.4.2}
-\contentsline {subsubsection}{\numberline {1.4.3}Ist-Analyse}{14}{subsubsection.1.4.3}
-\contentsline {subsubsection}{\numberline {1.4.4}Anforderungsanalyse}{15}{subsubsection.1.4.4}
-\contentsline {subsubsection}{\numberline {1.4.5}Arbeitsplanung}{16}{subsubsection.1.4.5}
-\contentsline {subsubsection}{\numberline {1.4.6}Scrum}{19}{subsubsection.1.4.6}
-\contentsline {subsection}{\numberline {1.5}Sicherheit}{20}{subsection.1.5}
-\contentsline {section}{\numberline {2}Systemarchitektur/-landschaft}{21}{section.2}
-\contentsline {subsection}{\numberline {2.1}Modell, View, Controller}{22}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}MongoDB}{23}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}OpenShift Server}{24}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Basis Tools}{25}{subsubsection.2.2.2}
-\contentsline {section}{\numberline {3}Durchf\IeC {\"u}hrungsphase}{26}{section.3}
-\contentsline {subsection}{\numberline {3.1}Registrierung}{27}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Login}{29}{subsubsection.3.1.1}
-\contentsline {subsection}{\numberline {3.2}Einkauf}{31}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Nutzerverwaltung}{32}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Auswertung}{33}{subsection.3.4}
-\contentsline {section}{\numberline {4}Problemzusammenfassung}{34}{section.4}
-\contentsline {subsection}{\numberline {4.1}Usability der App}{34}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Organisation Projektmanagement}{35}{subsection.4.2}
-\contentsline {section}{\numberline {5}Projektabschluss}{36}{section.5}
-\contentsline {subsection}{\numberline {5.1}Fertiges Produkt}{36}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Aussichten}{36}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Zusammenfassung}{37}{subsection.5.3}
-\contentsline {section}{\numberline {6}Lesson learned}{38}{section.6}
-\contentsline {section}{Quellen}{39}{section*.28}
-\contentsline {section}{Anhang}{41}{section*.31}
+\contentsline {subsubsection}{\numberline {1.3.1}Einkauf}{9}{subsubsection.1.3.1}
+\contentsline {paragraph}{Hauptfunktion}{9}{section*.11}
+\contentsline {paragraph}{Zusatzfunktion}{9}{section*.12}
+\contentsline {paragraph}{Ideen Out-Of-Scope}{9}{section*.13}
+\contentsline {subsubsection}{\numberline {1.3.2}Markt}{9}{subsubsection.1.3.2}
+\contentsline {paragraph}{Hauptfunktion}{9}{section*.14}
+\contentsline {paragraph}{Zusatzfunktion}{9}{section*.15}
+\contentsline {paragraph}{Ideen Out-of-Scope}{10}{section*.16}
+\contentsline {subsubsection}{\numberline {1.3.3}Benutzerprofil}{10}{subsubsection.1.3.3}
+\contentsline {paragraph}{Hauptfunktion}{10}{section*.17}
+\contentsline {paragraph}{Zusatzfunktion}{10}{section*.18}
+\contentsline {paragraph}{Ideen Out-of-Scope}{10}{section*.19}
+\contentsline {subsubsection}{\numberline {1.3.4}Gruppeneink\IeC {\"a}ufe}{10}{subsubsection.1.3.4}
+\contentsline {paragraph}{Hauptfunktion}{10}{section*.20}
+\contentsline {paragraph}{Zusatzfunktion}{10}{section*.21}
+\contentsline {paragraph}{Ideen Out-of-Scope}{10}{section*.22}
+\contentsline {subsubsection}{\numberline {1.3.5}Auswertung}{11}{subsubsection.1.3.5}
+\contentsline {paragraph}{Hauptfunktion}{11}{section*.23}
+\contentsline {subsection}{\numberline {1.4}Projektorganisation}{12}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Kick-Off-Meeting}{12}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Soll-Analyse}{13}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.3}Ist-Analyse}{15}{subsubsection.1.4.3}
+\contentsline {subsubsection}{\numberline {1.4.4}Anforderungsanalyse}{16}{subsubsection.1.4.4}
+\contentsline {subsubsection}{\numberline {1.4.5}Arbeitsplanung}{17}{subsubsection.1.4.5}
+\contentsline {subsubsection}{\numberline {1.4.6}Scrum}{20}{subsubsection.1.4.6}
+\contentsline {subsection}{\numberline {1.5}Sicherheit}{21}{subsection.1.5}
+\contentsline {section}{\numberline {2}Systemarchitektur/-landschaft}{22}{section.2}
+\contentsline {subsection}{\numberline {2.1}Modell, View, Controller}{23}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}MongoDB}{24}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}OpenShift Server}{25}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Basis Tools}{26}{subsubsection.2.2.2}
+\contentsline {section}{\numberline {3}Durchf\IeC {\"u}hrungsphase}{27}{section.3}
+\contentsline {subsection}{\numberline {3.1}Registrierung}{28}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Login}{30}{subsubsection.3.1.1}
+\contentsline {subsection}{\numberline {3.2}Einkauf}{32}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Nutzerverwaltung}{33}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Auswertung}{34}{subsection.3.4}
+\contentsline {section}{\numberline {4}Problemzusammenfassung}{35}{section.4}
+\contentsline {subsection}{\numberline {4.1}Usability der App}{35}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Organisation Projektmanagement}{36}{subsection.4.2}
+\contentsline {section}{\numberline {5}Projektabschluss}{37}{section.5}
+\contentsline {subsection}{\numberline {5.1}Fertiges Produkt}{37}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Aussichten}{37}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Zusammenfassung}{38}{subsection.5.3}
+\contentsline {section}{\numberline {6}Lesson learned}{39}{section.6}
+\contentsline {section}{Quellen}{40}{section*.40}
+\contentsline {section}{Anhang}{42}{section*.43}
