@@ -436,59 +436,46 @@ Rahmenbedingungen für Profil und Einkaufslisten
 \newpage
 
 \section{Durchführungsphase}
-In diesem Abschnitt erklären wir, wie die EinkaufsApp nach und nach aufgebaut wurde und gehen insbesondere auf die einzelnen Punkte wie Registrierung, Login, Einkauf, Nutzerverwaltung und die Auswertung ein.
+In diesem Abschnitt wird erklärt, wie die EinkaufsApp nach und nach aufgebaut wurde und insbesondere werden die einzelnen Punkte wie Registrierung, Login, Einkauf, Nutzerverwaltung und die Auswertung beschrieben.
 (Idee: Roadmap, s. Flussdiagramm) (Was haben die Designer für die App geplant und was können die Entwickler davon umsetzen) -> nachfolgende Struktur erklären
 \subsection*{Einleitung}
+\newpage
+\subsection{Systemarchitektur}
+%Architekturbild
+\subsection{Modell-View-Controller}
+%Wie ist es aufgebaut?
+%Zeichnung dafür hat Erik 
+%Programmiersprache
+\subsubsection{MongoDB}
+%Development --> v3 dia als aktuelles Datenmodell
+%Basti erstellt Dokument
+\subsubsection{OpenShift Server}
+%bastelt Basti und schickt es uns
+\subsubsection{Tools}
 \newpage
 \subsection{Registrierung}
 Bei der EinkaufsApp muss sich jeder Nutzer mittels einer Email-Adresse und einem Kennwort bei der App registrieren.
 Eine Registrierung ist bei dieser App unentbehrlich, da für jeden Nutzer ein Profil angelegt wird und er mit diesem Profil seine Produkte einscannen kann und seine Finanzen im Blick behalten kann.
 In den drei folgenden Unterpunkten wird der Prozess der Registrierung aus Seiten der Designer, Entwickler und der Dokumentation beschrieben.
 \subsubsection*{Design}
-Die Designer befassten sich mit der Optik bei der Registrierung und erstellten als erstes einen Welcome-Screen, wo der Nutzer sich aussuchen kann, ob er sich neu registrieren oder nur einloggen will. 
-Entscheidet sich der Nutzer für die Registrierung werden ihm die Eingabefelder "Email-Adresse", "Nutzername", "Passwort" und "Passwort wiederholen" angezeigt, die er ausfüllen muss.
-Nachdem er diese ausgefüllt hat, klickt er auf den Button "Registrierung bestätigen" und es werden die eingegebenen Daten kontrolliert: Die Email-Adresse und der Nutzername werden auf Einmaligkeit und die Passwort-Anfragen auf Gleichheit überprüft.
-Wenn die Daten alle korrekt eingegeben wurden, wir der Nutzer auf den Login Screen weiter geleitet um sich dann anzumelden.
-Doch falls bei bestimmten Daten Unstimmigkeiten auftreten, erscheinen folgende Fehlermeldungen:
-\newline
-1. Bei einer Nicht-Übereinstimmung der Passwörter taucht eine Meldung auf, die den Nutzer auf den Fehler hinweist und verweist ihn dazu die Passwörter neu einzugeben. Die Email-Adresse und der Nutzername bleiben in diesem Fall voreingetragen in den Eingabefeldern stehen.
-\newline
-2. Bei bereits existierender Email-Adresse wird der Nutzer, durch eine Fehlermeldung, darauf hingewiesen und muss diese ändern. Hierbei bleibt nur der Nutzername voreingetragen stehen.
-\newline
-3. Bei bereits existierendem Nutzernamen erscheint eine Meldung, die den Nutzer darauf hinweist, dass der Name bereits vergeben ist. Der Nutzer sieht dann nur seine Email-Adresse noch voreingetragen und muss einen neuen Nutzernamen eintragen.
-
+% Flussdiagramm Login 
 \subsubsection*{Entwicklung}
-Die Entwickler befassen sich mit den Funktionen der Applikation  und sorgen bei der Registrierung dafür, dass alle Daten ordentlich geprüft  und in die Datenbank eingepflegt werden.
+Die Entwickler befassen sich mit den Funktionen der Applikation  und sorgen bei der Registrierung dafür, dass alle Daten ordentlich geprüft und in die Datenbank eingepflegt werden.
 Als Datenbank wird die MongoDB genutzt und via RoboMongo gemanagt. Als Programmiersprache wird in allen, auch den folgenden Unterpunkten JavaScript verwendet.
-Beim Registrieren wird nach Eingabe der Daten durch den Nutzer die Datenbank abgefragt, ob bereits ein solcher Nutzername und eine solche Email-Adresse bereits existiert.
-Zudem wird noch überprüft, ob die eingetragenen Passwörter übereinstimmen und ob die Email-Adresse im richtigen Format eingetragen wurde. 
-Sobald alles übereinstimmt und weder Nutzername, noch Email-Adresse in der Datenbank bereits existieren, wird der Nutzer angelegt und das Passwort als Hash in der Datenbank gespeichert. 
-Das bedeutet, dass das eingetragene Passwort als ein kleinerer Wert abgebildet und dieser gespeichert wird.
-\subsubsection*{Dokumentation} --> Probleme beschreiben
+Bei der Registrierung werden die einzelnen Benutzereingaben durch bestimmte Regeln auf z.B. Länge, Email-Format, Eindeutigkeit, sowie Sicherheitskriterien der Passwortsvergabe in der Applikation geprüft.
+% Konkrete Regeln siehe Handbuch
+Wenn alle Prüfungen erfolgreich waren, wird der Benutzer angelegt und das Passwort verschlüsselt in Form eines Hashs in der Datenbank gespeichert.
+\subsubsection*{Problembeschreibung} --> Probleme beschreiben
 Eine ganz wichtige und entscheidende Rolle spielt hierbei der Datenschutz und die Datensicherheit. Alle eingetragenen Daten des Nutzers müssen abgesichert sein, sodass kein Dritter sich an diesen Daten vergreifen kann.
 \newpage
 \subsubsection{Login}
-Nachdem sich der Nutzer erfolgreich registriert hat, muss er sich nun um die EinkaufsApp nutzen zu können mittels seiner Email-Adresse und dem Passwort anmelden.
-Auch dieser Teil ist unentbehrlich für die Nutzung der App. 
-\subsubsection*{Design}
-Die Aufgabe der Designer bestand hier, einen anschaulichen und einfach bedienbaren Login-Screen für den Nutzer zu kreieren. Zuallererst wird der Nutzer, wie bereits bei der Registrierung schon erwähnt auf einen Welcome-Screen geleitet, wo er die Wahl trifft zwischen Login und Registrierung.
-Bei bereits abgeschlossener, erfolgreicher Registrierung wählt der Nutzer nun den Login aus, um sich anzumelden. Es folgt dann ein weiterer Screen mit den Eingabefeldern "Email-Adresse" und "Passwort".
-Nach dem Eintragen der Nutzerdaten klickt der Nutzer auf den "Anmelden"-Button um sich einzuloggen.
-Auch hierbei werden die Daten überprüft und wenn mindestens eine Eingabe falsch war, erscheint eine Fehlermeldung die besagt, dass die Email-Adresse oder das Passwort unbekannt sind.
-Der Nutzer muss seine Daten nun erneut eintragen und seine Email-Adresse wird dabei automatisch voreingetragen. Wenn der Login erfolgreich war, wird der Nutzer auf den Home Screen weiter geleitet 
-Bei Vergessen des Passwortes gibt es eine Funktion, die es ermöglicht, dass Kennwort zurücksetzen zu lassen. Der Nutzer klickt auf den Button "Passwort vergessen" und gelangt auf einen neuen Screen. Dieser Screen ermöglicht es dem Nutzer seine Email-Adresse einzutragen und mittels dem Button "Zurücksetzen" sich ein neues Passwort an die eingetragene Mail senden zu lassen.
-Nachdem die Mail zur Passwortrücksetzung gesendet wurde und die Email-Adresse des Nutzers bekannt war, informiert ein Ausgabefenster den Nutzer, dass die Mail erfolgreich verschickt wurde.
-Falls die E-Mail-Adresse nicht existiert, wird ebenso ein Ausgabefenster angezeigt mit der Information, dass die Email-Adresse nicht bekannt ist und der Nutzer kann es erneut versuchen.
-Wenn der Nutzer eine Mail erhalten hat und auf den darin enthaltenen Link klickt, gelangt er auf einen neuen Screen, der ihn dazu auffordert ein neues Passwort einzugeben.
-Dieses muss er wieder bestätigen und dann gelangt er wieder ins Hauptmenü der EinkaufsApp.
+%FLussdiagramm-Ausschnitt
 \subsubsection*{Entwicklung}
-Die Entwicklung beschäftigt sich hierbei mit der Funktionsweise des Tests ob die eingegebene Email-Adresse und das dazugehörige Passwort korrekt eingegeben wurden.
-Dazu schaut die Applikation in der Datenbank nach und überprüft die eingegebenen Daten mit den Daten in der Datenbank. Falls diese nicht übereinstimmen, wird der Nutzer nicht eingeloggt.
-Falls er sein Passwort vergessen hat, kann er dieses wieder zurücksenden lassen und erhält eine Email an die eingegebene Mail-Adresse, welche  sich in der Datenbank befinden muss.
-Der Nutzer muss bei Erhalt der Nachricht diese öffnen und erhält einen Link mit einem Token, welcher nur eine Stunde gültig ist, um sein Kennwort zurücksetzen zu lassen. 
-Wenn er  diesen Link anklickt, prüft die Datenbank ob der Token richtig und noch gültig ist und leitet den Nutzer weiter zu einer Seite, wo er sein Kennwort ändern kann.
+Die Entwicklung beschäftigt sich mit der Funktionsweise des Logins. und prüft hierbei, ob der Benutzer in der Datenbank existiert und falls dies der Fall ist, ob das dazugehörige Passwort korrekt ist. Stimmen dann Benutzername und Passwort überein, wird der Benutzer eingeloggt. 
+Wenn der Benutzer sein Passwort vergessen hat, kann er dieses zurücksetzen lassen. Hierbei bekommt er eine E-Mail an die im Userprofil hinterlegte E-Mail Adresse. Diese enthält ein Token womit es einen Benutzer ermöglicht wird sein Passwort zu ändern. Dieses Token ist genau eine Stunde gültig, danach verfällt es. 
 Nachdem der Nutzer sein Passwort zweimal eintragen musste, ändert die Datenbank das Kennwort des Nutzer und speichert dieses.
-\subsubsection*{Dokumentation} --> Probleme beschreiben
+\subsubsection*{Problembeschreibung} --> Probleme beschreiben
+Fehler bei Passwortrücksetzung weil Email nicht verschickt wird.
 \newpage
 
 
