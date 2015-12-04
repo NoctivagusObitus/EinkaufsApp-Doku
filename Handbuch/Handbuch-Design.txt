@@ -1,0 +1,24 @@
+Registrierung Designer:
+Die Designer befassten sich mit der Optik bei der Registrierung und erstellten als erstes einen Welcome-Screen, wo der Nutzer sich aussuchen kann, ob er sich neu registrieren oder nur einloggen will. 
+Entscheidet sich der Nutzer für die Registrierung werden ihm die Eingabefelder "Email-Adresse", "Nutzername", "Passwort" und "Passwort wiederholen" angezeigt, die er ausfüllen muss.
+Nachdem er diese ausgefüllt hat, klickt er auf den Button "Registrierung bestätigen" und es werden die eingegebenen Daten kontrolliert: Die Email-Adresse und der Nutzername werden auf Einmaligkeit und die Passwort-Anfragen auf Gleichheit überprüft.
+Wenn die Daten alle korrekt eingegeben wurden, wir der Nutzer auf den Login Screen weiter geleitet um sich dann anzumelden.
+Doch falls bei bestimmten Daten Unstimmigkeiten auftreten, erscheinen folgende Fehlermeldungen:
+\newline
+1. Bei einer Nicht-Übereinstimmung der Passwörter taucht eine Meldung auf, die den Nutzer auf den Fehler hinweist und verweist ihn dazu die Passwörter neu einzugeben. Die Email-Adresse und der Nutzername bleiben in diesem Fall voreingetragen in den Eingabefeldern stehen.
+\newline
+2. Bei bereits existierender Email-Adresse wird der Nutzer, durch eine Fehlermeldung, darauf hingewiesen und muss diese ändern. Hierbei bleibt nur der Nutzername voreingetragen stehen.
+\newline
+3. Bei bereits existierendem Nutzernamen erscheint eine Meldung, die den Nutzer darauf hinweist, dass der Name bereits vergeben ist. Der Nutzer sieht dann nur seine Email-Adresse noch voreingetragen und muss einen neuen Nutzernamen eintragen.
+
+Login Designer:
+Die Aufgabe der Designer bestand hier, einen anschaulichen und einfach bedienbaren Login-Screen für den Nutzer zu kreieren. Zuallererst wird der Nutzer, wie bereits bei der Registrierung schon erwähnt auf einen Welcome-Screen geleitet, wo er die Wahl trifft zwischen Login und Registrierung.
+Bei bereits abgeschlossener, erfolgreicher Registrierung wählt der Nutzer nun den Login aus, um sich anzumelden. Es folgt dann ein weiterer Screen mit den Eingabefeldern "Email-Adresse" und "Passwort".
+Nach dem Eintragen der Nutzerdaten klickt der Nutzer auf den "Anmelden"-Button um sich einzuloggen.
+Auch hierbei werden die Daten überprüft und wenn mindestens eine Eingabe falsch war, erscheint eine Fehlermeldung die besagt, dass die Email-Adresse oder das Passwort unbekannt sind.
+Der Nutzer muss seine Daten nun erneut eintragen und seine Email-Adresse wird dabei automatisch voreingetragen. Wenn der Login erfolgreich war, wird der Nutzer auf den Home Screen weiter geleitet 
+Bei Vergessen des Passwortes gibt es eine Funktion, die es ermöglicht, dass Kennwort zurücksetzen zu lassen. Der Nutzer klickt auf den Button "Passwort vergessen" und gelangt auf einen neuen Screen. Dieser Screen ermöglicht es dem Nutzer seine Email-Adresse einzutragen und mittels dem Button "Zurücksetzen" sich ein neues Passwort an die eingetragene Mail senden zu lassen.
+Nachdem die Mail zur Passwortrücksetzung gesendet wurde und die Email-Adresse des Nutzers bekannt war, informiert ein Ausgabefenster den Nutzer, dass die Mail erfolgreich verschickt wurde.
+Falls die E-Mail-Adresse nicht existiert, wird ebenso ein Ausgabefenster angezeigt mit der Information, dass die Email-Adresse nicht bekannt ist und der Nutzer kann es erneut versuchen.
+Wenn der Nutzer eine Mail erhalten hat und auf den darin enthaltenen Link klickt, gelangt er auf einen neuen Screen, der ihn dazu auffordert ein neues Passwort einzugeben.
+Dieses muss er wieder bestätigen und dann gelangt er wieder ins Hauptmenü der EinkaufsApp.
