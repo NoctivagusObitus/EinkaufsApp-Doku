@@ -460,13 +460,14 @@ Eine Registrierung ist bei dieser App unentbehrlich, da für jeden Nutzer ein Pr
 In den drei folgenden Unterpunkten wird der Prozess der Registrierung aus Seiten der Designer, Entwickler und der Dokumentation beschrieben.
 \subsubsection*{Design}
 Die Designer haben zu der Registrierung und zu dem Login, welcher im Punkt 3.4 behandelt wird ein Flussdiagramm entworfen, welches hier zu sehen ist.
-\includegraphics[scale=0.6, origin=l]{C:/Users/Anni/Desktop/Login-Registrierung.png}
+\includegraphics[scale=0.6, origin=l]{C:\Users\Anni\Desktop\Einkaufsapp\EinkaufsApp-Doku\Dokumentation\Login-Registrierung.png}
 \footnotesize Abbildung 1: Flussdiagramm Login
 \normalsize
 \\
 \linebreak
-Das Flussdiagramm zeigt den Ablauf der Registrierung und des Logins. Die Reihenfolge spielt hierbei ein wichtige Rolle. Alles, was hier in diesem Diagramm zu sehen ist, wurde von den Entwicklern umgesetzt.
+Das Flussdiagramm beschreibt sukzessiv den Ablauf des Registrierungs- und des Loginvorgangs, welcher von den Entwicklern umgesetzt wurde.
 \subsubsection*{Entwicklung}
+%Diagramm?
 Die Entwickler befassen sich mit den Funktionen der Applikation  und sorgen bei der Registrierung dafür, dass alle Daten ordentlich geprüft und in die Datenbank eingepflegt werden.
 Als Datenbank wird die MongoDB genutzt und via RoboMongo gemanagt. Als Programmiersprache wird in allen, auch den folgenden Unterpunkten JavaScript verwendet.
 Bei der Registrierung werden die einzelnen Benutzereingaben durch bestimmte Regeln auf z.B. Länge, Email-Format, Eindeutigkeit, sowie Sicherheitskriterien der Passwortsvergabe in der Applikation geprüft.
@@ -479,7 +480,7 @@ Eine ganz wichtige und entscheidende Rolle spielt hierbei der Datenschutz und di
 \subsubsection*{Design}
 Das Flussdiagramm der Designer für den Login ist im Abschnitt 3.3 Registrierung zu finden. 
 \subsubsection*{Entwicklung}
-Die Entwicklung beschäftigt sich mit der Funktionsweise des Logins. und prüft hierbei, ob der Benutzer in der Datenbank existiert und falls dies der Fall ist, ob das dazugehörige Passwort korrekt ist. Stimmen dann Benutzername und Passwort überein, wird der Benutzer eingeloggt. 
+Die Entwicklung beschäftigt sich mit der Funktionsweise des Logins und prüft hierbei, ob der Benutzer in der Datenbank existiert. Falls dies der Fall ist, wird das Passwort geprüft und bei korrekter Eingabe ist der Login erfolgreich durchgeführt.
 Wenn der Benutzer sein Passwort vergessen hat, kann er dieses zurücksetzen lassen. Hierbei bekommt er eine E-Mail an die im Userprofil hinterlegte E-Mail Adresse. Diese enthält ein Token womit es einen Benutzer ermöglicht wird sein Passwort zu ändern. Dieses Token ist genau eine Stunde gültig, danach verfällt es. 
 Nachdem der Nutzer sein Passwort zweimal eintragen musste, ändert die Datenbank das Kennwort des Nutzer und speichert dieses.
 \subsubsection*{Problembeschreibung} --> Probleme beschreiben
