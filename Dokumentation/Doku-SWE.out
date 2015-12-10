@@ -14,23 +14,18 @@
 \BOOKMARK [3][-]{subsubsection.1.4.6}{Scrum}{subsection.1.4}% 14
 \BOOKMARK [2][-]{subsection.1.5}{Sicherheit}{section.1}% 15
 \BOOKMARK [1][-]{section.2}{Durchf\374hrungsphase}{}% 16
-\BOOKMARK [2][-]{subsection.2.1}{Systemarchitektur}{section.2}% 17
-\BOOKMARK [2][-]{subsection.2.2}{Modell-View-Controller}{section.2}% 18
-\BOOKMARK [3][-]{subsubsection.2.2.1}{MongoDB}{subsection.2.2}% 19
-\BOOKMARK [3][-]{subsubsection.2.2.2}{OpenShift Server}{subsection.2.2}% 20
-\BOOKMARK [3][-]{subsubsection.2.2.3}{Tools}{subsection.2.2}% 21
-\BOOKMARK [2][-]{subsection.2.3}{Registrierung}{section.2}% 22
-\BOOKMARK [3][-]{subsubsection.2.3.1}{Login}{subsection.2.3}% 23
-\BOOKMARK [2][-]{subsection.2.4}{Einkauf}{section.2}% 24
-\BOOKMARK [2][-]{subsection.2.5}{Nutzerverwaltung}{section.2}% 25
-\BOOKMARK [2][-]{subsection.2.6}{Auswertung}{section.2}% 26
-\BOOKMARK [1][-]{section.3}{Problemzusammenfassung}{}% 27
-\BOOKMARK [2][-]{subsection.3.1}{Usability der App}{section.3}% 28
-\BOOKMARK [2][-]{subsection.3.2}{Organisation Projektmanagement}{section.3}% 29
-\BOOKMARK [1][-]{section.4}{Projektabschluss}{}% 30
-\BOOKMARK [2][-]{subsection.4.1}{Fertiges Produkt}{section.4}% 31
-\BOOKMARK [2][-]{subsection.4.2}{Aussichten}{section.4}% 32
-\BOOKMARK [2][-]{subsection.4.3}{Zusammenfassung}{section.4}% 33
-\BOOKMARK [1][-]{section.5}{Lesson learned}{}% 34
-\BOOKMARK [1][-]{section*.30}{Quellen}{}% 35
-\BOOKMARK [1][-]{section*.33}{Anhang}{}% 36
+\BOOKMARK [2][-]{subsection.2.1}{Registrierung}{section.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Login}{subsection.2.1}% 18
+\BOOKMARK [2][-]{subsection.2.2}{Einkauf}{section.2}% 19
+\BOOKMARK [2][-]{subsection.2.3}{Nutzerverwaltung}{section.2}% 20
+\BOOKMARK [2][-]{subsection.2.4}{Auswertung}{section.2}% 21
+\BOOKMARK [1][-]{section.3}{Problemzusammenfassung}{}% 22
+\BOOKMARK [2][-]{subsection.3.1}{Usability der App}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.2}{Organisation Projektmanagement}{section.3}% 24
+\BOOKMARK [1][-]{section.4}{Projektabschluss}{}% 25
+\BOOKMARK [2][-]{subsection.4.1}{Fertiges Produkt}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.2}{Aussichten}{section.4}% 27
+\BOOKMARK [2][-]{subsection.4.3}{Zusammenfassung}{section.4}% 28
+\BOOKMARK [1][-]{section.5}{Lesson learned}{}% 29
+\BOOKMARK [1][-]{section*.30}{Quellen}{}% 30
+\BOOKMARK [1][-]{section*.33}{Anhang}{}% 31
