@@ -2,43 +2,28 @@
 \BOOKMARK [1][-]{section.1}{Vorbetrachtung}{}% 2
 \BOOKMARK [2][-]{subsection.1.1}{Problembeschreibung}{section.1}% 3
 \BOOKMARK [2][-]{subsection.1.2}{Entscheidung zur Projektdurchf\374hrung}{section.1}% 4
-\BOOKMARK [2][-]{subsection.1.3}{Funktionen}{section.1}% 5
-\BOOKMARK [3][-]{subsubsection.1.3.1}{Einkauf}{subsection.1.3}% 6
-\BOOKMARK [3][-]{subsubsection.1.3.2}{Markt}{subsection.1.3}% 7
-\BOOKMARK [3][-]{subsubsection.1.3.3}{Benutzerprofil}{subsection.1.3}% 8
-\BOOKMARK [3][-]{subsubsection.1.3.4}{Gruppeneink\344ufe}{subsection.1.3}% 9
-\BOOKMARK [3][-]{subsubsection.1.3.5}{Auswertung}{subsection.1.3}% 10
-\BOOKMARK [2][-]{subsection.1.4}{Projektorganisation}{section.1}% 11
-\BOOKMARK [3][-]{subsubsection.1.4.1}{Kick-Off-Meeting}{subsection.1.4}% 12
-\BOOKMARK [3][-]{subsubsection.1.4.2}{Soll-Analyse}{subsection.1.4}% 13
-\BOOKMARK [3][-]{subsubsection.1.4.3}{Ist-Analyse}{subsection.1.4}% 14
-\BOOKMARK [3][-]{subsubsection.1.4.4}{Anforderungsanalyse}{subsection.1.4}% 15
-\BOOKMARK [3][-]{subsubsection.1.4.5}{Arbeitsplanung}{subsection.1.4}% 16
-\BOOKMARK [3][-]{subsubsection.1.4.6}{Scrum}{subsection.1.4}% 17
-\BOOKMARK [2][-]{subsection.1.5}{Sicherheit}{section.1}% 18
-\BOOKMARK [1][-]{section.2}{Systemarchitektur/-landschaft}{}% 19
-\BOOKMARK [2][-]{subsection.2.1}{Modell, View, Controller}{section.2}% 20
-\BOOKMARK [2][-]{subsection.2.2}{MongoDB}{section.2}% 21
-\BOOKMARK [3][-]{subsubsection.2.2.1}{OpenShift Server}{subsection.2.2}% 22
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Basis Tools}{subsection.2.2}% 23
-\BOOKMARK [1][-]{section.3}{Durchf\374hrungsphase}{}% 24
-\BOOKMARK [2][-]{subsection.3.1}{Systemarchitektur}{section.3}% 25
-\BOOKMARK [2][-]{subsection.3.2}{Modell-View-Controller}{section.3}% 26
-\BOOKMARK [3][-]{subsubsection.3.2.1}{MongoDB}{subsection.3.2}% 27
-\BOOKMARK [3][-]{subsubsection.3.2.2}{OpenShift Server}{subsection.3.2}% 28
-\BOOKMARK [3][-]{subsubsection.3.2.3}{Tools}{subsection.3.2}% 29
-\BOOKMARK [2][-]{subsection.3.3}{Registrierung}{section.3}% 30
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Login}{subsection.3.3}% 31
-\BOOKMARK [2][-]{subsection.3.4}{Einkauf}{section.3}% 32
-\BOOKMARK [2][-]{subsection.3.5}{Nutzerverwaltung}{section.3}% 33
-\BOOKMARK [2][-]{subsection.3.6}{Auswertung}{section.3}% 34
-\BOOKMARK [1][-]{section.4}{Problemzusammenfassung}{}% 35
-\BOOKMARK [2][-]{subsection.4.1}{Usability der App}{section.4}% 36
-\BOOKMARK [2][-]{subsection.4.2}{Organisation Projektmanagement}{section.4}% 37
-\BOOKMARK [1][-]{section.5}{Projektabschluss}{}% 38
-\BOOKMARK [2][-]{subsection.5.1}{Fertiges Produkt}{section.5}% 39
-\BOOKMARK [2][-]{subsection.5.2}{Aussichten}{section.5}% 40
-\BOOKMARK [2][-]{subsection.5.3}{Zusammenfassung}{section.5}% 41
-\BOOKMARK [1][-]{section.6}{Lesson learned}{}% 42
-\BOOKMARK [1][-]{section*.40}{Quellen}{}% 43
-\BOOKMARK [1][-]{section*.43}{Anhang}{}% 44
+\BOOKMARK [2][-]{subsection.1.3}{Vorbereitende Fragen}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.4}{Projektorganisation}{section.1}% 6
+\BOOKMARK [3][-]{subsubsection.1.4.1}{Kick-Off-Meeting}{subsection.1.4}% 7
+\BOOKMARK [3][-]{subsubsection.1.4.2}{Soll-Analyse}{subsection.1.4}% 8
+\BOOKMARK [3][-]{subsubsection.1.4.3}{Ist-Analyse}{subsection.1.4}% 9
+\BOOKMARK [3][-]{subsubsection.1.4.4}{Anforderungsanalyse}{subsection.1.4}% 10
+\BOOKMARK [3][-]{subsubsection.1.4.5}{Arbeitsplanung}{subsection.1.4}% 11
+\BOOKMARK [3][-]{subsubsection.1.4.6}{Scrum}{subsection.1.4}% 12
+\BOOKMARK [2][-]{subsection.1.5}{Sicherheit}{section.1}% 13
+\BOOKMARK [1][-]{section.2}{Durchf\374hrungsphase}{}% 14
+\BOOKMARK [2][-]{subsection.2.1}{Registrierung}{section.2}% 15
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Login}{subsection.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.2}{Einkauf}{section.2}% 17
+\BOOKMARK [2][-]{subsection.2.3}{Nutzerverwaltung}{section.2}% 18
+\BOOKMARK [2][-]{subsection.2.4}{Auswertung}{section.2}% 19
+\BOOKMARK [1][-]{section.3}{Problemzusammenfassung}{}% 20
+\BOOKMARK [2][-]{subsection.3.1}{Usability der App}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.2}{Organisation Projektmanagement}{section.3}% 22
+\BOOKMARK [1][-]{section.4}{Projektabschluss}{}% 23
+\BOOKMARK [2][-]{subsection.4.1}{Fertiges Produkt}{section.4}% 24
+\BOOKMARK [2][-]{subsection.4.2}{Aussichten}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.3}{Zusammenfassung}{section.4}% 26
+\BOOKMARK [1][-]{section.5}{Lesson learned}{}% 27
+\BOOKMARK [1][-]{section*.32}{Quellen}{}% 28
+\BOOKMARK [1][-]{section*.35}{Anhang}{}% 29

@@ -86,75 +86,47 @@ Unser Ziel mit der Umsetzung des Projektes ist es, eine App zu entwickeln, die e
 Die Produktvielfalt der verschiedenen Produktanbieter wird vereinfacht dargestellt, der Konsument sieht auf einen Blick seine Ausgaben und Gruppenmitglieder müssen nicht noch manuell nach dem Einkauf jegliche Preise zusammenrechnen.
 
 \newpage
+\subsection{Vorbereitende Fragen}
+\subsubsection*{1. Wer arbeitet mit dem Softwaresystem?}
+Primär können alle Privatpersonen mit einem Smartphone die EinkaufsApp nutzen. Eine Ausweitung auf den Geschäftskundenbereich, z. B. Restaurants, die ihre Großeinkäufe tracken möchten, ist vorerst nicht geplant. Die Anforderungen dafür müssten angepasst werden. 
+Ggfs: Supermarktbesitzer oder Ketten bezüglich Angebote
+ 
+\subsubsection*{2. Welcher Benutzer benötigt welche Funktionen?}
+Jeder Nutzer bekommt die gleichen Funktionen, d. h. dass keine Premium Features oder ähnliches implementiert werden.
+Folgende Funktionen können genutzt werden:
+\begin{itemize}
+\item[-]Einkäufe anzeigen
+\item[-]Artikel Scannen, bearbeiten, abgleichen,  oder wieder aus dem Korb raus nehmen per Scan.
+\item[-]Einloggen, registrieren, ausloggen, abmelden.  ( Registriervorgang?), Passwortreset?
+\item[-]Supermärkte in der Nähe anzeigen lassen, hinzufügen 
+\item[-]Eigene Gruppen/Namen für Einkäufe erstellen
+\item[-]Impressum anzeigen lassen 
+\item[-]Benutzerprofil bearbeiten         
+\end{itemize} 
 
-\subsection{Funktionen}
-Dieses Kapitel beinhaltet die geplanten Funktionen der Applikation. Die Unterteilung erfolgt in die Hauptteile Einkauf, Auswertung und Gruppenverwaltung. Es werden jeweils pro Kategorie die Hauptfunktionen, also die Funktionen die implementiert werden müssen, Zusatzfunktionen, also die Funktionen die nachdem die Hauptfunktionen umgesetzt wurden implementiert werden und den Ideen, die aber aus Kapazitätsgründen nicht umgesetzt werden, aber in Zukunft umgesetzt werden können.
-\subsubsection{Einkauf}
-\paragraph{Hauptfunktion}
-\begin{itemize}
-\item Grundlegend muss die App die Funktion der Erstellung von Einkaufslisten haben. Hierzu gehören auch die Artikelaufnahme in diese Liste sowie die nachfolgende Bearbeitung dieser Liste bei Änderungsbedarf des Nutzers. Zum Schluss muss sie den kompletten Einkauf zusammenfassen. Der Einkauf wird dann abgeschlossen sobald der Nutzer dies auch bestätigt.
-\end{itemize}
-\paragraph{Zusatzfunktion}
-\begin{itemize}
-\item Zusätzlich soll die App die Funktion des Preisvergleichs von Artikeln in unterschiedlichen Märkten besitzen.
-\end {itemize}
-\paragraph{Ideen Out-Of-Scope}
-\begin{itemize}
-\item Es soll keine weitere Zusatzfunktion implementiert werden
-\end{itemize}
-\subsubsection{Markt}
-\paragraph{Hauptfunktion}
-\begin{itemize}
-\item Bevor der Einkaufsprozess gestartet wird soll die App die Funktion der Standortbestimmung haben. Sobald der Nutzer vor einem Markt steht ermittelt die App via GPS seinen Standort. Falls der Markt nicht gefunden wird, soll es die Möglichkeit der Hinzufügung eines neuen Marktes geben. Der Nutzer gibt dann hier die Daten des neuen Marktes an.
-\end{itemize}
-\paragraph{Zusatzfunktion}
-\begin{itemize}
-\item Es werden keine weiteren Zusatzfunktionen implementiert.
-\end{itemize}
-\paragraph{Ideen Out-of-Scope}
-\begin{itemize}
-\item Ein Markt kann über die App von einem Nutzer z. B. durch ein 5-Sterne Bwertungssystem bewertet werden
-\end{itemize}
+\subsubsection*{3.Welche Informationen müssen zu einer Person/Benutzer gespeichert werden, um einen Geschäftsprozess, z. B. Einkaufsprozess, mit dem System abzuwickeln?}
 
-\subsubsection{Benutzerprofil}
-\paragraph{Hauptfunktion}
+ Der Nutzer muss seinen Namen, die E-Mail-Adresse und ein Passwort hinterlegen.
+ 
+\subsubsection*{4. Welche im Szenario nicht genannten Funktionen werden von dem Softwaresystem benötigt, um heutigen Anforderungen zu entsprechen? Nennen Sie beispielhaft fünf Funktionen!}
 \begin{itemize}
-\item Der Nutzer kann die App erst nutzen, wenn dieser ein Benutzerprofil erstellt. Das Profil besteht grundlegend aus Namen, E-Mailadresse und einem Passwort. Die von ihm getätigten Einkäufe sind dann eindeutig zuordbar.
+\item[-]Separater Zugang für z.B Supermarktbesitzer um Angebote anzeigen zu lassen
+\item[-]Bewertung zum Supermarkt abgegeben, Angebote des Supermarktes anzeigen lassen, ggfs. push Nachrichten bei neuem Angebot
+\item[-]Auswertungsreport über Einkäufe / Monatsabgleich
+\item[-]Künstliche Intelligenz Einkaufsliste  z.B jeden Montag wird eine Kiste Wasser gekauft
+\item[-]Schuldenliste für z.B Mitbewohner zwecks WG-Einkäufe
 \end{itemize}
-\paragraph{Zusatzfunktion}
+ 
+ 
+\subsubsection*{5.Was ist ein Anwendungsfall und welche Beziehungen zwischen Anwendungsfällen beschreibt der Standard?}
 \begin{itemize}
-\item Es werden keine weiteren Zusatzfunktionen implementiert.
+\item[-]A1: User X möchte einen Einkauf tätigen und separieren, welche Artikel er für sich selber gekauft hat / WG/ freunde oder für bestimmte Aktivitäten z.B Hobby/Auto 
+\item[-]A2: User möchte auf Basis seiner Einkäufe einen Report sehen/ Auswertung, z.B wie viel Geld er im letzen Monat bezahlt hat. 
+\item[-]A3: User X möchte eine Schuldenliste führen können, z.B wie viel Geld er noch pro Mitbewohner bekommt, für den Einkauf von letzer Woche
+\item[-]A4: User sucht den nächst gelegenen Supermarkt der Kette XY
+\item[-]A5: User möchte über aktuelle Angebote von Supermarkt XY informiert werden ( nice to have )
+\item[-]A6: User möchte eine durch die App erstellte Einkaufsliste.
 \end{itemize}
-\paragraph{Ideen Out-of-Scope}
-\begin{itemize}
-\item[-]Der Nutzer kann sich auch mit seinem FB-Profil oder via Twitter anmelden.
-\end{itemize}
-\subsubsection{Gruppeneinkäufe}
-\paragraph{Hauptfunktion}
-\begin{itemize}
-\item[-]Einkäufe können einzeln Gruppen und Personen zugeordnet werden.
-\end{itemize}
-\paragraph{Zusatzfunktion}
-\begin{itemize}
-\item[-]Es werden keine weiteren Zusatzfunktionen implementiert.
-\end{itemize}
-\paragraph{Ideen Out-of-Scope}
-\begin{itemize}
-\item[-] Via Push-Notifications werden die Gruppenmitglieder über deren aktuellen Einkaufsstand benachrichtigt.
-\end{itemize}
-\subsubsection{Auswertung}
-\paragraph{Hauptfunktion}
-\begin{itemize}
-\item[-]Der Nutzer kann vergangene Einkäufe auswerten lassen. 
-\\Folgende Unterscheidungen werden gemacht:
-\begin{itemize}
-\item[a)]Kosten pro Zeitraum
-\item [b)] Kaufhäufigkeit eines Artikels und die dazugehörigen Gesamtkosten
-\item[c)] Kosten pro Artikelkategorie
-\item[d)] monetäre Ausgaben je Käufergruppe
-\end{itemize}
-\end{itemize}
-
 \newpage
 \subsection{Projektorganisation}
 Die Projektgruppe der EinkaufsApp teilte sich am 02. Oktober 2015 in die Untergruppen Dokumentation, Design und Entwicklung auf.
@@ -423,36 +395,10 @@ Rahmenbedingungen für Profil und Einkaufslisten
 \newpage
 \subsection{Sicherheit}
 \newpage
-
-
-\section{Systemarchitektur/-landschaft}
-\newpage
-\subsection{Modell, View, Controller}
-\newpage
-\subsection{MongoDB}
-\newpage
-\subsubsection{OpenShift Server}
-\newpage
-\subsubsection{Basis Tools}
-\newpage
-
 \section{Durchführungsphase}
 In diesem Abschnitt wird erklärt, wie die EinkaufsApp nach und nach aufgebaut wurde und insbesondere werden die einzelnen Punkte wie Registrierung, Login, Einkauf, Nutzerverwaltung und die Auswertung beschrieben.
 (Idee: Roadmap, s. Flussdiagramm) (Was haben die Designer für die App geplant und was können die Entwickler davon umsetzen) -> nachfolgende Struktur erklären
 \subsection*{Einleitung}
-\newpage
-\subsection{Systemarchitektur}
-%Architekturbild
-\subsection{Modell-View-Controller}
-%Wie ist es aufgebaut?
-%Zeichnung dafür hat Erik 
-%Programmiersprache
-\subsubsection{MongoDB}
-%Development --> v3 dia als aktuelles Datenmodell
-%Basti erstellt Dokument
-\subsubsection{OpenShift Server}
-%bastelt Basti und schickt es uns
-\subsubsection{Tools}
 \newpage
 \subsection{Registrierung}
 Bei der EinkaufsApp muss sich jeder Nutzer mittels einer Email-Adresse und einem Kennwort bei der App registrieren.
@@ -460,7 +406,7 @@ Eine Registrierung ist bei dieser App unentbehrlich, da für jeden Nutzer ein Pr
 In den drei folgenden Unterpunkten wird der Prozess der Registrierung aus Seiten der Designer, Entwickler und der Dokumentation beschrieben.
 \subsubsection*{Design}
 Die Designer haben zu der Registrierung und zu dem Login, welcher im Punkt 3.4 behandelt wird ein Flussdiagramm entworfen, welches hier zu sehen ist.
-\includegraphics[scale=0.6, origin=l]{C:\Users\Anni\Desktop\Einkaufsapp\EinkaufsApp-Doku\Dokumentation\Login-Registrierung.png}
+\includegraphics[scale=0.6, origin=l]{Login-Registrierung.png}
 \footnotesize Abbildung 1: Flussdiagramm Login
 \normalsize
 \\
