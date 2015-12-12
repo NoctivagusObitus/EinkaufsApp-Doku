@@ -88,45 +88,79 @@ Die Produktvielfalt der verschiedenen Produktanbieter wird vereinfacht dargestel
 \newpage
 \subsection{Vorbereitende Fragen}
 \subsubsection*{1. Wer arbeitet mit dem Softwaresystem?}
-Primär können alle Privatpersonen mit einem Smartphone die EinkaufsApp nutzen. Eine Ausweitung auf den Geschäftskundenbereich, z. B. Restaurants, die ihre Großeinkäufe tracken möchten, ist vorerst nicht geplant. Die Anforderungen dafür müssten angepasst werden. 
-Ggfs: Supermarktbesitzer oder Ketten bezüglich Angebote
+Mit dem System kann jede Privatperson arbeiten, die ihren Einkauf digital dokumentieren und Auswertungen des aktuellen Kaufverhaltens erhalten möchte. Des Weiteren hilft diese App jedem, der für Gruppen, z. B. Mitgliedern einer Wohngemeinschaft, Einkäufe tätigt, und eine direkte Zuteilung der einzelnen Produkte zur jeweiligen Person wünscht. Die App richtet sich auch an Menschen, die mit Hilfe der Auswertung mögliche Sparpotenziale erkennen und wahrnehmen möchten. 
  
 \subsubsection*{2. Welcher Benutzer benötigt welche Funktionen?}
-Jeder Nutzer bekommt die gleichen Funktionen, d. h. dass keine Premium Features oder ähnliches implementiert werden.
-Folgende Funktionen können genutzt werden:
 \begin{itemize}
-\item[-]Einkäufe anzeigen
-\item[-]Artikel Scannen, bearbeiten, abgleichen,  oder wieder aus dem Korb raus nehmen per Scan.
-\item[-]Einloggen, registrieren, ausloggen, abmelden.  ( Registriervorgang?), Passwortreset?
-\item[-]Supermärkte in der Nähe anzeigen lassen, hinzufügen 
-\item[-]Eigene Gruppen/Namen für Einkäufe erstellen
-\item[-]Impressum anzeigen lassen 
-\item[-]Benutzerprofil bearbeiten         
+\item[•]Standarduser (ohne Gruppenzugehörigkeit):
+\begin{itemize}
+\item[o] Einkauf einlesen
+\item[o] Einkauf löschen
+\item[o] Neuen Einkauf starten
+\item[o] Gruppe hinzufügen
+\item[o] Auswertungen ansehen
+\item[o] Passwort ändern
+\item[o] Markt anlegen
+\item[o] Artikel zum Datenbestand hinzufügen
+\end{itemize}       
 \end{itemize} 
 
-\subsubsection*{3.Welche Informationen müssen zu einer Person/Benutzer gespeichert werden, um einen Geschäftsprozess, z. B. Einkaufsprozess, mit dem System abzuwickeln?}
+\begin{itemize}
+\item[•]Gruppen Admin:
+\begin{itemize}
+\item[o] Einkauf einlesen
+\item[o] Einkauf löschen
+\item[o] Neuen Einkauf starten
+\item[o] Auswertungen ansehen
+\item[o] Gruppe löschen
+\item[o] Einkauf einem Gruppenmitglied zuordnen
+\item[o] Neue Mitglieder hinzufügen
+\item[o] Gruppenadmin festlegen (Einmal Admin, immer Admin)
+\end{itemize}
+\end{itemize}
 
- Der Nutzer muss seinen Namen, die E-Mail-Adresse und ein Passwort hinterlegen.
+\begin{itemize}
+\item[•] Gruppenmitglied:
+\begin{itemize}
+\item[o] Einkauf einlesen
+\item[o] Einkauf löschen
+\item[o] Neuen Einkauf starten
+\item[o] Gruppe hinzufügen
+\item[o] Auswertungen ansehen
+\item[o] Einkauf einem Gruppenmitglied zuordnen
+\end{itemize}
+\end{itemize}
+
+\subsubsection*{3.Welche Informationen müssen zu einer Person/Benutzer gespeichert werden, um einen Geschäftsprozess, z. B. das für WG einkaufen, mit dem System abzuwickeln?}
+
+Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf für eine WG stattfinden kann:
+\begin{itemize} 
+\item[o] eindeutiger Name des User
+\item[o] eindeutiger Gruppenname der WG
+\item[o] Zuordnung des Users zu der Gruppe
+\item[o] Produktname
+\item[o] Produktmenge
+\item[o] Produktpreis
+\item[o] Märkte (Namen und Standort)
+\item[o] Einkaufsdatum
+\end{itemize}
  
 \subsubsection*{4. Welche im Szenario nicht genannten Funktionen werden von dem Softwaresystem benötigt, um heutigen Anforderungen zu entsprechen? Nennen Sie beispielhaft fünf Funktionen!}
 \begin{itemize}
-\item[-]Separater Zugang für z.B Supermarktbesitzer um Angebote anzeigen zu lassen
-\item[-]Bewertung zum Supermarkt abgegeben, Angebote des Supermarktes anzeigen lassen, ggfs. push Nachrichten bei neuem Angebot
-\item[-]Auswertungsreport über Einkäufe / Monatsabgleich
-\item[-]Künstliche Intelligenz Einkaufsliste  z.B jeden Montag wird eine Kiste Wasser gekauft
-\item[-]Schuldenliste für z.B Mitbewohner zwecks WG-Einkäufe
+\item[a.] Separater Zugang für Anbieter (Supermärkte) um Angebote einzupflegen, die der Käufer via Push-Notification bekommt
+\item[b.] Der Käufer kann einen Markt bewerten und sich die Bewertung eines Marktes anzeigen lassen.
+\item[c.] Via Push-Notification wird ein monatlicher Auswertungsreport erstellt
+\item[d.] Einkaufslistenfunktion (Manuell)
+\item[e.] Der Nutzer kann die EinkaufsApp mit via Social Media, z. B. Twitter oder Facebook, koppeln
 \end{itemize}
  
  
 \subsubsection*{5.Was ist ein Anwendungsfall und welche Beziehungen zwischen Anwendungsfällen beschreibt der Standard?}
-\begin{itemize}
-\item[-]A1: User X möchte einen Einkauf tätigen und separieren, welche Artikel er für sich selber gekauft hat / WG/ freunde oder für bestimmte Aktivitäten z.B Hobby/Auto 
-\item[-]A2: User möchte auf Basis seiner Einkäufe einen Report sehen/ Auswertung, z.B wie viel Geld er im letzen Monat bezahlt hat. 
-\item[-]A3: User X möchte eine Schuldenliste führen können, z.B wie viel Geld er noch pro Mitbewohner bekommt, für den Einkauf von letzer Woche
-\item[-]A4: User sucht den nächst gelegenen Supermarkt der Kette XY
-\item[-]A5: User möchte über aktuelle Angebote von Supermarkt XY informiert werden ( nice to have )
-\item[-]A6: User möchte eine durch die App erstellte Einkaufsliste.
-\end{itemize}
+
+Ein Anwendungsfall ist die Beschreibung eines Szenarios innerhalb einer gesamten Anwendung. Dabei beginnt in der Regel der Prozess mit einem Startzustand („Precondition“), dem Akteur, der Abwicklung („Main Flow“), und dem Zielzustand. Je nach Anwendungsfall bzw. Use Case werden die einzelnen Parameter unterschiedlich angegeben. 
+Im Beispiel „EinkaufsApp“ wäre ein potentieller Anwendungsfall „Gruppen verwalten“. 
+
+
 \newpage
 \subsection{Projektorganisation}
 Die Projektgruppe der EinkaufsApp teilte sich am 02. Oktober 2015 in die Untergruppen Dokumentation, Design und Entwicklung auf.
@@ -298,100 +332,63 @@ Was benötigen wir?
 \newpage
 
 \subsubsection{Arbeitsplanung}
-\textbf{Designer:}
-\textbf{Florian Graupeter:}
-\begin{itemize}
-\item[-]Konzeption Grundstruktur
-\item[-]Wie ist der Ablauf bei der App Nutzung, welche Sonderfälle müssen an welchen Punkten beachtet werden, wie ist die generelle Struktur
-\end{itemize}
-\textbf{Moritz Karsten:}
-\begin{itemize}
-\item[-]Konzeption Funktionalitäten und Informationsfluss einzelner Ansichten
-\item[-]welche Knöpfe soll es geben, welche Informationen werden angezeigt, welche Informationen werden zwischen zwei Ansichten ausgetauscht
-\end{itemize}
-\textbf{Moritz Schaub:}
-\begin{itemize}
-\item[-]Visuelles Design
-\item[-]Farben, Formen und Anordnung, von Butten und Feldern 
-\item[-]eventuelles Logodesign + neuer Name für App
-\end{itemize}
-\textbf{Jannis Grohs:}
-\begin{itemize}
-\item[-]Quality of Service (Konsistenz in allem beachten und Vorgaben einhalten)
-\item[-]Zusammenfassung über Erwartungshorizont und Ausarbeitung zu Fragen
-\item[-]Einfachheit und Intuition im Design beachten, zuverlässige Fehlerbehandlung beachten
-\end{itemize}
-ToDos für alle Designer:
-\begin{itemize}
-\item[-]Flussdiagramm erstellen und erweitern
-\item[-]Erwartungshorizont der App definieren
-\item[-]Anfangsstruktur für die Entwickler festlegen
-\end{itemize}
-\newpage
+Zu Beginn der Projektorganisation wurde von der Dokumentation ein grober Plan bereitgestellt, der eine Einteilung der Teams in organisatorische Einheiten festschreibt und einen Rahmen für die Planung der Aufgaben beziehungsweise Arbeitspakete vorgibt. Damit wurde ein organisatorisches Grundgerüst geschaffen, das allen Gruppen als Orientierung dient und gleichzeitig zur eigenständigen Organisation und Erstellung sowie Bearbeitung der Arbeitspakete motiviert:
+\\
+\\
+\includegraphics[scale=0.6, origin=l]{Aktivitaetsliste.png}
+\\
+\footnotesize Abbildung 1: Aktivitätsliste
+\normalsize
+\\
+\linebreak
+\subsubsection*{Meilensteinplanung}
+\includegraphics[scale=0.6, origin=l]{Meilensteine.png}
+\\
+\footnotesize Abbildung 2: Meilensteine
+\normalsize
+\\
+\linebreak
+\subsubsection*{Klassen-Diagramm}
+\includegraphics[scale=0.6, origin=l]{Klassendiagramm.png}
+\\
+\footnotesize Abbildung 3: Klassendiagramm
+\normalsize
+\\
+\linebreak
+\subsubsection*{Aktivitäts-Diagramme}
+Aktivitätsdiagramm "Einkauf einlesen"
+\\
+\includegraphics[scale=0.6, origin=l]{Aktivitaets-Diagramm.png}
+\\
+\footnotesize Abbildung 4: Aktivitätsdiagramm-Einkauf
+\normalsize
+\\
+\linebreak
+Aktivitätsdiagramm "Ausgabeverlauf anzeigen"
+\\
+\includegraphics[scale=0.6, origin=l]{Aktivitaets-Diagramm-Ausgabenverlauf.png}
+\\
+\footnotesize Abbildung 5: Aktivitätsdiagramm-Ausgabenverlauf
+\normalsize
+\\
+\linebreak
+\subsubsection*{Zustandsdiagramm}
+Zustands-Diagramm „Ausgabenverlauf anzeigen“
+\\
+\includegraphics[scale=0.6, origin=l]{Zustandsdiagramm.png}
+\\
+\footnotesize Abbildung 6: Zustandsdiagramm
+\normalsize
+\\
+\linebreak
 
-\textbf{Entwickler:}
-Hier fehlen leider noch die einzelnen Aufgabenbereiche von Vielen!  Unbedingt nachtragen!
-\newline
-\textbf{Sebastian Kiepsch:}
-\begin{itemize}
-\item[-] Einführung in die Technik- Präsentation vorbereiten
-\item[-]Modulplan erstellen
-\item[-] bereits erstellten Code kommentieren
-\end{itemize}
-\textbf{Michael Hein:}
-\begin{itemize}
-\item[-]Erstellung einer Benutzerverwaltung mit User Interface
-\item[-] bereits erstellten Code kommentieren
-\end{itemize}
-\textbf{Eric Sorgalla:}
-\begin{itemize}
-\item[-] Einführung in die Technik- Präsentation vorbereiten
-\item[-] Modulplan erstellen
-\item[-] Kanban-Board erstellen
-\end{itemize}
-\textbf{Viktor Fuchs:}
-\begin{itemize}
-\item[-] Namenskonventionen ausarbeiten - Variablen und Funktionen
-\end{itemize}
-\textbf{Florian Schmitt:}
-\begin{itemize}
-\item[-] HTML-Code der Proto.io- App exportieren und durchgehen
-\end{itemize}
-\textbf{offene Aufgaben:}
-\begin{itemize}
-\item[-] aktualisiertes DB Modell erstellen
-\item[-] EAN-Kategorien recherchieren und Tabelle füllen
-\item[-] neues DB Modell implementieren
-\item[-] UML Diagramm erstellen
-\end{itemize}
 
-\newpage
-\textbf {Dokumentation:}
-\newline
-\textbf{Thomas Elias:}
-\begin{itemize}
-\item[-] Projektplan erstellen 
-\item[-] Skillliste der einzelnen Projektmitglieder erstellen
-\item[-] Aktivitätsliste aller Projektmitglieder definieren
-\item[-] Ausarbeiten allgemeiner Informationen für Handbuch
-\end{itemize}
-
-\textbf{Huong Dang:}
-\begin{itemize}
-\item[-] Projektseitige Dokumentation
-\item[-] Dokumentation der Emails, Meetings und Telefonkonferenzen
-\item[-] Ausarbeiten der Aktivitäten des Einkaufsprozesses für Handbuch 
-\end{itemize}
-
-\textbf{Annika Köstler:}
-\begin{itemize}
-\item[-] Schreiben der endgültigen Dokumentation
-\item[-] Ausarbeiten der Installationsanleitung 
-\end{itemize}
-\newpage
 
 \subsubsection{Scrum}
-Rahmenbedingungen für Profil und Einkaufslisten
+Nachdem ein grober organisatorischer Rahmen für das Projekt von der Gruppe Dokumentation vorgegeben wurde, haben die einzelnen Gruppen intern mittels agiler Projektmanagement-Methoden ihre Arbeitspakete und Ablaufpläne festgelegt. 
+Mittels Telefonkonferenzen bei der Gruppe Dokumentation wurden Arbeitspakete erstellt und jeder hat sich nach dem Pull-Prinzip – bekannt aus der Projektmanagement-Methode Kanban – seine Arbeitspakete abgeholt und eine Bearbeitungsfrist definiert. 
+In der Gruppe der Entwickler wurde unter Zuhilfenahme des Tools „Trello“ die Planung und Durchführung der Arbeitspakete durchgeführt. Trello ist ein Web-Dienst, der ein Board bietet, um Arbeitspakete gemäß agiler Projektmanagement-Methoden zu bearbeiten und Arbeitsfortschritte transparent darzustellen. 
+Die Gruppe Design hat ihre Arbeitspakete auf Basis eines Ablaufplanes auf die verschiedenen Mitglieder verteilt. Es wurden die Phasen Prototyp-Entwurf, Prototyp-Review, Prototyp-Modifikationen und Prototyp-Test und Prototyp-Abnahme durchlaufen.
 \newpage
 \subsection{Sicherheit}
 \newpage
@@ -416,7 +413,7 @@ Das Flussdiagramm beschreibt sukzessiv den Ablauf des Registrierungs- und des Lo
 %Diagramm?
 Die Entwickler befassen sich mit den Funktionen der Applikation  und sorgen bei der Registrierung dafür, dass alle Daten ordentlich geprüft und in die Datenbank eingepflegt werden.
 Als Datenbank wird die MongoDB genutzt und via RoboMongo gemanagt. Als Programmiersprache wird in allen, auch den folgenden Unterpunkten JavaScript verwendet.
-Bei der Registrierung werden die einzelnen Benutzereingaben durch bestimmte Regeln auf z.B. Länge, Email-Format, Eindeutigkeit, sowie Sicherheitskriterien der Passwortsvergabe in der Applikation geprüft.
+Bei der Registrierung werden die einzelnen Benutzereingaben durch bestimmte Regeln auf z.B. Länge, Email-Format, Eindeutigkeit, sowie Sicherheitskriterien der Passwortvergabe in der Applikation geprüft.
 % Konkrete Regeln siehe Handbuch
 Wenn alle Prüfungen erfolgreich waren, wird der Benutzer angelegt und das Passwort verschlüsselt in Form eines Hashs in der Datenbank gespeichert.
 \subsubsection*{Problembeschreibung} 
