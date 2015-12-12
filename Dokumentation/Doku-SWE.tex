@@ -401,6 +401,9 @@ In der Gruppe der Entwickler wurde unter Zuhilfenahme des Tools „Trello“ die
 Die Gruppe Design hat ihre Arbeitspakete auf Basis eines Ablaufplanes auf die verschiedenen Mitglieder verteilt. Es wurden die Phasen Prototyp-Entwurf, Prototyp-Review, Prototyp-Modifikationen und Prototyp-Test und Prototyp-Abnahme durchlaufen.
 \newpage
 \subsection{Sicherheit}
+Sobald Daten eines Nutzers für eine Applikation eingefordert werden, wird ein gewisser Standard an Sicherheit gefordert. Es sollen keine Dritte an diese Daten kommen.
+In der EinkaufsApp wurden folgende Maßnahmen getroffen um diese gewährleisten zu können.
+Das vom Nutzer festgelegte Passwort wird als Einweg-Hash in der Datenbank gespeichert. Zudem wird in Verbindung mit dem Nutzernamen sichergestellt, dass es sich auch um den richtigen Nutzer handelt. Eine weitere wichtige Technik zur Sicherheit von Webanwendungen spielt das SSL-Protokoll (Secure Socket Layer). Bei Verwendung dieser Protokolle wird vor der eigentlichen HTTP-Kommunikation ein geschützter Kanal aufgebaut, so dass die Nutzerdaten für Dritte nicht zugängig sind. Die Nutzerdaten werden in einem normalen Web-Formular eingetragen (Login-Screen)und mittels POST-Request an den Server gesendet. Da der TCP-Kanal abgesichert ist, haben Dritte keinen Zugriff auf die Nutzdaten innerhalb des POST-Requests, d. h. Nutzername und Passwort werden gesichert übertragen. 
 \newpage
 \section{Durchführungsphase}
 In diesem Abschnitt wird erklärt, wie die EinkaufsApp nach und nach aufgebaut wurde und insbesondere werden die einzelnen Punkte wie Registrierung, Login, Einkauf, Nutzerverwaltung und die Auswertung beschrieben.
