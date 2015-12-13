@@ -185,52 +185,9 @@ Die Untergruppen einigten sich außerdem auf Tools, die effizient und sinnvoll z
 \newpage
 
 \subsubsection{Soll-Analyse}
-In dem hier angeführten Kapitel werden konkrete Ziele für das bevorstehende Projekt formuliert, die auf den oben aufgeführten Funktionen der Applikation basieren. (Tabelle der Grundfunktionen, Die Umsetzungsmöglichkeiten, Prioritäten)
+In dem hier angeführten Kapitel werden konkrete Ziele für das bevorstehende Projekt formuliert, die auf den oben aufgeführten Funktionen der Applikation basieren. Die einzeln genutzten Tools sind bereits im Pflichtenheft (s. Anhang) genannt worden, werden hier aber den einzelnen Arbeitsgruppen zugewiesen.
 
-\begin{tabular}{|l|c|r|}
-\hline
- Funktion & nötige Umsetzungsaspekte & Priorität \\
-\hline
-Datenbank & Aufstellen einer MongoDB & Prio 1\\
-\end{tabular}
-
-\begin{itemize}
- \item[1.1)] 
-  Die App soll in Echtzeit die monetären Ausgaben einer Person speichern, sowie ausgewertet wiedergeben.
- \item[1.2)] Hierfür soll es möglich sein:
- \begin{itemize}
- \item[a)] bei einem Einkauf Informationen über einen Artikel von einem Etikett via Barcodescanner einzulesen, beziehungsweise bei bestehender EAN Nummer aus einer Datenbank zu laden und aus diesen Argumenten einen Einkauf zu erstellen
-  \item[b)] sonstige Kosten aufzunehmen, die nicht mit einem EAN Code in Verbindung gebracht werden können.
-  \item[c)] von aktiven Einkäufen unabhängige, regelmäßige Kosten zu erfassen.
-  \end{itemize}
- \item[1.3)] Es soll möglich sein für jemand anderen oder eine Gruppe (z.B. WG) einzukaufen.
- \item[1.4)] Die Daten werden zentral in einer, über das Internet erreichbare, Datenbank gespeichert.
- \item[1.5)] Die App soll primär ein einfaches Front End bereitstellen, um Informationen zu sammeln und zu verwalten
- \item[1.6)] Eine Web Site ist momentan out of scope, wäre aber eine sinnvolle Ergänzung für die Ausgabe von Statistiken und die Benutzerverwaltung.
- \item[1.7)] Die Möglichkeiten der Auswertung sind vielfältig und können in Listen oder Diagrammen dargestellt werden.
- \item[1.8)] Auswertungsbeispiele:
- \begin{itemize}
-\item[a)]Ausgaben innerhalb eines bestimmten Zeitraumes (z.B. Woche oder Monat)
- \item[b)] Maximal oder Minimalpreis innerhalb eines Zeitraumes (z.B. Woche oder Monat) 
-\item[c)] Eine Grafik, die den Ausgabenverlauf innerhalb eines Zeitraumes darstellt
-\item[d)] Eine Extrapolation regelmäßig gekaufter Artikel (Ersatz des „Einkaufzettels“)
-\item[e)]Das persönliche Tracking der allgemeinen Ausgaben
-\end{itemize}
- \item[1.9)] Außerdem nicht personenbezogene Auswertungen:
- \begin{itemize}
-\item[a)]über beliebteste Artikel
-\item[b)] beliebteste Märkte
-\item[c)] Durchschnittspreise eines Artikels
-\end{itemize}
- \item[2.1)] Ein online verfügbarer Server, auf dem seinerseits ein Datenbank Server und ein Web Server läuft
- \begin{itemize}
-\item[a)]Als Datenbank-Server wird MongoDB verwendet
-\item[b)]Als Web Server wird Apache verwendet
-\end{itemize}
-\item[2.2)] Auf dem Web Server befindliche PHP-Skripte stellen die Verbindung zur Datenbank her.
-\item[2.3)] Aus der Android-App heraus wird mittels HTTP-Post eine Anfrage an die PHP-Skripte geschickte und die Antwort im JSON-Format wieder an die App zurück geschickt.
-\end{itemize}
-\newpage
+(Hier Tabelle einfügen)
 
 \subsubsection{Ist-Analyse}
 Zu Beginn wurden die jeweiligen Kompetenzen der Projektmitarbeiter zum Standpunkt vor der Durchführung des Projektes niedergeschrieben. Davon leiteten sich die Zugehörigkeiten jeder einzelnen Person in die Gruppen ab.\\
