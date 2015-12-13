@@ -7,24 +7,24 @@
 \contentsline {subsection}{\numberline {1.4}Projektorganisation}{12}{subsection.1.4}
 \contentsline {subsubsection}{\numberline {1.4.1}Kick-Off-Meeting}{12}{subsubsection.1.4.1}
 \contentsline {subsubsection}{\numberline {1.4.2}Soll-Analyse}{13}{subsubsection.1.4.2}
-\contentsline {subsubsection}{\numberline {1.4.3}Ist-Analyse}{15}{subsubsection.1.4.3}
-\contentsline {subsubsection}{\numberline {1.4.4}Anforderungsanalyse}{18}{subsubsection.1.4.4}
-\contentsline {subsubsection}{\numberline {1.4.5}Arbeitsplanung}{19}{subsubsection.1.4.5}
-\contentsline {subsubsection}{\numberline {1.4.6}Scrum}{23}{subsubsection.1.4.6}
-\contentsline {subsection}{\numberline {1.5}Sicherheit}{24}{subsection.1.5}
-\contentsline {section}{\numberline {2}Durchf\IeC {\"u}hrungsphase}{25}{section.2}
-\contentsline {subsection}{\numberline {2.1}Registrierung}{26}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}Login}{28}{subsubsection.2.1.1}
-\contentsline {subsection}{\numberline {2.2}Einkauf}{29}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Nutzerverwaltung}{30}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Auswertung}{31}{subsection.2.4}
-\contentsline {section}{\numberline {3}Problemzusammenfassung}{32}{section.3}
-\contentsline {subsection}{\numberline {3.1}Usability der App}{32}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Organisation Projektmanagement}{33}{subsection.3.2}
-\contentsline {section}{\numberline {4}Projektabschluss}{34}{section.4}
-\contentsline {subsection}{\numberline {4.1}Fertiges Produkt}{34}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Aussichten}{34}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Zusammenfassung}{35}{subsection.4.3}
-\contentsline {section}{\numberline {5}Lesson learned}{36}{section.5}
-\contentsline {section}{Quellen}{37}{section*.37}
-\contentsline {section}{Anhang}{39}{section*.40}
+\contentsline {subsubsection}{\numberline {1.4.3}Ist-Analyse}{13}{subsubsection.1.4.3}
+\contentsline {subsubsection}{\numberline {1.4.4}Anforderungsanalyse}{16}{subsubsection.1.4.4}
+\contentsline {subsubsection}{\numberline {1.4.5}Arbeitsplanung}{17}{subsubsection.1.4.5}
+\contentsline {subsubsection}{\numberline {1.4.6}Scrum}{21}{subsubsection.1.4.6}
+\contentsline {subsection}{\numberline {1.5}Sicherheit}{22}{subsection.1.5}
+\contentsline {section}{\numberline {2}Durchf\IeC {\"u}hrungsphase}{23}{section.2}
+\contentsline {subsection}{\numberline {2.1}Registrierung}{24}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Login}{26}{subsubsection.2.1.1}
+\contentsline {subsection}{\numberline {2.2}Einkauf}{27}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Nutzerverwaltung}{28}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Auswertung}{29}{subsection.2.4}
+\contentsline {section}{\numberline {3}Problemzusammenfassung}{30}{section.3}
+\contentsline {subsection}{\numberline {3.1}Usability der App}{30}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Organisation Projektmanagement}{31}{subsection.3.2}
+\contentsline {section}{\numberline {4}Projektabschluss}{32}{section.4}
+\contentsline {subsection}{\numberline {4.1}Fertiges Produkt}{32}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Aussichten}{32}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Zusammenfassung}{33}{subsection.4.3}
+\contentsline {section}{\numberline {5}Lesson learned}{34}{section.5}
+\contentsline {section}{Quellen}{35}{section*.37}
+\contentsline {section}{Anhang}{37}{section*.40}
