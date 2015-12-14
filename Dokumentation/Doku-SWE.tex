@@ -66,13 +66,13 @@ Annika Köstler
 
 \section*{Einleitung}
 \addcontentsline{toc}{section}{Einleitung}
-Diese Dokumentation soll einen näheren Einblick in den Umfang, den Nutzen, den Ablauf und das Ergebnis unseres Softwareprojekts 'EinkaufsApp' geben.  
+Diese Dokumentation soll einen näheren Einblick in den Umfang, den Nutzen, den Ablauf und das Ergebnis des Softwareprojekts 'EinkaufsApp' geben.  
 \newline
 Die EinkaufsApp dient dem Nutzer seine alltäglichen Einkaufserlebnisse, hinsichtlich der besuchten Läden und gekauften Produkte zu dokumentieren und eine Übersicht über seine Finanzen zu erhalten.
 Gleichzeitig soll sie als kleines Nachschlagewerk fungieren, welches Überblick über Preis und Angebot bestimmter Produkte bietet.
 Der alltägliche Einkauf wird hinsichtlich des Monitoring der Finanzen und Produktauswahl aufgrund der Funktionalitäten der EinkaufsApp erleichtert.
 \newline
-Die Dokumentation umfasst die kompletten Phasen der Vorbetrachtung, Planung und Entwicklung der EinkaufsApp mit den jeweiligen Ideen, Tasks und angefertigten Dokumenten und fungiert als Leitfaden für alle Projektmitglieder durch das gesamte Projekt.
+Die Dokumentation umfasst die kompletten Phasen der Vorbetrachtung, Planung und Entwicklung der EinkaufsApp mit den jeweiligen Ideen, Tasks und angefertigten Dokumenten und dient als Leitfaden für alle Projektmitglieder durch das gesamte Projekt.
 \newline
 Zudem wurde eine Einteilung des Projektes in Definitionsphase, Planungsphase, Durchführungsphase und Abschlussphase als angemessen empfunden und in diesem Dokument angewandt.
 Diese Dokumentation ist parallel zur Durchführungsphase entstanden.
@@ -83,16 +83,19 @@ Die Vorbetrachtung beinhaltet alle vorbereitenden Aktivitäten, die vor der Entw
 
 
 \subsection{Problembeschreibung}
-Die steigende Vielfalt an Produkten und die Preisschwankungen der Anbieter führen den Konsumenten zu einer Unübersichtlichkeit über die Angebotsvielfalt und der damit verbundenen Ausgaben.
-Wie in der Einleitung beschrieben, bietet die EinkaufsApp die Möglichkeit einen Überblick über getätigte Einkäufe zu schaffen,
-um vor allem die finanziellen Ausgaben pro Woche, Monat oder Jahr zu tracken und Preise gleicher Produkte von unterschiedlichen Anbietern zu vergleichen.  
-Diese App soll zudem noch dabei helfen den finanziellen Überblick zu behalten und eine Hilfe für alle Konsumenten sein, die sich öfter fragen, wo ihre Lieblingsprodukte am günstigsten angeboten werden und wie oft sie diese Produkte im Monat kaufen.
-Zusätzlich gibt es eine Gruppenfunktion, die bestimmten angelegten Gruppen, z.B WG-Mitgliedern, die Möglichkeit bietet, die Ausgaben pro Person zu tracken, was die manuelle Kalkulation am Ende eines Monats erspart. 
+
+Die Problembeschreibung kann aus dem Pflichtenheft im Anhang entnommen werden.
+
+%Die steigende Vielfalt an Produkten und die Preisschwankungen der Anbieter führen den Konsumenten zu einer Unübersichtlichkeit über die Angebotsvielfalt und der damit verbundenen Ausgaben.
+%Wie in der Einleitung beschrieben, bietet die EinkaufsApp die Möglichkeit einen Überblick über getätigte Einkäufe zu schaffen,
+%um vor allem die finanziellen Ausgaben pro Woche, Monat oder Jahr zu tracken und Preise gleicher Produkte von unterschiedlichen Anbietern zu vergleichen.  
+%Diese App soll zudem noch dabei helfen den finanziellen Überblick zu behalten und eine Hilfe für alle Konsumenten sein, die sich öfter fragen, wo ihre Lieblingsprodukte am günstigsten angeboten werden und wie oft sie diese Produkte im Monat kaufen.
+%Zusätzlich gibt es eine Gruppenfunktion, die bestimmten angelegten Gruppen, z.B WG-Mitgliedern, die Möglichkeit bietet, die Ausgaben pro Person zu tracken, was die manuelle Kalkulation am Ende eines Monats erspart. 
 
 \subsection{Entscheidung zur Projektdurchführung}
 Die EinkaufsApp soll die EANs (European Article Number) der Produkte, die Konsumenten bei ihren Einkäufen in den Warenkorb legen und bezahlen, speichern.
 Sie soll es zudem ermöglichen die Preise der Produkte und die damit verbundenen Kosten auf Gruppen oder einzelne Personen aufzuteilen und im Ergebnis eine finanzielle Auswertung aufzeigen.
-Unser Ziel mit der Umsetzung des Projektes ist es, eine App zu entwickeln, die eine Lösung für das in der Problemstellung genannte Problem darstellt. 
+Das Ziel der Umsetzung des Projektes ist es, eine App zu entwickeln, die eine Lösung für das in der Problemstellung genannte Problem darstellt. 
 Die Produktvielfalt der verschiedenen Produktanbieter wird vereinfacht dargestellt, der Konsument sieht auf einen Blick seine Ausgaben und Gruppenmitglieder müssen nicht noch manuell nach dem Einkauf jegliche Preise zusammenrechnen.
 
 \newpage
@@ -101,6 +104,7 @@ Die Produktvielfalt der verschiedenen Produktanbieter wird vereinfacht dargestel
 Mit dem System kann jede Privatperson arbeiten, die ihren Einkauf digital dokumentieren und Auswertungen des aktuellen Kaufverhaltens erhalten möchte. Des Weiteren hilft diese App jedem, der für Gruppen, z. B. Mitgliedern einer Wohngemeinschaft, Einkäufe tätigt, und eine direkte Zuteilung der einzelnen Produkte zur jeweiligen Person wünscht. Die App richtet sich auch an Menschen, die mit Hilfe der Auswertung mögliche Sparpotenziale erkennen und wahrnehmen möchten. 
  
 \subsubsection*{2. Welcher Benutzer benötigt welche Funktionen?}
+Es werden insgesamt drei Nutzerrollen vorgesehen. Es gibt den Standarduser, der wiederum eine Gruppe erstellen kann und somit Gruppen Admin ist und ein Gruppenmitglied.
 \begin{itemize}
 \item[•]Standarduser (ohne Gruppenzugehörigkeit):
 \begin{itemize}
@@ -143,7 +147,7 @@ Mit dem System kann jede Privatperson arbeiten, die ihren Einkauf digital dokume
 
 \subsubsection*{3.Welche Informationen müssen zu einer Person/Benutzer gespeichert werden, um einen Geschäftsprozess, z. B. das für WG einkaufen, mit dem System abzuwickeln?}
 
-Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf für eine WG stattfinden kann:
+Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf, für z. B. eine WG, stattfinden kann:
 \begin{itemize} 
 \item[o] eindeutiger Name des User
 \item[o] eindeutiger Gruppenname der WG
@@ -151,7 +155,7 @@ Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf 
 \item[o] Produktname
 \item[o] Produktmenge
 \item[o] Produktpreis
-\item[o] Märkte (Namen und Standort)
+\item[o] Märkte (Name und Standort)
 \item[o] Einkaufsdatum
 \end{itemize}
  
@@ -180,11 +184,11 @@ Jegliche Unterhaltung basierte auf Mailverkehr oder fand durch Telefonkonferenze
 
 
 \subsubsection{Kick-Off-Meeting}
-Am 02. Oktober  2015 fand das erste Meeting mit der gesamten Projektgruppe statt. In diesem Kick-Off-Meeting traf man Absprachen über das weitere Vorgehen und die Projektumsetzung der Ideen und Ziele, welche im Kapitel 1.3 ausführlich beschrieben wurden. Es wurde über die weitere Kommunikationsform abgestimmt und ebenso fest gelegt, dass wöchentlich Telefonkonferenzen innerhalb der Untergruppen zum weiteren Vorgehen des Projektes statt finden werden, sodass die genannten Projektziele bis zum festgelegten Datum umgesetzt werden können. 
-Die Untergruppen einigten sich außerdem auf Tools, die effizient und sinnvoll zur Umsetzung der anstehenden Aktivitäten und zum Einhalten der Projektziele verwendet wurden. Die einzelnen Tools der Untergruppen werden ausführlich im Abschnitt Organisationstools aufgezählt und definiert.
+Am 02. Oktober  2015 fand das erste Meeting mit der gesamten Projektgruppe statt. In diesem Kick-Off-Meeting wurden Absprachen über das weitere Vorgehen und die Projektumsetzung der Ideen und Ziele, welche im Kapitel 1.3 ausführlich beschrieben wurden, getroffen. Es wurde über die weitere Kommunikationsform abgestimmt und ebenso fest gelegt, dass wöchentlich Telefonkonferenzen innerhalb der Untergruppen zum weiteren Vorgehen des Projektes statt finden werden, sodass die genannten Projektziele bis zum festgelegten Datum umgesetzt werden können. 
+Die Untergruppen einigten sich außerdem auf Tools, die effizient und sinnvoll zur Umsetzung der anstehenden Aktivitäten und zum Einhalten der Projektziele verwendet wurden. 
 \newpage
 
-\subsubsection{Soll-Analyse}
+\subsubsection{Anforderungskatalog}
 In dem hier angeführten Kapitel werden konkrete Ziele für das bevorstehende Projekt formuliert, die auf den oben aufgeführten Funktionen der Applikation basieren. Die einzeln genutzten Tools sind bereits im Pflichtenheft (s. Anhang) genannt worden, werden hier aber den einzelnen Arbeitsgruppen zugewiesen.
 
 (Hier Tabelle einfügen)
