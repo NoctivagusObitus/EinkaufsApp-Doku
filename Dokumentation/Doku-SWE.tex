@@ -24,6 +24,8 @@ Tabelle 1 : Ist-Analyse
 Tabelle 2 : Anforderungsanalyse
 \newpage
 \section*{Abbildungsverzeichnis}
+%\addcontentsline{toc}{section}{Abbildungsverzeichnis}
+%\listoffigures
 Abbildung 1: Aktivitätsliste
 \\
 Abbildung 2: Meilensteinplanung
@@ -79,7 +81,7 @@ Die EinkaufsApp dient dem Nutzer seine alltäglichen Einkaufserlebnisse, hinsich
 Gleichzeitig soll sie als kleines Nachschlagewerk fungieren, welches Überblick über Preis und Angebot bestimmter Produkte bietet.
 Der alltägliche Einkauf wird hinsichtlich des Monitoring der Finanzen und Produktauswahl aufgrund der Funktionalitäten der EinkaufsApp erleichtert.
 \newline
-Die Dokumentation umfasst die kompletten Phasen der Vorbetrachtung, Planung und Entwicklung der EinkaufsApp mit den jeweiligen Ideen, Tasks und angefertigten Dokumenten und dient als Leitfaden für alle Projektmitglieder durch das gesamte Projekt.
+Die Dokumentation umfasst die Phasen der Vorbetrachtung, Planung und Entwicklung der EinkaufsApp mit den jeweiligen Ideen, Tasks und angefertigten Dokumenten und dient als Leitfaden für alle Projektmitglieder durch das gesamte Projekt.
 \newline
 Zudem wurde eine Einteilung des Projektes in Definitionsphase, Planungsphase, Durchführungsphase und Abschlussphase als angemessen empfunden und in diesem Dokument angewandt.
 Diese Dokumentation ist parallel zur Durchführungsphase entstanden.
@@ -99,7 +101,7 @@ Die Problembeschreibung kann aus dem Pflichtenheft im Anhang entnommen werden.
 %Diese App soll zudem noch dabei helfen den finanziellen Überblick zu behalten und eine Hilfe für alle Konsumenten sein, die sich öfter fragen, wo ihre Lieblingsprodukte am günstigsten angeboten werden und wie oft sie diese Produkte im Monat kaufen.
 %Zusätzlich gibt es eine Gruppenfunktion, die bestimmten angelegten Gruppen, z.B WG-Mitgliedern, die Möglichkeit bietet, die Ausgaben pro Person zu tracken, was die manuelle Kalkulation am Ende eines Monats erspart. 
 
-\subsection{Entscheidung zur Projektdurchführung}
+\subsection{Zielsetzung}
 Die EinkaufsApp soll die EANs (European Article Number) der Produkte, die Konsumenten bei ihren Einkäufen in den Warenkorb legen und bezahlen, speichern.
 Sie soll es zudem ermöglichen die Preise der Produkte und die damit verbundenen Kosten auf Gruppen oder einzelne Personen aufzuteilen und im Ergebnis eine finanzielle Auswertung aufzeigen.
 Das Ziel der Umsetzung des Projektes ist es, eine App zu entwickeln, die eine Lösung für das in der Problemstellung genannte Problem darstellt. 
@@ -115,40 +117,36 @@ Es werden insgesamt drei Nutzerrollen vorgesehen. Es gibt den Standarduser, der 
 \begin{itemize}
 \item[•]Standarduser (ohne Gruppenzugehörigkeit):
 \begin{itemize}
-\item[o] Einkauf einlesen
-\item[o] Einkauf löschen
-\item[o] Neuen Einkauf starten
-\item[o] Gruppe hinzufügen
-\item[o] Auswertungen ansehen
-\item[o] Passwort ändern
-\item[o] Markt anlegen
-\item[o] Artikel zum Datenbestand hinzufügen
+\item Einkauf einlesen
+\item Einkauf löschen
+\item Neuen Einkauf starten
+\item Gruppe erstellen
+\item Auswertungen abrufen
+\item Passwort ändern
+\item Markt auswählen
+\item Neuen Markt hinzufügen
+\item Neue Artikel zum Datenbestand hinzufügen
 \end{itemize}       
 \end{itemize} 
 
 \begin{itemize}
-\item[•]Gruppen Admin:
+\item[•]Gruppenadmin:
+\newline
+Dieser erbt die Funktionalitäten des Standardusers und kann darüber hinaus noch folgende Funktionen ausführen:
 \begin{itemize}
-\item[o] Einkauf einlesen
-\item[o] Einkauf löschen
-\item[o] Neuen Einkauf starten
-\item[o] Auswertungen ansehen
-\item[o] Gruppe löschen
-\item[o] Einkauf einem Gruppenmitglied zuordnen
-\item[o] Neue Mitglieder hinzufügen
-\item[o] Gruppenadmin festlegen (Einmal Admin, immer Admin)
+\item Gruppe löschen
+\item Einkauf einem Gruppenmitglied zuordnen
+\item Neue Mitglieder hinzufügen
+\item Weitere Gruppenadmins festlegen
 \end{itemize}
 \end{itemize}
 
 \begin{itemize}
 \item[•] Gruppenmitglied:
+\\
+Dieser erbt ebenfalls die Funktionalitäten des Standardusers und kann darüber hinaus noch folgende Funktionen ausführen:
 \begin{itemize}
-\item[o] Einkauf einlesen
-\item[o] Einkauf löschen
-\item[o] Neuen Einkauf starten
-\item[o] Gruppe hinzufügen
-\item[o] Auswertungen ansehen
-\item[o] Einkauf einem Gruppenmitglied zuordnen
+\item Einkauf einem Gruppenmitglied zuordnen
 \end{itemize}
 \end{itemize}
 
@@ -156,23 +154,23 @@ Es werden insgesamt drei Nutzerrollen vorgesehen. Es gibt den Standarduser, der 
 
 Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf, für z. B. eine WG, stattfinden kann:
 \begin{itemize} 
-\item[o] eindeutiger Name des User
-\item[o] eindeutiger Gruppenname der WG
-\item[o] Zuordnung des Users zu der Gruppe
-\item[o] Produktname
-\item[o] Produktmenge
-\item[o] Produktpreis
-\item[o] Märkte (Name und Standort)
-\item[o] Einkaufsdatum
+\item Eindeutiger Name des User
+\item Eindeutiger Gruppenname
+\item Zuordnung des Users zu der Gruppe
+\item Produktname
+\item Produktmenge
+\item Produktpreis
+\item Märkte (Name und Standort)
+\item Einkaufsdatum
 \end{itemize}
  
 \subsubsection*{4. Welche im Szenario nicht genannten Funktionen werden von dem Softwaresystem benötigt, um heutigen Anforderungen zu entsprechen? Nennen Sie beispielhaft fünf Funktionen!}
 \begin{itemize}
-\item[a.] Separater Zugang für Anbieter (Supermärkte) um Angebote einzupflegen, die der Käufer via Push-Notification bekommt
-\item[b.] Der Käufer kann einen Markt bewerten und sich die Bewertung eines Marktes anzeigen lassen.
+\item[a.] Separater Zugang für Anbieter, z. B. Supermärkte um Angebote einzupflegen, die der Käufer via Push-Notification bekommt
+\item[b.] Käufer kann einen Markt bewerten und sich die Bewertung eines Marktes anzeigen lassen
 \item[c.] Via Push-Notification wird ein monatlicher Auswertungsreport erstellt
-\item[d.] Einkaufslistenfunktion (Manuell)
-\item[e.] Der Nutzer kann die EinkaufsApp mit via Social Media, z. B. Twitter oder Facebook, koppeln
+\item[d.] manuelle Einkaufsliste vor Einkauf erstellen
+\item[e.] Nutzer kann die EinkaufsApp über Social Media nutzen, z. B. Twitter oder Facebook
 \end{itemize}
  
  
@@ -186,18 +184,19 @@ Im Beispiel „EinkaufsApp“ wäre ein potentieller Anwendungsfall „Gruppen v
 \subsection{Projektorganisation}
 Die Projektgruppe der EinkaufsApp teilte sich am 02. Oktober 2015 in die Untergruppen Dokumentation, Design und Entwicklung auf.
 Der Projektleiter und in diesem Falle auch Projektmanager wurde ebenso an diesem Tag ernannt.
-Als Projektmanager war er nun für die Team- und Projektorganisation zuständig, wozu das Einhalten der Projekt- und Meilensteinplanung  und das Erfüllen der Projektziele hoch priorisiert wurden.
-Jegliche Unterhaltung basierte auf Mailverkehr oder fand durch Telefonkonferenzen statt. Jede Untergruppe musste sich selbst organisieren und wöchentlich ein Update dem Projektleiter zukommen lassen. Jeden Montag fanden Status-Telekonferenzen statt, wo sich alle Teammitglieder zusammen fanden und über den aktuellen Stand der Untergruppen informierten und über aufgekommene Probleme diskutierten. Die einzelnen Aktivitäten der Untergruppen werden in den Unterpunkten  1.5 - 1.7 noch genau erläutert.
+Als Projektmanager war er nun für die Team- und Projektorganisation zuständig. Dazu gehört unter anderem das Einhalten der Projekt- und Meilensteinplanung und das Erfüllen der Projektziele.
+Jegliche Unterhaltung basierte auf Mailverkehr oder fand durch Telefonkonferenzen statt. Jede Untergruppe musste sich selbst organisieren und wöchentlich ein Update dem Projektleiter zukommen lassen. Jeden Montag fanden Status-Telefonkonferenzen statt, wo sich alle Teammitglieder zusammen fanden und über den aktuellen Stand der Untergruppen informierten und über aufgekommene Probleme diskutierten. 
 
 
 \subsubsection{Kick-Off-Meeting}
-Am 02. Oktober  2015 fand das erste Meeting mit der gesamten Projektgruppe statt. In diesem Kick-Off-Meeting wurden Absprachen über das weitere Vorgehen und die Projektumsetzung der Ideen und Ziele, welche im Kapitel 1.3 ausführlich beschrieben wurden, getroffen. Es wurde über die weitere Kommunikationsform abgestimmt und ebenso fest gelegt, dass wöchentlich Telefonkonferenzen innerhalb der Untergruppen zum weiteren Vorgehen des Projektes statt finden werden, sodass die genannten Projektziele bis zum festgelegten Datum umgesetzt werden können. 
+Am 02. Oktober  2015 fand das erste Meeting mit der gesamten Projektgruppe statt. In diesem Kick-Off-Meeting wurden Absprachen über das weitere Vorgehen und die Projektumsetzung der Ideen und Ziele getroffen. Es wurde über die weitere Kommunikationsform abgestimmt und ebenso festgelegt, dass wöchentlich Telefonkonferenzen innerhalb der Untergruppen zum weiteren Vorgehen des Projektes statt finden werden, sodass die genannten Projektziele bis zum festgelegten Datum umgesetzt werden können. 
 Die Untergruppen einigten sich außerdem auf Tools, die effizient und sinnvoll zur Umsetzung der anstehenden Aktivitäten und zum Einhalten der Projektziele verwendet wurden. 
 \newpage
-
 \subsubsection{Anforderungskatalog}
-In dem hier angeführten Kapitel werden konkrete Ziele für das bevorstehende Projekt formuliert, die auf den oben aufgeführten Funktionen der Applikation basieren. Die einzeln genutzten Tools sind bereits im Pflichtenheft (s. Anhang) genannt worden, werden hier aber den einzelnen Arbeitsgruppen zugewiesen.
-\includegraphics[scale=0.6, origin=l]{Anforderungskatalog.png}
+In dem hier angeführten Kapitel werden konkrete Ziele für das bevorstehende Projekt formuliert, die auf den oben aufgeführten Funktionen der Applikation basieren. Die einzeln genutzten Tools sind bereits im Pflichtenheft genannt worden, werden hier aber den einzelnen Arbeitsgruppen zugewiesen.
+\\
+\\
+\includegraphics[scale=0.59, origin=l]{Anforderungskatalog.png}
 \\
 \footnotesize Tabelle 1: Anforderungsanalyse
 \normalsize
@@ -205,101 +204,158 @@ In dem hier angeführten Kapitel werden konkrete Ziele für das bevorstehende Pr
 \linebreak
 
 \subsubsection{Ist-Analyse}
-Zu Beginn wurden die jeweiligen Kompetenzen der Projektmitarbeiter zum Standpunkt vor der Durchführung des Projektes niedergeschrieben. Davon leiteten sich die Zugehörigkeiten jeder einzelnen Person in die Gruppen ab.\\
-\newline
+Zu Beginn wurden die jeweiligen Kompetenzen der Projektmitarbeiter zum Standpunkt vor der Durchführung des Projektes niedergeschrieben. Davon leiteten sich die Zugehörigkeiten jeder einzelnen Person in die Gruppen ab.
+Zudem hat der Projektleiter bevor das Projekt begonnen hat ein Grobkonzept (ER-Modell) erstellt um die groben Anforderungen der App einzugrenzen. Diese Übersicht dient als Grundlage für die Entwickler, die im Nachhinein noch ausgebaut wird.
+\\
+\\
+\includegraphics[scale=0.6, origin=l]{EER-Modell.png}
+\footnotesize Abbildung 2: ER - Modell
+\normalsize
+\\
+\newpage
+Skilliste der Projektmitglieder:
+\\
+\\
+\includegraphics[scale=0.6, origin=l]{Skillliste.png}
+\normalsize
+%\begin{tabular}{ | l | l | l | }
+%\hline
+%	Name & Skills vor Projektstart & Team dementsprechend \\ \hline
+%	Annika Köstler &  Zwei Jahre Controlling
+% & Annika Köstler wird aufgrund ihrer Kompetenzen im Bereich Protokollierung in der Gruppe Dokumentation arbeiten. \\ \hline
+%	 & Tools Latex &  \\ \hline
+%	 & Grundkenntnisse VBA &  \\ \hline
+%	 & Protokollierung von Meetings  &  \\ \hline
+%	Eric Sorgalla & Grundkenntnisse (Java, C/C++,Javascript,HTML/CSS,VBA,SQL) & Eric Sorgalla wird aufgrund seiner Programmier- und Projektmanagementerfahrung das Team Entwicklung leiten. \\ \hline
+%	 & 1 Jahr Projektleitung ISIPT (nur kaufmännische Verantwortung) &  \\ \hline
+%	Huong Dang & Zwei Jahre Vertrieb & Aufgrund der regelmäßigen Quality Check Aufgaben im Betrieb arbeitet Huong Dang in der Gruppe Dokumentation. \\ \hline
+%	 & Tools LaTex &  \\ \hline
+%	 & Grundlagen VBA &  \\ \hline
+%	Jannis Grohs & Datenbanken (MYSQL, Apex) & Jannis Grohs wird aufgrund seines Know-Hows für das kontinuierliche Quality Check der Entwicklung und Designs zuständig sein. \\ \hline
+%	 & Programmiererfahrung (VBA, JAVA, Apex) &  \\ \hline
+%	 & Projektmanagement &  \\ \hline
+%	 & Design + Marketingtechniken &  \\ \hline
+%	Markus Hube & Zwei Jahre PMO der operational services & Da Markus Hube bereits zum Thema EinkaufsApp Vorarbeit geleistet und Erfahrung im Projektmanagement gesammelt hat, übernimmt er die Position des Projektleiters. \\ \hline
+%	 & Zwei Jahre Programmiererfahrung (VBA) &  \\ \hline
+%	 & Bereits Vorarbeit zum Projekt geleistet &  \\ \hline
+%	Michael Hein & Zwei Jahre Applikations Administration
+% & Durch die langjährige Programmiererfahrung wird Michal Hein bei den Entwicklern tätig sein. \\ \hline
+%	 & Java Erfahrung &  \\ \hline
+%	 & VBA Erfahrung &  \\ \hline
+%	 & Skript Programmierung &  \\ \hline
+%	Moritz Karsten & Zwei Jahre Projektansprechpartner Messe Berlin
+% & Durch seine Erfahrung im Bereich Prozessablauf und Konzeptentwicklung wird Moritz Karsten bei der Gruppe Design arbeiten. \\ \hline
+%	 & Application Management &  \\ \hline
+%	Moritz Schaub &  2 Jahre Co-Product Owner in iOS und Android Messaging Produkt in AGILER Entwicklung & Da Vorkenntnisse im Bereich Prototyperstellung von Apps bestehen, wird Moritz Schaub für das visuelle Design zuständig sein. \\ \hline
+%	 &  Erstellung von komplexen Prototypen mit Proto.io auf Basis von HTML5 &  \\ \hline
+%	 &  Vorbereitung, Durchführung von Design Thinking Workshops, Designstudien &  \\ \hline
+%	Thomas Elias &  gute Kenntnisse in Projektkoordination & Aufgrund seiner guten Kenntnisse im Bereich Projektkoordination wird Thomas Elias in der Dokumentation arbeiten und für die Meilensteinplanung verantwortlich sein. \\ \hline
+%	 &  Anforderungen und Arbeitspakete definieren &  \\ \hline
+%	 &  Erfahrungen Customizing von Dokumenten-Layouts &  \\ \hline
+%	 &  Kommunikation zwischen versch. Abteilungen zum Transparent-Machen der Informationen &  \\ \hline
+%	Victor Fuchs & gute Excelkenntnisse & Victor Fuchs wird in der Gruppe Entwicklung arbeiten und hierbei die benötigten Konzeptdiagramme erstellen \\ \hline
+%	 & gute Kenntnisse RW/C &  \\ \hline
+%	Sebastian Kiepsch & 1 Jahr T-Systems, Expert Services & Sebastian Kiepsch wird wegen seiner ausgeprägten Programmiererfahrung bei der Entwicklung tätig sein. \\ \hline
+%	 & 1 Jahr T-Systems, Digital Division &  \\ \hline
+%	 & Programmiererfahrung (Javascript, HTML, CSS, C\#) &  \\ \hline
+%	 & Frameworks: Node.JS, Express.JS, Ionic &  \\ \hline
+%	Florian Graupeter & Application Management bei T-Systems BTG & Florian Graupeter wird bei den Designern im logischen Design mitwirken. \\ \hline
+%	 & Benutzeradministration im SAP &  \\ \hline
+%\end{tabular}
 
-\begin{tabular}{|m{5cm}|m{5cm}|m{5cm}|}
-\hline
-\textbf {Name} & \textbf {Skills} & \textbf {Teamzuordnung} \\
-\hline
-\centering Annika Köstler & \begin {itemize}
-\item Zwei Jahre Arbeit im Controlling
-\item Tools:LaTex
-\item Grundkenntnisse VBA
-\item Protokollierung von Meetings
-\end{itemize}
-& Annika Köstler wird aufgrund ihrer Kompetenzen im Bereich Protokollierung in der Gruppe Dokumentation arbeiten.
-\\
-\hline
-\centering Eric Sorgalla & 
-\begin {itemize}
-\item Grundkenntnisse (Java, C/C++, Javascript, HTML/CSS, VBA, SQL)
-\item 1 Jahr Projektleitung ISIPT (nur kaufmännische Verantwortung) 
-\end {itemize}
-& Eric Sorgalla wird aufgrund seiner Programmiererfahrung bei den Entwicklern arbeiten
 
-\\
-\hline
-\centering Huong Dang & \begin {itemize}
-\item Zwei Jahre Vertrieb
-\item Tools LaTex
-\item Grundlagen VBA 
-\end {itemize}
-& Aufgrund der regelmäßigen Quality Check Aufgaben im Betrieb arbeitet Huong Dang in der Gruppe Dokumentation.
-
-\\
-\hline
-\centering Jannis Grohs & \begin {itemize}
-\item Datenbanken (MYSQL, Apex)
-\item Programmiererfahrung (VBA, JAVA, Apex)
-\item Projektmanagement 
-\item Design - und Marketingtechniken
-\end {itemize}
-& Jannis Grohs wird aufgrund seines Know-Hows für das kontinuierliche Quality Check der Entwicklung und Designs zuständig sein.
-
-\\
-\hline
-\centering Markus Hube & \begin {itemize}
-\item Zwei Jahre PMO der operational services
-\item Zwei Jahre Programmiererfahrung (VBA)
-\item Bereits Vorarbeit zum Thema EinkaufsApp geleistet 
-\end {itemize}
-& Da Markus Hube bereits zum Thema EinkaufsApp Vorarbeit geleistet und Erfahrung im Projektmanagement gesammelt hat, übernimmt er die Position des Projektleiters.
-
-\\
-\hline
-\centering Michael Hein & \begin {itemize}
-\item Zwei Jahre Applikations Administration
-\item Java Erfahrung
-\item VBA Erfahrung
-\item Skript Programmierung
-\end {itemize}
-& Durch Michael Heins langjähriger Programmiererfahrung wird er bei den Entwicklern tätig sein.
-
-\\
-\hline
-\centering Moritz Karsten & \begin {itemize}
-\item  Zwei Jahre Projektansprechpartner Messe Berlin
-\item  Application Management
-\end {itemize}
-& Durch seine Erfahrung im Bereich Prozessablauf und Konzeptentwicklung wird Moritz Karsten bei der Gruppe Design arbeiten.
-\\
-\hline
-\centering Moritz Schaub & \begin {itemize}
-\item  Zwei Jahre Co-Product Owner in iOS und Android Messaging Produkt in AGILER Entwicklung (internationales, crossfunktionales Team)
-\item  Erstellung von komplexen Prototypen mit Proto.io auf Basis von HTML5
-\item Durchführung von Design Thinking Workshops
-\end {itemize}
-& Da Moritz Schaub Vorkenntnisse im Bereich Prototyperstellung von Apps hat, wird er für das visuelle Design zuständig sein.
-
-\\
-\hline
-\centering Thomas Elias & \begin {itemize}
-\item gute Kenntnisse in Projektkoordination
-\item Anforderungen und Arbeitspakete definieren
-\item Erfahrungen Customizing von Dokumenten-Layouts
-\item Kommunikation zwischen versch. Abteilungen zum Transparent-Machen der Informationen
-\end {itemize}
-& Aufgrund seiner guten Kenntnisse im Bereich Projektkoordination wird Thomas Elias in der Dokumentation arbeiten und für die Meilensteinplanung verantwortlich sein.
-
-\\
-\hline
-\centering Victor Fuchs & \begin {itemize}
-\item  gute Excelkenntnisse
-\item  gute Kenntnisse im Rechnungswesen und Controlling
-\end {itemize}
-& Victor Fuchs wird in der Gruppe Entwicklung arbeiten und hierbei die benötigten Konzeptdiagramme erstellen.
-\end{tabular}
+%\begin{tabular}{|m{5cm}|m{5cm}|m{5cm}|}
+%\hline
+%\textbf {Name} & \textbf {Skills} & \textbf {Teamzuordnung} \\
+%\hline
+%\centering Annika Köstler & \begin {itemize}
+%\item Zwei Jahre Arbeit im Controlling
+%\item Tools:LaTex
+%\item Grundkenntnisse VBA
+%\item Protokollierung von Meetings
+%\end{itemize}
+%& Annika Köstler wird aufgrund ihrer Kompetenzen im Bereich Protokollierung in der Gruppe Dokumentation arbeiten.
+%\\
+%\hline
+%\centering Eric Sorgalla & 
+%\begin {itemize}
+%\item Grundkenntnisse (Java, C/C++, Javascript, HTML/CSS, VBA, SQL)
+%\item 1 Jahr Projektleitung ISIPT (nur kaufmännische Verantwortung) 
+%\end {itemize}
+%& Eric Sorgalla wird aufgrund seiner Programmiererfahrung bei den Entwicklern arbeiten
+%
+%\\
+%\hline
+%\centering Huong Dang & \begin {itemize}
+%\item Zwei Jahre Vertrieb
+%\item Tools LaTex
+%\item Grundlagen VBA 
+%\end {itemize}
+%& Aufgrund der regelmäßigen Quality Check Aufgaben im Betrieb arbeitet Huong Dang in der Gruppe Dokumentation.
+%
+%\\
+%\hline
+%\centering Jannis Grohs & \begin {itemize}
+%\item Datenbanken (MYSQL, Apex)
+%\item Programmiererfahrung (VBA, JAVA, Apex)
+%\item Projektmanagement 
+%\item Design - und Marketingtechniken
+%\end {itemize}
+%& Jannis Grohs wird aufgrund seines Know-Hows für das kontinuierliche Quality Check der Entwicklung und Designs zuständig sein.
+%
+%\\
+%\hline
+%\centering Markus Hube & \begin {itemize}
+%\item Zwei Jahre PMO der operational services
+%\item Zwei Jahre Programmiererfahrung (VBA)
+%\item Bereits Vorarbeit zum Thema EinkaufsApp geleistet 
+%\end {itemize}
+%& Da Markus Hube bereits zum Thema EinkaufsApp Vorarbeit geleistet und Erfahrung im Projektmanagement gesammelt hat, übernimmt er die Position des Projektleiters.
+%
+%\\
+%\hline
+%\centering Michael Hein & \begin {itemize}
+%\item Zwei Jahre Applikations Administration
+%\item Java Erfahrung
+%\item VBA Erfahrung
+%\item Skript Programmierung
+%\end {itemize}
+%& Durch Michael Heins langjähriger Programmiererfahrung wird er bei den Entwicklern tätig sein.
+%
+%\\
+%\hline
+%\centering Moritz Karsten & \begin {itemize}
+%\item  Zwei Jahre Projektansprechpartner Messe Berlin
+%\item  Application Management
+%\end {itemize}
+%& Durch seine Erfahrung im Bereich Prozessablauf und Konzeptentwicklung wird Moritz Karsten bei der Gruppe Design arbeiten.
+%\\
+%\hline
+%\centering Moritz Schaub & \begin {itemize}
+%\item  Zwei Jahre Co-Product Owner in iOS und Android Messaging Produkt in AGILER Entwicklung (internationales, crossfunktionales Team)
+%\item  Erstellung von komplexen Prototypen mit Proto.io auf Basis von HTML5
+%\item Durchführung von Design Thinking Workshops
+%\end {itemize}
+%& Da Moritz Schaub Vorkenntnisse im Bereich Prototyperstellung von Apps hat, wird er für das visuelle Design zuständig sein.
+%
+%\\
+%\hline
+%\centering Thomas Elias & \begin {itemize}
+%\item gute Kenntnisse in Projektkoordination
+%\item Anforderungen und Arbeitspakete definieren
+%\item Erfahrungen Customizing von Dokumenten-Layouts
+%\item Kommunikation zwischen versch. Abteilungen zum Transparent-Machen der Informationen
+%\end {itemize}
+%& Aufgrund seiner guten Kenntnisse im Bereich Projektkoordination wird Thomas Elias in der Dokumentation arbeiten und für die Meilensteinplanung verantwortlich sein.
+%
+%\\
+%\hline
+%\centering Victor Fuchs & \begin {itemize}
+%\item  gute Excelkenntnisse
+%\item  gute Kenntnisse im Rechnungswesen und Controlling
+%\end {itemize}
+%& Victor Fuchs wird in der Gruppe Entwicklung arbeiten und hierbei die benötigten Konzeptdiagramme erstellen.
+%\end{tabular}
 \footnotesize Tabelle 2: Skill-Liste
 \normalsize
 \\
@@ -307,9 +363,7 @@ Zu Beginn wurden die jeweiligen Kompetenzen der Projektmitarbeiter zum Standpunk
 \newline
 \newline
 
-Insgesamt gibt es demnach drei Designer, fünf Entwickler und drei Gruppenmitglieder, die für die Dokumentation verantwortlich sind. Zudem sind zwei Gruppenmitglieder für das stetige Quality Check bei den Entwicklern und Designern zuständig.
-
-Der Projektleiter Markus Hube hat sich bevor das Projekt gestartet ist ein Grobkonzept (ER-Modell) erstellt um die groben Anforderungen der App einzugrenzen. Diese Übersicht dient als Grundlage für die Entwickler, die im Nachhinein noch ausgebaut wird.
+Insgesamt gibt es demnach drei Designer, fünf Entwickler und drei Gruppenmitglieder, die für die Dokumentation verantwortlich sind. Das stetige Quality Check wird parallel vom Projektteam durchgeführt.
 \newpage
 
 \subsubsection{Arbeitsplanung}
@@ -327,42 +381,6 @@ Zu Beginn der Projektorganisation wurde von der Dokumentation ein grober Plan be
 \\
 \footnotesize Abbildung 2: Meilensteine
 \normalsize
-\\
-\linebreak
-\subsubsection*{Klassen-Diagramm}
-\includegraphics[scale=0.6, origin=l]{Klassendiagramm.png}
-\\
-\footnotesize Abbildung 3: Klassendiagramm
-\normalsize
-\\
-\linebreak
-\subsubsection*{Aktivitäts-Diagramme}
-Aktivitätsdiagramm „Einkauf einlesen“ 
-\\
-\includegraphics[scale=0.6, origin=l]{Aktivitaets-Diagramm.png}
-\\
-\footnotesize Abbildung 4: Aktivitätsdiagramm-Einkauf
-\normalsize
-\\
-\newpage
-Aktivitätsdiagramm „Ausgabeverlauf anzeigen“
-\\
-\includegraphics[scale=0.6, origin=l]{Aktivitaets-Diagramm-Ausgabenverlauf.png}
-\\
-\footnotesize Abbildung 5: Aktivitätsdiagramm-Ausgabenverlauf
-\normalsize
-\\
-\linebreak
-\subsubsection*{Zustandsdiagramm}
-Zustands-Diagramm „Ausgabenverlauf anzeigen“
-\\
-\includegraphics[scale=0.6, origin=l]{Zustandsdiagramm.png}
-\\
-\footnotesize Abbildung 6: Zustandsdiagramm
-\normalsize
-\\
-\linebreak
-
 
 
 \subsubsection{Scrum}
@@ -379,7 +397,13 @@ Das vom Nutzer festgelegte Passwort wird als Einweg-Hash in der Datenbank gespei
 \section{Durchführungsphase}
 In diesem Abschnitt wird die Funktionsweise der EinkaufsApp beschrieben. Dabei werden die einzelnen Hauptprozesse einzeln vorgestellt und deren technische Umsetzung erläutert. Die Hauptprozesse sind der Login und die Registrierung des Nutzers, der Einkaufsprozess, die Nutzerverwaltung und die Auswertung. 
 \subsection*{Einleitung}
-\newpage
+Die genannten Hauptprozesse stehen, wie in dem folgenden Diagramm zu sehen ist, in Relation. Dabei wurden die jeweiligen Views als einzelne Klassen dargestellt:
+\\
+\includegraphics[scale=0.4, origin=l]{Klassen-UML.jpeg}
+\\
+\footnotesize Abbildung 3: Klassendiagramm
+\normalsize
+
 \subsection{Registrierung}
 Bei der EinkaufsApp muss sich jeder Nutzer mittels einer Email-Adresse und einem Kennwort bei der App registrieren.
 Eine Registrierung ist bei dieser App unentbehrlich, da für jeden Nutzer ein Profil angelegt wird und er mit diesem Profil seine Produkte einscannen kann und seine Finanzen im Blick behalten kann.
@@ -420,9 +444,12 @@ Bevor der Einkaufsprozess beginnt muss der Nutzer einen Markt auswählen, welche
 %\includegraphics[scale=0.6, origin=l]{035 Markt_Aufnahme.jpeg}
 
 \subsection{Einkauf}
-Gruppeneinkauf vereinfacht, Einkauf fortsetzen eingebaut und Passwort rücksetzen
-Gruppenverwaltung wurde zu Verwaltung allgemein:  Verwaltung von Gruppen UND KONTAKTE 
-Kontaktverwaltung wird noch erstellt"
+Aktivitätsdiagramm „Einkauf einlesen“ 
+\\
+\includegraphics[scale=0.6, origin=l]{Aktivitaets-Diagramm.png}
+\\
+\footnotesize Abbildung 4: Aktivitätsdiagramm-Einkauf
+\normalsize
 \subsubsection*{Design}
 \subsubsection*{Entwicklung}
 \subsubsection*{Dokumentation} --> Probleme beschreiben
@@ -442,24 +469,40 @@ Die Gruppenverwaltung wird in zwei Teile unterteilt. Der Erste beschreibt die Gr
 \newpage
 
 \subsection{Auswertung}
-Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Dabei hat er unterschiedliche Möglichkeiten.  Es gibt die zeitliche Eingrenzung, eine Artikeleingrenzung und eine Gruppenmitgliedereingrenzung, bei der alle vergangenen Einkäufe von bestimmten Gruppen zusammengefasst werden.
+Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Dabei hat er unterschiedliche Möglichkeiten. Es gibt die zeitliche Eingrenzung, eine Artikeleingrenzung und eine Gruppenmitgliedereingrenzung, bei der alle vergangenen Einkäufe von bestimmten Gruppen zusammengefasst werden.
+\\
+\\
+\includegraphics[scale=0.6, origin=l]{Aktivitaets-Diagramm-Ausgabenverlauf.png}
+\\
+\footnotesize Abbildung 5: Aktivitätsdiagramm-Ausgabenverlauf
+\normalsize
+\\
+\linebreak
+\subsubsection*{Zustandsdiagramm}
+ „Ausgabenverlauf anzeigen“
+\\
+\includegraphics[scale=0.9, origin=l]{Zustandsdiagramm.png}
+\\
+\footnotesize Abbildung 6: Zustandsdiagramm
+\normalsize
 \subsubsection*{Design}
-\includegraphics[scale=0.6, origin=l]{060 Auswertungen.jpeg}
+\includegraphics[scale=0.5, origin=l]{060 Auswertungen.jpeg}
+\\
+\footnotesize Abbildung 6: Auswertung
+\normalsize
+\\
 \subsubsection*{Entwicklung}
-
-\subsubsection*{Dokumentation} --> Probleme beschreiben
+Aufgrund des Zeitmangels konnte lediglich ein Konzept für den Auswertungsteil der Applikation erstellt werden. Die richtige Implementierung wurde nicht umgesetzt.
 \newpage
 
 \section{Problemzusammenfassung}
 %Hier wird das Ergebnis beschrieben.
 \subsection{Usability der App}
+Zusammengefasst kann die Version 1.0 der EinkaufsApp Nutzer registrieren und anmelden, sowie den Einkaufsprozess durchführen. Außerdem können Gruppen erstellt und verwaltet werden. Der Auswertungsprozess wurde in Anbetracht der Zeit nicht umgesetzt. Hinsichtlich des optischen Designs gibt es kein Corporate Design - Corporate Identity, um die Benutzerfreundlichkeit dennoch zu gewährleisten, implementierten die Entwickler ein schlichtes Interface.
 \newpage
 \subsection{Organisation Projektmanagement}
-Allem voran muss erwähnt werden, dass dieses Projekt enorm zeitkritisch war und daher die Planungsphase nahe zu vollständig übersprungenen werden musste. Ebenfalls sind Design und Implementation stark parallelisiert abgelaufen. Um innerhalb von zwei Monaten ein lauffähiges und qualitätsgesichertes Software Produkt zu erstellen bedarf es eines überschaubaren und für alle Mitglieder transparenten Projektes, aber allem voran auch ein gezielt auf die Herausforderungen zugeschnittenes Team, welches die benötigten Skills und das Know How bereits mitbringt. Ebenfalls ist es sehr wertvoll, wenn die Beteiligten bereits zuvor zusammen gearbeitet haben und untereinander mit Tools und Konventionen vertraut sind oder zumindest in der Lage sind unter formalen Bedingungen zu arbeiten. Da naturgemäß in unserem Umfeld diese Voraussetzungen nur zu sehr geringen Teilen erfüllt werden können, ist auch ein sehr kritischer Projektablauf unausweichlich. Um diesen Schwierigkeiten entgegen zu wirken, wäre eine klarer Abgrenzung von Aufgabenbereichen
-und Skills und auch das Vertrauen in diese Entscheidungen notwendig
-gewesen. Unglücklicherweise fehlte auch hier wieder die bereits erwähnte Planungsphase, die aber auch aus Zeit- und Lokalitätsgründen nicht umsetzbar war. Im weiteren Verlauf wurde dann eine zusätzliche
-Organisationseinheit zwischen dem Gesamtprojekt und den einzelnen
-Entwicklern eingefügt, um einen besseren Überblick zu gewährleisten und schneller Entscheidungen treffen zu können. An dieser Stelle lässt sich auch die obligatorische Diffizilität, die aus den unterschiedlichen Engagements entsteht erwähnen. Nach den vorangegangenen Ausführungen zu den kritischen Komponenten des Projektes sollte selbstredend sein, dass es ohne überdurchschnittlichen Einsatz jedes einzelnen Beteiligten
+Allem voran muss erwähnt werden, dass dieses Projekt enorm zeitkritisch war und daher die Planungsphase nahe zu vollständig übersprungen werden musste. Ebenfalls sind Design und Implementation stark parallelisiert abgelaufen. Um innerhalb von zwei Monaten ein lauffähiges und qualitätsgesichertes Software-Produkt zu erstellen, bedarf es eines überschaubaren und für alle Mitglieder transparenten Projektes, aber allem voran auch ein, gezielt auf die Herausforderungen, zugeschnittenes Team, welches die benötigten Skills und das Know How bereits mitbringt. Ebenfalls ist es sehr wertvoll, wenn die Beteiligten bereits zuvor zusammen gearbeitet haben und untereinander mit Tools und Konventionen vertraut sind, oder zumindest in der Lage sind unter formalen Bedingungen zu arbeiten. Da naturgemäß in unserem Umfeld diese Voraussetzungen nur zu sehr geringen Teilen erfüllt werden können, ist auch ein sehr kritischer Projektablauf unausweichlich. Um diesen Schwierigkeiten entgegen zu wirken, wäre eine klarer Abgrenzung von Aufgabenbereichen
+und Skills und auch das Vertrauen in diese Entscheidungen notwendig gewesen. Unglücklicherweise fehlte auch hier wieder die bereits erwähnte Planungsphase, die aber auch aus Zeit- und Lokalitätsgründen nicht umsetzbar war. Im weiteren Verlauf wurde dann eine zusätzliche Organisationseinheit zwischen dem Gesamtprojekt und den einzelnen Entwicklern eingefügt, um einen besseren Überblick zu gewährleisten und schneller Entscheidungen treffen zu können. An dieser Stelle lässt sich auch die obligatorische Diffizilität, die aus den unterschiedlichen Engagements entsteht erwähnen. Nach den vorangegangenen Ausführungen zu den kritischen Komponenten des Projektes sollte selbstredend sein, dass es ohne überdurchschnittlichen Einsatz jedes einzelnen Beteiligten
 unmöglich zu 100\% in gegebener Zeit mit derartig begrenzten Ressourcen abgeschlossen werden kann. Nun sind naturgemäß die intrinsischen Beweggründe, sowie die Möglichkeiten der einzelnen Personen verschieden. Somit verbleibt die Aufgabe aller Beteiligten im Rahmen der gegebenen
 Bedingungen das bestmöglich Ergebnis zu erzielen.
 \newpage
