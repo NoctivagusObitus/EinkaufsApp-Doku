@@ -8,6 +8,7 @@
 \usepackage{array}
 \usepackage{longtable}
 \usepackage{graphicx}
+\usepackage{pdfpages}
 \begin{document}
 \title{Software Engineering Projekt}
 \author{Gruppe Einkaufsapp}
@@ -195,11 +196,12 @@ Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf,
 \subsubsection*{5. Was ist ein Anwendungsfall und welche Beziehungen zwischen Anwendungsfällen beschreibt der Standard?}
 Ein Anwendungsfall ist die Beschreibung eines Szenarios innerhalb einer gesamten Anwendung. 
 Dabei beginnt in der Regel der Prozess mit einem Startzustand („Precondition“), dem Akteur, der Abwicklung („Main Flow“), und dem Zielzustand. 
-Je nach Anwendungsfall bzw. Use Case werden die einzelnen Parameter unterschiedlich angegeben.  Es ergeben sich die zwei verschiedenen Beziehungen Include und Extend zwischen Anwendungsfällen.
-Die Include-Beziehung im Anwendungsdiagramm bei 2 Anwendungsfällen beschreibt, dass ein Anwendungsfall den zweiten Anwendungsfall beinhaltet. Im Gegensattz dazu beschreibt die Extend-Beziehung, dass ein Anwendungsfall den anderen erweitert.
+Je nach Anwendungsfall bzw. Use Case werden die einzelnen Parameter unterschiedlich angegeben. Es ergeben sich die zwei verschiedenen Beziehungen "Include" und "Extend" zwischen Anwendungsfällen.
+Die Include-Beziehung im Anwendungsdiagramm beschreibt bei zwei Anwendungsfällen, dass der erste Anwendungsfall den zweiten beinhaltet. Im Gegensattz dazu beschreibt die Extend-Beziehung, dass ein Anwendungsfall den anderen erweitert.
 \\
 Als Beispiel stehen folgende Anwendungsfälle in der EinkaufsApp in Beziehung:
 \\
+%MH: ich denke hier kommt dann noch was, oder?
 \\
 Include-Beziehung:
 \\
@@ -208,19 +210,25 @@ Extend-Beziehung:
 \\
 \newpage
 \subsection{Projektorganisation}
+%MH: ich weis ja nicht wer von euch welchen teil geschrieben hat, aber ich würde mich inhaltlich gern nochmal über diese Absatz unterhalten
 Die Projektgruppe der EinkaufsApp teilte sich am 02. Oktober 2015 in die Untergruppen Dokumentation, Design und Entwicklung auf.
 Der Projektleiter und in diesem Falle auch Projektmanager wurde ebenso an diesem Tag ernannt.
 Als Projektmanager war er nun für die Team- und Projektorganisation zuständig. Dazu gehört unter anderem das Einhalten der Projekt- und Meilensteinplanung und das Erfüllen der Projektziele.
 Jegliche Unterhaltung basierte auf Mailverkehr oder fand durch Telefonkonferenzen statt. Jede Untergruppe musste sich selbst organisieren und wöchentlich ein Update dem Projektleiter zukommen lassen. Jeden Montag fanden Status-Telefonkonferenzen statt, wo sich alle Teammitglieder zusammen fanden und über den aktuellen Stand der Untergruppen informierten und über aufgekommene Probleme diskutierten. 
 \subsubsection{Kick-Off-Meeting}
+%MH: nur in einem Absatz "02. Oktober  2015" schreiben
+%MH: außerdem auch bitte nochmal rücksprache mit mir halten
 Am 02. Oktober  2015 fand das erste Meeting mit der gesamten Projektgruppe statt. In diesem Kick-Off-Meeting wurden Absprachen über das weitere Vorgehen und die Projektumsetzung der Ideen und Ziele getroffen. Es wurde über die weitere Kommunikationsform abgestimmt und ebenso festgelegt, dass wöchentlich Telefonkonferenzen innerhalb der Untergruppen zum weiteren Vorgehen des Projektes statt finden werden, sodass die genannten Projektziele bis zum festgelegten Datum umgesetzt werden können. 
 Die Untergruppen einigten sich außerdem auf Tools, die effizient und sinnvoll zur Umsetzung der anstehenden Aktivitäten und zum Einhalten der Projektziele verwendet wurden. 
 \newpage
 \subsubsection{Anforderungskatalog}
-In dem hier angeführten Kapitel werden konkrete Ziele für das bevorstehende Projekt formuliert, die auf den oben aufgeführten Funktionen der Applikation basieren.
-Die einzeln genutzten Tools sind bereits im Pflichtenheft, welches im Anhang zu finden ist, genannt worden, werden hier aber den einzelnen Arbeitsgruppen zugewiesen.
+%MH: wenn die Doku parallel zur Implementation entstanden ist können hier nicht "ziele für das Projekt" definiert werden (das wäre wieder Planungsphase)
+In dem hier angeführten Kapitel werden konkrete Ziele für das bevorstehende Projekt formuliert, die auf den zuvor aufgeführten Funktionen der Applikation basieren.
+Die einzeln genutzten Tools die im Pflichtenheft, welches sich im Anhang befindet, festgehalten sind, werden hier den einzelnen Arbeitsgruppen zugewiesen.
 \\
 \\
+%MH: in dem Bild sollte bei "Umgesetzt von" sollte eher stehen "Entwicklung" oder wahlweise von den "Entwicklern"
+%MH: insgesammt bitte nochmal mit mir über die Organisation der Tabelle sprechen! und wenn möglich könnte es geminhin sinvoll sein PDFs einzubinden anstatt von bildern
 \includegraphics[scale=0.59, origin=l]{Anforderungskatalog.png}
 \\
 \footnotesize Tabelle 1: Anforderungsanalyse
@@ -229,20 +237,23 @@ Die einzeln genutzten Tools sind bereits im Pflichtenheft, welches im Anhang zu 
 \linebreak
 
 \subsubsection{Ist-Analyse}
+%MH: für eine schlüssige Doku würde hier die Frage aufkommen "warum hab ich das denn vor dem Projekt gemacht???" - außerdem geht es nicht drum mich selbst zu beweiräuchern 
+%MH: es sollte mehr in die Richtung gehen "eien Grundanforderung an den Datenbestand ging bereits aus der aufgabe hervor" oder "wurde bereits zu beginn in das Projekt überneommen" - gerne nochmal an mich herantreten
 Der Projektleiter hat vor Beginn des Projektes ein Grobkonzept, mittels ER-Modell erstellt, um die groben Anforderungen an die EinkaufsApp einzugrenzen. 
 Dieses Konzept dient als Grundlage für das Entwicklerteam und wird während der Vorbetrachtung und Durchführungsphase noch ausgebaut.
 \\
 \\
-\includegraphics[scale=0.6,origin=l]{EER-Modell.png}
+\includegraphics[scale=0.6,origin=l]{EER-Modell.PNG}
 \\
 \footnotesize Abbildung 2: ER - Modell
 \normalsize
 \\
 \\
-Zu Beginn wurden die jeweiligen Kompetenzen der Projektmitarbeiter zum Standpunkt vor der Durchführung des Projektes niedergeschrieben. 
-Aus diesen leiteten sich die Zugehörigkeiten jeder einzelnen Person in die Projektgruppen Dokumentation, Entwicklung und Design ab.
+Zu Beginn wurden die jeweiligen Kompetenzen der Projektmitarbeiter vor der Durchführung des Projektes aufgenommen. 
+Aus diesen leiteten sich die Zugehörigkeiten jeder einzelnen Person in die Projektgruppen Dokumentation, Entwicklung und Design ab. %MH: sehr gefährliche formulierung - habt ihr das gegengeprüft?
 \\
 \\
+%MH: gute tabelle - bitte auch mit mir zusammen noch einmal etwas optisch anpassen
 \includegraphics[scale=0.6, origin=l]{Skillliste.png}
 \normalsize
 
