@@ -90,8 +90,11 @@ Die EinkaufsApp dient dem Nutzer dazu sein alltägliches Einkaufserlebnisse, hin
 \\
 Gleichzeitig soll sie als kleines Nachschlagewerk fungieren, welches Überblick über Preis und Angebot bestimmter Produkte bietet.
 Der alltägliche Einkauf wird hinsichtlich der Nachverfolgung von Finanzen und Produktauswahl, durch die Funktionen der EinkaufsApp stark erleichtert.
+
 \\
 %MH: bitte mit dem Begriff "Plaung" vorsichtig sein weil er auf "Planungsphase" schließen lässt und ich die in meinem schribs ja ausgeschlossen habe
+%HD: Markus bitte einfach ändern, wenn es dir nicht passt. Wir haben keine Zeit da noch viel zu diskutieren. Es muss fertig werden. Wir sind so ziemlich mit allen Änderungsvorschlägen zufrieden!
+%HD: EInkaufsliste generieren in ZUkunft -> Sparpotentiale von 40 % Zeitpotential
 Die Dokumentation umfasst die Phasen der Vorbetrachtung, Planung und Entwicklung der EinkaufsApp mit den jeweiligen Ideen, Tasks und angefertigten Dokumenten und dient als Reflexion aller Projektmitglieder über das gesamte Projekt.
 Zudem wurde eine Einteilung des Projektes in Vorbetrachtung, Durchführungs-
 phase, Problembeschreibung und Abschlussphase als angemessen empfunden und in diesem Dokument angewandt.
@@ -117,8 +120,11 @@ Die Problembeschreibung kann aus dem Pflichtenheft im Anhang entnommen werden.
 %MH - 04.12.15
 Die EinkaufsApp soll die EANs (European Article Number), beziehungsweise die neuere GTIN (Global Trade Item Number), der Produkte, die von den Konsumenten gekauft werden, zusammen mit dem Datum, dem Einkaufsort und ihren Kosten speichern.
 Sie soll es zudem ermöglichen die Preise der Produkte und die damit verbundenen Kosten auf Gruppen oder einzelne Personen zu verteilen und im Ergebnis eine finanzielle Auswertung aufzeigen.
-Das Ziel des Projektes ist es, eine App zu entwickeln, die eine Lösung für die unter 1.1 dargestellten Herausforderungen bereitzustellen. 
-Die Vielfalt an Produkten wird vereinfacht dargestellt, der Konsument sieht auf einen Blick eine Zusammenfassung seiner Ausgaben, sowie den Finasstatus innerhalb der Gruppen in denen er Mitglied ist. Die Nutzer erhalten eine automatisierte Auswertung über Einkaufsverläufe, entstandene Kosten und Artikel, welche auf Anfrage bestimmter, anderer Personen erworben wurden.
+Das Ziel des Projektes ist es, eine App zu entwickeln, die eine Lösung für die unter 1.1 dargestellten Herausforderungen bereitstellt. 
+Die Vielfalt an Produkten wird vereinfacht dargestellt, der Konsument sieht auf einen Blick eine Zusammenfassung seiner Ausgaben, sowie den Finanzstatus innerhalb der Gruppen in denen er Mitglied ist. Die Nutzer erhalten eine automatisierte Auswertung über Einkaufsverläufe, entstandene Kosten und Artikel, welche auf Anfrage bestimmter, anderer Personen erworben wurden.
+%HD: Einwurf von Eric. Ich hab mal versucht was zu schreiben!
+\\
+Zum jetzigen Zeitpunkt soll die zu entwickelnde Applikation vorerst als Trackingtool dienen. Funktioniert dieses einwandfrei so kann eine weitere Funktionalität implementiert werden nämlich der automatischen Einkaufslistengenerierung. Diese soll nun vergangene Einkäufe auswerten und anhand dieser Einkaufslisten erstellen, die die größtmöglichen Sparpotentiale für den Nutzer bieten. Hier kann dieser vorab festlegen, in wie vielen Märkten er höchstens einkaufen möchte und wie viel Budget er für den jetzigen Einkauf zur Verfügung hat. Dadurch spart sich der Nutzer die manuelle Einkaufsanalyse und somit auch die dafür benötigte Zeit.
 
 \newpage
 \subsection{Vorbereitende Fragen}
@@ -128,11 +134,13 @@ Des Weiteren hilft diese App jedem, der für Gruppen, z. B. Mitgliedern einer Wo
 Die App richtet sich auch an Menschen, die mit Hilfe der Auswertung mögliche Sparpotenziale erkennen und wahrnehmen möchten. 
 \subsubsection*{2. Welcher Benutzer benötigt welche Funktionen?}
 %MH: ist das wirklich mit der Frage gemeint??? ich könnte mir da auch so etwas vortellen wie "was braucht ein kind und was braucht ein erwachsener?"
+%HD: Wir lassen das jetzt so. Nimmt nur Zeit weg. 
 Insgesamt werden in der EinkaufsApp drei verschiedene Nutzerrollen vorgesehen:
 Einerseits existiert der Standarduser, welche Rolle jeder Nutzer einnimmt nachdem er sich angemeldet hat.
-Wenn dieser wiederum in der EinkaufsApp eine Gruppe erstellt kann er zusätzlich die Rolle des Gruppenadminstratos einnehmen und kann weitere Gruppenmitglieder hinzufügen.
+Wenn dieser wiederum in der EinkaufsApp eine Gruppe erstellt kann er zusätzlich die Rolle des Gruppenadminstrators einnehmen und kann weitere Gruppenmitglieder hinzufügen.
 Somit bestehen die Rollen Standarduser, Gruppenadmin und Gruppenmitglied, welche im Folgenden genauer differenziert werden:
 %MH: logikfrage - ist der Admin auch ein gruppenmitglied???
+%HD: Wahrscheinlich ja. Ich schreibe das als Kommentar unter Gruppenmitglieder
 \begin{itemize}
 \item[•]Standarduser (ohne Gruppenzugehörigkeit):
 \begin{itemize}
@@ -167,12 +175,14 @@ Dieser erbt ebenfalls die Funktionalitäten des Standardusers und kann darüber 
 \begin{itemize}
 \item Einkauf einem Gruppenmitglied zuordnen
 \end{itemize}
+Hinweis: Ein Gruppenadmin ist gleichzeitig auch ein Gruppenmitglied.
 \end{itemize}
 
 \subsubsection*{3. Welche Informationen müssen zu einer Person, dem Benutzer, gespeichert werden, um einen Geschäftsprozess, z. B. das für eine WG einkaufen, mit dem System abzuwickeln?}
 Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf, für z. B. eine WG, stattfinden kann:
 \begin{itemize} 
 \item Eindeutiger Name des User in der Gruppe %MH: bei so etwas bitte genau sein - der Username ist nicht zwingend eindeutig (die frage ist hier wie weit die Entwckilung vorangeschritten ist wenn das thema betrachtet werden soll - gegebenefalls das Datenmodell hinzuziehen)
+%HD: Bitte ändern! gilt auch für den Rest der Frage
 \item Eindeutiger Gruppenname %MH: ähnliche aussage wie in der zeile darüber <- soll ja nicht heißen das es so falsch ist
 \item Zuordnung des Users zu der Gruppe %MH: datenhaltungstechnisch werden die beiden sachen hier erst eindeutig
 \item Produktname
@@ -189,7 +199,7 @@ Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf,
 \item[c.] Anzeigen der Bewertung eines Marktes für alle Nutzer
 \item[d.] Erstellen eines monatlichen Auswertungsreports via Push-Notification 
 \item[e.] Erstellen manueller Einkaufslisten vor dem Einkauf 
-\item[f.] Nutung der EinkaufsApp über Social Media (z. B. Twitter oder Facebook)
+\item[f.] Nutzung der EinkaufsApp über Social Media (z. B. Twitter oder Facebook)
 \end{itemize}
  
  
@@ -202,11 +212,14 @@ Die Include-Beziehung im Anwendungsdiagramm beschreibt bei zwei Anwendungsfälle
 Als Beispiel stehen folgende Anwendungsfälle in der EinkaufsApp in Beziehung:
 \\
 %MH: ich denke hier kommt dann noch was, oder?
+%HD: ja
 \\
 Include-Beziehung:
+Registrierung -> include -> Passworteingabe überprüfen
 \\
 \\
 Extend-Beziehung:
+Einkaufsprozess <- extends <- Marktbestimmung
 \\
 \newpage
 \subsection{Projektorganisation}
@@ -398,9 +411,10 @@ In der EinkaufsApp wurden folgende Maßnahmen getroffen um dies gewährleisten z
 %MH: was ist der Inhalt dieser Aussage?
 %2. In Verbindung mit dem Nutzernamen wird sichergestellt, dass es sich auch um den richtigen Nutzer handelt.
 \\
- 3. Die Verwendung des SSL-Protokolls (Secure Socket Layer) sorgt für  den Aufbau eines geschützten Kanals vor der eigentlichen HTTP-Kommunikation, so dass die Nutzerdaten für Dritte nicht zugängig sind. 
- Dies bedeutet: Die Nutzerdaten werden in einem standart Web-Formular eingetragen (Login-Screen) und mittels POST-Request an den Server gesendet. 
- Da der TCP-Kanal verschlüsselt ist, haben Dritte keinen Zugriff auf die vom Nutzer eingegebenen Daten innerhalb des POST-Requests, was wiederum die gesicherte Übertragung von Nutzernamen und Passwort bewirkt.
+3. Die Verwendung des SSL-Protokolls (Secure Socket Layer) sorgt für  den Aufbau eines geschützten Kanals vor der eigentlichen HTTP-Kommunikation, so dass die Nutzerdaten für Dritte nicht zugängig sind. 
+Dies bedeutet: Die Nutzerdaten werden in einem standart Web-Formular eingetragen (Login-Screen) und mittels POST-Request an den Server gesendet. 
+Da der TCP-Kanal verschlüsselt ist, haben Dritte keinen Zugriff auf die vom Nutzer eingegebenen Daten innerhalb des POST-Requests, was wiederum die gesicherte Übertragung von Nutzernamen und Passwort bewirkt.
+
 \newpage
 \section{Durchführungsphase}
 In diesem Abschnitt wird die Funktionsweise der EinkaufsApp beschrieben. Dabei werden die einzelnen Hauptprozesse separat vorgestellt und deren technische Umsetzung erläutert. Die Hauptprozesse sind unterteilt in den Login und die Registrierung des Nutzers, den Einkaufsprozess, die Nutzerverwaltung und die Auswertung. 
@@ -558,7 +572,26 @@ nicht umgesetzte Ideen --> siehe Excelliste
 \newpage
 \section*{Anhang}
 \addcontentsline{toc}{section}{Anhang}
+begin{itemize}
+\item Anhang [1]: Pflichtenheft
+\item Anhang [2]: Handbuch
+\item Anhang [3]: Installationsanleitung
+\item Anhang [4]: EER-Diagramm
+\item Anhang [5]: Proto.io Design
+\item Anhang [6]: Prototyp
+\item Anhang [7]: MVP
+\item Anhang [8]: Main PAP
+\item Anhang [9]: Datenfluss
+%HD: Ich weiß nicht,ob wir von den Designern alle Datenflüsse anhängen sollen
+\item Anhang [10]: ER Modell 
+\item Anhang [11]: MongoDB-Klassendiagramm
+%HD: Da im Development Repository das MongoDB_v2 ggf.
+\item Anhang [12]: Factories
 
+%HD: ich hoffe, dass ich nichts vergessen habe
+
+
+end{itemize}
 \end{document}
 
     Status API Training Shop Blog About Pricing 
