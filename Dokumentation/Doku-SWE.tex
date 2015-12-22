@@ -430,8 +430,8 @@ Die genannten Hauptprozesse stehen, wie in dem folgenden Diagramm zu sehen ist, 
 
 \subsection{Registrierung}
 Um die EinkaufsApp zu nutzen, muss sich jeder Nutzer mittels einer Email-Adresse und einem Kennwort für der App registrieren.
-Eine Registrierung ist bei dieser App unentbehrlich, da für jeden Nutzer ein Profil angelegt wird und er mit diesem Profil innerhalb der Datenbenk seine Produkte Finanzen zugeordnet werden.
-In den folgenden Unterpunkten wird der Prozess der Registrierung aus Seiten der Designer und Entwickler beschrieben.
+Eine Registrierung ist bei dieser App unentbehrlich, da für jeden Nutzer ein Profil angelegt wird und diesem Profil innerhalb der Datenbenk die Produkte und Finanzen zugeordnet werden.
+In den folgenden Unterpunkten wird der Prozess der Registrierung jeweils von den Designern und Entwicklern beschrieben.
 \subsubsection*{Design}
 Die Designer haben zu der Registrierung und zu dem Login, welcher im Punkt 3.4 behandelt wird, das folgende Flussdiagramm entworfen:
 \\
@@ -444,9 +444,9 @@ Das Flussdiagramm beschreibt sukzessiv den Ablauf des Registrierungs- und des Lo
 \newpage
 \subsubsection*{Entwicklung}
 Die Entwickler befassen sich mit den Funktionen der Applikation  und sorgen bei der Registrierung dafür, dass alle Daten ordnungsgemäß geprüft und in die Datenbank eingepflegt werden.
-Als Datenbank nutzen die Entwickler die MongoDB, welche via RoboMongo gemanagt wird und als Programmiersprache wählten die Entwickler JavaScript.\footnote{Genaueres zu der Datenstruktur können Sie dem angehängten Pflichtenheft entnehmen.}
+Als Datenbank wird für die App MongoDB genutzt, welche via RoboMongo gemanagt wird. Als Programmiersprache JavaScript.\footnote{Genaueres zu der Datenstruktur können Sie dem angehängten Pflichtenheft entnehmen.} verwendet.
 
-Bei der Registrierung werden die einzelnen Benutzereingaben durch bestimmte Regeln auf z.B. Länge, Email-Format, Eindeutigkeit, sowie Sicherheitskriterien der Passwortvergabe in der Applikation geprüft.\footnote{Die konkreten Regeln der Benutzereingaben können Sie in dem angehängten Handbuch entnehmen.}
+Bei der Registrierung werden die einzelnen Benutzereingaben durch bestimmte Regeln in hinblick auf Länge, Email-Format, Eindeutigkeit, sowie Sicherheitskriterien bei der Passwortvergabe in der Applikation geprüft.\footnote{Die konkreten Regeln der Benutzereingaben können Sie in dem angehängten Handbuch entnehmen.}
 
 Wenn alle Prüfungen erfolgreich waren, wird der Benutzer angelegt und das Passwort verschlüsselt in Form eines Hashs in der Datenbank gespeichert.
 \newpage
@@ -455,11 +455,12 @@ Wenn alle Prüfungen erfolgreich waren, wird der Benutzer angelegt und das Passw
 Das Flussdiagramm der Designer für den Login ist im Abschnitt 3.3 Registrierung zu finden. 
 \subsubsection*{Entwicklung}
 Die Entwicklung beschäftigt sich mit der Funktionsweise des Logins und prüft hierbei, ob der Benutzer in der Datenbank existiert. Falls dies der Fall ist, wird das Passwort geprüft und bei korrekter Eingabe ist der Login erfolgreich durchgeführt.
-Wenn der Benutzer sein Passwort vergessen hat, kann er dieses zurücksetzen lassen. Hierbei bekommt er eine E-Mail an die im Userprofil hinterlegte E-Mail Adresse. Diese enthält ein Token womit es einen Benutzer ermöglicht wird sein Passwort zu ändern. Dieses Token ist genau eine Stunde gültig, danach verfällt es. 
+Wenn der Benutzer sein Passwort vergessen hat, kann er dieses zurücksetzen lassen. Hierbei bekommt er eine E-Mail an die im Userprofil hinterlegte E-Mail Adresse. Diese Funktionalität ist bereits implementiert, wird aber auf Grund der Sicherheitsbestimmungen der Testumgebung geblockt. Diese enthält ein Token womit es einen Benutzer ermöglicht wird sein Passwort zu ändern. Dieses Token ist genau eine Stunde gültig, danach verfällt es. 
+%MH: ist das jetzt thematisch aus dem Registrierungsvorgang???
 Nachdem der Nutzer sein Passwort zweimal eintragen musste, ändert die Datenbank das Kennwort des Nutzer und speichert dieses.
 \newpage
 \subsection{Marktauswahl}
-Bevor der Einkaufsprozess beginnt muss der Nutzer einen Markt auswählen, welcher via GPS geortet wird. 
+Bevor der Einkaufsprozess beginnt muss der Nutzer einen Markt auswählen, hierfür wird der Standort des Nutzers ermittelt via GPS ermittelt und bereits registrierte Märkte in seiner Nähe angezeigt. 
 \subsubsection*{Design}
 Die Designer haben hierzu, ebenso wie bei der Registrierung und dem Login ein Flussdiagramm erstelt: 
 \\
@@ -482,18 +483,18 @@ Aktivitätsdiagramm „Einkauf einlesen“
 \subsubsection*{Entwicklung}
 \newpage
 \subsection{Nutzerverwaltung}
-Die Nutzerverwaltung ermöglicht dem Nutzer die individuelle Zuweisung von Artikeln an einzelne Gruppenmitglieder einer zuvor erstellten Gruppe. Ziel dessen ist die vereinfachte Finanzverwaltung.
+Die Nutzerverwaltung ermöglicht dem Nutzer die individuelle Zuweisung von anderen Accounts als Gruppenmitglieder zu bereits erstellten Gruppe. Ziel dessen ist die vereinfachte Finanzverwaltung wärend des Einkaufes, sowie die Möglichkeit komplexere Auswertung durchzuführen.
 
 \subsubsection*{Design}
 \includegraphics[scale=0.6, origin=l]{Gruppenverwaltung.jpeg}
 \newline
 \newline
-Die Gruppenverwaltung wird in zwei Teile unterteilt. Der Erste beschreibt die Gruppenerstellung. Wie im Flussdiagramm zu sehen, kann eine Gruppe angelegt werden indem zunächst der Nutzer die Menüoption Mitgliederliste wählt und hier eine Gruppe erstellt. Dabei können Mitglieder hinzugefügt bzw. auch gelöscht werden.
+Die Gruppenverwaltung wird in zwei Teile unterteilt. Der Erste beschreibt die Gruppenerstellung. Wie im Flussdiagramm zu sehen, kann eine Gruppe angelegt werden, indem zunächst der Nutzer die Menüoption Mitgliederliste wählt und hier eine Gruppe erstellt. Dabei können Mitglieder hinzugefügt bzw. auch gelöscht werden.
 \subsubsection*{Entwicklung}
 \newpage
 
 \subsection{Auswertung}
-Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Es gibt die zeitliche Eingrenzung, eine Artikeleingrenzung und eine Gruppenmitgliedereingrenzung, bei der alle vergangenen Einkäufe von bestimmten Gruppen zusammengefasst werden.
+Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Es gibt die zeitliche Eingrenzung und eine Gruppenmitgliedereingrenzung, bei der alle vergangenen Einkäufe von bestimmten Gruppen zusammengefasst werden.
 \\
 \\
 \includegraphics[scale=0.6, origin=l]{Aktivitaets-Diagramm-Ausgabenverlauf.png}
@@ -516,15 +517,17 @@ Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Es gib
 \normalsize
 \\
 \subsubsection*{Entwicklung}
+%MH: Update von Eric einholen
 Aufgrund des Zeitmangels konnte lediglich ein Konzept für den Auswertungsteil der Applikation erstellt werden. Die richtige Implementierung wurde nicht umgesetzt.
 \newpage
 
 \section{Problemzusammenfassung}
 %Hier wird das Ergebnis beschrieben.
 \subsection{Usability der App}
-Zusammengefasst kann die Version 1.0 der EinkaufsApp Nutzer registrieren und anmelden, sowie den Einkaufsprozess durchführen. Außerdem können Gruppen erstellt und verwaltet werden. Der Auswertungsprozess wurde in Anbetracht der Zeit nicht umgesetzt. Hinsichtlich des optischen Designs gibt es kein Corporate Design - Corporate Identity, um die Benutzerfreundlichkeit dennoch zu gewährleisten, implementierten die Entwickler ein schlichtes Interface.
+Zusammengefasst kann die Version 1.0 der EinkaufsApp Nutzer registrieren und anmelden, sowie den Einkaufsprozess durchführen. Außerdem können Gruppen erstellt und verwaltet werden. Der Auswertungsprozess wurde in Anbetracht der Zeit nicht umgesetzt. Hinsichtlich des Optik wurde kein Corporate Design - Corporate Identity entwikelt, um die Benutzerfreundlichkeit dennoch zu gewährleisten, implementierten die Entwickler ein schlichtes Interface im aktuellen Web Stil.
 \newpage
 \subsection{Organisation Projektmanagement}
+%MH: der Inhalt beist sich etwas mit der überschrift - lasst uns noch was besseres finden
 Allem voran muss erwähnt werden, dass dieses Projekt enorm zeitkritisch war und daher die Planungsphase nahe zu vollständig übersprungen werden musste. Ebenfalls sind Design und Implementation stark parallelisiert abgelaufen. Um innerhalb von zwei Monaten ein lauffähiges und qualitätsgesichertes Software-Produkt zu erstellen, bedarf es eines überschaubaren und für alle Mitglieder transparenten Projektes, aber allem voran auch ein, gezielt auf die Herausforderungen, zugeschnittenes Team, welches die benötigten Skills und das Know How bereits mitbringt. Ebenfalls ist es sehr wertvoll, wenn die Beteiligten bereits zuvor zusammen gearbeitet haben und untereinander mit Tools und Konventionen vertraut sind, oder zumindest in der Lage sind unter formalen Bedingungen zu arbeiten. Da naturgemäß in unserem Umfeld diese Voraussetzungen nur zu sehr geringen Teilen erfüllt werden können, ist auch ein sehr kritischer Projektablauf unausweichlich. Um diesen Schwierigkeiten entgegen zu wirken, wäre eine klarer Abgrenzung von Aufgabenbereichen
 und Skills und auch das Vertrauen in diese Entscheidungen notwendig gewesen. Unglücklicherweise fehlte auch hier wieder die bereits erwähnte Planungsphase, die aber auch aus Zeit- und Lokalitätsgründen nicht umsetzbar war. Im weiteren Verlauf wurde dann eine zusätzliche Organisationseinheit zwischen dem Gesamtprojekt und den einzelnen Entwicklern eingefügt, um einen besseren Überblick zu gewährleisten und schneller Entscheidungen treffen zu können. An dieser Stelle lässt sich auch die obligatorische Diffizilität, die aus den unterschiedlichen Engagements entsteht erwähnen. Nach den vorangegangenen Ausführungen zu den kritischen Komponenten des Projektes sollte selbstredend sein, dass es ohne überdurchschnittlichen Einsatz jedes einzelnen Beteiligten
 unmöglich zu 100\% in gegebener Zeit mit derartig begrenzten Ressourcen abgeschlossen werden kann. Nun sind naturgemäß die intrinsischen Beweggründe, sowie die Möglichkeiten der einzelnen Personen verschieden. Somit verbleibt die Aufgabe aller Beteiligten im Rahmen der gegebenen
@@ -562,10 +565,10 @@ nicht umgesetzte Ideen --> siehe Excelliste
 \newpage
 \section*{Organisationstool- Übersicht}
 \begin{itemize}
-\item[-]Allgemeine Ablage: GitHub
+\item[-]Zentrale Ablage: GitHub
 \item[-]Diskussionsrunden: Slack
 \item[-]Informationsaustausch: via Email
-\item[-]Diagramme zeichen: via Dia 
+\item[-]Diagramme darstellen: via Dia 
 \item[-]Kreieren von Web-Prototypen: proto.io
 \item[-]Datenbanken und Datenbankenverwaltung: MongoDB, RoboMongo
 \end{itemize}
