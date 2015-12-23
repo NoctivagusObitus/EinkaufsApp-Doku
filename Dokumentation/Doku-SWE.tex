@@ -8,8 +8,15 @@
 \usepackage{array}
 \usepackage{longtable}
 \usepackage{graphicx}
-\usepackage{pdfpages}
+\usepackage{geometry}
+
+
+%abstandsformate (z.b. seitenränder)
+\geometry{a4paper, top=25mm, left=33mm, right=22mm, bottom=30mm,
+headsep=10mm, footskip=12mm}
+
 \begin{document}
+
 \title{Software Engineering Projekt}
 \author{Gruppe Einkaufsapp}
 \date {18.Oktober 2015}
@@ -235,12 +242,13 @@ Die Untergruppen einigten sich außerdem auf Tools, die effizient und sinnvoll z
 %MH: wenn die Doku parallel zur Implementation entstanden ist können hier nicht "ziele für das Projekt" definiert werden (das wäre wieder Planungsphase)
 In dem hier angeführten Kapitel werden konkrete Ziele für das bevorstehende Projekt formuliert, die auf den zuvor aufgeführten Funktionen der Applikation basieren.
 Die einzeln genutzten Tools die im Pflichtenheft, welches sich im Anhang befindet, festgehalten sind, werden hier den einzelnen Arbeitsgruppen zugewiesen.
-
+\\
 %MH: in dem Bild sollte bei "Umgesetzt von" sollte eher stehen "Entwicklung" oder wahlweise von den "Entwicklern"
 %MH: insgesammt bitte nochmal mit mir über die Organisation der Tabelle sprechen! und wenn möglich könnte es geminhin sinvoll sein PDFs einzubinden anstatt von bildern
 
 %way to go for graphics
-\includegraphics[scale=0.57]{Anforderungskatalog.pdf}
+%negative \hspace um das bild nach links zu verschieben und trim um nicht die ganzen weißen bereiche der pdf zu übernehmen
+\hspace*{-10mm} \includegraphics[trim = 17mm 130mm 0mm 20mm]{Anforderungskatalog.pdf}
 \\
 \footnotesize Tabelle 1: Anforderungsanalyse
 \normalsize
