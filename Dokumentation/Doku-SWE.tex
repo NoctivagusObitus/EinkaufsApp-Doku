@@ -427,6 +427,9 @@ Da der TCP-Kanal verschlüsselt ist, haben Dritte keinen Zugriff auf die vom Nut
 %TO DO - MH: bisschen architetktur aufschreiben
 
 In diesem Abschnitt wird die Funktionsweise der EinkaufsApp beschrieben. Dabei werden die einzelnen Hauptprozesse separat vorgestellt und deren technische Umsetzung erläutert. Die Hauptprozesse sind unterteilt in den Login und die Registrierung des Nutzers, den Einkaufsprozess, die Nutzerverwaltung und die Auswertung. 
+%HD - 23.12.2015: willst du den unteren Text mit reinnehmen?
+%Generell wurde in der Entwicklung nach dem Modell-View-Controller Prinzip gearbeitet. Nachdem die Prozesslogik der Designer stand („Modell“), wurden die einzelnen Views, also die visuelle Darstellung der zu implementierten Funktion, die der Nutzer am Ende sieht, entwickelt und welche schlussendlich über die „Controller“ mit der Logik versehen wurden. Jedes einzelne View hat dabei seinen eigenen Route.
+
 \subsection*{Einleitung}
 Die genannten Hauptprozesse stehen, wie in dem folgenden Diagramm zu sehen ist, in Relation. Dabei wurden die Views als einzelne Klassen dargestellt:
 \\
@@ -482,6 +485,8 @@ Die Designer haben hierzu, ebenso wie bei der Registrierung und dem Login ein Fl
 \subsubsection*{Entwicklung}
 %TO DO - HD: noch machen^^
 %HD - 22.12.2015: Wo kieg ich die Infos her?
+%HD - 23.12.2015: Entwicklertext
+Der vom Design erstellte Ablauf der Marktauswahl wird direkt in den Einkaufsprozess mit eingebunden. Sobald der Nutzer die Option „Einkaufen“ wählt gelangt dieser in den Marktauswahl-View. Anders als im geplanten Ablauf der Designer, kann der Nutzer selber entscheiden, in welchem Markt er sich gerade befindet, indem er entweder in der direkt aufgeführten Marktliste einen auswählt, oder die Option „Markt hinzufügen“ nutzt. Dies hat technische Gründe, da zurzeit eine Lokalisierung der Märkte via GPS aus Zeitgründen noch nicht umgesetzt wurde.
 \newpage
 \subsection{Einkaufsverwaltung}
 \subsubsection{Design}
@@ -539,7 +544,8 @@ Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Es gib
 %MH: Update von Eric einholen
 %TO DO - HD: Eric nochmal anschreiben, wie es jetzt genau stant ist
 %HD - 22.12.2015 Ja es wurde was umgesetzt. Ich weiß nur nicht, wie ich hierzu eine Text formulieren soll, der nicht wie Handbuch klingt
-Aufgrund des Zeitmangels konnte lediglich ein Konzept für den Auswertungsteil der Applikation erstellt werden. Die richtige Implementierung wurde nicht umgesetzt.
+Wie im Programmablaufplan beschrieben, gibt es im View „Auswertung“ die drei Optionen Kaufhäufigkeit, Ausgabenverlauf und Gruppenverlauf. In jedem dieser Optionen muss ein Start- und Enddatum vom Nutzer festgelegt werden. Je nachdem welche Option ausgewählt wurde, sind die vom System gebende Informationen unterschiedlich.
+%HD- Optionen werden am 24.12.15 eingefügt
 \newpage
 \section{Problemzusammenfassung}
 %Hier wird das Ergebnis beschrieben.
