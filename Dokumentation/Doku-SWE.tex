@@ -49,11 +49,19 @@ Abbildung 2: Meilensteinplanung
 \\
 Abbildung 3: Klassen-Diagramm
 \\
-Abbildung 4: Aktivitätsdiagramm-Einkauf
+Abbildung 4: Flussdiagramm- Login
 \\
-Abbildung 5: Aktivitätsdiagramm-Ausgabenverlauf
+Abbildung 5: Marktauswahl
 \\
-Abbildung 6: Flussdiagramm Login
+Abbildung 6: Aktivitätsdiagramm Einkauf
+\\
+Abbildung 7: Gruppenverwaltung
+\\
+Abbildung 8: Aktivitätsdiagramm Auswertung
+\\
+Abbildung 9: Zustandsdiagramm
+\\
+Abbildung 10: Auswertung
 
 \newpage
 \section*{Projektdokumentation}
@@ -102,9 +110,6 @@ Der alltägliche Einkauf wird hinsichtlich der Nachverfolgung von Finanzen und P
 Die Dokumentation umfasst die Phasen der Vorbetrachtung und Entwicklung der EinkaufsApp mit den jeweiligen Ideen, Tasks und angefertigten Dokumenten und dient als Reflexion aller Projektmitglieder über das gesamte Projekt.
 Zudem wurde eine Einteilung des Projektes in Vorbetrachtung, Durchführungs-
 phase, Problembeschreibung und Abschlussphase als angemessen empfunden und in diesem Dokument angewandt.
-\\
-Diese Dokumentation ist parallel zur Durchführungsphase entstanden.
-
 \newpage
 \section{Vorbetrachtung}
 Die Vorbetrachtung beinhaltet alle vorbereitenden Aktivitäten, die vor der Entwicklung der Applikation getätigt wurden. Dazu gehören die konkrete Problembeschreibung, der darauffolgende Lösungsansatz und die Zielsetzungen für die Umsetzung der Entwicklung.
@@ -226,20 +231,18 @@ Einkaufsprozess <- extends <- Marktbestimmung
 \newpage
 \subsection{Projektorganisation}
 %MH: ich weis ja nicht wer von euch welchen teil geschrieben hat, aber ich würde mich inhaltlich gern nochmal über diese Absatz unterhalten
-Die Projektgruppe der EinkaufsApp teilte sich am 02. Oktober 2015 in die Untergruppen Dokumentation, Design und Entwicklung auf.
+%AK: haben uns ja darüber bereits unterhalten- Änderung am 23.12. vorgenommen
+Am 02. Oktober 2015 fand das erste Meeting mit der gesamten Projektgruppe der EinkaufsApp statt, hierbei wurden Absprachen über das weitere Vorgehen und die Projektumsetzung der Ideen und Ziele getroffen.
+Das gesamte Team teilte sich zur optimalen Zielerfüllung in die Untergruppen Dokumentation, Design und Entwicklung auf.
 Der Projektleiter und in diesem Falle auch Projektmanager wurde ebenso an diesem Tag ernannt.
 Als Projektmanager war er nun für die Team- und Projektorganisation zuständig. Dazu gehört unter anderem das Einhalten der Projekt- und Meilensteinplanung und das Erfüllen der Projektziele.
 Jegliche Unterhaltung basierte auf Mailverkehr oder fand durch Telefonkonferenzen statt. Jede Untergruppe musste sich selbst organisieren und wöchentlich ein Update dem Projektleiter zukommen lassen. Jeden Montag fanden Status-Telefonkonferenzen statt, wo sich alle Teammitglieder zusammenfanden und über den aktuellen Stand der Untergruppen informierten und über aufgekommene Probleme diskutierten. 
-\subsubsection{Kick-Off-Meeting}
-%MH: nur in einem Absatz "02. Oktober  2015" schreiben
-%MH: außerdem auch bitte nochmal rücksprache mit mir halten
-
-%TO DO - AK: die beiden puntke zusammenführen
-Am 02. Oktober  2015 fand das erste Meeting mit der gesamten Projektgruppe statt. In diesem Kick-Off-Meeting wurden Absprachen über das weitere Vorgehen und die Projektumsetzung der Ideen und Ziele getroffen. Es wurde über die weitere Kommunikationsform abgestimmt und ebenso festgelegt, dass wöchentlich Telefonkonferenzen innerhalb der Untergruppen zum weiteren Vorgehen des Projektes statt finden werden, sodass die genannten Projektziele bis zum festgelegten Datum umgesetzt werden können. 
 Die Untergruppen einigten sich außerdem auf Tools, die effizient und sinnvoll zur Umsetzung der anstehenden Aktivitäten und zum Einhalten der Projektziele verwendet wurden. 
+%AK-Änderung-Ende
+
 \newpage
 \subsubsection{Anforderungskatalog}
-%MH: wenn die Doku parallel zur Implementation entstanden ist können hier nicht "ziele für das Projekt" definiert werden (das wäre wieder Planungsphase)
+%MH: wenn die Doku parallel zur Implementation entstanden ist können hier nicht "ziele für das Projekt" definiert werden (das wäre wieder Planungsphase) --> %AK hab es nun geändert und den Satz raus genommen
 In dem hier angeführten Kapitel werden konkrete Ziele für das bevorstehende Projekt formuliert, die auf den zuvor aufgeführten Funktionen der Applikation basieren.
 Die einzeln genutzten Tools die im Pflichtenheft, welches sich im Anhang befindet, festgehalten sind, werden hier den einzelnen Arbeitsgruppen zugewiesen.
 \\
@@ -261,20 +264,30 @@ Die einzeln genutzten Tools die im Pflichtenheft, welches sich im Anhang befinde
 
 Aus vorangegangener Erfahrung mit dem Thema der automatisierte Unterstützung durch eine App bei Einkäufen im privaten bereich ist ein Grobkonzept, eines ER-Modells, bereits in das Projekt überführt worden. Dieses wurde verwendet, um ein Grundveständnis beim designen und implementieren zu erzeugen. 
 \\
-\\
-\includegraphics[scale=0.6,origin=l]{EER-Modell.PNG}
+\hspace*{-20mm} 
+\includegraphics[trim = 15mm 130mm 0mm 20mm]{ER-Modell.pdf}
 \\
 \footnotesize Abbildung 2: ER - Modell
 \normalsize
+\linebreak
 \\
 \\
 Zu Beginn wurden die jeweiligen Kompetenzen der Projektmitarbeiter vor der Durchführung des Projektes aufgenommen. 
 Aus diesen leiteten sich die Zugehörigkeiten jeder einzelnen Person in die Projektgruppen Dokumentation, Entwicklung und Design ab. 
 \\
 \\
-\includegraphics[scale=0.6, origin=l]{Skillliste.png}
+\hspace*{-10mm} \includegraphics[trim = 15mm 130mm 0mm 20mm]{Skillliste.pdf}
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\footnotesize Tabelle 2: Ist-Analyse
 \normalsize
-
+\linebreak
+\\
 %TO DO - darstellen durch eine eingebundene PDF
 %\begin{longtable}{|m{5cm}|m{5cm}|m{5cm}|}
 %\hline
@@ -369,11 +382,6 @@ Aus diesen leiteten sich die Zugehörigkeiten jeder einzelnen Person in die Proj
 %& Victor Fuchs wird in der Gruppe Entwicklung arbeiten und hierbei die benötigten Konzeptdiagramme erstellen.
 %\\
 %\end{longtable}
-
-\footnotesize Tabelle 2: Skill-Liste
-\normalsize
-\\
-\linebreak
 \newline
 \newline
 Insgesamt gibt es demnach drei Designer, fünf Entwickler und drei Dokumentatoren, die parallel den stetigen Quality Check durchführen.
@@ -385,14 +393,14 @@ Es wurde ein organisatorisches Grundgerüst geschaffen, das allen Gruppen als Or
 \\
 \\
 %MH: hier taucht wieder die Planungsphase auf...
-\includegraphics[scale=0.6, origin=l]{Aktivitaetsliste.png}
+\hspace*{-10mm} \includegraphics[trim = 17mm 130mm 0mm 20mm]{Aktivitaetsliste.pdf}
 \\
 \footnotesize Abbildung 1: Aktivitätsliste
 \normalsize
 \\
 \linebreak
 \subsubsection*{Meilensteinplanung}
-\includegraphics[scale=0.6, origin=l]{Meilensteine.png}
+\hspace*{-10mm} \includegraphics[trim = 17mm 130mm 0mm 20mm]{Meilensteine.pdf}
 \\
 %MH: holt euch ganz schnell nochmal fixierte Aussagen dazu von Eric, wenn er euch dazu überhaupt etwas sagen kann. Wenn nicht komplett anders darstellen oder rausnehmen.
 \footnotesize Abbildung 2: Meilensteine
@@ -432,7 +440,8 @@ Die genannten Hauptprozesse stehen, wie in dem folgenden Diagramm zu sehen ist, 
 \\
 \\
 %MH: ist dem Leser an der stelle Klar was "Views" sind???
-\includegraphics[scale=0.4, origin=l]{Klassen-UML.jpeg}
+\hspace*{-10mm} 
+\includegraphics[trim = 17mm 130mm 0mm 20mm]{Klassendiagramm.pdf}
 \\
 \footnotesize Abbildung 3: Klassendiagramm
 \normalsize
@@ -444,8 +453,8 @@ In den folgenden Unterpunkten wird der Prozess der Registrierung jeweils von den
 \subsubsection*{Design}
 Die Designer haben zu der Registrierung und zu dem Login, welcher im Punkt 3.4 behandelt wird, das folgende Flussdiagramm entworfen:
 \\
-\includegraphics[scale=0.6, origin=l]{Login-Registrierung.png}
-\footnotesize Abbildung 7: Flussdiagramm Login
+\hspace*{-10mm} \includegraphics[trim = 17mm 130mm 0mm 20mm]{Login-PDF.pdf}
+\footnotesize Abbildung 4: Flussdiagramm Login
 \normalsize
 \\
 \linebreak
@@ -473,9 +482,10 @@ Bevor der Einkaufsprozess beginnt muss der Nutzer einen Markt auswählen, hierf�
 Die Designer haben hierzu, ebenso wie bei der Registrierung und dem Login ein Flussdiagramm erstelt: 
 \\
 \\
-\includegraphics[scale=0.6, origin=l]{Markt_Aufnahme.jpeg}
+\hspace*{-10mm} 
+\includegraphics[trim = 17mm 130mm 0mm 20mm]{Markt-Aufnahme.pdf}
 \\
-\footnotesize Abbildung 4: Markt-Auswahl
+\footnotesize Abbildung 5: Markt-Auswahl
 \normalsize
 \subsubsection*{Entwicklung}
 %TO DO - HD: noch machen^^
@@ -485,9 +495,10 @@ Die Designer haben hierzu, ebenso wie bei der Registrierung und dem Login ein Fl
 \subsubsection{Design}
 Aktivitätsdiagramm „Einkauf einlesen“ 
 \\
-\includegraphics[scale=0.6, origin=l]{Aktivitaets-Diagramm.png}
+\hspace*{-10mm} 
+\includegraphics[trim = 17mm 130mm 0mm 20mm]{Aktiv-Einkauf.pdf}
 \\
-\footnotesize Abbildung 4: Aktivitätsdiagramm-Einkauf
+\footnotesize Abbildung 6: Aktivitätsdiagramm-Einkauf
 \normalsize
 \subsubsection*{Entwicklung}
 %TO DO - TE: einpflegen
@@ -496,7 +507,11 @@ Aktivitätsdiagramm „Einkauf einlesen“
 Die Nutzerverwaltung ermöglicht dem Nutzer die individuelle Zuweisung von anderen Accounts als Gruppenmitglieder zu bereits erstellten Gruppe. Ziel dessen ist die vereinfachte Finanzverwaltung wärend des Einkaufes, sowie die Möglichkeit komplexere Auswertung durchzuführen.
 
 \subsubsection*{Design}
-\includegraphics[scale=0.6, origin=l]{Gruppenverwaltung.jpeg}
+\hspace*{-10mm} 
+\includegraphics[trim = 17mm 130mm 0mm 20mm]{Gruppenverwaltung.pdf}
+\\
+\footnotesize Abbildung 7: Gruppenverwaltung
+\normalsize
 \newline
 \newline
 Die Gruppenverwaltung wird in zwei Teile unterteilt. Der Erste beschreibt die Gruppenerstellung. Wie im Flussdiagramm zu sehen, kann eine Gruppe angelegt werden, indem zunächst der Nutzer die Menüoption Mitgliederliste wählt und hier eine Gruppe erstellt. Dabei können Mitglieder hinzugefügt bzw. auch gelöscht werden.
@@ -507,23 +522,28 @@ Die Gruppenverwaltung wird in zwei Teile unterteilt. Der Erste beschreibt die Gr
 Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Es gibt die zeitliche Eingrenzung und eine Gruppenmitgliedereingrenzung, bei der alle vergangenen Einkäufe von bestimmten Gruppen zusammengefasst werden.
 \\
 \\
-\includegraphics[scale=0.6, origin=l]{Aktivitaets-Diagramm-Ausgabenverlauf.png}
+\hspace*{-10mm} 
+\includegraphics[trim = 17mm 130mm 0mm 20mm]{Aktiv-Ausgabe.pdf}
 \\
-\footnotesize Abbildung 5: Aktivitätsdiagramm-Ausgabenverlauf
+\\
+\footnotesize Abbildung 8: Aktivitätsdiagramm-Ausgabenverlauf
 \normalsize
 \\
 \linebreak
 \subsubsection*{Zustandsdiagramm}
  „Ausgabenverlauf anzeigen“
 \\
-\includegraphics[scale=0.9, origin=l]{Zustandsdiagramm.png}
+\hspace*{-10mm} 
+\includegraphics[trim = 17mm 130mm 0mm 20mm]{Zustand.pdf}
 \\
-\footnotesize Abbildung 6: Zustandsdiagramm
+\\
+\footnotesize Abbildung 9: Zustandsdiagramm
 \normalsize
 \subsubsection*{Design}
-\includegraphics[scale=0.5, origin=l]{060 Auswertungen.jpeg}
+\hspace*{-10mm} 
+\includegraphics[trim = 17mm 130mm 0mm 20mm]{Auswertung.pdf}
 \\
-\footnotesize Abbildung 6: Auswertung
+\footnotesize Abbildung 10: Auswertung
 \normalsize
 \\
 \subsubsection*{Entwicklung}

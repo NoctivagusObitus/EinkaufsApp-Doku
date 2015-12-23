@@ -5,11 +5,10 @@
 \contentsline {subsection}{\numberline {1.2}Zielsetzung}{8}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Vorbereitende Fragen}{9}{subsection.1.3}
 \contentsline {subsection}{\numberline {1.4}Projektorganisation}{12}{subsection.1.4}
-\contentsline {subsubsection}{\numberline {1.4.1}Kick-Off-Meeting}{12}{subsubsection.1.4.1}
-\contentsline {subsubsection}{\numberline {1.4.2}Anforderungskatalog}{13}{subsubsection.1.4.2}
-\contentsline {subsubsection}{\numberline {1.4.3}Ist-Analyse}{13}{subsubsection.1.4.3}
-\contentsline {subsubsection}{\numberline {1.4.4}Arbeitsplanung}{16}{subsubsection.1.4.4}
-\contentsline {subsubsection}{\numberline {1.4.5}agiles Projektmanagement}{17}{subsubsection.1.4.5}
+\contentsline {subsubsection}{\numberline {1.4.1}Anforderungskatalog}{13}{subsubsection.1.4.1}
+\contentsline {subsubsection}{\numberline {1.4.2}Ist-Analyse}{13}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.3}Arbeitsplanung}{16}{subsubsection.1.4.3}
+\contentsline {subsubsection}{\numberline {1.4.4}agiles Projektmanagement}{16}{subsubsection.1.4.4}
 \contentsline {subsection}{\numberline {1.5}Sicherheit}{18}{subsection.1.5}
 \contentsline {section}{\numberline {2}Durchf\IeC {\"u}hrungsphase}{19}{section.2}
 \contentsline {subsection}{\numberline {2.1}Registrierung}{19}{subsection.2.1}
