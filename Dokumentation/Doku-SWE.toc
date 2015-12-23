@@ -6,24 +6,24 @@
 \contentsline {subsection}{\numberline {1.3}Vorbereitende Fragen}{9}{subsection.1.3}
 \contentsline {subsection}{\numberline {1.4}Projektorganisation}{12}{subsection.1.4}
 \contentsline {subsubsection}{\numberline {1.4.1}Anforderungskatalog}{13}{subsubsection.1.4.1}
-\contentsline {subsubsection}{\numberline {1.4.2}Ist-Analyse}{13}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.2}Ist-Analyse}{14}{subsubsection.1.4.2}
 \contentsline {subsubsection}{\numberline {1.4.3}Arbeitsplanung}{16}{subsubsection.1.4.3}
-\contentsline {subsubsection}{\numberline {1.4.4}agiles Projektmanagement}{16}{subsubsection.1.4.4}
+\contentsline {subsubsection}{\numberline {1.4.4}Agiles Projektmanagement}{17}{subsubsection.1.4.4}
 \contentsline {subsection}{\numberline {1.5}Sicherheit}{18}{subsection.1.5}
 \contentsline {section}{\numberline {2}Durchf\IeC {\"u}hrungsphase}{19}{section.2}
 \contentsline {subsection}{\numberline {2.1}Registrierung}{19}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Login}{22}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Marktauswahl}{23}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Einkaufsverwaltung}{24}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Design}{24}{subsubsection.2.4.1}
-\contentsline {subsection}{\numberline {2.5}Nutzerverwaltung}{25}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Auswertung}{26}{subsection.2.6}
-\contentsline {section}{\numberline {3}Problemzusammenfassung}{29}{section.3}
-\contentsline {subsection}{\numberline {3.1}Usability der App}{29}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Organisation und Projektmanagement}{30}{subsection.3.2}
-\contentsline {section}{\numberline {4}Projektabschluss}{31}{section.4}
-\contentsline {subsection}{\numberline {4.1}Fertiges Produkt}{31}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Aussichten}{31}{subsection.4.2}
-\contentsline {section}{\numberline {5}Lesson learned}{32}{section.5}
-\contentsline {section}{Quellen}{33}{section*.33}
-\contentsline {section}{Anhang}{35}{section*.36}
+\contentsline {subsection}{\numberline {2.4}Einkaufsverwaltung}{25}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Design}{25}{subsubsection.2.4.1}
+\contentsline {subsection}{\numberline {2.5}Nutzerverwaltung}{26}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Auswertung}{27}{subsection.2.6}
+\contentsline {section}{\numberline {3}Problemzusammenfassung}{30}{section.3}
+\contentsline {subsection}{\numberline {3.1}Usability der App}{30}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Organisation und Projektmanagement}{31}{subsection.3.2}
+\contentsline {section}{\numberline {4}Projektabschluss}{32}{section.4}
+\contentsline {subsection}{\numberline {4.1}Fertiges Produkt}{32}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Aussichten}{32}{subsection.4.2}
+\contentsline {section}{\numberline {5}Lesson learned}{33}{section.5}
+\contentsline {section}{Quellen}{34}{section*.33}
+\contentsline {section}{Anhang}{36}{section*.36}
