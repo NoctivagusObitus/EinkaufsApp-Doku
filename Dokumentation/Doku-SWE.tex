@@ -212,21 +212,23 @@ Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf,
 \subsubsection*{5. Was ist ein Anwendungsfall und welche Beziehungen zwischen Anwendungsfällen beschreibt der Standard?}
 Ein Anwendungsfall ist die Beschreibung eines Szenarios innerhalb einer gesamten Anwendung. 
 Dabei beginnt in der Regel der Prozess mit einem Startzustand („Precondition“), dem Akteur, der Abwicklung („Main Flow“), und dem Zielzustand. 
-Je nach Anwendungsfall bzw. Use Case werden die einzelnen Parameter unterschiedlich angegeben. Es ergeben sich die zwei verschiedenen Beziehungen "Include" und "Extend" zwischen Anwendungsfällen.
-Die Include-Beziehung im Anwendungsdiagramm beschreibt bei zwei Anwendungsfällen, dass der erste Anwendungsfall den zweiten beinhaltet. Im Gegensattz dazu beschreibt die Extend-Beziehung, dass ein Anwendungsfall den anderen erweitert.
+Je nach Anwendungsfall bzw. Use Case werden die einzelnen Parameter unterschiedlich angegeben. Es ergeben sich die zwei verschiedenen Beziehungen „Include“ und „Extend“.
+Die Include-Beziehung im Anwendungsdiagramm beschreibt eine abhängige Zugehörigkeit eines Anwendungsfalls zu einem anderen. Im Gegensatz dazu beschreibt die Extend-Beziehung eine unabhängige Erweiterung eines Anwendungsfalls.
 \\
-Als Beispiel stehen folgende Anwendungsfälle in der EinkaufsApp in Beziehung:
+Als Beispiel stehen folgende Use Cases in der EinkaufsApp in Beziehung:
 \\
 %MH: ich denke hier kommt dann noch was, oder?
 %HD: ja
 %HD-22.12.2015: HDTODO Grafik erstellen
 \\
 Include-Beziehung:
-Registrierung -> include -> Passworteingabe überprüfen
+\\
+\includegraphics[scale=1]{Include_Use-Case.jpg}
 \\
 \\
 Extend-Beziehung:
-Einkaufsprozess <- extends <- Marktbestimmung
+\\
+\includegraphics[scale=1]{Extend_Use-Case.jpg}
 \\
 \newpage
 \subsection{Projektorganisation}
@@ -513,6 +515,8 @@ Die Nutzerverwaltung ermöglicht dem Nutzer die individuelle Zuweisung von ander
 \newline
 Die Gruppenverwaltung wird in zwei Teile unterteilt. Der Erste beschreibt die Gruppenerstellung. Wie im Flussdiagramm zu sehen, kann eine Gruppe angelegt werden, indem zunächst der Nutzer die Menüoption Mitgliederliste wählt und hier eine Gruppe erstellt. Dabei können Mitglieder hinzugefügt bzw. auch gelöscht werden.
 \subsubsection*{Entwicklung}
+Die Entwicklung hat lediglich den Teil der eigentlichen Gruppenerstellung integriert. Der Nutzer legt einen Gruppennamen fest und kann daraufhin die registrierten Nutzer hinzufügen und ggf. wieder entfernen. Ist die Gruppe erstellt, kann gespeichert werden.
+Diese kann im Nachhinein noch nicht geändert werden, weil die Gruppe nicht angezeigt wird. Dies ist ein Problem, welches die Entwickler noch ausbessern werden.
 \newpage
 \subsection{Auswertung}
 Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Es gibt die zeitliche Eingrenzung und eine Gruppenmitgliedereingrenzung, bei der alle vergangenen Einkäufe von bestimmten Gruppen zusammengefasst werden.
@@ -544,7 +548,7 @@ Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Es gib
 %MH: Update von Eric einholen
 %TO DO - HD: Eric nochmal anschreiben, wie es jetzt genau stant ist
 %HD - 22.12.2015 Ja es wurde was umgesetzt. Ich weiß nur nicht, wie ich hierzu eine Text formulieren soll, der nicht wie Handbuch klingt
-Wie im Programmablaufplan beschrieben, gibt es im View „Auswertung“ die drei Optionen Kaufhäufigkeit, Ausgabenverlauf und Gruppenverlauf. In jedem dieser Optionen muss ein Start- und Enddatum vom Nutzer festgelegt werden. Je nachdem welche Option ausgewählt wurde, sind die vom System gebende Informationen unterschiedlich.
+Wie im Programmablaufplan beschrieben, gibt es im View „Auswertung“ die drei Optionen Kaufhäufigkeit, Ausgabenverlauf und Gruppenverlauf. In jedem dieser Optionen muss ein Start- und Enddatum vom Nutzer festgelegt werden. Je nachdem welche Option ausgewählt wurde, sind die vom System gebende Informationen unterschiedlich. Da es aber weiterhin noch Probleme mit dem Einkaufsprozess gibt, kann die Auswertungsfunktion noch nicht genutzt werden.
 %HD- Optionen werden am 24.12.15 eingefügt
 \newpage
 \section{Problemzusammenfassung}
