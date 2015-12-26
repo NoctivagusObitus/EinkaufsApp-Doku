@@ -223,12 +223,12 @@ Als Beispiel stehen folgende Use Cases in der EinkaufsApp in Beziehung:
 \\
 Include-Beziehung:
 \\
-\includegraphics[scale=1]{Include_Use-Case.jpg}
+\includegraphics[scale=1]{Include_Use-Case.JPG}
 \\
 \\
 Extend-Beziehung:
 \\
-\includegraphics[scale=1]{Extend_Use-Case.jpg}
+\includegraphics[scale=1]{Extend_Use-Case.JPG}
 \\
 \newpage
 \subsection{Projektorganisation}
@@ -424,9 +424,6 @@ Da der TCP-Kanal verschlüsselt ist, haben Dritte keinen Zugriff auf die vom Nut
 
 \newpage
 \section{Durchführungsphase}
-\subsection*{Architektur}
-
-%TO DO - MH: bisschen architetktur aufschreiben
 
 In diesem Abschnitt wird die Funktionsweise der EinkaufsApp beschrieben. Dabei werden die einzelnen Hauptprozesse separat vorgestellt und deren technische Umsetzung erläutert. Die Hauptprozesse sind unterteilt in den Login und die Registrierung des Nutzers, den Einkaufsprozess, die Nutzerverwaltung und die Auswertung. 
 %HD - 23.12.2015: willst du den unteren Text mit reinnehmen?
@@ -442,6 +439,12 @@ Die genannten Hauptprozesse stehen, wie in dem folgenden Diagramm zu sehen ist, 
 \\
 \footnotesize Abbildung 3: Klassendiagramm
 \normalsize
+
+\subsection{Architektur}
+
+Die App selbst wurde auf Basis des Ionic Frameworks Entwickelt, der Webserver wurde mittels Node.JS umgesetz und die zugrundeliegende Datenbank ist eine MongoDB. Die entscheidung zu diesen Komponenten fand auf Grund ihres guten Zusammenspiels hinsichtlich Webapplicationen statt. Im ersten Schritt wurde die MongoDB gewählt, weil es für unsere Zwecke eine angemessene Flexibilität aufgrund der Schemalosigkeit bietet, aber auch die Skalierbarkeit einer NoSQL für den Aspekt der Zukunfssicherheit mit sich bringt. Node.JS ist besonders gut geeignet, um weniger rechenintensive Aufgaben, wie das Handeln einer Anfrage und das Verweisen auf eine Ressource, auf einem Server umzusetzen. Ebenfalls wurde diese Entscheidung durch das gute zusammenspiel mit MongoDB, nicht zuletzt durch Mongoose, bestärkt. Das Ionic Framework wurde allemvoran genutzt, weil ermöglicht, ein zeitgemäßes Desing zu erstellen und die Möglichkeit bietet, sowohl Android, als auch iOS lauffähige anwedungen zu erstellen, ohne dafür zusätzliche Entwicklungsarbeit zu leisten.
+
+Für deteiliertere Ausfürungen wird auf das Pflichtenheft verwiesen.
 
 \subsection{Registrierung}
 Um die EinkaufsApp zu nutzen, muss sich jeder Nutzer mittels einer Email-Adresse und einem Kennwort für der App registrieren.
