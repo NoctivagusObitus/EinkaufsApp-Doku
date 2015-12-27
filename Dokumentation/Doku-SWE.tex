@@ -33,12 +33,15 @@ headsep=10mm, footskip=12mm}
 \item[4.] ER - Entity Relationship
 \item[5.] UML  - Unified Modeling Language
 \item[6.] SSL - Secure Socket Layer 
+\item[7.] GTIN - Global Trade Item Number
 \end{itemize}
 \newpage
 \section*{Tabellenverzeichnis}
 Tabelle 1: Anforderungsanalyse
 \\
 Tabelle 2 : Anforderungsanalyse
+\\
+Tabelle 3: Aussichten
 \newpage
 \section*{Abbildungsverzeichnis}
 %\addcontentsline{toc}{section}{Abbildungsverzeichnis}
@@ -140,6 +143,8 @@ Zum jetzigen Zeitpunkt soll die zu entwickelnde Applikation vorerst als Tracking
 Mit dem Softwaresystem kann jede Privatperson arbeiten, die ihren Einkauf digital dokumentieren und Auswertungen des eigenen Kaufverhaltens erhalten möchte. 
 Des Weiteren hilft diese App jedem, der für Gruppen, z. B. Mitgliedern einer Wohngemeinschaft, Einkäufe tätigt und eine direkte Zuteilung der einzelnen Produkte zur jeweiligen Person wünscht. 
 Die App richtet sich auch an Menschen, die mit Hilfe der Auswertung mögliche Sparpotenziale erkennen und wahrnehmen möchten. 
+\\
+\\
 \subsubsection*{2. Welcher Benutzer benötigt welche Funktionen?} 
 Insgesamt werden in der EinkaufsApp drei verschiedene Nutzerrollen vorgesehen:
 Einerseits existiert der Standarduser, welche Rolle jeder Nutzer einnimmt nachdem er sich angemeldet hat.
@@ -183,7 +188,6 @@ Dieser erbt ebenfalls die Funktionalitäten des Standardusers und kann darüber 
 \end{itemize}
 Hinweis: Ein Gruppenadmin ist gleichzeitig auch ein Gruppenmitglied.
 \end{itemize}
-
 \subsubsection*{3. Welche Informationen müssen zu einer Person, dem Benutzer, gespeichert werden, um einen Geschäftsprozess, z. B. das für eine WG einkaufen, mit dem System abzuwickeln?}
 Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf, für z. B. eine WG, stattfinden kann:
 \begin{itemize} 
@@ -197,7 +201,6 @@ Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf,
 \item Märkte (Name und Standort)
 \item Einkaufsdatum
 \end{itemize}
- 
 \subsubsection*{4. Welche im Szenario nicht genannten Funktionen werden von dem Softwaresystem benötigt, um heutigen Anforderungen zu entsprechen? Nennen Sie beispielhaft fünf Funktionen!}
 \begin{itemize}
 \item[a.] Separater Zugang für Anbieter, z. B. Supermärkte um Angebote einzupflegen, die der Käufer via Push-Notification bekommt
@@ -206,15 +209,14 @@ Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf,
 \item[d.] Erstellen eines monatlichen Auswertungsreports via Push-Notification 
 \item[e.] Erstellen manueller Einkaufslisten vor dem Einkauf 
 \item[f.] Nutzung der EinkaufsApp über Social Media (z. B. Twitter oder Facebook)
-\end{itemize}
- 
- 
+\end{itemize} 
+\newpage
 \subsubsection*{5. Was ist ein Anwendungsfall und welche Beziehungen zwischen Anwendungsfällen beschreibt der Standard?}
 Ein Anwendungsfall ist die Beschreibung eines Szenarios innerhalb einer gesamten Anwendung. 
 Dabei beginnt in der Regel der Prozess mit einem Startzustand („Precondition“), dem Akteur, der Abwicklung („Main Flow“), und dem Zielzustand. 
 Je nach Anwendungsfall bzw. Use Case werden die einzelnen Parameter unterschiedlich angegeben. Es ergeben sich die zwei verschiedenen Beziehungen „Include“ und „Extend“.
 Die Include-Beziehung im Anwendungsdiagramm beschreibt eine abhängige Zugehörigkeit eines Anwendungsfalls zu einem anderen. Im Gegensatz dazu beschreibt die Extend-Beziehung eine unabhängige Erweiterung eines Anwendungsfalls.
-\\
+
 Als Beispiel stehen folgende Use Cases in der EinkaufsApp in Beziehung:
 \\
 %MH: ich denke hier kommt dann noch was, oder?
@@ -278,6 +280,7 @@ Aus diesen leiteten sich die Zugehörigkeiten jeder einzelnen Person in die Proj
 \\
 \\
 \hspace*{-10mm} \includegraphics[trim = 15mm 0mm 0mm 20mm,clip,scale=0.8]{Skillliste.pdf}
+\\
 \footnotesize Tabelle 2: Ist-Analyse
 \\
 \normalsize
@@ -414,11 +417,11 @@ In der EinkaufsApp wurden folgende Maßnahmen getroffen um dies gewährleisten z
 1. Der Nutzer startet durch die Eingabe von Benutzername und persönlichem Password eine Session, die Ihn bei jeder Anfrage an den Server authentifiziert.
 \\
 2. Alle Passwörter werden als Einweg-Hash in der Datenbank gespeichert. Bei der Anmeldung wird das Passwort dem gleichen Verfahren unterzogen und dann die resultiereden Zeichenfolge mit der, in der Datenbank gespeicherten, abgeglichen.
-\\ 
 %MH: was ist der Inhalt dieser Aussage?
 %2. In Verbindung mit dem Nutzernamen wird sichergestellt, dass es sich auch um den richtigen Nutzer handelt.
 \\
-3. Die Verwendung des SSL-Protokolls (Secure Socket Layer) sorgt für  den Aufbau eines geschützten Kanals vor der eigentlichen HTTP-Kommunikation, so dass die Nutzerdaten für Dritte nicht zugängig sind. 
+3. Die Verwendung des SSL-Protokolls (Secure Socket Layer) sorgt für  den Aufbau eines geschützten Kanals vor der eigentlichen HTTP-Kommunikation, so dass die Nutzerdaten für Dritte nicht zugängig sind.
+\\ 
 Dies bedeutet: Die Nutzerdaten werden in einem standart Web-Formular eingetragen (Login-Screen) und mittels POST-Request an den Server gesendet. 
 Da der TCP-Kanal verschlüsselt ist, haben Dritte keinen Zugriff auf die vom Nutzer eingegebenen Daten innerhalb des POST-Requests, was wiederum die gesicherte Übertragung von Nutzernamen und Passwort bewirkt.
 
@@ -442,13 +445,14 @@ Die genannten Hauptprozesse stehen, wie in dem folgenden Diagramm zu sehen ist, 
 
 \subsection{Architektur}
 
-Die App selbst wurde auf Basis des Ionic Frameworks Entwickelt, der Webserver wurde mittels Node.JS umgesetz und die zugrundeliegende Datenbank ist eine MongoDB. Die entscheidung zu diesen Komponenten fand auf Grund ihres guten Zusammenspiels hinsichtlich Webapplicationen statt. Im ersten Schritt wurde die MongoDB gewählt, weil es für unsere Zwecke eine angemessene Flexibilität aufgrund der Schemalosigkeit bietet, aber auch die Skalierbarkeit einer NoSQL für den Aspekt der Zukunfssicherheit mit sich bringt. Node.JS ist besonders gut geeignet, um weniger rechenintensive Aufgaben, wie das Handeln einer Anfrage und das Verweisen auf eine Ressource, auf einem Server umzusetzen. Ebenfalls wurde diese Entscheidung durch das gute zusammenspiel mit MongoDB, nicht zuletzt durch Mongoose, bestärkt. Das Ionic Framework wurde allemvoran genutzt, weil ermöglicht, ein zeitgemäßes Desing zu erstellen und die Möglichkeit bietet, sowohl Android, als auch iOS lauffähige anwedungen zu erstellen, ohne dafür zusätzliche Entwicklungsarbeit zu leisten.
-
-Für deteiliertere Ausfürungen wird auf das Pflichtenheft verwiesen.
+Die App selbst wurde auf Basis des Ionic Frameworks Entwickelt, der Webserver wurde mittels Node.JS umgesetzt und die zugrundeliegende Datenbank ist eine MongoDB. Die Entscheidung zu diesen Komponenten fand auf Grund ihres guten Zusammenspiels hinsichtlich Webapplikationen statt. Im ersten Schritt wurde die MongoDB gewählt, weil es für unsere Zwecke eine angemessene Flexibilität aufgrund der Schemalosigkeit bietet, aber auch die Skalierbarkeit einer NoSQL für den Aspekt der Zukunftssicherheit mit sich bringt. Node.JS ist besonders gut geeignet, um weniger rechenintensive Aufgaben, wie das Handeln einer Anfrage und das Verweisen auf eine Ressource, auf einem Server umzusetzen. Ebenfalls wurde diese Entscheidung durch das gute Zusammenspiel mit MongoDB, nicht zuletzt durch Mongoose, bestärkt. 
+\\
+Das Ionic Framework wurde allem voran genutzt, weil ermöglicht, ein zeitgemäßes Desing zu erstellen und die Möglichkeit bietet, sowohl Android, als auch iOS-lauffähige Anwendungen zu erstellen, ohne dafür zusätzliche Entwicklungsarbeit zu leisten.
+Für detailliertere Ausführungen wird auf das Pflichtenheft verwiesen.
 
 \subsection{Registrierung}
-Um die EinkaufsApp zu nutzen, muss sich jeder Nutzer mittels einer Email-Adresse und einem Kennwort für der App registrieren.
-Eine Registrierung ist bei dieser App unentbehrlich, da für jeden Nutzer ein Profil angelegt wird und diesem Profil innerhalb der Datenbenk die Produkte und Finanzen zugeordnet werden.
+Um die EinkaufsApp zu nutzen, muss sich jeder Nutzer mittels einer E-Mail-Adresse und einem Kennwort für der App registrieren.
+Eine Registrierung ist bei dieser App unentbehrlich, da für jeden Nutzer ein Profil angelegt wird und diesem Profil innerhalb der Datenbank die Produkte und Finanzen zugeordnet werden.
 In den folgenden Unterpunkten wird der Prozess der Registrierung jeweils von den Designern und Entwicklern beschrieben.
 \subsubsection*{Design}
 Die Designer haben zu der Registrierung und zu dem Login, welcher im Punkt 3.4 behandelt wird, das folgende Flussdiagramm entworfen:
@@ -464,7 +468,7 @@ Das Flussdiagramm beschreibt sukzessiv den Ablauf des Registrierungs- und des Lo
 Die Entwickler befassen sich mit den Funktionen der Applikation  und sorgen bei der Registrierung dafür, dass alle Daten ordnungsgemäß geprüft und in die Datenbank eingepflegt werden.
 Als Datenbank wird für die App MongoDB genutzt, welche via RoboMongo gemanagt wird. Als Programmiersprache JavaScript.\footnote{Genaueres zu der Datenstruktur können Sie dem angehängten Pflichtenheft entnehmen.} verwendet.
 
-Bei der Registrierung werden die einzelnen Benutzereingaben durch bestimmte Regeln in hinblick auf Länge, Email-Format, Eindeutigkeit, sowie Sicherheitskriterien bei der Passwortvergabe in der Applikation geprüft.\footnote{Die konkreten Regeln der Benutzereingaben können Sie in dem angehängten Handbuch entnehmen.}
+Bei der Registrierung werden die einzelnen Benutzereingaben durch bestimmte Regeln in Hinblick auf Länge, E-Mail-Format, Eindeutigkeit, sowie Sicherheitskriterien bei der Passwortvergabe in der Applikation geprüft.\footnote{Die konkreten Regeln der Benutzereingaben können Sie in dem angehängten Handbuch entnehmen.}
 
 Wenn alle Prüfungen erfolgreich waren, wird der Benutzer angelegt und das Passwort verschlüsselt in Form eines Hashs in der Datenbank gespeichert.
 \newpage
@@ -474,12 +478,12 @@ Das Flussdiagramm der Designer für den Login ist im Abschnitt 3.3 Registrierung
 \subsubsection*{Entwicklung}
 Die Entwicklung beschäftigt sich mit der Funktionsweise des Logins und prüft hierbei, ob der Benutzer in der Datenbank existiert. Falls dies der Fall ist, wird das Passwort geprüft und bei korrekter Eingabe ist der Login erfolgreich durchgeführt.
 Wenn der Benutzer sein Passwort vergessen hat, kann er dieses zurücksetzen lassen. Hierbei bekommt er eine E-Mail an die im Userprofil hinterlegte E-Mail Adresse. Diese Funktionalität ist bereits implementiert, wird aber auf Grund der Sicherheitsbestimmungen der Testumgebung geblockt. Diese enthält ein Token womit es einen Benutzer ermöglicht wird sein Passwort zu ändern. Dieses Token ist genau eine Stunde gültig, danach verfällt es. 
-In dem dann aufgerufenen Bilschirm muss der Nutzer nun sein Passwort zweimal eintragen. Daraufhin ändert die Datenbank das Kennwort des Nutzer und speichert dieses.
+In dem dann aufgerufenen Bildschirm muss der Nutzer nun sein Passwort zweimal eintragen. Daraufhin ändert die Datenbank das Kennwort des Nutzer und speichert dieses.
 \newpage
 \subsection{Marktauswahl}
 Bevor der Einkaufsprozess beginnt muss der Nutzer einen Markt auswählen, hierfür wird der Standort des Nutzers ermittelt via GPS ermittelt und bereits registrierte Märkte in seiner Nähe angezeigt. 
 \subsubsection*{Design}
-Die Designer haben hierzu, ebenso wie bei der Registrierung und dem Login ein Flussdiagramm erstelt: 
+Die Designer haben hierzu, ebenso wie bei der Registrierung und dem Login ein Flussdiagramm erstellt: 
 \\
 \\
 \hspace*{-10mm} 
@@ -491,7 +495,7 @@ Die Designer haben hierzu, ebenso wie bei der Registrierung und dem Login ein Fl
 %TO DO - HD: noch machen^^
 %HD - 22.12.2015: Wo kieg ich die Infos her?
 %HD - 23.12.2015: Entwicklertext
-Der vom Design erstellte Ablauf der Marktauswahl wird direkt in den Einkaufsprozess mit eingebunden. Sobald der Nutzer die Option „Einkaufen“ wählt gelangt dieser in den Marktauswahl-View. Anders als im geplanten Ablauf der Designer, kann der Nutzer selber entscheiden, in welchem Markt er sich gerade befindet, indem er entweder in der direkt aufgeführten Marktliste einen auswählt, oder die Option „Markt hinzufügen“ nutzt. Dies hat technische Gründe, da zurzeit eine Lokalisierung der Märkte via GPS aus Zeitgründen noch nicht umgesetzt wurde.
+Der vom Design erstellte Ablauf der Marktauswahl wird direkt in den Einkaufsprozess mit eingebunden. Sobald der Nutzer die Option „Einkaufen“ wählt gelangt dieser in den Marktauswahl-View.\footnote {In der EinkaufsApp werden Views verwendet, da die Systemarchitektur auf der Model-View-Controller Architektur basiert.} Anders als im geplanten Ablauf der Designer, kann der Nutzer selber entscheiden, in welchem Markt er sich gerade befindet, indem er entweder in der direkt aufgeführten Marktliste einen auswählt, oder die Option „Markt hinzufügen“ nutzt. Dies hat technische Gründe, da zurzeit eine Lokalisierung der Märkte via GPS aus Zeitgründen noch nicht umgesetzt wurde.
 %HD - 23.12.2015 Ende
 \newpage
 \subsection{Einkaufsverwaltung}
@@ -558,11 +562,11 @@ Wie im Programmablaufplan beschrieben, gibt es im View „Auswertung“ die drei
 \section{Problemzusammenfassung}
 %Hier wird das Ergebnis beschrieben.
 \subsection{Usability der App}
-Zusammengefasst kann die Version 1.0 der EinkaufsApp Nutzer registrieren und anmelden, sowie den Einkaufsprozess durchführen. Außerdem können Gruppen erstellt und verwaltet werden. Der Auswertungsprozess wurde in Anbetracht der Zeit nicht umgesetzt. Hinsichtlich des Optik wurde kein Corporate Design - Corporate Identity entwikelt, um die Benutzerfreundlichkeit dennoch zu gewährleisten, implementierten die Entwickler ein schlichtes Interface im aktuellen Web Stil.
+Zusammengefasst kann die Version 1.0 der EinkaufsApp Nutzer registrieren und anmelden, sowie den Einkaufsprozess durchführen. Außerdem können Gruppen erstellt und verwaltet werden. Der Auswertungsprozess wurde in Anbetracht der Zeit nicht umgesetzt. Hinsichtlich der Optik wurde kein Corporate Design verwendet, um die Benutzerfreundlichkeit dennoch zu gewährleisten, implementierten die Entwickler ein übersichtliches Interface im aktuellen Web Stil.
 \newpage
 \subsection{Organisation und Projektmanagement}
 %MH: der Inhalt beist sich etwas mit der überschrift - lasst uns noch was besseres finden
-Allem voran muss erwähnt werden, dass dieses Projekt enorm zeitkritisch war und daher die Planungsphase nahe zu vollständig übersprungen werden musste. Ebenfalls sind Design und Implementation stark parallelisiert abgelaufen. Um innerhalb von zwei Monaten ein lauffähiges und qualitätsgesichertes Software-Produkt zu erstellen, bedarf es eines überschaubaren und für alle Mitglieder transparenten Projektes, aber allem voran auch ein, gezielt auf die Herausforderungen, zugeschnittenes Team, welches die benötigten Skills und das Know How bereits mitbringt. Ebenfalls ist es sehr wertvoll, wenn die Beteiligten bereits zuvor zusammen gearbeitet haben und untereinander mit Tools und Konventionen vertraut sind, oder zumindest in der Lage sind unter formalen Bedingungen zu arbeiten. Da naturgemäß in unserem Umfeld diese Voraussetzungen nur zu sehr geringen Teilen erfüllt werden können, ist auch ein sehr kritischer Projektablauf unausweichlich. Um diesen Schwierigkeiten entgegen zu wirken, wäre eine klarer Abgrenzung von Aufgabenbereichen
+Allem voran muss erwähnt werden, dass dieses Projekt enorm zeitkritisch war und daher die Planungsphase nahe zu vollständig übersprungen werden musste. Ebenfalls sind Design und Implementation stark parallelisiert abgelaufen. Um innerhalb von zwei Monaten ein lauffähiges und qualitätsorientiertes Software-Produkt zu erstellen, bedarf es eines überschaubaren und für alle Mitglieder transparenten Projektes, aber allem voran auch ein, gezielt auf die Herausforderungen, zugeschnittenes Team, welches die benötigten Skills und das Know-How bereits mitbringt. Ebenfalls ist es sehr wertvoll, wenn die Beteiligten bereits zuvor zusammen gearbeitet haben und untereinander mit Tools und Konventionen vertraut sind, oder zumindest in der Lage sind unter formalen Bedingungen zu arbeiten. Da naturgemäß in unserem Umfeld diese Voraussetzungen nur zu sehr geringen Teilen erfüllt werden können, ist auch ein sehr kritischer Projektablauf unausweichlich. Um diesen Schwierigkeiten entgegen zu wirken, wäre eine klarer Abgrenzung von Aufgabenbereichen
 und Skills und auch das Vertrauen in diese Entscheidungen notwendig gewesen. Unglücklicherweise fehlte auch hier wieder die bereits erwähnte Planungsphase, die aber auch aus Zeit- und Lokalitätsgründen nicht umsetzbar war. Im weiteren Verlauf wurde dann eine zusätzliche Organisationseinheit zwischen dem Gesamtprojekt und den einzelnen Entwicklern eingefügt, um einen besseren Überblick zu gewährleisten und schneller Entscheidungen treffen zu können. An dieser Stelle lässt sich auch die obligatorische Diffizilität, die aus den unterschiedlichen Engagements entsteht erwähnen. Nach den vorangegangenen Ausführungen zu den kritischen Komponenten des Projektes sollte selbstredend sein, dass es ohne überdurchschnittlichen Einsatz jedes einzelnen Beteiligten
 unmöglich zu 100\% in gegebener Zeit mit derartig begrenzten Ressourcen abgeschlossen werden kann. Nun sind naturgemäß die intrinsischen Beweggründe, sowie die Möglichkeiten der einzelnen Personen verschieden. Somit verbleibt die Aufgabe aller Beteiligten im Rahmen der gegebenen
 Bedingungen das bestmöglich Ergebnis zu erzielen.
@@ -570,7 +574,11 @@ Bedingungen das bestmöglich Ergebnis zu erzielen.
 \section{Projektabschluss}
 \subsection{Fertiges Produkt}
 \subsection{Aussichten}
-nicht umgesetzte Ideen --> siehe Excelliste
+\hspace*{-10mm} 
+\includegraphics[trim = 17mm 10mm 0mm 20mm,clip,scale=0.9]{Anforderungen-Probleme.pdf}
+\\
+\footnotesize Tabelle 3: Aussichten
+\normalsize
 \newpage
 \section{Lesson learned}
 %TO DO - MH (fazit)
