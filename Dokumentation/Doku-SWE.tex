@@ -286,100 +286,6 @@ Aus diesen leiteten sich die Zugehörigkeiten jeder einzelnen Person in die Proj
 \normalsize
 \linebreak
 \\
-%TO DO - darstellen durch eine eingebundene PDF
-%\begin{longtable}{|m{5cm}|m{5cm}|m{5cm}|}
-%\hline
-%\textbf {Name} & \textbf {Skills} & \textbf {Teamzuordnung} \\
-%\hline
-%\centering Annika Köstler & \begin {itemize}
-%\item Zwei Jahre Arbeit im Controlling
-%\item Tools:LaTex
-%\item Grundkenntnisse VBA
-%\item Protokollierung von Meetings
-%\end{itemize}
-%& Annika Köstler wird aufgrund ihrer Kompetenzen im Bereich Protokollierung in der Gruppe Dokumentation arbeiten.
-%\\
-%\hline
-%\centering Eric Sorgalla & 
-%\begin {itemize}
-%\item Grundkenntnisse (Java, C/C++, Javascript, HTML/CSS, VBA, SQL)
-%\item 1 Jahr Projektleitung ISIPT (nur kaufmännische Verantwortung) 
-%\end {itemize}
-%& Eric Sorgalla wird aufgrund seiner Programmiererfahrung bei den Entwicklern arbeiten
-%
-%\\
-%\hline
-%\centering Huong Dang & \begin {itemize}
-%\item Zwei Jahre Vertrieb
-%\item Tools LaTex
-%\item Grundlagen VBA 
-%\end {itemize}
-%& Aufgrund der regelmäßigen Quality Check Aufgaben im Betrieb arbeitet Huong Dang in der Gruppe Dokumentation.
-%
-%\\
-%\hline
-%\centering Jannis Grohs & \begin {itemize}
-%\item Datenbanken (MYSQL, Apex)
-%\item Programmiererfahrung (VBA, JAVA, Apex)
-%\item Projektmanagement 
-%\item Design - und Marketingtechniken
-%\end {itemize}
-%& Jannis Grohs wird aufgrund seines Know-Hows für das kontinuierliche Quality Check der Entwicklung und Designs zuständig sein.
-%
-%\\
-%\hline
-%\centering Markus Hube & \begin {itemize}
-%\item Zwei Jahre PMO der operational services
-%\item Zwei Jahre Programmiererfahrung (VBA)
-%\item Bereits Vorarbeit zum Thema EinkaufsApp geleistet 
-%\end {itemize}
-%& Da Markus Hube bereits zum Thema EinkaufsApp Vorarbeit geleistet und Erfahrung im Projektmanagement gesammelt hat, übernimmt er die Position des Projektleiters.
-%
-%\\
-%\hline
-%\centering Michael Hein & \begin {itemize}
-%\item Zwei Jahre Applikations Administration
-%\item Java Erfahrung
-%\item VBA Erfahrung
-%\item Skript Programmierung
-%\end {itemize}
-%& Durch Michael Heins langjähriger Programmiererfahrung wird er bei den Entwicklern tätig sein.
-%
-%\\
-%\hline
-%\centering Moritz Karsten & \begin {itemize}
-%\item  Zwei Jahre Projektansprechpartner Messe Berlin
-%\item  Application Management
-%\end {itemize}
-%& Durch seine Erfahrung im Bereich Prozessablauf und Konzeptentwicklung wird Moritz Karsten bei der Gruppe Design arbeiten.
-%\\
-%\hline
-%\centering Moritz Schaub & \begin {itemize}
-%\item  Zwei Jahre Co-Product Owner in iOS und Android Messaging Produkt in AGILER Entwicklung (internationales, crossfunktionales Team)
-%\item  Erstellung von komplexen Prototypen mit Proto.io auf Basis von HTML5
-%\item Durchführung von Design Thinking Workshops
-%\end {itemize}
-%& Da Moritz Schaub Vorkenntnisse im Bereich Prototyperstellung von Apps hat, wird er für das visuelle Design zuständig sein.
-%
-%\\
-%\hline
-%\centering Thomas Elias & \begin {itemize}
-%\item gute Kenntnisse in Projektkoordination
-%\item Anforderungen und Arbeitspakete definieren
-%\item Erfahrungen Customizing von Dokumenten-Layouts
-%\item Kommunikation zwischen versch. Abteilungen zum Transparent-Machen der Informationen
-%\end {itemize}
-%& Aufgrund seiner guten Kenntnisse im Bereich Projektkoordination wird Thomas Elias in der Dokumentation arbeiten und für die Meilensteinplanung verantwortlich sein.
-%
-%\\
-%\hline
-%\centering Victor Fuchs & \begin {itemize}
-%\item  gute Excelkenntnisse
-%\item  gute Kenntnisse im Rechnungswesen und Controlling
-%\end {itemize}
-%& Victor Fuchs wird in der Gruppe Entwicklung arbeiten und hierbei die benötigten Konzeptdiagramme erstellen.
-%\\
-%\end{longtable}
 \newline
 \newline
 Insgesamt gibt es demnach drei Designer, fünf Entwickler und drei Dokumentatoren, die parallel den stetigen Quality Check durchführen.
@@ -411,32 +317,34 @@ In der Gruppe der Entwickler wurde unter Zuhilfenahme des Tools „Trello“ die
 Die Designer haben ihre Arbeitspakete auf Basis eines Ablaufplanes verteilt. Es wurden die Phasen Prototyp-Entwurf, Prototyp-Review, Prototyp-Modifikationen und Prototyp-Test und Prototyp-Abnahme durchlaufen.
 \newpage
 \subsection{Sicherheit}
+%AK-28.12.5-Bearbeitung Anfang
 Sobald Daten eines Nutzers für eine Applikation gespeichert werden, wird ein gewisser Standard an Sicherheit gefordert, damit keinen Dritten diese Daten zugänglich werden.
 In der EinkaufsApp wurden folgende Maßnahmen getroffen um dies gewährleisten zu können:
 \\
-1. Der Nutzer startet durch die Eingabe von Benutzername und persönlichem Password eine Session, die Ihn bei jeder Anfrage an den Server authentifiziert.
+Einige konkrete Sicherheitsvorkehrungen lauten:
 \\
-2. Alle Passwörter werden als Einweg-Hash in der Datenbank gespeichert. Bei der Anmeldung wird das Passwort dem gleichen Verfahren unterzogen und dann die resultiereden Zeichenfolge mit der, in der Datenbank gespeicherten, abgeglichen.
-%MH: was ist der Inhalt dieser Aussage?
-%2. In Verbindung mit dem Nutzernamen wird sichergestellt, dass es sich auch um den richtigen Nutzer handelt.
+1)	Eine Session läuft nach 10 Minuten ohne Request an den Server ab.
 \\
-3. Die Verwendung des SSL-Protokolls (Secure Socket Layer) sorgt für  den Aufbau eines geschützten Kanals vor der eigentlichen HTTP-Kommunikation, so dass die Nutzerdaten für Dritte nicht zugängig sind.
-\\ 
-Dies bedeutet: Die Nutzerdaten werden in einem standart Web-Formular eingetragen (Login-Screen) und mittels POST-Request an den Server gesendet. 
-Da der TCP-Kanal verschlüsselt ist, haben Dritte keinen Zugriff auf die vom Nutzer eingegebenen Daten innerhalb des POST-Requests, was wiederum die gesicherte Übertragung von Nutzernamen und Passwort bewirkt.
-
+2)	Jedes Passwort wird als Einweg-Hash in der DB gespeichert.
+\\
+3)	Es wird eine Authentifizierung durchgeführt, das heißt ein Sicherstellen, dass die beteiligten Parteien auch tatsächlich die sind, die sie vorgeben zu sein.
+\\
+4)	Data Security: Eine weitere wichtige Technik zur Sicherheit von Webanwendungen spielt das SSL-Protokoll (Secure Socket Layer). Bei Verwendung dieser Protokolle wird vor der eigentlichen HTTP-Kommunikation ein geschützter Kanal aufgebaut, 
+sodass die Nutzerdaten für Dritte nicht zugänglich sind. Die Nutzerdaten werden in einem normalen Web-Formular eingetragen (Login-Screen) und mittels POST-Request an den Server gesendet. Da der TCP-Kanal abgesichert ist, haben Dritte keinen Zugriff auf die 
+Nutzdaten innerhalb des POST-Requests, d.h. Nutzername und Passwort werden gesichert übertragen.
+%AK-28.12.15-BearbeitungEnde
 \newpage
 \section{Durchführungsphase}
 
 In diesem Abschnitt wird die Funktionsweise der EinkaufsApp beschrieben. Dabei werden die einzelnen Hauptprozesse separat vorgestellt und deren technische Umsetzung erläutert. Die Hauptprozesse sind unterteilt in den Login und die Registrierung des Nutzers, den Einkaufsprozess, die Nutzerverwaltung und die Auswertung. 
-%HD - 23.12.2015: willst du den unteren Text mit reinnehmen?
-%Generell wurde in der Entwicklung nach dem Modell-View-Controller Prinzip gearbeitet. Nachdem die Prozesslogik der Designer stand („Modell“), wurden die einzelnen Views, also die visuelle Darstellung der zu implementierten Funktion, die der Nutzer am Ende sieht, entwickelt und welche schlussendlich über die „Controller“ mit der Logik versehen wurden. Jedes einzelne View hat dabei seinen eigenen Route.
+Generell wurde in der Entwicklung nach dem Modell-View-Controller Prinzip gearbeitet. Nachdem die Prozesslogik der Designer stand („Modell“), wurden die einzelnen Views, also die visuelle Darstellung, der zu implementierten Funktion, die der Nutzer am Ende sieht, entwickelt und welche schlussendlich über die „Controller“ mit der Logik versehen wurden. Jedes einzelne View hat dabei seine eigene Route.
 
 \subsection*{Einleitung}
-Die genannten Hauptprozesse stehen, wie in dem folgenden Diagramm zu sehen ist, in Relation. Dabei wurden die Views als einzelne Klassen dargestellt:
+Die genannten Hauptprozesse stehen, wie in dem folgenden Diagramm zu sehen ist, in Relation. Dabei wurden die Views\footnote {In der EinkaufsApp werden Views verwendet, da die Systemarchitektur auf der Model-View-Controller Architektur basiert.}  als einzelne Klassen dargestellt:
 \\
 \\
 %MH: ist dem Leser an der stelle Klar was "Views" sind???
+%AK: jetzt ja :)
 \hspace*{-10mm} 
 \includegraphics[trim = 17mm 30mm 0mm 20mm,clip,scale=0.7]{Klassendiagramm.pdf}
 \\
@@ -495,7 +403,7 @@ Die Designer haben hierzu, ebenso wie bei der Registrierung und dem Login ein Fl
 %TO DO - HD: noch machen^^
 %HD - 22.12.2015: Wo kieg ich die Infos her?
 %HD - 23.12.2015: Entwicklertext
-Der vom Design erstellte Ablauf der Marktauswahl wird direkt in den Einkaufsprozess mit eingebunden. Sobald der Nutzer die Option „Einkaufen“ wählt gelangt dieser in den Marktauswahl-View.\footnote {In der EinkaufsApp werden Views verwendet, da die Systemarchitektur auf der Model-View-Controller Architektur basiert.} Anders als im geplanten Ablauf der Designer, kann der Nutzer selber entscheiden, in welchem Markt er sich gerade befindet, indem er entweder in der direkt aufgeführten Marktliste einen auswählt, oder die Option „Markt hinzufügen“ nutzt. Dies hat technische Gründe, da zurzeit eine Lokalisierung der Märkte via GPS aus Zeitgründen noch nicht umgesetzt wurde.
+Der vom Design erstellte Ablauf der Marktauswahl wird direkt in den Einkaufsprozess mit eingebunden. Sobald der Nutzer die Option „Einkaufen“ wählt gelangt dieser in den Marktauswahl-View.Anders als im geplanten Ablauf der Designer, kann der Nutzer selber entscheiden, in welchem Markt er sich gerade befindet, indem er entweder in der direkt aufgeführten Marktliste einen auswählt, oder die Option „Markt hinzufügen“ nutzt. Dies hat technische Gründe, da zurzeit eine Lokalisierung der Märkte via GPS aus Zeitgründen noch nicht umgesetzt wurde.
 %HD - 23.12.2015 Ende
 \newpage
 \subsection{Einkaufsverwaltung}
@@ -548,7 +456,7 @@ Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Es gib
 \normalsize
 \subsubsection*{Design}
 \hspace*{-10mm} 
-\includegraphics[trim = 20mm 60mm 0mm 20mm,clip,scale=0.8]{Auswertung.pdf}
+\includegraphics[trim = 20mm 60mm 0mm 20mm,clip,scale=0.9]{Auswertung.pdf}
 \footnotesize Abbildung 10: Auswertung
 \normalsize
 \\
@@ -564,7 +472,7 @@ Wie im Programmablaufplan beschrieben, gibt es im View „Auswertung“ die drei
 \subsection{Usability der App}
 Zusammengefasst kann die Version 1.0 der EinkaufsApp Nutzer registrieren und anmelden, sowie den Einkaufsprozess durchführen. Außerdem können Gruppen erstellt und verwaltet werden. Der Auswertungsprozess wurde in Anbetracht der Zeit nicht umgesetzt. Hinsichtlich der Optik wurde kein Corporate Design verwendet, um die Benutzerfreundlichkeit dennoch zu gewährleisten, implementierten die Entwickler ein übersichtliches Interface im aktuellen Web Stil.
 \newpage
-\subsection{Besondere Herrausforderungen des Projektes}
+\subsection{Besondere Herausforderungen des Projektes}
 %\subsection{Organisation und Projektmanagement}
 %MH: der Inhalt beist sich etwas mit der überschrift - lasst uns noch was besseres finden
 Allem voran muss erwähnt werden, dass dieses Projekt enorm zeitkritisch war und daher die Planungsphase nahe zu vollständig übersprungen werden musste. Ebenfalls sind Design und Implementation stark parallelisiert abgelaufen. Um innerhalb von zwei Monaten ein lauffähiges und qualitätsorientiertes Software-Produkt zu erstellen, bedarf es eines überschaubaren und für alle Mitglieder transparenten Projektes, aber allem voran auch ein, gezielt auf die Herausforderungen, zugeschnittenes Team, welches die benötigten Skills und das Know-How bereits mitbringt. Ebenfalls ist es sehr wertvoll, wenn die Beteiligten bereits zuvor zusammen gearbeitet haben und untereinander mit Tools und Konventionen vertraut sind, oder zumindest in der Lage sind unter formalen Bedingungen zu arbeiten. Da naturgemäß in unserem Umfeld diese Voraussetzungen nur zu sehr geringen Teilen erfüllt werden können, ist auch ein sehr kritischer Projektablauf unausweichlich. Um diesen Schwierigkeiten entgegen zu wirken, wäre eine klarer Abgrenzung von Aufgabenbereichen
@@ -622,20 +530,21 @@ Bedingungen das bestmöglich Ergebnis zu erzielen.
 \item Anhang [3]: Installationsanleitung
 \item Anhang [4]: EER-Diagramm
 \item Anhang [5]: Proto.io Design
-\item Anhang [6]: Prototyp
-\item Anhang [7]: MVP
+\item Anhang [6]: Prototyp - Beschreibung
+\item Anhang [7]: Prototyp
 \item Anhang [8]: Main PAP
 \item Anhang [9]: Datenfluss
 %HD: Ich weiß nicht,ob wir von den Designern alle Datenflüsse anhängen sollen
 %MH: warum nicht?
-\item Anhang [10]: ER Modell 
-\item Anhang [11]: MongoDB-Klassendiagramm
+\item Anhang [10]: MongoDB-Klassendiagramm
 %HD: Da im Development Repository das MongoDB_v2 ggf.
 %MH: da liegt jetzt auch ein v3 drinne -> das ruig nehmen
-\item Anhang [12]: Factories
+\item Anhang [11]: Factories
+\item Anhang [12]: Moritz Logik
 
 %HD: ich hoffe, dass ich nichts vergessen habe
 
+%1worldsync --> gs1 
 
 \end{itemize}
 \end{document}
