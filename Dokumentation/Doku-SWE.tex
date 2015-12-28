@@ -18,8 +18,8 @@ headsep=10mm, footskip=12mm}
 \begin{document}
 
 \title{Software Engineering Projekt}
-\author{Gruppe Einkaufsapp}
-\date {18.Oktober 2015}
+\author{DWI 13 - EinkaufsApp}
+\date {04. Januar 2015}
 \maketitle
 \newpage
 \tableofcontents
@@ -111,8 +111,7 @@ Der alltägliche Einkauf wird hinsichtlich der Nachverfolgung von Finanzen und P
 \\
 %HD: EInkaufsliste generieren in ZUkunft -> Sparpotentiale von 40 % Zeitpotential
 Die Dokumentation umfasst die Phasen der Vorbetrachtung und Entwicklung der EinkaufsApp mit den jeweiligen Ideen, Tasks und angefertigten Dokumenten und dient als Reflexion aller Projektmitglieder über das gesamte Projekt.
-Zudem wurde eine Einteilung des Projektes in Vorbetrachtung, Durchführungs-
-phase, Problembeschreibung und Abschlussphase als angemessen empfunden und in diesem Dokument angewandt.
+Zudem wurde eine Einteilung des Projektes in Vorbetrachtung, Durchführungsphase, Problembeschreibung und Abschlussphase als angemessen empfunden und in diesem Dokument angewandt.
 \newpage
 \section{Vorbetrachtung}
 Die Vorbetrachtung beinhaltet alle vorbereitenden Aktivitäten, die vor der Entwicklung der Applikation getätigt wurden. Dazu gehören die konkrete Problembeschreibung, der darauffolgende Lösungsansatz und die Zielsetzungen für die Umsetzung der Entwicklung.
@@ -216,21 +215,26 @@ Ein Anwendungsfall ist die Beschreibung eines Szenarios innerhalb einer gesamten
 Dabei beginnt in der Regel der Prozess mit einem Startzustand („Precondition“), dem Akteur, der Abwicklung („Main Flow“), und dem Zielzustand. 
 Je nach Anwendungsfall bzw. Use Case werden die einzelnen Parameter unterschiedlich angegeben. Es ergeben sich die zwei verschiedenen Beziehungen „Include“ und „Extend“.
 Die Include-Beziehung im Anwendungsdiagramm beschreibt eine abhängige Zugehörigkeit eines Anwendungsfalls zu einem anderen. Im Gegensatz dazu beschreibt die Extend-Beziehung eine unabhängige Erweiterung eines Anwendungsfalls.
-
+\\
+\\
 Als Beispiel stehen folgende Use Cases in der EinkaufsApp in Beziehung:
 \\
-%MH: ich denke hier kommt dann noch was, oder?
-%HD: ja
-%HD-22.12.2015: HDTODO Grafik erstellen
 \\
-Include-Beziehung:
+\textbf{Include-Beziehung}
 \\
 \includegraphics[scale=1]{Include_Use-Case.JPG}
 \\
+\footnotesize Abbildung xx: Include-Beziehung
+\normalsize
 \\
-Extend-Beziehung:
+\\
+\\
+\textbf{Extend-Beziehung:}
 \\
 \includegraphics[scale=1]{Extend_Use-Case.JPG}
+\\
+\footnotesize Abbildung xx: Extend-Beziehung
+\normalsize
 \\
 \newpage
 \subsection{Projektorganisation}
@@ -262,8 +266,6 @@ Die einzeln genutzten Tools die im Pflichtenheft, welches sich im Anhang befinde
 \\
 \newpage
 \subsubsection{Ist-Analyse}
-%MH: für eine schlüssige Doku würde hier die Frage aufkommen "warum hab ich das denn vor dem Projekt gemacht???" - außerdem geht es nicht drum mich selbst zu beweiräuchern 
-%MH: es sollte mehr in die Richtung gehen "eien Grundanforderung an den Datenbestand ging bereits aus der aufgabe hervor" oder "wurde bereits zu beginn in das Projekt überneommen" - gerne nochmal an mich herantreten
 Aus vorangegangener Erfahrung mit dem Thema der automatisierte Unterstützung durch eine App bei Einkäufen im privaten Bereich ist ein Grobkonzept, eines ER-Modells, bereits in das Projekt überführt worden. Dieses wurde verwendet, um ein Grundverständnis beim designen und implementieren zu erzeugen. 
 \\
 \\
@@ -310,7 +312,6 @@ Es wurde ein organisatorisches Grundgerüst geschaffen, das allen Gruppen als Or
 \normalsize
 
 \subsubsection{Agiles Projektmanagement}
-%MH: ganz dringend inhaltlich nochmal mit mir besprechen!!!
 Nachdem ein grober organisatorischer Rahmen für das Projekt von der Gruppe Dokumentation vorgegeben wurde, haben die einzelnen Gruppen, durch agile Projektmanagement-Methoden,  ihre Arbeitspakete und Ablaufpläne festgelegt. 
 Die Dokumentation erstellte Arbeitspakete für alle Gruppen und jedes Projektmitglied hat sich nach dem Pull-Prinzip – bekannt aus der Projektmanagement-Methode Kanban – seine Arbeitspakete abgeholt und eine Bearbeitungsfrist definiert. 
 In der Gruppe der Entwickler wurde unter Zuhilfenahme des Tools „Trello“ die Planung und Durchführung der Arbeitspakete definiert. Trello ist ein Web-Dienst, der ein Board anbietet, um Arbeitspakete gemäß agiler Projektmanagement-Methoden zu bearbeiten und Arbeitsfortschritte transparent darzustellen. 
@@ -400,14 +401,11 @@ Die Designer haben hierzu, ebenso wie bei der Registrierung und dem Login ein Fl
 \footnotesize Abbildung 5: Markt-Auswahl
 \normalsize
 \subsubsection*{Entwicklung}
-%TO DO - HD: noch machen^^
-%HD - 22.12.2015: Wo kieg ich die Infos her?
-%HD - 23.12.2015: Entwicklertext
 Der vom Design erstellte Ablauf der Marktauswahl wird direkt in den Einkaufsprozess mit eingebunden. Sobald der Nutzer die Option „Einkaufen“ wählt gelangt dieser in den Marktauswahl-View.Anders als im geplanten Ablauf der Designer, kann der Nutzer selber entscheiden, in welchem Markt er sich gerade befindet, indem er entweder in der direkt aufgeführten Marktliste einen auswählt, oder die Option „Markt hinzufügen“ nutzt. Dies hat technische Gründe, da zurzeit eine Lokalisierung der Märkte via GPS aus Zeitgründen noch nicht umgesetzt wurde.
 %HD - 23.12.2015 Ende
 \newpage
 \subsection{Einkaufsverwaltung}
-\subsubsection{Design}
+\subsubsection*{Design}
 Aktivitätsdiagramm „Einkauf einlesen“ 
 \\
 \hspace*{-10mm} 
@@ -460,6 +458,23 @@ Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Es gib
 \footnotesize Abbildung 10: Auswertung
 \normalsize
 \\
+\subsubsection*{Auswertung der Diagramme}
+In diesem Abschnitt wird noch einmal genauer auf die UML-Diagramme\footnote{Die gesamten UML-Diagramme befinden sich in dem Anhang der Dokumentation und werden vereinzelt in den Unterkapiteln schon dargestellt.} eingegangen, welche mit dem Enterprise Architect erstellt wurden. Der Enterprise Architekt eignet sich besonders gut zum Modellieren des Softwaresystems, da das Programm nach UML Standards arbeitet. Diese Funktionalität war besonders hilfreich beim Erstellen der UML-Diagramme. 
+\\
+Zudem bietet das Tool Vorlagen und Objekte für viele verschiedenen UML-Diagramme an und ist einfach zu bedienen. Gerade bei der ersten Erstellung eines UML-Diagramms bietet das Programm viele Hilfestellungen und ist optimal auf die Erstellung solcher Diagramme ausgelegt. Außerdem ist das Programm für den Anwender individuell anpassbar, um auch speziellen Anforderungen gerecht zu werden.
+\newpage
+In der nachfolgenden Tabelle sind die Eigenschaften der in dem Projekt  genutzten Diagramme beschrieben und gegenübergestellt:
+\\
+\\
+\hspace*{-10mm} 
+\includegraphics[trim = 10mm 60mm 0mm 20mm,clip,scale=0.7]{Auswertung_Diagramme.pdf}
+\footnotesize Abbildung 10: Auswertung-Diagramme
+\normalsize
+\\
+\\
+Das Sequenzdiagramm muss innerhalb des Desginprozesses konkretisiert dargestellt werden, damit die Entwickler optimal implementieren können.
+
+
 \subsubsection*{Entwicklung}
 %MH: Update von Eric einholen
 %TO DO - HD: Eric nochmal anschreiben, wie es jetzt genau stant ist
@@ -483,6 +498,9 @@ Bedingungen das bestmöglich Ergebnis zu erzielen.
 \section{Projektabschluss}
 \subsection{Fertiges Produkt}
 \subsection{Aussichten}
+In der folgenden Tabelle ist als kleine Übersicht gezeigt, welche Anforderungen an die EinkaufsApp umgesetzt wurden und welche noch nicht. 
+\\
+\\
 \hspace*{-10mm} 
 \includegraphics[trim = 17mm 10mm 0mm 20mm,clip,scale=0.9]{Anforderungen-Probleme.pdf}
 \\
@@ -491,11 +509,11 @@ Bedingungen das bestmöglich Ergebnis zu erzielen.
 \newpage
 \section{Lesson learned}
 %TO DO - MH (fazit)
-Rückblickend war es eine besondere Herausforderung die gleiche Vorstellung der Aufgaben und Ziele im gesamten Team zu erreichen. Hierfür sind interne Abstimmungen innehalb des Teams noch vor dem Projektstart sehr zu empfehlen. Ebenso ist eine im Vorfeld gut geplante und abgestimmte Organisationsstruktur unerlässlich. Da diese Vorarbeit hier nicht gegeben werden konnte, wurde zuerst auf eine Flache Hirachi mit einem hohen Teil an Selbstorganisation für jede Person gesetzt. Dies hatte das Ziel jede Person mit einem signifikanten Maaß an Verantwortung und Einsicht in die Sie umgebenden Projektgeschehnisse zu versehen, um die Qualität der geleisteten Arbeit zu sichern. Leider haben die Vorteile einer unkomplizierten und schnellen Kommunikation, sowie das flexible Arbeiten hier nicht überwogen. Demzufolge wurde eine weitere Organisationsebene über den Teilbereich ''Entwicklung'' eingefügt. Nachdem hier, abgetrennt von den anderen Arbeitsgruppen, kleinere Arbeitspakete erstellt wurden, ist die Produktivität spürbar gestigen. \\
-Weiterhin ist für das Arbeiten miteinander und das Verständnis der Ergbnisse ein gewissens Anteil an formalen Methoden sehr zu empfehlen. Es wurde vor allem in der Anfangsphase des Projektes relativ viel Zeit damit verbracht, sich über die Arbeitsmittel, das Vorgehen in den einzelnen Gruppen, die Ziele in den Gruppen und innerhalb des gesamtne Projektes, sowie die Nachhaltigkeit und den Nutzen der verrichteten Arbeiten einig zu werden. Diese Herrausforderung wäre ebenfalls bereits in der Planungsphase zu bewältiegen.\\
-Als ein weitereren sehr wichtiegen Erfolgsfaktor ist das eigene Team und jedes Einzelne seiner Mitglieder als Stakeholder, zu betrachten. Hier können die Relevanz einzelner Personen für den Projekterfolg oder auch Ihre Motivation diesbezüglich stark variieren. Im Ideealfall wird das Team, wie bereits zuvor bei den besonderen Herausforderungen erwähnt, konkret auf die spezifischen auftreten Aufgaben zugeschnitten und dann im vollen Umfang mit einer qualitativ hochwertiegen Lösung betraut.\\
-Ebenfalls ist in diesem Projekt Zeit eine sehr Herausfordernde Komponente gewesen. Da hier ein fixer Abgabetermin unausweichlich ist und darüber hinaus alle Mitglieder nicht Vollzeit an diesem Projekt arbeiten, wirken Abwesenheiten der einzelnen Personen besonders schwer. Da dises Risiko aber unabdingbar ist, kann es lidglich in der Planung berücksichtigt werden.\\
-Somit sind die kritischten Punkte, die in einem Softwareprojekt wie diesem beachten werden sollten, eine klare Definition der Aufgaben unter berücksichtiegung der zu verfügung stehenden Zeit und der Personenrressource, sowie ihrer Ausfallwahrscheinlichkeit. Allerdings auch die Zusammenstellung des Teams bezogen auf Motivation und Skills und nicht zuletzt eine ausreichende Planung des gesamten Projektes mit allen beteiligten, um die Erwartungen und die notwendigen Arbeiten klar abzugrenzen, zu kommunizieren und auch entgegen zu nehmen.
+Rückblickend war es eine besondere Herausforderung die gleiche Vorstellung der Aufgaben und Ziele im gesamten Team zu erreichen. Hierfür sind interne Abstimmungen innerhalb des Teams noch vor dem Projektstart sehr zu empfehlen. Ebenso ist eine im Vorfeld gut geplante und abgestimmte Organisationsstruktur unerlässlich. Da diese Vorarbeit hier nicht gegeben werden konnte, wurde zuerst auf eine Flache Hierarchie mit einem hohen Teil an Selbstorganisation für jede Person gesetzt. Dies hatte das Ziel jede Person mit einem signifikanten Maß an Verantwortung und Einsicht in die Sie umgebenden Projektgeschehnisse zu versehen, um die Qualität der geleisteten Arbeit zu sichern. Leider haben die Vorteile einer unkomplizierten und schnellen Kommunikation, sowie das flexible Arbeiten hier nicht überwogen. Demzufolge wurde eine weitere Organisationsebene über den Teilbereich ''Entwicklung'' eingefügt. Nachdem hier, abgetrennt von den anderen Arbeitsgruppen, kleinere Arbeitspakete erstellt wurden, ist die Produktivität spürbar gestiegen. \\
+Weiterhin ist für das Arbeiten miteinander und das Verständnis der Ergebnisse ein gewisses Anteil an formalen Methoden sehr zu empfehlen. Es wurde vor allem in der Anfangsphase des Projektes relativ viel Zeit damit verbracht, sich über die Arbeitsmittel, das Vorgehen in den einzelnen Gruppen, die Ziele in den Gruppen und innerhalb des gesamten Projektes, sowie die Nachhaltigkeit und den Nutzen der verrichteten Arbeiten einig zu werden. Diese Herausforderung wäre ebenfalls bereits in der Planungsphase zu bewältigen.\\
+Als ein weiteren sehr wichtigen Erfolgsfaktor ist das eigene Team und jedes Einzelne seiner Mitglieder als Stakeholder, zu betrachten. Hier können die Relevanz einzelner Personen für den Projekterfolg oder auch Ihre Motivation diesbezüglich stark variieren. Im Idealfall wird das Team, wie bereits zuvor bei den besonderen Herausforderungen erwähnt, konkret auf die spezifischen auftreten Aufgaben zugeschnitten und dann im vollen Umfang mit einer qualitativ hochwertigen Lösung betraut.\\
+Ebenfalls ist in diesem Projekt Zeit eine sehr Herausfordernde Komponente gewesen. Da hier ein fixer Abgabetermin unausweichlich ist und darüber hinaus alle Mitglieder nicht Vollzeit an diesem Projekt arbeiten, wirken Abwesenheiten der einzelnen Personen besonders schwer. Da dieses Risiko aber unabdingbar ist, kann es lediglich in der Planung berücksichtigt werden.\\
++Somit sind die kritischsten Punkte, die in einem Softwareprojekt wie diesem beachten werden sollten, eine klare Definition der Aufgaben unter Berücksichtigung der zu Verfügung stehenden Zeit und der Personenressource, sowie ihrer Ausfallwahrscheinlichkeit. Allerdings auch die Zusammenstellung des Teams bezogen auf Motivation und Skills und nicht zuletzt eine ausreichende Planung des gesamten Projektes mit allen beteiligten, um die Erwartungen und die notwendigen Arbeiten klar abzugrenzen, zu kommunizieren und auch entgegen zu nehmen.
 \newpage
 \section*{Quellen}
 \addcontentsline{toc}{section}{Quellen}
@@ -533,19 +551,21 @@ Somit sind die kritischten Punkte, die in einem Softwareprojekt wie diesem beach
 \item Anhang [1]: Pflichtenheft
 \item Anhang [2]: Handbuch
 \item Anhang [3]: Installationsanleitung
-\item Anhang [4]: EER-Diagramm
 \item Anhang [5]: Proto.io Design
-\item Anhang [6]: Prototyp - Beschreibung
-\item Anhang [7]: Prototyp
-\item Anhang [8]: Main PAP
-\item Anhang [9]: Datenfluss
-%HD: Ich weiß nicht,ob wir von den Designern alle Datenflüsse anhängen sollen
-%MH: warum nicht?
-\item Anhang [10]: MongoDB-Klassendiagramm
-%HD: Da im Development Repository das MongoDB_v2 ggf.
-%MH: da liegt jetzt auch ein v3 drinne -> das ruig nehmen
-\item Anhang [11]: Factories
-\item Anhang [12]: Moritz Logik
+\item Anhang [6]: Prototyp
+\item Anhang [7]: Datenfluss-PAP-EinkaufsApp
+\item Anhang [8]: Klassendiagramm
+\item Anhang [9]: MongoDB-Klassendiagramm
+\item Anhang [10]: Factories
+\item Anhang [11]: Aktivitätsdiagramm Ausgabenverlauf
+\item Anhang [12]: Aktivitätsdiagramm Einkauf 
+\item Anhang [13]: Anwendungsfalldiagramm  Ausgabenverlauf
+\item Anhang [14]: Anwendungsfalldiagramm Einkauf 
+\item Anhang [15]: Sequenzdiagramm Ausgabenverlauf
+\item Anhang [16]: Sequenzdiagramm Einkauf
+\item Anhang [17]: Zustandsdiagramm 
+
+
 
 %HD: ich hoffe, dass ich nichts vergessen habe
 
@@ -558,7 +578,4 @@ Somit sind die kritischten Punkte, die in einem Softwareprojekt wie diesem beach
 
     © 2015 GitHub, Inc. Terms Privacy Security Contact Help 
 
-    Status API Training Shop Blog About Pricing 
-
-    © 2015 GitHub, Inc. Terms Privacy Security Contact Help 
 
