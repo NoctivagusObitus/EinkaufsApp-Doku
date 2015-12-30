@@ -8,11 +8,18 @@
 \usepackage{array}
 \usepackage{longtable}
 \usepackage{graphicx}
-\usepackage{pdfpages}
+\usepackage{geometry}
+
+
+%abstandsformate (z.b. seitenränder)
+\geometry{a4paper, top=25mm, left=33mm, right=22mm, bottom=30mm,
+headsep=10mm, footskip=12mm}
+
 \begin{document}
+
 \title{Software Engineering Projekt}
-\author{Gruppe Einkaufsapp}
-\date {18.Oktober 2015}
+\author{Dual Wirtschaftsinformatik Jahrgang 2013 \\ EinkaufsApp}
+\date {04. Januar 2015}
 \maketitle
 \newpage
 \tableofcontents
@@ -26,28 +33,34 @@
 \item[4.] ER - Entity Relationship
 \item[5.] UML  - Unified Modeling Language
 \item[6.] SSL - Secure Socket Layer 
+\item[7.] GTIN - Global Trade Item Number
 \end{itemize}
 \newpage
 \section*{Tabellenverzeichnis}
-Tabelle 1: Anforderungsanalyse
-\\
-Tabelle 2 : Anforderungsanalyse
+\begin{itemize}
+\item[] Tabelle 1: Anforderungsanalyse
+\item[] Tabelle 2 : Ist- Analyse
+\item[] Tabelle 3: Meilensteinplanung
+\item[] Tabelle 4: Auswertung-Diagramme
+\item[] Tabelle 5: Aussichten
+\end{itemize}
 \newpage
 \section*{Abbildungsverzeichnis}
 %\addcontentsline{toc}{section}{Abbildungsverzeichnis}
 %\listoffigures
-Abbildung 1: Aktivitätsliste
-\\
-Abbildung 2: Meilensteinplanung
-\\
-Abbildung 3: Klassen-Diagramm
-\\
-Abbildung 4: Aktivitätsdiagramm-Einkauf
-\\
-Abbildung 5: Aktivitätsdiagramm-Ausgabenverlauf
-\\
-Abbildung 6: Flussdiagramm Login
-
+\begin{itemize}
+\item[] Abbildung 01: Include-Beziehung
+\item[] Abbildung 02: Extend-Beziehung
+\item[] Abbildung 03: ER - Modell
+\item[] Abbildung 04: Aktivitätsliste
+\item[] Abbildung 05: Klassen-Diagramm
+\item[] Abbildung 06: Flussdiagramm-Login
+\item[] Abbildung 07: Marktauswahl
+\item[] Abbildung 08: Aktivitätsdiagramm Einkauf
+\item[] Abbildung 09: Gruppenverwaltung
+\item[] Abbildung 10: Aktivitätsdiagramm Auswertung
+\item[] Abbildung 11: Zustandsdiagramm
+\end{itemize}
 \newpage
 \section*{Projektdokumentation}
 \subsection*{Gruppenmitglieder}
@@ -90,17 +103,10 @@ Die EinkaufsApp dient dem Nutzer dazu sein alltägliches Einkaufserlebnisse, hin
 \\
 Gleichzeitig soll sie als kleines Nachschlagewerk fungieren, welches Überblick über Preis und Angebot bestimmter Produkte bietet.
 Der alltägliche Einkauf wird hinsichtlich der Nachverfolgung von Finanzen und Produktauswahl, durch die Funktionen der EinkaufsApp stark erleichtert.
-
 \\
-%MH: bitte mit dem Begriff "Plaung" vorsichtig sein weil er auf "Planungsphase" schließen lässt und ich die in meinem schribs ja ausgeschlossen habe
-%HD: Markus bitte einfach ändern, wenn es dir nicht passt. Wir haben keine Zeit da noch viel zu diskutieren. Es muss fertig werden. Wir sind so ziemlich mit allen Änderungsvorschlägen zufrieden!
 %HD: EInkaufsliste generieren in ZUkunft -> Sparpotentiale von 40 % Zeitpotential
-Die Dokumentation umfasst die Phasen der Vorbetrachtung, Planung und Entwicklung der EinkaufsApp mit den jeweiligen Ideen, Tasks und angefertigten Dokumenten und dient als Reflexion aller Projektmitglieder über das gesamte Projekt.
-Zudem wurde eine Einteilung des Projektes in Vorbetrachtung, Durchführungs-
-phase, Problembeschreibung und Abschlussphase als angemessen empfunden und in diesem Dokument angewandt.
-\\
-Diese Dokumentation ist parallel zur Durchführungsphase entstanden.
-
+Die Dokumentation umfasst die Phasen der Vorbetrachtung und Entwicklung der EinkaufsApp mit den jeweiligen Ideen, Tasks und angefertigten Dokumenten und dient als Reflexion aller Projektmitglieder über das gesamte Projekt.
+Zudem wurde eine Einteilung des Projektes in Vorbetrachtung, Durchführungsphase, Problembeschreibung und Abschlussphase als angemessen empfunden und in diesem Dokument angewandt.
 \newpage
 \section{Vorbetrachtung}
 Die Vorbetrachtung beinhaltet alle vorbereitenden Aktivitäten, die vor der Entwicklung der Applikation getätigt wurden. Dazu gehören die konkrete Problembeschreibung, der darauffolgende Lösungsansatz und die Zielsetzungen für die Umsetzung der Entwicklung.
@@ -117,7 +123,6 @@ Die Problembeschreibung kann aus dem Pflichtenheft im Anhang entnommen werden.
 %Zusätzlich gibt es eine Gruppenfunktion, die bestimmten selbstgewählten Gruppen, z.B WG-Mitgliedern, die Möglichkeit bietet, die Ausgaben pro Person zu tracken, was die manuelle Kalkulation am Ende eines Monats erspart. 
 
 \subsection{Zielsetzung}
-%MH - 04.12.15
 Die EinkaufsApp soll die EANs (European Article Number), beziehungsweise die neuere GTIN (Global Trade Item Number), der Produkte, die von den Konsumenten gekauft werden, zusammen mit dem Datum, dem Einkaufsort und ihren Kosten speichern.
 Sie soll es zudem ermöglichen die Preise der Produkte und die damit verbundenen Kosten auf Gruppen oder einzelne Personen zu verteilen und im Ergebnis eine finanzielle Auswertung aufzeigen.
 Das Ziel des Projektes ist es, eine App zu entwickeln, die eine Lösung für die unter 1.1 dargestellten Herausforderungen bereitstellt. 
@@ -132,9 +137,9 @@ Zum jetzigen Zeitpunkt soll die zu entwickelnde Applikation vorerst als Tracking
 Mit dem Softwaresystem kann jede Privatperson arbeiten, die ihren Einkauf digital dokumentieren und Auswertungen des eigenen Kaufverhaltens erhalten möchte. 
 Des Weiteren hilft diese App jedem, der für Gruppen, z. B. Mitgliedern einer Wohngemeinschaft, Einkäufe tätigt und eine direkte Zuteilung der einzelnen Produkte zur jeweiligen Person wünscht. 
 Die App richtet sich auch an Menschen, die mit Hilfe der Auswertung mögliche Sparpotenziale erkennen und wahrnehmen möchten. 
-\subsubsection*{2. Welcher Benutzer benötigt welche Funktionen?}
-%MH: ist das wirklich mit der Frage gemeint??? ich könnte mir da auch so etwas vortellen wie "was braucht ein kind und was braucht ein erwachsener?"
-%HD: Wir lassen das jetzt so. Nimmt nur Zeit weg. 
+\\
+\\
+\subsubsection*{2. Welcher Benutzer benötigt welche Funktionen?} 
 Insgesamt werden in der EinkaufsApp drei verschiedene Nutzerrollen vorgesehen:
 Einerseits existiert der Standarduser, welche Rolle jeder Nutzer einnimmt nachdem er sich angemeldet hat.
 Wenn dieser wiederum in der EinkaufsApp eine Gruppe erstellt kann er zusätzlich die Rolle des Gruppenadminstrators einnehmen und kann weitere Gruppenmitglieder hinzufügen.
@@ -177,7 +182,6 @@ Dieser erbt ebenfalls die Funktionalitäten des Standardusers und kann darüber 
 \end{itemize}
 Hinweis: Ein Gruppenadmin ist gleichzeitig auch ein Gruppenmitglied.
 \end{itemize}
-
 \subsubsection*{3. Welche Informationen müssen zu einer Person, dem Benutzer, gespeichert werden, um einen Geschäftsprozess, z. B. das für eine WG einkaufen, mit dem System abzuwickeln?}
 Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf, für z. B. eine WG, stattfinden kann:
 \begin{itemize} 
@@ -191,7 +195,6 @@ Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf,
 \item Märkte (Name und Standort)
 \item Einkaufsdatum
 \end{itemize}
- 
 \subsubsection*{4. Welche im Szenario nicht genannten Funktionen werden von dem Softwaresystem benötigt, um heutigen Anforderungen zu entsprechen? Nennen Sie beispielhaft fünf Funktionen!}
 \begin{itemize}
 \item[a.] Separater Zugang für Anbieter, z. B. Supermärkte um Angebote einzupflegen, die der Käufer via Push-Notification bekommt
@@ -200,243 +203,168 @@ Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf,
 \item[d.] Erstellen eines monatlichen Auswertungsreports via Push-Notification 
 \item[e.] Erstellen manueller Einkaufslisten vor dem Einkauf 
 \item[f.] Nutzung der EinkaufsApp über Social Media (z. B. Twitter oder Facebook)
-\end{itemize}
- 
- 
+\end{itemize} 
+\newpage
 \subsubsection*{5. Was ist ein Anwendungsfall und welche Beziehungen zwischen Anwendungsfällen beschreibt der Standard?}
 Ein Anwendungsfall ist die Beschreibung eines Szenarios innerhalb einer gesamten Anwendung. 
 Dabei beginnt in der Regel der Prozess mit einem Startzustand („Precondition“), dem Akteur, der Abwicklung („Main Flow“), und dem Zielzustand. 
-Je nach Anwendungsfall bzw. Use Case werden die einzelnen Parameter unterschiedlich angegeben. Es ergeben sich die zwei verschiedenen Beziehungen "Include" und "Extend" zwischen Anwendungsfällen.
-Die Include-Beziehung im Anwendungsdiagramm beschreibt bei zwei Anwendungsfällen, dass der erste Anwendungsfall den zweiten beinhaltet. Im Gegensattz dazu beschreibt die Extend-Beziehung, dass ein Anwendungsfall den anderen erweitert.
-\\
-Als Beispiel stehen folgende Anwendungsfälle in der EinkaufsApp in Beziehung:
-\\
-%MH: ich denke hier kommt dann noch was, oder?
-%HD: ja
-\\
-Include-Beziehung:
-Registrierung -> include -> Passworteingabe überprüfen
+Je nach Anwendungsfall bzw. Use Case werden die einzelnen Parameter unterschiedlich angegeben. Es ergeben sich die zwei verschiedenen Beziehungen „Include“ und „Extend“.
+Die Include-Beziehung im Anwendungsdiagramm beschreibt eine abhängige Zugehörigkeit eines Anwendungsfalls zu einem anderen. Im Gegensatz dazu beschreibt die Extend-Beziehung eine unabhängige Erweiterung eines Anwendungsfalls.
 \\
 \\
-Extend-Beziehung:
-Einkaufsprozess <- extends <- Marktbestimmung
+Als Beispiel stehen folgende Use Cases in der EinkaufsApp in Beziehung:
+\\
+\\
+\textbf{Include-Beziehung}
+\\
+\includegraphics[scale=1]{Include_Use-Case.JPG}
+\\
+\footnotesize Abbildung 1: Include-Beziehung
+\normalsize
+\\
+\\
+\\
+\textbf{Extend-Beziehung:}
+\\
+\includegraphics[scale=1]{Extend_Use-Case.JPG}
+\\
+\footnotesize Abbildung 2: Extend-Beziehung
+\normalsize
 \\
 \newpage
 \subsection{Projektorganisation}
 %MH: ich weis ja nicht wer von euch welchen teil geschrieben hat, aber ich würde mich inhaltlich gern nochmal über diese Absatz unterhalten
-Die Projektgruppe der EinkaufsApp teilte sich am 02. Oktober 2015 in die Untergruppen Dokumentation, Design und Entwicklung auf.
+%AK: haben uns ja darüber bereits unterhalten- Änderung am 23.12. vorgenommen
+Am 02. Oktober 2015 fand das erste Meeting mit der gesamten Projektgruppe der EinkaufsApp statt, hierbei wurden Absprachen über das weitere Vorgehen und die Projektumsetzung der Ideen und Ziele getroffen.
+Das gesamte Team teilte sich zur optimalen Zielerfüllung in die Untergruppen Dokumentation, Design und Entwicklung auf.
 Der Projektleiter und in diesem Falle auch Projektmanager wurde ebenso an diesem Tag ernannt.
 Als Projektmanager war er nun für die Team- und Projektorganisation zuständig. Dazu gehört unter anderem das Einhalten der Projekt- und Meilensteinplanung und das Erfüllen der Projektziele.
-Jegliche Unterhaltung basierte auf Mailverkehr oder fand durch Telefonkonferenzen statt. Jede Untergruppe musste sich selbst organisieren und wöchentlich ein Update dem Projektleiter zukommen lassen. Jeden Montag fanden Status-Telefonkonferenzen statt, wo sich alle Teammitglieder zusammen fanden und über den aktuellen Stand der Untergruppen informierten und über aufgekommene Probleme diskutierten. 
-\subsubsection{Kick-Off-Meeting}
-%MH: nur in einem Absatz "02. Oktober  2015" schreiben
-%MH: außerdem auch bitte nochmal rücksprache mit mir halten
-Am 02. Oktober  2015 fand das erste Meeting mit der gesamten Projektgruppe statt. In diesem Kick-Off-Meeting wurden Absprachen über das weitere Vorgehen und die Projektumsetzung der Ideen und Ziele getroffen. Es wurde über die weitere Kommunikationsform abgestimmt und ebenso festgelegt, dass wöchentlich Telefonkonferenzen innerhalb der Untergruppen zum weiteren Vorgehen des Projektes statt finden werden, sodass die genannten Projektziele bis zum festgelegten Datum umgesetzt werden können. 
+Jegliche Unterhaltung basierte auf Mailverkehr oder fand durch Telefonkonferenzen statt. Jede Untergruppe musste sich selbst organisieren und wöchentlich ein Update dem Projektleiter zukommen lassen. Jeden Montag fanden Status-Telefonkonferenzen statt, wo sich alle Teammitglieder zusammenfanden und über den aktuellen Stand der Untergruppen informierten und über aufgekommene Probleme diskutierten. 
 Die Untergruppen einigten sich außerdem auf Tools, die effizient und sinnvoll zur Umsetzung der anstehenden Aktivitäten und zum Einhalten der Projektziele verwendet wurden. 
+%AK-Änderung-Ende
+
 \newpage
 \subsubsection{Anforderungskatalog}
-%MH: wenn die Doku parallel zur Implementation entstanden ist können hier nicht "ziele für das Projekt" definiert werden (das wäre wieder Planungsphase)
+%MH: wenn die Doku parallel zur Implementation entstanden ist können hier nicht "ziele für das Projekt" definiert werden (das wäre wieder Planungsphase) --> %AK hab es nun geändert und den Satz raus genommen
 In dem hier angeführten Kapitel werden konkrete Ziele für das bevorstehende Projekt formuliert, die auf den zuvor aufgeführten Funktionen der Applikation basieren.
 Die einzeln genutzten Tools die im Pflichtenheft, welches sich im Anhang befindet, festgehalten sind, werden hier den einzelnen Arbeitsgruppen zugewiesen.
 \\
-\\
 %MH: in dem Bild sollte bei "Umgesetzt von" sollte eher stehen "Entwicklung" oder wahlweise von den "Entwicklern"
 %MH: insgesammt bitte nochmal mit mir über die Organisation der Tabelle sprechen! und wenn möglich könnte es geminhin sinvoll sein PDFs einzubinden anstatt von bildern
-\includegraphics[scale=0.59, origin=l]{Anforderungskatalog.png}
+
+%way to go for graphics
+%negative \hspace um das bild nach links zu verschieben und trim um nicht die ganzen weißen bereiche der pdf zu übernehmen
+\hspace*{-10mm} \includegraphics[trim = 17mm 130mm 0mm 20mm]{Anforderungskatalog.pdf}
 \\
 \footnotesize Tabelle 1: Anforderungsanalyse
 \normalsize
 \\
-\linebreak
-
+\newpage
 \subsubsection{Ist-Analyse}
-%MH: für eine schlüssige Doku würde hier die Frage aufkommen "warum hab ich das denn vor dem Projekt gemacht???" - außerdem geht es nicht drum mich selbst zu beweiräuchern 
-%MH: es sollte mehr in die Richtung gehen "eien Grundanforderung an den Datenbestand ging bereits aus der aufgabe hervor" oder "wurde bereits zu beginn in das Projekt überneommen" - gerne nochmal an mich herantreten
-Der Projektleiter hat vor Beginn des Projektes ein Grobkonzept, mittels ER-Modell erstellt, um die groben Anforderungen an die EinkaufsApp einzugrenzen. 
-Dieses Konzept dient als Grundlage für das Entwicklerteam und wird während der Vorbetrachtung und Durchführungsphase noch ausgebaut.
+Aus vorangegangener Erfahrung mit dem Thema der automatisierte Unterstützung durch eine App bei Einkäufen im privaten Bereich ist ein Grobkonzept, eines ER-Modells, bereits in das Projekt überführt worden. Dieses wurde verwendet, um ein Grundverständnis beim designen und implementieren zu erzeugen. 
 \\
 \\
-\includegraphics[scale=0.6,origin=l]{EER-Modell.PNG}
+\hspace*{-20mm} 
+\includegraphics[trim = 15mm 40mm 0mm 20mm, clip, scale=0.7]{ER-Modell.pdf}
+\linebreak
+\footnotesize Abbildung 3: ER - Modell
 \\
-\footnotesize Abbildung 2: ER - Modell
 \normalsize
-\\
+\linebreak
 \\
 Zu Beginn wurden die jeweiligen Kompetenzen der Projektmitarbeiter vor der Durchführung des Projektes aufgenommen. 
-Aus diesen leiteten sich die Zugehörigkeiten jeder einzelnen Person in die Projektgruppen Dokumentation, Entwicklung und Design ab. %MH: sehr gefährliche formulierung - habt ihr das gegengeprüft?
+Aus diesen leiteten sich die Zugehörigkeiten jeder einzelnen Person in die Projektgruppen Dokumentation, Entwicklung und Design ab. 
 \\
 \\
-%MH: gute tabelle - bitte auch mit mir zusammen noch einmal etwas optisch anpassen
-\includegraphics[scale=0.6, origin=l]{Skillliste.png}
+\hspace*{-10mm} \includegraphics[trim = 15mm 0mm 0mm 20mm,clip,scale=0.8]{Skillliste.pdf}
+\\
+\footnotesize Tabelle 2: Ist-Analyse
+\\
 \normalsize
-
-%\begin{longtable}{|m{5cm}|m{5cm}|m{5cm}|}
-%\hline
-%\textbf {Name} & \textbf {Skills} & \textbf {Teamzuordnung} \\
-%\hline
-%\centering Annika Köstler & \begin {itemize}
-%\item Zwei Jahre Arbeit im Controlling
-%\item Tools:LaTex
-%\item Grundkenntnisse VBA
-%\item Protokollierung von Meetings
-%\end{itemize}
-%& Annika Köstler wird aufgrund ihrer Kompetenzen im Bereich Protokollierung in der Gruppe Dokumentation arbeiten.
-%\\
-%\hline
-%\centering Eric Sorgalla & 
-%\begin {itemize}
-%\item Grundkenntnisse (Java, C/C++, Javascript, HTML/CSS, VBA, SQL)
-%\item 1 Jahr Projektleitung ISIPT (nur kaufmännische Verantwortung) 
-%\end {itemize}
-%& Eric Sorgalla wird aufgrund seiner Programmiererfahrung bei den Entwicklern arbeiten
-%
-%\\
-%\hline
-%\centering Huong Dang & \begin {itemize}
-%\item Zwei Jahre Vertrieb
-%\item Tools LaTex
-%\item Grundlagen VBA 
-%\end {itemize}
-%& Aufgrund der regelmäßigen Quality Check Aufgaben im Betrieb arbeitet Huong Dang in der Gruppe Dokumentation.
-%
-%\\
-%\hline
-%\centering Jannis Grohs & \begin {itemize}
-%\item Datenbanken (MYSQL, Apex)
-%\item Programmiererfahrung (VBA, JAVA, Apex)
-%\item Projektmanagement 
-%\item Design - und Marketingtechniken
-%\end {itemize}
-%& Jannis Grohs wird aufgrund seines Know-Hows für das kontinuierliche Quality Check der Entwicklung und Designs zuständig sein.
-%
-%\\
-%\hline
-%\centering Markus Hube & \begin {itemize}
-%\item Zwei Jahre PMO der operational services
-%\item Zwei Jahre Programmiererfahrung (VBA)
-%\item Bereits Vorarbeit zum Thema EinkaufsApp geleistet 
-%\end {itemize}
-%& Da Markus Hube bereits zum Thema EinkaufsApp Vorarbeit geleistet und Erfahrung im Projektmanagement gesammelt hat, übernimmt er die Position des Projektleiters.
-%
-%\\
-%\hline
-%\centering Michael Hein & \begin {itemize}
-%\item Zwei Jahre Applikations Administration
-%\item Java Erfahrung
-%\item VBA Erfahrung
-%\item Skript Programmierung
-%\end {itemize}
-%& Durch Michael Heins langjähriger Programmiererfahrung wird er bei den Entwicklern tätig sein.
-%
-%\\
-%\hline
-%\centering Moritz Karsten & \begin {itemize}
-%\item  Zwei Jahre Projektansprechpartner Messe Berlin
-%\item  Application Management
-%\end {itemize}
-%& Durch seine Erfahrung im Bereich Prozessablauf und Konzeptentwicklung wird Moritz Karsten bei der Gruppe Design arbeiten.
-%\\
-%\hline
-%\centering Moritz Schaub & \begin {itemize}
-%\item  Zwei Jahre Co-Product Owner in iOS und Android Messaging Produkt in AGILER Entwicklung (internationales, crossfunktionales Team)
-%\item  Erstellung von komplexen Prototypen mit Proto.io auf Basis von HTML5
-%\item Durchführung von Design Thinking Workshops
-%\end {itemize}
-%& Da Moritz Schaub Vorkenntnisse im Bereich Prototyperstellung von Apps hat, wird er für das visuelle Design zuständig sein.
-%
-%\\
-%\hline
-%\centering Thomas Elias & \begin {itemize}
-%\item gute Kenntnisse in Projektkoordination
-%\item Anforderungen und Arbeitspakete definieren
-%\item Erfahrungen Customizing von Dokumenten-Layouts
-%\item Kommunikation zwischen versch. Abteilungen zum Transparent-Machen der Informationen
-%\end {itemize}
-%& Aufgrund seiner guten Kenntnisse im Bereich Projektkoordination wird Thomas Elias in der Dokumentation arbeiten und für die Meilensteinplanung verantwortlich sein.
-%
-%\\
-%\hline
-%\centering Victor Fuchs & \begin {itemize}
-%\item  gute Excelkenntnisse
-%\item  gute Kenntnisse im Rechnungswesen und Controlling
-%\end {itemize}
-%& Victor Fuchs wird in der Gruppe Entwicklung arbeiten und hierbei die benötigten Konzeptdiagramme erstellen.
-%\\
-%\end{longtable}
-
-\footnotesize Tabelle 2: Skill-Liste
-\normalsize
-\\
 \linebreak
+\\
 \newline
 \newline
 Insgesamt gibt es demnach drei Designer, fünf Entwickler und drei Dokumentatoren, die parallel den stetigen Quality Check durchführen.
-\newpage
-
+\\
 \subsubsection{Arbeitsplanung}
 Zu Beginn der Projektorganisation wurde von der Dokumentation ein grober Plan erstellt, der eine Einteilung der Teams in organisatorische Einheiten aufzeigt und einen Rahmen für die Planung der Aufgaben, beziehungsweise Arbeitspakete, vorgibt. 
 Es wurde ein organisatorisches Grundgerüst geschaffen, das allen Gruppen als Orientierung dient und gleichzeitig zur eigenständigen Organisation, sowie Bearbeitung der Arbeitspakete motiviert:
 \\
 \\
 %MH: hier taucht wieder die Planungsphase auf...
-\includegraphics[scale=0.6, origin=l]{Aktivitaetsliste.png}
+\hspace*{-10mm} \includegraphics[trim = 20mm 0mm 0mm 20mm,clip,scale=0.7]{Aktivitaetsliste.pdf}
 \\
-\footnotesize Abbildung 1: Aktivitätsliste
+\footnotesize Abbildung 4: Aktivitätsliste
 \normalsize
 \\
 \linebreak
 \subsubsection*{Meilensteinplanung}
-\includegraphics[scale=0.6, origin=l]{Meilensteine.png}
+Mithilfe der erstellten Meilensteinplanung wurde das pünktliche Erreichen der Projektziele gesichert.
+Jedes Team konnte sich an dieser Tabelle orientieren und seine Aufgaben der Reihe nach ordnen und ausführen.
+\hspace*{-10mm} \includegraphics[trim = 10mm 90mm 10mm 20mm,clip, scale=0.9]{Meilensteine.pdf}
 \\
 %MH: holt euch ganz schnell nochmal fixierte Aussagen dazu von Eric, wenn er euch dazu überhaupt etwas sagen kann. Wenn nicht komplett anders darstellen oder rausnehmen.
-\footnotesize Abbildung 2: Meilensteine
+\footnotesize Tabelle 3: Meilensteine
 \normalsize
 
-
-\subsubsection{Scrum}
-%MH: ganz dringend inhaltlich nochmal mit mir besprechen!!!
+\subsubsection{Agiles Projektmanagement}
 Nachdem ein grober organisatorischer Rahmen für das Projekt von der Gruppe Dokumentation vorgegeben wurde, haben die einzelnen Gruppen, durch agile Projektmanagement-Methoden,  ihre Arbeitspakete und Ablaufpläne festgelegt. 
 Die Dokumentation erstellte Arbeitspakete für alle Gruppen und jedes Projektmitglied hat sich nach dem Pull-Prinzip – bekannt aus der Projektmanagement-Methode Kanban – seine Arbeitspakete abgeholt und eine Bearbeitungsfrist definiert. 
 In der Gruppe der Entwickler wurde unter Zuhilfenahme des Tools „Trello“ die Planung und Durchführung der Arbeitspakete definiert. Trello ist ein Web-Dienst, der ein Board anbietet, um Arbeitspakete gemäß agiler Projektmanagement-Methoden zu bearbeiten und Arbeitsfortschritte transparent darzustellen. 
 Die Designer haben ihre Arbeitspakete auf Basis eines Ablaufplanes verteilt. Es wurden die Phasen Prototyp-Entwurf, Prototyp-Review, Prototyp-Modifikationen und Prototyp-Test und Prototyp-Abnahme durchlaufen.
 \newpage
 \subsection{Sicherheit}
+%AK-28.12.5-Bearbeitung Anfang
 Sobald Daten eines Nutzers für eine Applikation gespeichert werden, wird ein gewisser Standard an Sicherheit gefordert, damit keinen Dritten diese Daten zugänglich werden.
 In der EinkaufsApp wurden folgende Maßnahmen getroffen um dies gewährleisten zu können:
 \\
-1. Der Nutzer startet durch die Eingabe von Benutzername und persönlichem Password eine Session, die Ihn bei jeder Anfrage an den Server authentifiziert.
+Einige konkrete Sicherheitsvorkehrungen lauten:
 \\
-2. Alle Passwörter werden als Einweg-Hash in der Datenbank gespeichert. Bei der Anmeldung wird das Passwort dem gleichen Verfahren unterzogen und dann die resultiereden Zeichenfolge mit der, in der Datenbank gespeicherten, abgeglichen.
-\\ 
-%MH: was ist der Inhalt dieser Aussage?
-%2. In Verbindung mit dem Nutzernamen wird sichergestellt, dass es sich auch um den richtigen Nutzer handelt.
+1)	Eine Session läuft nach 10 Minuten ohne Request an den Server ab.
 \\
-3. Die Verwendung des SSL-Protokolls (Secure Socket Layer) sorgt für  den Aufbau eines geschützten Kanals vor der eigentlichen HTTP-Kommunikation, so dass die Nutzerdaten für Dritte nicht zugängig sind. 
-Dies bedeutet: Die Nutzerdaten werden in einem standart Web-Formular eingetragen (Login-Screen) und mittels POST-Request an den Server gesendet. 
-Da der TCP-Kanal verschlüsselt ist, haben Dritte keinen Zugriff auf die vom Nutzer eingegebenen Daten innerhalb des POST-Requests, was wiederum die gesicherte Übertragung von Nutzernamen und Passwort bewirkt.
-
+2)	Jedes Passwort wird als Einweg-Hash in der DB gespeichert.
+\\
+3)	Es wird eine Authentifizierung durchgeführt, das heißt ein Sicherstellen, dass die beteiligten Parteien auch tatsächlich die sind, die sie vorgeben zu sein.
+\\
+4)	Data Security: Eine weitere wichtige Technik zur Sicherheit von Webanwendungen spielt das SSL-Protokoll (Secure Socket Layer). Bei Verwendung dieser Protokolle wird vor der eigentlichen HTTP-Kommunikation ein geschützter Kanal aufgebaut, 
+sodass die Nutzerdaten für Dritte nicht zugänglich sind. Die Nutzerdaten werden in einem normalen Web-Formular eingetragen (Login-Screen) und mittels POST-Request an den Server gesendet. Da der TCP-Kanal abgesichert ist, haben Dritte keinen Zugriff auf die 
+Nutzdaten innerhalb des POST-Requests, d.h. Nutzername und Passwort werden gesichert übertragen.
+%AK-28.12.15-BearbeitungEnde
 \newpage
 \section{Durchführungsphase}
+
 In diesem Abschnitt wird die Funktionsweise der EinkaufsApp beschrieben. Dabei werden die einzelnen Hauptprozesse separat vorgestellt und deren technische Umsetzung erläutert. Die Hauptprozesse sind unterteilt in den Login und die Registrierung des Nutzers, den Einkaufsprozess, die Nutzerverwaltung und die Auswertung. 
+Generell wurde in der Entwicklung nach dem Modell-View-Controller Prinzip gearbeitet. Nachdem die Prozesslogik der Designer stand („Modell“), wurden die einzelnen Views, also die visuelle Darstellung, der zu implementierten Funktion, die der Nutzer am Ende sieht, entwickelt und welche schlussendlich über die „Controller“ mit der Logik versehen wurden. Jedes einzelne View hat dabei seine eigene Route.
+
 \subsection*{Einleitung}
-Die genannten Hauptprozesse stehen, wie in dem folgenden Diagramm zu sehen ist, in Relation. Dabei wurden die Views als einzelne Klassen dargestellt:
+Die genannten Hauptprozesse stehen, wie in dem folgenden Diagramm zu sehen ist, in Relation. Dabei wurden die Views\footnote {In der EinkaufsApp werden Views verwendet, da die Systemarchitektur auf der Model-View-Controller Architektur basiert.}  als einzelne Klassen dargestellt:
 \\
 \\
 %MH: ist dem Leser an der stelle Klar was "Views" sind???
-\includegraphics[scale=0.4, origin=l]{Klassen-UML.jpeg}
+%AK: jetzt ja :)
+\hspace*{-10mm} 
+\includegraphics[trim = 17mm 30mm 0mm 20mm,clip,scale=0.7]{Klassendiagramm.pdf}
 \\
-\footnotesize Abbildung 3: Klassendiagramm
+\footnotesize Abbildung 5: Klassendiagramm
 \normalsize
 
+\subsection{Architektur}
+
+Die App selbst wurde auf Basis des Ionic Frameworks Entwickelt, der Webserver wurde mittels Node.JS umgesetzt und die zugrundeliegende Datenbank ist eine MongoDB. Die Entscheidung zu diesen Komponenten fand auf Grund ihres guten Zusammenspiels hinsichtlich Webapplikationen statt. Im ersten Schritt wurde die MongoDB gewählt, weil es für unsere Zwecke eine angemessene Flexibilität aufgrund der Schemalosigkeit bietet, aber auch die Skalierbarkeit einer NoSQL für den Aspekt der Zukunftssicherheit mit sich bringt. Node.JS ist besonders gut geeignet, um weniger rechenintensive Aufgaben, wie das Handeln einer Anfrage und das Verweisen auf eine Ressource, auf einem Server umzusetzen. Ebenfalls wurde diese Entscheidung durch das gute Zusammenspiel mit MongoDB und Mongoose bestärkt. 
+\\
+Das Ionic Framework wurde allem voran genutzt, weil ermöglicht, ein zeitgemäßes Desing zu erstellen und die Möglichkeit bietet, sowohl Android, als auch iOS-lauffähige Anwendungen zu erstellen, ohne dafür zusätzliche Entwicklungsarbeit zu leisten.
+Für detailliertere Ausführungen wird auf das Pflichtenheft verwiesen.
+
 \subsection{Registrierung}
-Um die EinkaufsApp zu nutzen, muss sich jeder Nutzer mittels einer Email-Adresse und einem Kennwort für der App registrieren.
-Eine Registrierung ist bei dieser App unentbehrlich, da für jeden Nutzer ein Profil angelegt wird und diesem Profil innerhalb der Datenbenk die Produkte und Finanzen zugeordnet werden.
+Um die EinkaufsApp zu nutzen, muss sich jeder Nutzer mittels einer E-Mail-Adresse und einem Kennwort für der App registrieren.
+Eine Registrierung ist bei dieser App unentbehrlich, da für jeden Nutzer ein Profil angelegt wird und diesem Profil innerhalb der Datenbank die Produkte und Finanzen zugeordnet werden.
 In den folgenden Unterpunkten wird der Prozess der Registrierung jeweils von den Designern und Entwicklern beschrieben.
 \subsubsection*{Design}
 Die Designer haben zu der Registrierung und zu dem Login, welcher im Punkt 3.4 behandelt wird, das folgende Flussdiagramm entworfen:
 \\
-\includegraphics[scale=0.6, origin=l]{Login-Registrierung.png}
-\footnotesize Abbildung 7: Flussdiagramm Login
+\hspace*{-10mm} \includegraphics[trim = 17mm 0mm 0mm 20mm, clip, scale=0.8]{Login-PDF.pdf}
+\footnotesize Abbildung 6: Flussdiagramm Login
 \normalsize
 \\
 \linebreak
@@ -446,7 +374,7 @@ Das Flussdiagramm beschreibt sukzessiv den Ablauf des Registrierungs- und des Lo
 Die Entwickler befassen sich mit den Funktionen der Applikation  und sorgen bei der Registrierung dafür, dass alle Daten ordnungsgemäß geprüft und in die Datenbank eingepflegt werden.
 Als Datenbank wird für die App MongoDB genutzt, welche via RoboMongo gemanagt wird. Als Programmiersprache JavaScript.\footnote{Genaueres zu der Datenstruktur können Sie dem angehängten Pflichtenheft entnehmen.} verwendet.
 
-Bei der Registrierung werden die einzelnen Benutzereingaben durch bestimmte Regeln in hinblick auf Länge, Email-Format, Eindeutigkeit, sowie Sicherheitskriterien bei der Passwortvergabe in der Applikation geprüft.\footnote{Die konkreten Regeln der Benutzereingaben können Sie in dem angehängten Handbuch entnehmen.}
+Bei der Registrierung werden die einzelnen Benutzereingaben durch bestimmte Regeln in Hinblick auf Länge, E-Mail-Format, Eindeutigkeit, sowie Sicherheitskriterien bei der Passwortvergabe in der Applikation geprüft.\footnote{Die konkreten Regeln der Benutzereingaben können Sie in dem angehängten Handbuch entnehmen.}
 
 Wenn alle Prüfungen erfolgreich waren, wird der Benutzer angelegt und das Passwort verschlüsselt in Form eines Hashs in der Datenbank gespeichert.
 \newpage
@@ -456,91 +384,132 @@ Das Flussdiagramm der Designer für den Login ist im Abschnitt 3.3 Registrierung
 \subsubsection*{Entwicklung}
 Die Entwicklung beschäftigt sich mit der Funktionsweise des Logins und prüft hierbei, ob der Benutzer in der Datenbank existiert. Falls dies der Fall ist, wird das Passwort geprüft und bei korrekter Eingabe ist der Login erfolgreich durchgeführt.
 Wenn der Benutzer sein Passwort vergessen hat, kann er dieses zurücksetzen lassen. Hierbei bekommt er eine E-Mail an die im Userprofil hinterlegte E-Mail Adresse. Diese Funktionalität ist bereits implementiert, wird aber auf Grund der Sicherheitsbestimmungen der Testumgebung geblockt. Diese enthält ein Token womit es einen Benutzer ermöglicht wird sein Passwort zu ändern. Dieses Token ist genau eine Stunde gültig, danach verfällt es. 
-%MH: ist das jetzt thematisch aus dem Registrierungsvorgang???
-Nachdem der Nutzer sein Passwort zweimal eintragen musste, ändert die Datenbank das Kennwort des Nutzer und speichert dieses.
+In dem dann aufgerufenen Bildschirm muss der Nutzer nun sein Passwort zweimal eintragen. Daraufhin ändert die Datenbank das Kennwort des Nutzer und speichert dieses.
 \newpage
 \subsection{Marktauswahl}
 Bevor der Einkaufsprozess beginnt muss der Nutzer einen Markt auswählen, hierfür wird der Standort des Nutzers ermittelt via GPS ermittelt und bereits registrierte Märkte in seiner Nähe angezeigt. 
 \subsubsection*{Design}
-Die Designer haben hierzu, ebenso wie bei der Registrierung und dem Login ein Flussdiagramm erstelt: 
+Die Designer haben hierzu, ebenso wie bei der Registrierung und dem Login ein Flussdiagramm erstellt: 
 \\
 \\
-\includegraphics[scale=0.6, origin=l]{Markt_Aufnahme.jpeg}
+\hspace*{-10mm} 
+\includegraphics[trim = 17mm 40mm 0mm 20mm, clip, scale=0.9]{Markt-Aufnahme.pdf}
 \\
-\footnotesize Abbildung 4: Markt-Auswahl
+\footnotesize Abbildung 7: Markt-Auswahl
 \normalsize
 \subsubsection*{Entwicklung}
-
+Der vom Design erstellte Ablauf der Marktauswahl wird direkt in den Einkaufsprozess mit eingebunden. Sobald der Nutzer die Option „Einkaufen“ wählt gelangt dieser in den Marktauswahl-View.Anders als im geplanten Ablauf der Designer, kann der Nutzer selber entscheiden, in welchem Markt er sich gerade befindet, indem er entweder in der direkt aufgeführten Marktliste einen auswählt, oder die Option „Markt hinzufügen“ nutzt. Dies hat technische Gründe, da zurzeit eine Lokalisierung der Märkte via GPS aus Zeitgründen noch nicht umgesetzt wurde.
+%HD - 23.12.2015 Ende
 \newpage
 \subsection{Einkaufsverwaltung}
-\subsubsection{Design}
+\subsubsection*{Design}
 Aktivitätsdiagramm „Einkauf einlesen“ 
 \\
-\includegraphics[scale=0.6, origin=l]{Aktivitaets-Diagramm.png}
+\hspace*{-10mm} 
+\includegraphics[trim = 17mm 0mm 0mm 20mm,clip, scale=0.7]{Aktiv-Einkauf.pdf}
 \\
-\footnotesize Abbildung 4: Aktivitätsdiagramm-Einkauf
+\footnotesize Abbildung 8: Aktivitätsdiagramm-Einkauf
 \normalsize
 \subsubsection*{Entwicklung}
+%TO DO - TE: einpflegen
 \newpage
 \subsection{Nutzerverwaltung}
 Die Nutzerverwaltung ermöglicht dem Nutzer die individuelle Zuweisung von anderen Accounts als Gruppenmitglieder zu bereits erstellten Gruppe. Ziel dessen ist die vereinfachte Finanzverwaltung wärend des Einkaufes, sowie die Möglichkeit komplexere Auswertung durchzuführen.
 
 \subsubsection*{Design}
-\includegraphics[scale=0.6, origin=l]{Gruppenverwaltung.jpeg}
+\hspace*{-10mm} 
+\includegraphics[trim=10mm 20mm 0mm 20mm,clip, scale=0.7]{Gruppenverwaltung.pdf}
+\\
+\footnotesize Abbildung 9: Gruppenverwaltung
+\normalsize
 \newline
 \newline
 Die Gruppenverwaltung wird in zwei Teile unterteilt. Der Erste beschreibt die Gruppenerstellung. Wie im Flussdiagramm zu sehen, kann eine Gruppe angelegt werden, indem zunächst der Nutzer die Menüoption Mitgliederliste wählt und hier eine Gruppe erstellt. Dabei können Mitglieder hinzugefügt bzw. auch gelöscht werden.
 \subsubsection*{Entwicklung}
+Die Entwicklung hat lediglich den Teil der eigentlichen Gruppenerstellung integriert. Der Nutzer legt einen Gruppennamen fest und kann daraufhin die registrierten Nutzer hinzufügen und ggf. wieder entfernen. Ist die Gruppe erstellt, kann gespeichert werden.
+Diese kann im Nachhinein noch nicht geändert werden, weil die Gruppe nicht angezeigt wird. Dies ist ein Problem, welches die Entwickler noch ausbessern werden.
 \newpage
-
 \subsection{Auswertung}
 Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Es gibt die zeitliche Eingrenzung und eine Gruppenmitgliedereingrenzung, bei der alle vergangenen Einkäufe von bestimmten Gruppen zusammengefasst werden.
 \\
 \\
-\includegraphics[scale=0.6, origin=l]{Aktivitaets-Diagramm-Ausgabenverlauf.png}
+\hspace*{-10mm} 
+\includegraphics[trim = 17mm 130mm 0mm 20mm, clip, scale=0.9]{Aktiv-Ausgabe.pdf}
 \\
-\footnotesize Abbildung 5: Aktivitätsdiagramm-Ausgabenverlauf
+\\
+\footnotesize Abbildung 10: Aktivitätsdiagramm-Ausgabenverlauf
 \normalsize
 \\
-\linebreak
+\newpage
 \subsubsection*{Zustandsdiagramm}
  „Ausgabenverlauf anzeigen“
 \\
-\includegraphics[scale=0.9, origin=l]{Zustandsdiagramm.png}
 \\
-\footnotesize Abbildung 6: Zustandsdiagramm
+\hspace*{-10mm} 
+\includegraphics[trim = 17mm 130mm 0mm 20mm,clip]{Zustand.pdf}
+\footnotesize Abbildung 9: Zustandsdiagramm
 \normalsize
 \subsubsection*{Design}
-\includegraphics[scale=0.5, origin=l]{060 Auswertungen.jpeg}
-\\
-\footnotesize Abbildung 6: Auswertung
+\hspace*{-10mm} 
+\includegraphics[trim = 20mm 60mm 0mm 20mm,clip,scale=0.9]{Auswertung.pdf}
+\footnotesize Tabelle 4: Auswertung
 \normalsize
 \\
+\subsubsection*{Auswertung der Diagramme}
+In diesem Abschnitt wird noch einmal genauer auf die UML-Diagramme\footnote{Die gesamten UML-Diagramme befinden sich in dem Anhang der Dokumentation und werden vereinzelt in den Unterkapiteln schon dargestellt.} eingegangen, welche mit dem Enterprise Architect erstellt wurden. Der Enterprise Architekt eignet sich besonders gut zum Modellieren des Softwaresystems, da das Programm nach UML Standards arbeitet. Diese Funktionalität war besonders hilfreich beim Erstellen der UML-Diagramme. 
+\\
+Zudem bietet das Tool Vorlagen und Objekte für viele verschiedenen UML-Diagramme an und ist einfach zu bedienen. Gerade bei der ersten Erstellung eines UML-Diagramms bietet das Programm viele Hilfestellungen und ist optimal auf die Erstellung solcher Diagramme ausgelegt. Außerdem ist das Programm für den Anwender individuell anpassbar, um auch speziellen Anforderungen gerecht zu werden.
+\newpage
+In der nachfolgenden Tabelle sind die Eigenschaften der in dem Projekt  genutzten Diagramme beschrieben und gegenübergestellt:
+\\
+\\
+\hspace*{-10mm} 
+\includegraphics[trim = 10mm 60mm 0mm 20mm,clip,scale=0.7]{Auswertung_Diagramme.pdf}
+\footnotesize Tabelle 4: Auswertung-Diagramme
+\normalsize
+\\
+\\
+Das Sequenzdiagramm muss innerhalb des Designprozesses konkretisiert dargestellt werden, damit die Entwickler optimal implementieren können.
+
+
 \subsubsection*{Entwicklung}
 %MH: Update von Eric einholen
-Aufgrund des Zeitmangels konnte lediglich ein Konzept für den Auswertungsteil der Applikation erstellt werden. Die richtige Implementierung wurde nicht umgesetzt.
+%TO DO - HD: Eric nochmal anschreiben, wie es jetzt genau stant ist
+%HD - 22.12.2015 Ja es wurde was umgesetzt. Ich weiß nur nicht, wie ich hierzu eine Text formulieren soll, der nicht wie Handbuch klingt
+Wie im Programmablaufplan beschrieben, gibt es im View „Auswertung“ die drei Optionen Kaufhäufigkeit, Ausgabenverlauf und Gruppenverlauf. In jedem dieser Optionen muss ein Start- und Enddatum vom Nutzer festgelegt werden. Je nachdem welche Option ausgewählt wurde, sind die vom System gebende Informationen unterschiedlich. Da es aber weiterhin noch Probleme mit dem Einkaufsprozess gibt, kann die Auswertungsfunktion noch nicht genutzt werden.
+%HD- Optionen werden am 24.12.15 eingefügt
 \newpage
-
 \section{Problemzusammenfassung}
 %Hier wird das Ergebnis beschrieben.
 \subsection{Usability der App}
-Zusammengefasst kann die Version 1.0 der EinkaufsApp Nutzer registrieren und anmelden, sowie den Einkaufsprozess durchführen. Außerdem können Gruppen erstellt und verwaltet werden. Der Auswertungsprozess wurde in Anbetracht der Zeit nicht umgesetzt. Hinsichtlich des Optik wurde kein Corporate Design - Corporate Identity entwikelt, um die Benutzerfreundlichkeit dennoch zu gewährleisten, implementierten die Entwickler ein schlichtes Interface im aktuellen Web Stil.
+Zusammengefasst kann die Version 1.0 der EinkaufsApp Nutzer registrieren und anmelden, sowie den Einkaufsprozess durchführen. Außerdem können Gruppen erstellt und verwaltet werden. Der Auswertungsprozess wurde in Anbetracht der Zeit nicht umgesetzt. Hinsichtlich der Optik wurde kein Corporate Design verwendet, um die Benutzerfreundlichkeit dennoch zu gewährleisten, implementierten die Entwickler ein übersichtliches Interface im aktuellen Web Stil.
 \newpage
-\subsection{Organisation Projektmanagement}
+\subsection{Besondere Herausforderungen des Projektes}
+%\subsection{Organisation und Projektmanagement}
 %MH: der Inhalt beist sich etwas mit der überschrift - lasst uns noch was besseres finden
-Allem voran muss erwähnt werden, dass dieses Projekt enorm zeitkritisch war und daher die Planungsphase nahe zu vollständig übersprungen werden musste. Ebenfalls sind Design und Implementation stark parallelisiert abgelaufen. Um innerhalb von zwei Monaten ein lauffähiges und qualitätsgesichertes Software-Produkt zu erstellen, bedarf es eines überschaubaren und für alle Mitglieder transparenten Projektes, aber allem voran auch ein, gezielt auf die Herausforderungen, zugeschnittenes Team, welches die benötigten Skills und das Know How bereits mitbringt. Ebenfalls ist es sehr wertvoll, wenn die Beteiligten bereits zuvor zusammen gearbeitet haben und untereinander mit Tools und Konventionen vertraut sind, oder zumindest in der Lage sind unter formalen Bedingungen zu arbeiten. Da naturgemäß in unserem Umfeld diese Voraussetzungen nur zu sehr geringen Teilen erfüllt werden können, ist auch ein sehr kritischer Projektablauf unausweichlich. Um diesen Schwierigkeiten entgegen zu wirken, wäre eine klarer Abgrenzung von Aufgabenbereichen
+Allem voran muss erwähnt werden, dass dieses Projekt enorm zeitkritisch war und daher die Planungsphase nahe zu vollständig übersprungen werden musste. Ebenfalls sind Design und Implementation stark parallelisiert abgelaufen. Um innerhalb von zwei Monaten ein lauffähiges und qualitätsorientiertes Software-Produkt zu erstellen, bedarf es eines überschaubaren und für alle Mitglieder transparenten Projektes, aber allem voran auch ein, gezielt auf die Herausforderungen, zugeschnittenes Team, welches die benötigten Skills und das Know-How bereits mitbringt. Ebenfalls ist es sehr wertvoll, wenn die Beteiligten bereits zuvor zusammen gearbeitet haben und untereinander mit Tools und Konventionen vertraut sind, oder zumindest in der Lage sind unter formalen Bedingungen zu arbeiten. Da naturgemäß in unserem Umfeld diese Voraussetzungen nur zu sehr geringen Teilen erfüllt werden können, ist auch ein sehr kritischer Projektablauf unausweichlich. Um diesen Schwierigkeiten entgegen zu wirken, wäre eine klarer Abgrenzung von Aufgabenbereichen
 und Skills und auch das Vertrauen in diese Entscheidungen notwendig gewesen. Unglücklicherweise fehlte auch hier wieder die bereits erwähnte Planungsphase, die aber auch aus Zeit- und Lokalitätsgründen nicht umsetzbar war. Im weiteren Verlauf wurde dann eine zusätzliche Organisationseinheit zwischen dem Gesamtprojekt und den einzelnen Entwicklern eingefügt, um einen besseren Überblick zu gewährleisten und schneller Entscheidungen treffen zu können. An dieser Stelle lässt sich auch die obligatorische Diffizilität, die aus den unterschiedlichen Engagements entsteht erwähnen. Nach den vorangegangenen Ausführungen zu den kritischen Komponenten des Projektes sollte selbstredend sein, dass es ohne überdurchschnittlichen Einsatz jedes einzelnen Beteiligten
 unmöglich zu 100\% in gegebener Zeit mit derartig begrenzten Ressourcen abgeschlossen werden kann. Nun sind naturgemäß die intrinsischen Beweggründe, sowie die Möglichkeiten der einzelnen Personen verschieden. Somit verbleibt die Aufgabe aller Beteiligten im Rahmen der gegebenen
 Bedingungen das bestmöglich Ergebnis zu erzielen.
 \newpage
 \section{Projektabschluss}
-\subsection{Fertiges Produkt}
 \subsection{Aussichten}
-nicht umgesetzte Ideen --> siehe Excelliste
-\newpage
-\subsection{Zusammenfassung}
+In der folgenden Tabelle ist als kleine Übersicht gezeigt, welche Anforderungen an die EinkaufsApp umgesetzt wurden und welche noch nicht: 
+\\
+\\
+\hspace*{-10mm} 
+\includegraphics[trim = 17mm 10mm 0mm 20mm,clip,scale=0.9]{Anforderungen-Probleme.pdf}
+\\
+\footnotesize Tabelle 5: Aussichten
+\normalsize
 \newpage
 \section{Lesson learned}
+%TO DO - MH (fazit)
+Rückblickend war es eine besondere Herausforderung die gleiche Vorstellung der Aufgaben und Ziele im gesamten Team zu erreichen. Hierfür sind interne Abstimmungen innerhalb des Teams noch vor dem Projektstart sehr zu empfehlen. Ebenso ist eine im Vorfeld gut geplante und abgestimmte Organisationsstruktur unerlässlich. Da diese Vorarbeit hier nicht gegeben werden konnte, wurde zuerst auf eine Flache Hierarchie mit einem hohen Teil an Selbstorganisation für jede Person gesetzt. Dies hatte das Ziel jede Person mit einem signifikanten Maß an Verantwortung und Einsicht in die Sie umgebenden Projektgeschehnisse zu versehen, um die Qualität der geleisteten Arbeit zu sichern. Leider haben die Vorteile einer unkomplizierten und schnellen Kommunikation, sowie das flexible Arbeiten hier nicht überwogen. Demzufolge wurde eine weitere Organisationsebene über den Teilbereich ''Entwicklung'' eingefügt. Nachdem hier, abgetrennt von den anderen Arbeitsgruppen, kleinere Arbeitspakete erstellt wurden, ist die Produktivität spürbar gestiegen. \\
+Weiterhin ist für das Arbeiten miteinander und das Verständnis der Ergebnisse ein gewisses Anteil an formalen Methoden sehr zu empfehlen. Es wurde vor allem in der Anfangsphase des Projektes relativ viel Zeit damit verbracht, sich über die Arbeitsmittel, das Vorgehen in den einzelnen Gruppen, die Ziele in den Gruppen und innerhalb des gesamten Projektes, sowie die Nachhaltigkeit und den Nutzen der verrichteten Arbeiten einig zu werden. Diese Herausforderung wäre ebenfalls bereits in der Planungsphase zu bewältigen.\\
+Als ein weiteren sehr wichtigen Erfolgsfaktor ist das eigene Team und jedes Einzelne seiner Mitglieder als Stakeholder, zu betrachten. Hier können die Relevanz einzelner Personen für den Projekterfolg oder auch Ihre Motivation diesbezüglich stark variieren. Im Idealfall wird das Team, wie bereits zuvor bei den besonderen Herausforderungen erwähnt, konkret auf die spezifischen auftreten Aufgaben zugeschnitten und dann im vollen Umfang mit einer qualitativ hochwertigen Lösung betraut.\\
+Ebenfalls ist in diesem Projekt Zeit eine sehr Herausfordernde Komponente gewesen. Da hier ein fixer Abgabetermin unausweichlich ist und darüber hinaus alle Mitglieder nicht Vollzeit an diesem Projekt arbeiten, wirken Abwesenheiten der einzelnen Personen besonders schwer. Da dieses Risiko aber unabdingbar ist, kann es lediglich in der Planung berücksichtigt werden.\\
++Somit sind die kritischsten Punkte, die in einem Softwareprojekt wie diesem beachten werden sollten, eine klare Definition der Aufgaben unter Berücksichtigung der zu Verfügung stehenden Zeit und der Personenressource, sowie ihrer Ausfallwahrscheinlichkeit. Allerdings auch die Zusammenstellung des Teams bezogen auf Motivation und Skills und nicht zuletzt eine ausreichende Planung des gesamten Projektes mit allen beteiligten, um die Erwartungen und die notwendigen Arbeiten klar abzugrenzen, zu kommunizieren und auch entgegen zu nehmen.
 \newpage
 \section*{Quellen}
 \addcontentsline{toc}{section}{Quellen}
@@ -561,9 +530,8 @@ nicht umgesetzte Ideen --> siehe Excelliste
 \item[13.] Open Source mit API über eine einfachen HTTP-GET-Reguest: \url{http://www.opengtindb.org/api.php}
 \item[14.] Suchmaschine der Firma die GTIN-Nummern verwaltet: \url{http://www.gepir.de/v31/V31_client/gtin.aspx}
 \end{itemize}
-
 \newpage
-\section*{Organisationstool- Übersicht}
+\section*{Organisationstools}
 \begin{itemize}
 \item[-]Zentrale Ablage: GitHub
 \item[-]Diskussionsrunden: Slack
@@ -575,33 +543,36 @@ nicht umgesetzte Ideen --> siehe Excelliste
 \newpage
 \section*{Anhang}
 \addcontentsline{toc}{section}{Anhang}
-begin{itemize}
-\item Anhang [1]: Pflichtenheft
-\item Anhang [2]: Handbuch
-\item Anhang [3]: Installationsanleitung
-\item Anhang [4]: EER-Diagramm
-\item Anhang [5]: Proto.io Design
-\item Anhang [6]: Prototyp
-\item Anhang [7]: MVP
-\item Anhang [8]: Main PAP
-\item Anhang [9]: Datenfluss
-%HD: Ich weiß nicht,ob wir von den Designern alle Datenflüsse anhängen sollen
-\item Anhang [10]: ER Modell 
-\item Anhang [11]: MongoDB-Klassendiagramm
-%HD: Da im Development Repository das MongoDB_v2 ggf.
-\item Anhang [12]: Factories
+\begin{itemize}
+\item Anhang [01]: Pflichtenheft
+\item Anhang [02]: Handbuch
+\item Anhang [03]: Installationsanleitung
+\item Anhang [04]: Angebot
+\item Anhang [05]: Proto.io Design
+\item Anhang [06]: Prototyp
+\item Anhang [07]: Datenfluss-PAP-EinkaufsApp
+\item Anhang [08]: Klassendiagramm
+\item Anhang [09]: MongoDB-Klassendiagramm
+\item Anhang [10]: Factories
+\item Anhang [11]: Aktivitätsdiagramm Ausgabenverlauf
+\item Anhang [12]: Aktivitätsdiagramm Einkauf 
+\item Anhang [13]: Anwendungsfalldiagramm  Ausgabenverlauf
+\item Anhang [14]: Anwendungsfalldiagramm Einkauf 
+\item Anhang [15]: Sequenzdiagramm Ausgabenverlauf
+\item Anhang [16]: Sequenzdiagramm Einkauf
+\item Anhang [17]: Zustandsdiagramm 
+
+
 
 %HD: ich hoffe, dass ich nichts vergessen habe
 
+%1worldsync --> gs1 
 
-end{itemize}
+\end{itemize}
 \end{document}
 
     Status API Training Shop Blog About Pricing 
 
     © 2015 GitHub, Inc. Terms Privacy Security Contact Help 
 
-    Status API Training Shop Blog About Pricing 
-
-    © 2015 GitHub, Inc. Terms Privacy Security Contact Help 
 

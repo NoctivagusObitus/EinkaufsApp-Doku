@@ -1,0 +1,10 @@
+1. Kurze Einleitung und Vorstellung Team
+2. Problembeschreibung wieso EinkaufsApp erstellt werden soll
+3. Zielsetzung der EinkaufsApp
+4. Umsetzung der EinkaufsApp
+	-Systemarchitektur in 2 Folien erklären
+	-Umsetzung (Sprache, Tools,...)
+	-Sicherheit
+	-Vorstellung der App (Funktionen,..)
+5. Abschluss 
+6. Aussichten erläutern (GS1, Facebook-Twitter-Login, weitere Auswertungsmethoden,...)
