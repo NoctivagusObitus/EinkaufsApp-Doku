@@ -22,8 +22,7 @@
 \contentsline {subsection}{\numberline {3.1}Usability der App}{33}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Besondere Herausforderungen des Projektes}{34}{subsection.3.2}
 \contentsline {section}{\numberline {4}Projektabschluss}{35}{section.4}
-\contentsline {subsection}{\numberline {4.1}Fertiges Produkt}{35}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Aussichten}{35}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.1}Aussichten}{35}{subsection.4.1}
 \contentsline {section}{\numberline {5}Lesson learned}{36}{section.5}
 \contentsline {section}{Quellen}{37}{section*.34}
 \contentsline {section}{Anhang}{39}{section*.37}
