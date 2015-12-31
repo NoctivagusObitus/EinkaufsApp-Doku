@@ -16,13 +16,13 @@
 \contentsline {subsection}{\numberline {2.3}Login}{23}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Marktauswahl}{24}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Einkaufsverwaltung}{27}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Nutzerverwaltung}{28}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Auswertung}{29}{subsection.2.7}
-\contentsline {section}{\numberline {3}Problemzusammenfassung}{33}{section.3}
-\contentsline {subsection}{\numberline {3.1}Usability der App}{33}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Besondere Herausforderungen des Projektes}{34}{subsection.3.2}
-\contentsline {section}{\numberline {4}Projektabschluss}{35}{section.4}
-\contentsline {subsection}{\numberline {4.1}Aussichten}{35}{subsection.4.1}
-\contentsline {section}{\numberline {5}Lesson learned}{36}{section.5}
-\contentsline {section}{Quellen}{37}{section*.34}
-\contentsline {section}{Anhang}{39}{section*.37}
+\contentsline {subsection}{\numberline {2.6}Nutzerverwaltung}{29}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Auswertung}{30}{subsection.2.7}
+\contentsline {section}{\numberline {3}Problemzusammenfassung}{34}{section.3}
+\contentsline {subsection}{\numberline {3.1}Usability der App}{34}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Besondere Herausforderungen des Projektes}{35}{subsection.3.2}
+\contentsline {section}{\numberline {4}Projektabschluss}{36}{section.4}
+\contentsline {subsection}{\numberline {4.1}Aussichten}{36}{subsection.4.1}
+\contentsline {section}{\numberline {5}Lesson learned}{37}{section.5}
+\contentsline {section}{Quellen}{38}{section*.34}
+\contentsline {section}{Anhang}{40}{section*.37}
