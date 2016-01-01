@@ -56,7 +56,9 @@ headsep=10mm, footskip=12mm}
 \item[] Abbildung 05: Klassen-Diagramm
 \item[] Abbildung 06: Flussdiagramm-Login
 \item[] Abbildung 07: Marktauswahl
-\item[] Abbildung 08: Aktivitätsdiagramm Einkauf
+%\item[] Abbildung 08: Aktivitätsdiagramm Einkauf
+%HD 01.01.16: wenn wir das von Thomas nehmen dann nur Einzeleinkauf
+\item[] Abbildung 08: Einzeleinkauf
 \item[] Abbildung 09: Gruppenverwaltung
 \item[] Abbildung 10: Aktivitätsdiagramm Auswertung
 \item[] Abbildung 11: Zustandsdiagramm
@@ -114,7 +116,7 @@ Die Vorbetrachtung beinhaltet alle vorbereitenden Aktivitäten, die vor der Entw
 
 \subsection{Problembeschreibung}
 
-Die Problembeschreibung kann aus dem Pflichtenheft im Anhang entnommen werden.
+Die Problembeschreibung kann aus dem Angebot im Anhang entnommen werden.
 
 %Die steigende Vielfalt an Produkten und die Preisschwankungen der Anbieter machen Angebotsvielfalt und der damit verbundenen Ausgaben für den Konsumenten unübersichtlich.
 %Wie in der Einleitung beschrieben, bietet die EinkaufsApp die Möglichkeit einen Überblick über getätigte Einkäufe zu schaffen,
@@ -129,7 +131,7 @@ Das Ziel des Projektes ist es, eine App zu entwickeln, die eine Lösung für die
 Die Vielfalt an Produkten wird vereinfacht dargestellt, der Konsument sieht auf einen Blick eine Zusammenfassung seiner Ausgaben, sowie den Finanzstatus innerhalb der Gruppen in denen er Mitglied ist. Die Nutzer erhalten eine automatisierte Auswertung über Einkaufsverläufe, entstandene Kosten und Artikel, welche auf Anfrage bestimmter, anderer Personen erworben wurden.
 %HD: Einwurf von Eric. Ich hab mal versucht was zu schreiben!
 \\
-Zum jetzigen Zeitpunkt soll die zu entwickelnde Applikation vorerst als Trackingtool dienen. Funktioniert dieses einwandfrei so kann eine weitere Funktionalität implementiert werden nämlich der automatischen Einkaufslistengenerierung. Diese soll nun vergangene Einkäufe auswerten und anhand dieser Einkaufslisten erstellen, die die größtmöglichen Sparpotentiale für den Nutzer bieten. Hier kann dieser vorab festlegen, in wie vielen Märkten er höchstens einkaufen möchte und wie viel Budget er für den jetzigen Einkauf zur Verfügung hat. Dadurch spart sich der Nutzer die manuelle Einkaufsanalyse und somit auch die dafür benötigte Zeit.
+Zum jetzigen Zeitpunkt soll die zu entwickelnde Applikation vorerst als Trackingtool dienen. Funktioniert dieses einwandfrei, kann eine weitere Funktionalität implementiert werden, nämlich der automatischen Einkaufslistengenerierung. Diese soll nun vergangene Einkäufe auswerten und anhand dieser Vorschläge für Einkaufslisten erstellen, die die größtmöglichen Sparpotentiale für den Nutzer bieten. Hier kann dieser vorab festlegen, in wie vielen Märkten er höchstens einkaufen möchte und wie viel Budget er für den jetzigen Einkauf zur Verfügung hat. Dadurch spart sich der Nutzer die manuelle Einkaufsanalyse und somit auch die dafür benötigte Zeit.
 
 \newpage
 \subsection{Vorbereitende Fragen}
@@ -137,7 +139,6 @@ Zum jetzigen Zeitpunkt soll die zu entwickelnde Applikation vorerst als Tracking
 Mit dem Softwaresystem kann jede Privatperson arbeiten, die ihren Einkauf digital dokumentieren und Auswertungen des eigenen Kaufverhaltens erhalten möchte. 
 Des Weiteren hilft diese App jedem, der für Gruppen, z. B. Mitgliedern einer Wohngemeinschaft, Einkäufe tätigt und eine direkte Zuteilung der einzelnen Produkte zur jeweiligen Person wünscht. 
 Die App richtet sich auch an Menschen, die mit Hilfe der Auswertung mögliche Sparpotenziale erkennen und wahrnehmen möchten. 
-\\
 \\
 \subsubsection*{2. Welcher Benutzer benötigt welche Funktionen?} 
 Insgesamt werden in der EinkaufsApp drei verschiedene Nutzerrollen vorgesehen:
@@ -256,12 +257,13 @@ Die einzeln genutzten Tools die im Pflichtenheft, welches sich im Anhang befinde
 %negative \hspace um das bild nach links zu verschieben und trim um nicht die ganzen weißen bereiche der pdf zu übernehmen
 \hspace*{-10mm} \includegraphics[trim = 17mm 130mm 0mm 20mm]{Anforderungskatalog.pdf}
 \\
+\\
 \footnotesize Tabelle 1: Anforderungsanalyse
 \normalsize
 \\
 \newpage
 \subsubsection{Ist-Analyse}
-Aus vorangegangener Erfahrung mit dem Thema der automatisierte Unterstützung durch eine App bei Einkäufen im privaten Bereich ist ein Grobkonzept, eines ER-Modells, bereits in das Projekt überführt worden. Dieses wurde verwendet, um ein Grundverständnis beim designen und implementieren zu erzeugen. 
+Aus vorangegangener Erfahrung mit dem Thema der automatisierte Unterstützung durch eine App bei Einkäufen im privaten Bereich ist ein Grobkonzept, eines ER-Modells, bereits in das Projekt überführt worden. Dieses wurde verwendet, um ein Grundverständnis beim Designen und Implementieren zu erzeugen. 
 \\
 \\
 \hspace*{-20mm} 
@@ -277,7 +279,7 @@ Aus diesen leiteten sich die Zugehörigkeiten jeder einzelnen Person in die Proj
 \\
 \\
 \hspace*{-10mm} \includegraphics[trim = 15mm 0mm 0mm 20mm,clip,scale=0.8]{Skillliste.pdf}
-\\
+\linebreak
 \footnotesize Tabelle 2: Ist-Analyse
 \\
 \normalsize
@@ -300,8 +302,10 @@ Es wurde ein organisatorisches Grundgerüst geschaffen, das allen Gruppen als Or
 \\
 \linebreak
 \subsubsection*{Meilensteinplanung}
-Mithilfe der erstellten Meilensteinplanung wurde das pünktliche Erreichen der Projektziele gesichert.
+Mithilfe der erstellten Meilensteinplanung wurde das pünktliche Erreichen der Projektziele geplant.
 Jedes Team konnte sich an dieser Tabelle orientieren und seine Aufgaben der Reihe nach ordnen und ausführen.
+\\
+\\
 \hspace*{-10mm} \includegraphics[trim = 10mm 90mm 10mm 20mm,clip, scale=0.9]{Meilensteine.pdf}
 \\
 %MH: holt euch ganz schnell nochmal fixierte Aussagen dazu von Eric, wenn er euch dazu überhaupt etwas sagen kann. Wenn nicht komplett anders darstellen oder rausnehmen.
@@ -371,8 +375,10 @@ Die Designer haben zu der Registrierung und zu dem Login, welcher im Punkt 3.4 b
 Das Flussdiagramm beschreibt sukzessiv den Ablauf des Registrierungs- und des Loginvorgangs, welcher von den Entwicklern daraufhin technisch umgesetzt wurde.
 \newpage
 \subsubsection*{Entwicklung}
-Die Entwickler befassen sich mit den Funktionen der Applikation  und sorgen bei der Registrierung dafür, dass alle Daten ordnungsgemäß geprüft und in die Datenbank eingepflegt werden.
-Als Datenbank wird für die App MongoDB genutzt, welche via RoboMongo gemanagt wird. Als Programmiersprache JavaScript.\footnote{Genaueres zu der Datenstruktur können Sie dem angehängten Pflichtenheft entnehmen.} verwendet.
+Die Entwickler befassten sich mit den Funktionen der Applikation  und sorgten bei der Registrierung dafür, dass alle Daten ordnungsgemäß geprüft und in die Datenbank eingepflegt werden.
+Als Datenbank wird für die App MongoDB genutzt, welche via RoboMongo gemanagt wird. Als Programmiersprache JavaScript.
+%HD 01.01.15: Stimmt das so? ich denke jetzt eher im Angebot. Ich änder das mal!
+\footnote{Genaueres zu der Datenstruktur können Sie dem angehängten Angebotsdokument entnehmen.} verwendet.
 
 Bei der Registrierung werden die einzelnen Benutzereingaben durch bestimmte Regeln in Hinblick auf Länge, E-Mail-Format, Eindeutigkeit, sowie Sicherheitskriterien bei der Passwortvergabe in der Applikation geprüft.\footnote{Die konkreten Regeln der Benutzereingaben können Sie in dem angehängten Handbuch entnehmen.}
 
@@ -405,12 +411,17 @@ Der vom Design erstellte Ablauf der Marktauswahl wird direkt in den Einkaufsproz
 \subsubsection*{Design}
 Aktivitätsdiagramm „Einkauf einlesen“ 
 \\
-\hspace*{-10mm} 
-\includegraphics[trim = 17mm 0mm 0mm 20mm,clip, scale=0.7]{Aktiv-Einkauf.pdf}
 \\
-\footnotesize Abbildung 8: Aktivitätsdiagramm-Einkauf
+\hspace*{-10mm} 
+%HD 01.01.16: Ich hab hier mal das DIagramm von Thomas eingepflegt, es sei denn wir müssen das Aktivitätsdiagramm drin lassen. Sagt bescheid
+%\includegraphics[trim = 17mm 0mm 0mm 20mm,clip, scale=0.7]{Aktiv-Einkauf.pdf}
+\includegraphics[scale=0.7]{Einzeleinkauf_Diagramm.jpg}
+\\
+\footnotesize Abbildung 8: Flussdiagramm-Einzeleinkauf
+\\
+\\
 \normalsize
-Das Design Team hat ein Flussdiagramm zur Einkaufsverwaltung erstellt, das den Ausbau der Systemarchitektur berücksichtigt und als Orientierung für die Entwickler gilt. Zwecks Übersichtlichkeit ist nur ein Teil des Flussdiagramms enthalten (Anm. d. Autors: Das vollständige Flussdiagramm befindet sich im Anhang). 
+Das Design Team hat ein Flussdiagramm zur Einkaufsverwaltung erstellt, das den Ausbau der Systemarchitektur berücksichtigt und als Orientierung für die Entwickler gilt. Zwecks Übersichtlichkeit ist nur ein Teil des Flussdiagramms enthalten\footnote {Anm. d. Autors: Das vollständige Flussdiagramm befindet sich im Anhang}. 
 \\
 Gleichzeitig wird ein Prototyp in Proto.io entwickelt, mit der Zielsetzung, die Hauptfunktionalität der Anwendung abzubilden. Das Tool gibt bereits im frühen Projektstadium, vor der eigentlichen Entwicklung, ein Gefühl für das Endprodukt.
 \\
