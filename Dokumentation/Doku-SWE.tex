@@ -466,6 +466,7 @@ Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Es gib
 \footnotesize Abbildung 10: Aktivitätsdiagramm-Ausgabenverlauf
 \normalsize
 \\
+\\
 \newpage
 \subsubsection*{Zustandsdiagramm}
  „Ausgabenverlauf anzeigen“
@@ -502,7 +503,24 @@ Das Sequenzdiagramm muss innerhalb des Designprozesses konkretisiert dargestellt
 %MH: Update von Eric einholen
 %TO DO - HD: Eric nochmal anschreiben, wie es jetzt genau stant ist
 %HD - 22.12.2015 Ja es wurde was umgesetzt. Ich weiß nur nicht, wie ich hierzu eine Text formulieren soll, der nicht wie Handbuch klingt
-Wie im Programmablaufplan beschrieben, gibt es im View „Auswertung“ die drei Optionen Kaufhäufigkeit, Ausgabenverlauf und Gruppenverlauf. In jedem dieser Optionen muss ein Start- und Enddatum vom Nutzer festgelegt werden. Je nachdem welche Option ausgewählt wurde, sind die vom System gebende Informationen unterschiedlich. Da es aber weiterhin noch Probleme mit dem Einkaufsprozess gibt, kann die Auswertungsfunktion noch nicht genutzt werden.
+Wie im Programmablaufplan beschrieben, gibt es im View „Auswertung“ die drei Optionen Kaufhäufigkeit, Ausgabenverlauf und Gruppenverlauf. 
+\\
+\\
+\textit{Kaufhäufigkeit}
+\\
+Die Funktionalität für diese Auswertung ist im Controller „PurchaseQuantityCtrl“ hinterlegt. Zuerst wird der Username abgefragt und es werden alle für die Auswertung relevanten Variablen auf 0 gesetzt. Anschließend wird ein Array mit den Artikeln angelegt und es wird nach der Kaufhäufigkeit sortiert. Es wird geprüft ob die UserID gleich der EinkaufsID ist und ob die Einkäufe im Zeitraum liegen. Wenn ja wird „Anzahl Einkäufe“ inkrementiert. Der gesamte Einkauf wird durchlaufen und die Gesamtausgaben aufaddiert. Falls ein Artikel schon im Array ist, wird die Gesamtanzahl aufgerechnet. Wenn alle Artikel erfasst sind werden dann die Preise ausgerechnet, gerundet und ausgegeben.
+\\
+\\
+\textit {Ausgabenverlauf}
+\\
+Hierfür wird der Controller „PurchaseTimelineCtrl“ gebraucht. Darin werden zuerst die Daten festgelegt und der Username abgefragt. Anschließend werden alle Einkäufe nach Datum sortiert sodass der älteste Einkauf zuerst im Array steht. Wenn der User auch der Einkaufsowner ist und der Einkauf im angegebenen Zeitraum liegt, wird ein neues Label erstellt. Der Tagespreis wird auf 0 gesetzt. Anschließend werden alle Artikel des Einkaufes durchlaufen und die Gesamtkosten aufaddiert. Die Gesamtkosten sind dann der Datenpunkt. Zuletzt werden die Daten dann an „charData“ übergeben und ein Diagramm erstellt.
+\\
+\\
+\textit {Gruppenverlauf}
+\\
+Es wird der Controller „GroupPurchase-TimelineCtrl“ verwendet. Auch hier wird zuerst der Username abgefragt. Es wird geprüft, ob ein Label schon vorhanden ist. Wenn das nicht der Fall ist, wird dieses als Datum hinzugefügt. Nach diesem Lauf sind alle Einkaufsdaten erfasst. Nun wird mit „SelectionSort“ sortiert. Wie bei der Kaufhäufigkeits-Auswertung werden auch hier alle Einkäufe durchlaufen. Für jedes Label wird ein Datenpunkt angegeben. Alle Artikel für jeden Einkauf werden erfasst, daraufhin wird der Gesamtpreis ermittelt. Es wird die richtige Stelle im Array gesucht, welche von Gruppe und Datum abhängt. Nachdem alle Datenpunkte angegeben wurden ist das Array komplett. Auch hier wird zuletzt alles an „chart.js“ übergeben und ein Diagramm wird erstellt.
+
+%In jedem dieser Optionen muss ein Start- und Enddatum vom Nutzer festgelegt werden. Je nachdem welche Option ausgewählt wurde, sind die vom System gebende Informationen unterschiedlich. Da es aber weiterhin noch Probleme mit dem Einkaufsprozess gibt, kann die Auswertungsfunktion noch nicht genutzt werden.
 %HD- Optionen werden am 24.12.15 eingefügt
 \newpage
 \section{Problemzusammenfassung}
