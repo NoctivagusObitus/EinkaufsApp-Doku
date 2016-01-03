@@ -12,8 +12,7 @@
 
 
 %abstandsformate (z.b. seitenränder)
-\geometry{a4paper, top=25mm, left=33mm, right=22mm, bottom=30mm,
-headsep=10mm, footskip=12mm}
+%\geometry{a4paper, top=25mm, left=33mm, right=22mm, bottom=30mm, headsep=10mm, footskip=12mm}
 
 \begin{document}
 
@@ -133,7 +132,7 @@ Die Vielfalt an Produkten wird vereinfacht dargestellt, der Konsument sieht auf 
 \\
 Zum jetzigen Zeitpunkt soll die zu entwickelnde Applikation vorerst als Trackingtool dienen. Funktioniert dieses einwandfrei, kann eine weitere Funktionalität implementiert werden, nämlich der automatischen Einkaufslistengenerierung. Diese soll nun vergangene Einkäufe auswerten und anhand dieser Vorschläge für Einkaufslisten erstellen, die die größtmöglichen Sparpotentiale für den Nutzer bieten. Hier kann dieser vorab festlegen, in wie vielen Märkten er höchstens einkaufen möchte und wie viel Budget er für den jetzigen Einkauf zur Verfügung hat. Dadurch spart sich der Nutzer die manuelle Einkaufsanalyse und somit auch die dafür benötigte Zeit.
 
-\newpage
+%\newpage
 \subsection{Vorbereitende Fragen}
 \subsubsection*{1. Wer arbeitet mit dem Softwaresystem?}
 Mit dem Softwaresystem kann jede Privatperson arbeiten, die ihren Einkauf digital dokumentieren und Auswertungen des eigenen Kaufverhaltens erhalten möchte. 
@@ -205,7 +204,7 @@ Folgende Informationen müssen vom System gespeichert werden, damit ein Einkauf,
 \item[e.] Erstellen manueller Einkaufslisten vor dem Einkauf 
 \item[f.] Nutzung der EinkaufsApp über Social Media (z. B. Twitter oder Facebook)
 \end{itemize} 
-\newpage
+%\newpage
 \subsubsection*{5. Was ist ein Anwendungsfall und welche Beziehungen zwischen Anwendungsfällen beschreibt der Standard?}
 Ein Anwendungsfall ist die Beschreibung eines Szenarios innerhalb einer gesamten Anwendung. 
 Dabei beginnt in der Regel der Prozess mit einem Startzustand („Precondition“), dem Akteur, der Abwicklung („Main Flow“), und dem Zielzustand. 
@@ -232,7 +231,7 @@ Als Beispiel stehen folgende Use Cases in der EinkaufsApp in Beziehung:
 \footnotesize Abbildung 2: Extend-Beziehung
 \normalsize
 \\
-\newpage
+%\newpage
 \subsection{Projektorganisation}
 %MH: ich weis ja nicht wer von euch welchen teil geschrieben hat, aber ich würde mich inhaltlich gern nochmal über diese Absatz unterhalten
 %AK: haben uns ja darüber bereits unterhalten- Änderung am 23.12. vorgenommen
@@ -244,7 +243,7 @@ Jegliche Unterhaltung basierte auf Mailverkehr oder fand durch Telefonkonferenze
 Die Untergruppen einigten sich außerdem auf Tools, die effizient und sinnvoll zur Umsetzung der anstehenden Aktivitäten und zum Einhalten der Projektziele verwendet wurden. 
 %AK-Änderung-Ende
 
-\newpage
+%\newpage
 \subsubsection{Anforderungskatalog}
 %MH: wenn die Doku parallel zur Implementation entstanden ist können hier nicht "ziele für das Projekt" definiert werden (das wäre wieder Planungsphase) --> %AK hab es nun geändert und den Satz raus genommen
 In dem hier angeführten Kapitel werden konkrete Ziele für das bevorstehende Projekt formuliert, die auf den zuvor aufgeführten Funktionen der Applikation basieren.
@@ -335,7 +334,7 @@ Einige konkrete Sicherheitsvorkehrungen lauten:
 sodass die Nutzerdaten für Dritte nicht zugänglich sind. Die Nutzerdaten werden in einem normalen Web-Formular eingetragen (Login-Screen) und mittels POST-Request an den Server gesendet. Da der TCP-Kanal abgesichert ist, haben Dritte keinen Zugriff auf die 
 Nutzdaten innerhalb des POST-Requests, d.h. Nutzername und Passwort werden gesichert übertragen.
 %AK-28.12.15-BearbeitungEnde
-\newpage
+%\newpage
 \section{Durchführungsphase}
 
 In diesem Abschnitt wird die Funktionsweise der EinkaufsApp beschrieben. Dabei werden die einzelnen Hauptprozesse separat vorgestellt und deren technische Umsetzung erläutert. Die Hauptprozesse sind unterteilt in den Login und die Registrierung des Nutzers, den Einkaufsprozess, die Nutzerverwaltung und die Auswertung. 
@@ -373,7 +372,7 @@ Die Designer haben zu der Registrierung und zu dem Login, welcher im Punkt 3.4 b
 \\
 \linebreak
 Das Flussdiagramm beschreibt sukzessiv den Ablauf des Registrierungs- und des Loginvorgangs, welcher von den Entwicklern daraufhin technisch umgesetzt wurde.
-\newpage
+%\newpage
 \subsubsection*{Entwicklung}
 Die Entwickler befassten sich mit den Funktionen der Applikation und sorgten bei der Registrierung dafür, dass alle Daten ordnungsgemäß geprüft und in die Datenbank eingepflegt werden.
 %Als Datenbank wird für die App MongoDB genutzt, welche via RoboMongo gemanagt wird. Als Programmiersprache kommt JavaScript zum Einsatz.
@@ -384,7 +383,7 @@ Die Entwickler befassten sich mit den Funktionen der Applikation und sorgten bei
 Bei der Registrierung werden die einzelnen Benutzereingaben durch bestimmte Regeln in Hinblick auf Länge, E-Mail-Format, Eindeutigkeit, sowie Sicherheitskriterien bei der Passwortvergabe in der Applikation geprüft.\footnote{Die konkreten Regeln der Benutzereingaben können Sie in dem angehängten Handbuch entnehmen.}
 
 Wenn alle Prüfungen erfolgreich waren, wird der Benutzer angelegt und das Passwort verschlüsselt in Form eines Hashs in der Datenbank gespeichert.
-\newpage
+%\newpage
 \subsection{Login}
 \subsubsection*{Design}
 Das Flussdiagramm der Designer für den Login ist im Abschnitt 3.3 Registrierung zu finden. 
@@ -392,7 +391,7 @@ Das Flussdiagramm der Designer für den Login ist im Abschnitt 3.3 Registrierung
 Die Entwicklung beschäftigt sich mit der Funktionsweise des Logins und prüft hierbei, ob der Benutzer in der Datenbank existiert. Falls dies der Fall ist, wird das Passwort geprüft und bei korrekter Eingabe ist der Login erfolgreich durchgeführt.
 Wenn der Benutzer sein Passwort vergessen hat, kann er dieses zurücksetzen lassen. Hierbei bekommt er eine E-Mail an die im Userprofil hinterlegte E-Mail Adresse. Diese Funktionalität ist bereits implementiert, wird aber auf Grund der Sicherheitsbestimmungen der Testumgebung geblockt. Diese enthält ein Token womit es einen Benutzer ermöglicht wird sein Passwort zu ändern. Dieses Token ist genau eine Stunde gültig, danach verfällt es. 
 In dem dann aufgerufenen Bildschirm muss der Nutzer nun sein Passwort zweimal eintragen. Daraufhin ändert die Datenbank das Kennwort des Nutzer und speichert dieses.
-\newpage
+%\newpage
 \subsection{Marktauswahl}
 Bevor der Einkaufsprozess beginnt muss der Nutzer einen Markt auswählen, hierfür wird der Standort des Nutzers ermittelt via GPS ermittelt und bereits registrierte Märkte in seiner Nähe angezeigt. 
 \subsubsection*{Design}
@@ -400,14 +399,14 @@ Die Designer haben hierzu, ebenso wie bei der Registrierung und dem Login ein Fl
 \\
 \\
 \hspace*{-10mm} 
-\includegraphics[trim = 17mm 40mm 0mm 20mm, clip, scale=0.9]{Markt-Aufnahme.pdf}
+\includegraphics[trim = 17mm 40mm 0mm 20mm, clip, scale=0.8]{Markt-Aufnahme.pdf}
 \\
 \footnotesize Abbildung 7: Markt-Auswahl
 \normalsize
 \subsubsection*{Entwicklung}
 Der vom Design erstellte Ablauf der Marktauswahl wird direkt in den Einkaufsprozess mit eingebunden. Sobald der Nutzer die Option „Einkaufen“ wählt gelangt dieser in den Marktauswahl-View.Anders als im geplanten Ablauf der Designer, kann der Nutzer selber entscheiden, in welchem Markt er sich gerade befindet, indem er entweder in der direkt aufgeführten Marktliste einen auswählt, oder die Option „Markt hinzufügen“ nutzt. Dies hat technische Gründe, da zurzeit eine Lokalisierung der Märkte via GPS aus Zeitgründen noch nicht umgesetzt wurde.
 %HD - 23.12.2015 Ende
-\newpage
+%\newpage
 \subsection{Einkaufsverwaltung}
 \subsubsection*{Design}
 Aktivitätsdiagramm „Einkauf einlesen“ 
@@ -438,7 +437,7 @@ Durch eine klare Aufgabentrennung, die anhand der einzelnen Module der EinkaufsA
 Zum Schluss mussten schließlich die Schnittstellen angepasst und die Kompatibilität der einzelnen Module geprüft werden
 
 %TO DO - TE: einpflegen
-\newpage
+%\newpage
 \subsection{Nutzerverwaltung}
 Die Nutzerverwaltung ermöglicht dem Nutzer die individuelle Zuweisung von anderen Accounts als Gruppenmitglieder zu bereits erstellten Gruppe. Ziel dessen ist die vereinfachte Finanzverwaltung wärend des Einkaufes, sowie die Möglichkeit komplexere Auswertung durchzuführen.
 
@@ -454,7 +453,7 @@ Die Gruppenverwaltung wird in zwei Teile unterteilt. Der Erste beschreibt die Gr
 \subsubsection*{Entwicklung}
 Die Entwicklung hat lediglich den Teil der eigentlichen Gruppenerstellung integriert. Der Nutzer legt einen Gruppennamen fest und kann daraufhin die registrierten Nutzer hinzufügen und ggf. wieder entfernen. Ist die Gruppe erstellt, kann gespeichert werden.
 Diese kann im Nachhinein noch nicht geändert werden, weil die Gruppe nicht angezeigt wird. Dies ist ein Problem, welches die Entwickler noch ausbessern werden.
-\newpage
+%\newpage
 \subsection{Auswertung}
 Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Es gibt die zeitliche Eingrenzung und eine Gruppenmitgliedereingrenzung, bei der alle vergangenen Einkäufe von bestimmten Gruppen zusammengefasst werden.
 \\
@@ -467,7 +466,7 @@ Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Es gib
 \normalsize
 \\
 \\
-\newpage
+%\newpage
 \subsubsection*{Zustandsdiagramm}
  „Ausgabenverlauf anzeigen“
 \\
@@ -486,7 +485,7 @@ Der Nutzer hat die Möglichkeit vergangene Einkäufe auswerten zu lassen. Es gib
 In diesem Abschnitt wird noch einmal genauer auf die UML-Diagramme\footnote{Die gesamten UML-Diagramme befinden sich in dem Anhang der Dokumentation und werden vereinzelt in den Unterkapiteln schon dargestellt.} eingegangen, welche mit dem Enterprise Architect erstellt wurden. Der Enterprise Architekt eignet sich besonders gut zum Modellieren des Softwaresystems, da das Programm nach UML Standards arbeitet. Diese Funktionalität war besonders hilfreich beim Erstellen der UML-Diagramme. 
 \\
 Zudem bietet das Tool Vorlagen und Objekte für viele verschiedenen UML-Diagramme an und ist einfach zu bedienen. Gerade bei der ersten Erstellung eines UML-Diagramms bietet das Programm viele Hilfestellungen und ist optimal auf die Erstellung solcher Diagramme ausgelegt. Außerdem ist das Programm für den Anwender individuell anpassbar, um auch speziellen Anforderungen gerecht zu werden.
-\newpage
+%\newpage
 In der nachfolgenden Tabelle sind die Eigenschaften der in dem Projekt  genutzten Diagramme beschrieben und gegenübergestellt:
 \\
 \\
@@ -527,7 +526,7 @@ Es wird der Controller „GroupPurchase-TimelineCtrl“ verwendet. Auch hier wir
 %Hier wird das Ergebnis beschrieben.
 \subsection{Usability der App}
 Zusammengefasst kann die Version 1.0 der EinkaufsApp Nutzer registrieren und anmelden, sowie den Einkaufsprozess durchführen. Außerdem können Gruppen erstellt und verwaltet werden. Der Auswertungsprozess wurde in Anbetracht der Zeit nicht umgesetzt. Hinsichtlich der Optik wurde kein Corporate Design verwendet, um die Benutzerfreundlichkeit dennoch zu gewährleisten, implementierten die Entwickler ein übersichtliches Interface im aktuellen Web Stil.
-\newpage
+%\newpage
 \subsection{Besondere Herausforderungen des Projektes}
 %\subsection{Organisation und Projektmanagement}
 %MH: der Inhalt beist sich etwas mit der überschrift - lasst uns noch was besseres finden
@@ -546,8 +545,8 @@ In der folgenden Tabelle ist als kleine Übersicht gezeigt, welche Anforderungen
 \\
 \footnotesize Tabelle 5: Aussichten
 \normalsize
-\newpage
-\section{Lesson learned}
+%\newpage
+\subsection{Lesson learned}
 %TO DO - MH (fazit)
 Rückblickend war es eine besondere Herausforderung die gleiche Vorstellung der Aufgaben und Ziele im gesamten Team zu erreichen. Hierfür sind interne Abstimmungen innerhalb des Teams noch vor dem Projektstart sehr zu empfehlen. Ebenso ist eine im Vorfeld gut geplante und abgestimmte Organisationsstruktur unerlässlich. Da diese Vorarbeit hier nicht gegeben werden konnte, wurde zuerst auf eine Flache Hierarchie mit einem hohen Teil an Selbstorganisation für jede Person gesetzt. Dies hatte das Ziel jede Person mit einem signifikanten Maß an Verantwortung und Einsicht in die Sie umgebenden Projektgeschehnisse zu versehen, um die Qualität der geleisteten Arbeit zu sichern. Leider haben die Vorteile einer unkomplizierten und schnellen Kommunikation, sowie das flexible Arbeiten hier nicht überwogen. Demzufolge wurde eine weitere Organisationsebene über den Teilbereich ''Entwicklung'' eingefügt. Nachdem hier, abgetrennt von den anderen Arbeitsgruppen, kleinere Arbeitspakete erstellt wurden, ist die Produktivität spürbar gestiegen. \\
 Weiterhin ist für das Arbeiten miteinander und das Verständnis der Ergebnisse ein gewisses Anteil an formalen Methoden sehr zu empfehlen. Es wurde vor allem in der Anfangsphase des Projektes relativ viel Zeit damit verbracht, sich über die Arbeitsmittel, das Vorgehen in den einzelnen Gruppen, die Ziele in den Gruppen und innerhalb des gesamten Projektes, sowie die Nachhaltigkeit und den Nutzen der verrichteten Arbeiten einig zu werden. Diese Herausforderung wäre ebenfalls bereits in der Planungsphase zu bewältigen.\\
